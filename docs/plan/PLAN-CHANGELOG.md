@@ -31,6 +31,24 @@ local time of the committer.
 
 - Phase 1 ;;; create `.github` profile repo, author org charter, create program board.
 
+## [0.4.0] ; 2026-09-02 ; ADR-ES-002 ingested
+
+### Added
+
+- `00_inbox/ADR-ES-002.md` ;;; verbatim (17,751 bytes, em-dashes preserved).
+- `seed/ADR-ES-norm-002.md` ;;; dash-normalized (17,742 bytes, em-dash ;;; colon, en-dash ;;; semicolon). Gitignored per D-004.
+- `enterprise-semantics-governance/docs/adr/0002-enterprise-semantic-model.md` ;;; dash-normalized ADR with frontmatter (17,929 bytes), pushed to remote governance repo.
+- `enterprise-semantics-governance/CHANGELOG.md` ;;; v0.0.2 entry recording the ADR-ES-002 ingest.
+- Program board: new Decision card `[ADR-ES-002] Enterprise Semantic Model (Proposed)` (Issue #3 in `enterprise-semantics-governance`, on the board with `Item Type=Decision`, `Phase=Phase 3`, `Priority=High`, `Status=In Progress`).
+- PLAN.md ;;; v0.4.0: D-008 logged (open), Phase 3 marked in_progress, plan-keeper YAML reflects the new state.
+
+### Open question
+
+- ADR-ES-002 explicitly depends on ADR-ES-001. ADR-ES-001 has not been authored. Two paths:
+  - **Path A:** Author ADR-ES-001 next (commit to it first), then return to implementing ADR-ES-002.
+  - **Path B:** Accept ADR-ES-002 with the dependency noted in the ADR header, then author ADR-ES-001 alongside or after.
+  Awaiting user decision. Default: surface on each `manny-es` check-in.
+
 ## [0.3.0] ; 2026-09-02 ; Dedicated sub-agent manny-es established
 
 ### Added
