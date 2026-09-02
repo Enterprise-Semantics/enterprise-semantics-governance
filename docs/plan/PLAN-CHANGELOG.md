@@ -31,6 +31,42 @@ local time of the committer.
 
 - Phase 1 ;;; create `.github` profile repo, author org charter, create program board.
 
+## [0.5.0] ; 2026-09-02 ; Path B ; ADR-ES-002 dependency accepted ; FND-ES-AG-001 authored
+
+### Path B decision (per user, 2026-09-02)
+
+- ADR-ES-002 marked `dependency_status: pending` (ADR-ES-001 outstanding).
+- ADR-ES-001 will land alongside or after. Surfaced on every `manny-es` check-in until resolved.
+
+### Added
+
+- `00_inbox/FND-ES-AG-001.md` ;;; authored (14,202 bytes, dash-normalized from the start ;;; 0 em-dashes, 0 en-dashes).
+- `seed/FND-ES-norm-AG-001.md` ;;; identical bytes (gitignored per D-004).
+- `enterprise-semantics-governance/docs/finding/0001-agentic-semantic-grounding.md` ;;; 14,668 bytes with frontmatter, pushed to remote governance repo.
+- Program board: new Finding card `[FND-ES-AG-001] Agentic Semantic Grounding (Proposed)` (Issue #4 in `enterprise-semantics-governance`, on the board with `Item Type=Spike`, `Phase=Phase 3`, `Priority=High`, `Status=In Progress`).
+
+### FND-ES-AG-001 ;;; summary
+
+- Establishes the **Agentic Semantic Grounding** investigation as the first substantive semantic implementation under ADR-ES-002.
+- Addresses the 14 questions from ADR-ES-002 §21.
+- Working hypothesis (provisional, NOT normative):
+  - `Agentic != Autonomous`.
+  - `Agentic Value Stream` is a specialization of `Value Stream` (per ADR-ES-002 §22).
+  - `Agentic Workflow` specializes `Workflow` under agent participation.
+  - `Agentic Flow` specializes `Activity / Process` under AI-driven execution.
+  - `AI Agent` is an enterprise specialization of WSF `Agent` that uses AI Models.
+- Initial scope: 12 Agentic concepts from ADR-ES-002 §20, plus adjacent Autonomous concepts investigated only to establish the Agentic boundary.
+
+### Updated decisions
+
+- **D-008** updated: Path B accepted (ADR-ES-002 dependency noted, not blocking).
+- New **D-009** (open): FND-ES-AG-002+ sub-findings ;;; not yet authored. Will land incrementally as the investigation progresses.
+
+### Verification
+
+- `python3 scripts/plan_keeper.py` ;;; `NO_DRIFT` after commit.
+- `manny-es` daily check-in will surface D-008 (ADR-ES-001 outstanding) and the active Phase 3 status.
+
 ## [0.4.0] ; 2026-09-02 ; ADR-ES-002 ingested
 
 ### Added

@@ -405,10 +405,8 @@ Per the user's directive ("always have a sub-agent responsible to keep the proje
 - **D-005 (open):** Whether to publish the local working folder as a separate `es-workspace` repo (so the workspace is reproducible) — currently NO; revisit if user wants it.
 - **D-006 (open):** PNG renders of PlantUML diagrams pending until Phase 5 CI wires the renderer. Recorded in `enterprise-semantics-visuals/CHANGELOG.md`.
 - **D-007 (resolved 2026-09-02):** `manny-es` is the dedicated, named sub-agent for the Enterprise-Semantics organization. Implemented as cronjob `c0b35d4938af`. Identity surface updated across CODEOWNERS, profile README, program board (Decision card #2), and plan-keeper YAML.
-- **D-008 (open, surfaced 2026-09-02):** ADR-ES-002 (Enterprise Semantic Model) explicitly depends on ADR-ES-001 (organization scaffolding and initial content). ADR-ES-001 has not been authored. Two paths:
-  - **Path A:** Author ADR-ES-001 next (commit to it first), then return to implementing ADR-ES-002.
-  - **Path B:** Accept ADR-ES-002 with the dependency noted in the ADR header, then author ADR-ES-001 alongside or after.
-  Default until user decides: surface to user on each `manny-es` check-in.
+- **D-008 (resolved 2026-09-02, Path B):** ADR-ES-002 accepted with the dependency on ADR-ES-001 noted in the ADR frontmatter. ADR-ES-001 will land alongside or after. ADR-ES-002's frontmatter carries `dependency_status: pending`. `manny-es` will surface the outstanding dependency on every daily check-in until ADR-ES-001 lands.
+- **D-009 (open, opened 2026-09-02):** FND-ES-AG-002+ sub-findings ;;; per-concept, per-relationship, Agentic/Autonomous. Will land incrementally as the investigation progresses. Until at least one sub-finding is authored, ADR-ES-AG-001 cannot land.
 
 ---
 
@@ -438,7 +436,7 @@ phases:
     title: "Authority and Identifier Decisions"
     status: in_progress
     started: 2026-09-02
-    notes: "ADR-ES-002 ingested as Proposed (decision card #3 on the board, In Progress). ADR-ES-001 still pending ;;; surfaced to user (D-008)."
+    notes: "ADR-ES-002 ingested as Proposed (decision card #3 on the board, In Progress). FND-ES-AG-001 authored (finding card #4 on the board, In Progress). ADR-ES-001 still pending ;; surfaced to user (D-008 resolved via Path B)."
   - id: 4
     title: "Semantic Seed Land"
     status: pending
