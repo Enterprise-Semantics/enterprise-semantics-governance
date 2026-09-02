@@ -10,10 +10,30 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Planned
 
-- ADR-ES-001 (organization scaffolding and initial content) ;; pending.
+- ADR-ES-001 (organization scaffolding and initial content) ;; pending (D-008).
 - CR-ES-001 ;; pending ADR-ES-001.
 - Finding records for FND-ES-000 and FND-ES-001 ;; pending.
+- FND-ES-AG-002+ sub-findings ;; pending (D-009). Author incrementally as the Agentic investigation progresses.
 - Subsequent CRs driven by ADR-ES-002 (Agentic semantic CRs land in Phase 4/6).
+
+## [0.0.3] ; 2026-09-02 ; FND-ES-AG-001 ingested (Path B for ADR-ES-002 dep)
+
+### Added
+
+- `docs/finding/0001-agentic-semantic-grounding.md` ;;; FND-ES-AG-001 ;;; Agentic Semantic Grounding.
+  Status: Proposed Finding. Establishes the first substantive semantic investigation
+  under ADR-ES-002. Addresses the 14 questions from ADR-ES-002 §21. Working
+  hypothesis: Agentic != Autonomous; Agentic Value Stream is a specialization of
+  Value Stream; Agentic Workflow specializes Workflow under agent participation;
+  Agentic Flow specializes Activity/Process under AI-driven execution; AI Agent is
+  an enterprise specialization of WSF Agent that uses AI Models.
+
+### Updated
+
+- `docs/adr/0002-enterprise-semantic-model.md` ;;; frontmatter updated with
+  `dependency_status: pending` (Path B accepted; ADR-ES-001 outstanding).
+- `docs/plan/PLAN.md` ;;; v0.5.0 (D-008 resolved via Path B; D-009 opened).
+- `docs/plan/PLAN-CHANGELOG.md` ;;; v0.5.0 entry.
 
 ## [0.0.2] ; 2026-09-02 ; ADR-ES-002 ingested (dash-normalized)
 
