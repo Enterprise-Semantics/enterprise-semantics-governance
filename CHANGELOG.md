@@ -16,6 +16,16 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - FND-ES-AG-002+ sub-findings ;; pending (D-009). Author incrementally as the Agentic investigation progresses.
 - Subsequent CRs driven by ADR-ES-002 (Agentic semantic CRs land in Phase 4/6).
 
+## [0.0.4] ; 2026-09-02 ; FND-ES-AG-002 ingested
+
+### Added
+
+- `docs/finding/0002-agentic-value-stream-semantic-grounding.md` ;;; FND-ES-AG-002 ;;; Agentic Value Stream Semantic Grounding.
+  Status: Proposed Finding. Working conclusion: `Agentic Value Stream` is a **Profile** of `Value Stream`, not a Specialization, pure Characteristic, or Distinct kind.
+  Justification: the four agentic characteristics (bounded autonomy, AI-augmented decision-making, adaptive value-realization, human governance) are characteristics of execution, not of value-realization semantics. A Profile preserves identity, governed relationships, lifecycle, and mappings while avoiding semantic duplication.
+  Candidate relationships: `Agentic Value Stream profile-of Value Stream` ;; `realizes Value Outcome` ;; `enabled-by Capability` ;; `supported-by Process` ;; `executes-through Agentic Workflow`.
+  Architectural preservation per ADR-ES-002 §22: `executes-through` preferred over `contains` to keep value-realization (semantics) and execution-choreography (mechanism) at the right level of abstraction.
+
 ## [0.0.3] ; 2026-09-02 ; FND-ES-AG-001 ingested (Path B for ADR-ES-002 dep)
 
 ### Added
