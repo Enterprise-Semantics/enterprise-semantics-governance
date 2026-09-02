@@ -5,9 +5,10 @@ Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-AG-001.md (identical bytes; authored
 dash-normalized from the start).
 
-Status: Proposed (awaiting human-owner acceptance).
+Status: Accepted (promoted from Proposed on 2026-09-02, per user Proceed, message 1544734588893397022).
 Authored by: manny-es (the dedicated sub-agent for Enterprise-Semantics).
-Date: 2026-09-02.
+Date authored: 2026-09-02.
+Date accepted: 2026-09-02.
 Depends on: ADR-ES-002 (Enterprise Semantic Model) ;;; FND-ES-AG-001 ;;; FND-ES-AG-002.
 Transitive: ADR-ES-001 (organization scaffolding) ;; pending.
 
@@ -15,7 +16,8 @@ Decision: Agentic concepts are Profiles of their base concepts under agent-augme
 execution conditions (profile_type: agentic-execution). Agentic != Autonomous is
 established at the Profile-characteristic level, not at the semantic-kind level.
 
-Implementation: CR-ES-AG-001+ (13 CRs).
+Implementation: CR-ES-AG-001+ (13 CRs). CR-ES-AG-001 (Profile registry + schema) begins
+landing in this turn.
 -->
 
 # ADR-ES-AG-001 ;;; Agentic Semantic Decision

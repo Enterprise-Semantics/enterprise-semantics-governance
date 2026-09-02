@@ -9,6 +9,33 @@ local time of the committer.
 
 ---
 
+## [0.8.0] ; 2026-09-02 ; ADR-ES-AG-001 Accepted ; CR-ES-AG-001 implementation begins
+
+### User decision (2026-09-02)
+
+- Picked option #1 (recommended) ;;; promote ADR-ES-AG-001 to Accepted and begin the CR-ES-AG-001+ implementation sequence.
+
+### ADR-ES-AG-001 acceptance
+
+- `docs/adr/0003-agentic-semantic-decision.md` ;;; frontmatter updated: `Status: Accepted` (promoted from Proposed).
+- Program board: Decision card #6 (`[ADR-ES-AG-001] Agentic Semantic Decision (Proposed)`) ;;; Status promoted to `Done`.
+- Acceptance comment added on issue #6 with the three architectural commitments in force.
+- Local copies (`00_inbox/ADR-ES-AG-001.md` + `seed/ADR-ES-norm-AG-001.md`) updated to reflect the accepted status.
+
+### Implementation unlocked
+
+- CR-ES-AG-001+ (13 CRs) ;;; sequence locked by ADR-ES-AG-001 §6. CR-ES-AG-001 (Profile semantic construct + registry + YAML schema) lands in this turn as the first concrete implementation.
+
+### Updated decisions
+
+- **D-010** (in_progress): CR-ES-AG-001+ unblocked.
+
+### Verification
+
+- `python3 scripts/plan_keeper.py` ;;; `NO_DRIFT` after commit.
+
+---
+
 ## [0.7.0] ; 2026-09-02 ; ADR-ES-AG-001 Agentic Semantic Decision (Proposed)
 
 ### User decision (2026-09-02)
