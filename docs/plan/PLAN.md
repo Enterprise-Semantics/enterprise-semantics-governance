@@ -416,8 +416,9 @@ repos:
     - enterprise-semantics-visuals
     - enterprise-semantics-test-probe
 org_board:
-  exists: false
-  target_id: TBD (created in Phase 1)
+  exists: true
+  project_id: PVT_kwDOE02mGs4BiLsK
+  url: https://github.com/orgs/Enterprise-Semantics/projects/1
 keeper:
   cronjob_id: es-plan-keeper
   schedule: "*/15 * * * *"
