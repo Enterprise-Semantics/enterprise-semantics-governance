@@ -31,6 +31,28 @@ local time of the committer.
 
 - Phase 1 ;;; create `.github` profile repo, author org charter, create program board.
 
+## [0.3.0] ; 2026-09-02 ; Dedicated sub-agent manny-es established
+
+### Added
+
+- `manny-es` cronjob (id `c0b35d4938af`, daily 09:00 local + on-demand, attached to session). The dedicated, named sub-agent responsible for `Enterprise-Semantics` going forward.
+- Cooperation contract with `es-plan-keeper`: keeper detects drift every 15 minutes; `manny-es` consumes the reports and decides whether to fix, flag, or escalate.
+- Org profile README: new "Program ownership" section naming `manny-es` and explaining the manny-es / es-plan-keeper contract.
+- CODEOWNERS updated across all 9 repos: human `@emmanuel-a-otchere` as owner + agent reference block pointing at `manny-es` cronjob with fire instructions.
+- Program board: new Decision card `[manny-es] Dedicated sub-agent for Enterprise-Semantics` (Issue #2 in `enterprise-semantics-governance`, on the board with `Item Type=Decision`, `Phase=Phase 0`, `Status=Done`, `Priority=High`).
+- PLAN.md v0.3.0: new §5 "Sub-agent ownership" documenting the role table, hard rules, and identity surface; renumbered subsequent sections. D-007 marked resolved.
+
+### Verification
+
+- `cronjob list` returns `manny-es` and `es-plan-keeper` as enabled, scheduled.
+- `python3 scripts/plan_keeper.py` returns `NO_DRIFT`.
+- All 9 repos have CODEOWNERS referencing `manny-es`.
+- Org profile renders the new section.
+
+### Pending (awaiting user)
+
+- Phase 3 ;;; ADR-ES-001, CR-ES-001, Finding records.
+
 ## [0.2.0] ; 2026-09-02 ; Phase 1 + Phase 2 complete
 
 ### Phase 1 ;;; Org landing page

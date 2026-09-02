@@ -340,7 +340,45 @@ Phase 6 depends on Phase 5 (CI gate active; first release tagged).
 
 ---
 
-## 5. Plan-Keeper (durable sub-agent)
+## 5. Sub-agent ownership (added in v0.3.0)
+
+Every change to the Enterprise-Semantics organization is the joint product of:
+
+| Role | Identity | Cadence | Purpose |
+|------|----------|---------|---------|
+| Human owner | @emmanuel-a-otchere | on-demand | Sole sign-off authority. Approves and merges. |
+| Dedicated sub-agent | `manny-es` (cronjob `c0b35d4938af`) | daily + on-demand | Proposes and prepares changes. Posts a Discord check-in every day at 09:00 local. Resolves drift surfaced by the keeper. |
+| Drift keeper | `es-plan-keeper` (cronjob `434b5c9c3023`) | every 15 minutes | Read-only drift detection. Reports only when drift occurs. |
+
+The two agents cooperate, never duplicate. The keeper detects; `manny-es` decides.
+
+**Firing `manny-es` on demand:**
+
+```bash
+cronjob action=run job_id=c0b35d4938af
+```
+
+**Hard rules for `manny-es`** (full text in the cronjob prompt):
+
+1. Commit author is always `@emmanuel-a-otchere`.
+2. Dash normalization: colons / semicolons only, never en-dash or em-dash.
+3. Spec tone in normative documents.
+4. `enterprise-semantics` is the semantic authority; everything else derives from it.
+5. Concept IDs use `ES:<KIND>:<NAME>` once ADR-ES-001 lands.
+6. Concepts start at `Candidate`; promotion to Canonical requires an ADR + CR + CI green.
+7. Branch protection on `enterprise-semantics-spec`, `enterprise-semantics-governance`, `enterprise-semantics-docs`: PR + 1 review required.
+8. No auto-deploys; no auto-merges.
+9. Cronjob cannot ask clarifying questions ;;; surface as pending-decision in Discord and exit.
+10. Destructive operations forbidden ;;; propose, never execute.
+
+**Identity surface:**
+
+- Every repo's `CODEOWNERS` references `manny-es`.
+- Org profile README has a "Program ownership" section naming `manny-es`.
+- Plan-keeper YAML summary records `manny-es` cronjob id and live status.
+- Program board has a `[manny-es]` Decision card (Item Type=Decision, Status=Done).
+
+## 6. Plan-Keeper (durable sub-agent)
 
 Per the user's directive ("always have a sub-agent responsible to keep the project plan updated"), the plan-keeper is implemented as a **cronjob** (durable across sessions), not as a session-scoped delegate_task.
 
@@ -358,17 +396,19 @@ Per the user's directive ("always have a sub-agent responsible to keep the proje
 
 ---
 
-## 6. Decisions Log (open)
+## 7. Decisions Log (open)
 
 - **D-001 (open):** Plan-keeper cadence and notification channel — currently15min + Discord drift ping. Change here if user prefers daily digest only, or no automation.
 - **D-002 (open):** Branch-protection bar — currently light during skeleton phase, tightened org-wide at Phase 3.5.
 - **D-003 (open):** Orphan org `Enterprise-Concepts-Model` — currently untouched. User decision pending: delete / leave / archive.
 - **D-004 (open):** Whether the local `seed/` directory is gitignored (so dash-normalized drafts don't leak into a future remote push) — currently YES, ignored.
 - **D-005 (open):** Whether to publish the local working folder as a separate `es-workspace` repo (so the workspace is reproducible) — currently NO; revisit if user wants it.
+- **D-006 (open):** PNG renders of PlantUML diagrams pending until Phase 5 CI wires the renderer. Recorded in `enterprise-semantics-visuals/CHANGELOG.md`.
+- **D-007 (resolved 2026-09-02):** `manny-es` is the dedicated, named sub-agent for the Enterprise-Semantics organization. Implemented as cronjob `c0b35d4938af`. Identity surface updated across CODEOWNERS, profile README, program board (Decision card #2), and plan-keeper YAML.
 
 ---
 
-## 7. Plan Status (machine-readable summary)
+## 8. Plan Status (machine-readable summary)
 
 ```yaml
 program: Enterprise-Semantics
@@ -423,6 +463,12 @@ keeper:
   cronjob_id: es-plan-keeper
   schedule: "*/15 * * * *"
   status: scheduled
+  dedicated_agent:
+    name: manny-es
+    cronjob_id: c0b35d4938af
+    schedule: "0 9 * * *"
+    status: scheduled
+    purpose: "Daily check-in + on-demand; resolves keeper drift"
 ```
 
 ---
