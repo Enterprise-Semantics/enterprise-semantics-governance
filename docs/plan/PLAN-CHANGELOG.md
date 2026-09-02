@@ -9,6 +9,41 @@ local time of the committer.
 
 ---
 
+## [0.9.0] ; 2026-09-02 ; CR-ES-AG-001 Profile semantic construct landed
+
+### Implementation
+
+- **CR-ES-AG-001 (Profile registry + schema)** landed in `enterprise-semantics` repo:
+  - `schema/profile.schema.json` (4,061 bytes) ;;; JSON Schema Draft 2020-12.
+  - `registry/profile-types.yaml` (1,689 bytes) ;;; Profile type registry (agentic-execution, autonomous-operation, example-do-not-use).
+  - `registry/profiles/_base.profile.yaml` (2,284 bytes) ;;; Profile conventions + canonical example.
+  - `conformance/check.py` (6,939 bytes) ;;; Profile conformance harness.
+  - `conformance/tests/test_profile_schema.py` (10,656 bytes) ;;; 5-case test suite.
+  - `conformance/tests/fixtures/*.yaml` (1,560 bytes total) ;;; 3 test fixtures.
+  - `docs/profile.md` (5,266 bytes) ;;; Profile semantic construct documentation.
+  - `CHANGELOG.md` v0.1.0.
+- Remote commit: 8afee80 on `Enterprise-Semantics/enterprise-semantics` main branch.
+
+### Conformance evidence
+
+- `python3 conformance/check.py` ;;; `NO_DRIFT (0 Profile record(s) validated)`, exit 0.
+- `python3 conformance/tests/test_profile_schema.py` ;;; `5/5 cases passed`, exit 0.
+
+### Documentation
+
+- `CR-ES-AG-001` published at `enterprise-semantics-governance/docs/cr/0001-profile-semantic-construct.md` (7,895 bytes).
+- `FND-ES-AG-003` (Agentic Workflow) authored and pushed (12,043 bytes with frontmatter).
+
+### Next CR
+
+- **CR-ES-AG-002** ;;; register `agentic-execution` profile_type and land Agentic Value Stream + Agentic Workflow Profile records (next step in the sequence per ADR-ES-AG-001 §6).
+
+### Verification
+
+- `python3 scripts/plan_keeper.py` ;;; `NO_DRIFT` after commit.
+
+---
+
 ## [0.8.0] ; 2026-09-02 ; ADR-ES-AG-001 Accepted ; CR-ES-AG-001 implementation begins
 
 ### User decision (2026-09-02)
