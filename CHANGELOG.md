@@ -14,7 +14,22 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - CR-ES-001 ;; pending ADR-ES-001.
 - Finding records for FND-ES-000 and FND-ES-001 ;; pending.
 - FND-ES-AG-002+ sub-findings ;; pending (D-009). Author incrementally as the Agentic investigation progresses.
-- Subsequent CRs driven by ADR-ES-002 (Agentic semantic CRs land in Phase 4/6).
+- Subsequent CRs driven by ADR-ES-002 and ADR-ES-AG-001 ;;; CR-ES-AG-001+ sequence locked (13 CRs). Implementation gated by human-owner acceptance of ADR-ES-AG-001.
+
+## [0.0.5] ; 2026-09-02 ; ADR-ES-AG-001 ingested (Agentic Semantic Decision)
+
+### Added
+
+- `docs/adr/0003-agentic-semantic-decision.md` ;;; ADR-ES-AG-001 ;;; Agentic Semantic Decision.
+  Status: Proposed (awaiting human-owner acceptance). Three architectural commitments:
+  (1) `Agentic` is a Profile modifier, not a new semantic kind. (2) `Agentic != Autonomous` at the Profile-characteristic level. (3) First implementation family: 11 concepts (Agentic Value Stream, Agentic Workflow, Agentic Flow, Agentic Operations, Agentic Enterprise, Agentic Capability, AI Agent, Agentic Agent, Agentic Service, Agentic Product, Agentic AI). `Agentic Culture` held back for separate investigation.
+  Implementation sequence: CR-ES-AG-001+ (13 CRs).
+
+### Updated
+
+- FND-ES-AG-001 (card #4) and FND-ES-AG-002 (card #5) cards received comments noting they are cited by ADR-ES-AG-001, not closed.
+- `docs/plan/PLAN.md` ;;; v0.7.0 (D-009 resolved, D-010 opened).
+- `docs/plan/PLAN-CHANGELOG.md` ;;; v0.7.0 entry.
 
 ## [0.0.4] ; 2026-09-02 ; FND-ES-AG-002 ingested
 
