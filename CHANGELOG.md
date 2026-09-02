@@ -14,7 +14,29 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - CR-ES-001 ;; pending ADR-ES-001.
 - Finding records for FND-ES-000 and FND-ES-001 ;; pending.
 - FND-ES-AG-002+ sub-findings ;; pending (D-009). Author incrementally as the Agentic investigation progresses.
-- Subsequent CRs driven by ADR-ES-002 and ADR-ES-AG-001 ;;; CR-ES-AG-001+ sequence locked (13 CRs). Implementation gated by human-owner acceptance of ADR-ES-AG-001.
+- CR-ES-AG-002+ ;;; implementation in progress. CR-ES-AG-002 lands agentic-execution profile_type + Profile record with WSF grounding. CR-ES-AG-003+ (Agentic Value Stream, Agentic Workflow, etc.) follow.
+
+## [0.0.6] ; 2026-09-02 ; User-revised FND-ES-AG-001 + Grounding Result + CR-ES-AG-002
+
+### Added
+
+- `docs/finding/0001-agentic-semantic-grounding-canonical.md` ;;; user-revised canonical FND-ES-AG-001 (16,016 bytes with frontmatter, dash-normalized).
+- `docs/finding/0001-agentic-semantic-grounding-grounding-result.md` ;;; FND-ES-AG-001-Grounding-Result (18,181 bytes with frontmatter, dash-normalized). Records the live WSF baseline grounding that informed the user revision.
+- `docs/cr/0002-agentic-execution-profile-type.md` ;;; CR-ES-AG-002 (5,995 bytes, dash-normalized). Implements ADR-ES-AG-001 §6 CR-ES-AG-002 ;;; the agentic-execution profile_type + Profile record.
+
+### Updated
+
+- `docs/finding/0001-agentic-semantic-grounding.md` ;;; replaced with a stub pointing to canonical + grounding (preserves audit trail of the earlier authored version).
+
+### Program board
+
+- Finding card #4 ;;; commented + Status=Done (superseded by canonical).
+- Finding card #9 ;;; new ;;; FND-ES-AG-001 canonical (user-revised). Status=In Progress.
+- Finding card #10 ;;; new ;;; FND-ES-AG-001-Grounding-Result. Status=In Progress.
+
+### Implementation
+
+- CR-ES-AG-002 (commit 063ab5c on `Enterprise-Semantics/enterprise-semantics`): Profile record `agentic-execution` (Established, v1.0.0) with four governed characteristics. WSF grounding cited explicitly in provenance.
 
 ## [0.0.5] ; 2026-09-02 ; ADR-ES-AG-001 ingested (Agentic Semantic Decision)
 
