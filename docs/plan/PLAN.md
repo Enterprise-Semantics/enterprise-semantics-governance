@@ -377,14 +377,19 @@ plan_version: 0.1.0
 phases:
   - id: 0
     title: "Plan + Plan-Keeper"
-    status: in_progress
+    status: completed
     started: 2026-09-02
+    completed: 2026-09-02
   - id: 1
     title: "Workspace + Org Landing Page"
-    status: pending
+    status: completed
+    started: 2026-09-02
+    completed: 2026-09-02
   - id: 2
     title: "Domain Repo Skeleton"
-    status: pending
+    status: completed
+    started: 2026-09-02
+    completed: 2026-09-02
   - id: 3
     title: "Authority and Identifier Decisions"
     status: pending
@@ -399,7 +404,7 @@ phases:
     status: pending
 repos:
   target: 9
-  created: 0
+  created: 9
   planned:
     - .github
     - enterprise-semantics
