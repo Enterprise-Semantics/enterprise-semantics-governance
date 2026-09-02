@@ -437,7 +437,7 @@ phases:
     title: "Authority and Identifier Decisions"
     status: in_progress
     started: 2026-09-02
-    notes: "ADR-ES-002 ingested as Proposed (decision card #3, In Progress). FND-ES-AG-001 + FND-ES-AG-002 landed (finding cards #4 and #5, cited by ADR-ES-AG-001). ADR-ES-AG-001 ACCEPTED 2026-09-02 (decision card #6, Status=Done). ADR-ES-001 still pending ;; surfaced to user (D-008 resolved via Path B). CR-ES-AG-001+ sequence unblocked (D-010 in_progress)."
+    notes: "ADR-ES-002 ingested as Proposed (decision card #3, In Progress). FND-ES-AG-001 + FND-ES-AG-002 landed (finding cards #4 and #5, cited by ADR-ES-AG-001). ADR-ES-AG-001 ACCEPTED 2026-09-02 (decision card #6, Status=Done). CR-ES-AG-001 (Profile semantic construct) landed in enterprise-semantics (commit 8afee80). ADR-ES-001 still pending ;; surfaced to user (D-008 resolved via Path B). CR-ES-AG-002+ next (D-010 in_progress)."
   - id: 4
     title: "Semantic Seed Land"
     status: pending
