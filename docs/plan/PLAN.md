@@ -463,12 +463,19 @@ keeper:
   cronjob_id: es-plan-keeper
   schedule: "*/15 * * * *"
   status: scheduled
-  dedicated_agent:
-    name: manny-es
-    cronjob_id: c0b35d4938af
+agents:
+  - name: es-plan-keeper
+    role: drift detector
+    cronjob_id: "434b5c9c3023"
+    schedule: "*/15 * * * *"
+    status: scheduled
+  - name: manny-es
+    role: dedicated sub-agent for Enterprise-Semantics
+    cronjob_id: "c0b35d4938af"
     schedule: "0 9 * * *"
     status: scheduled
     purpose: "Daily check-in + on-demand; resolves keeper drift"
+    decision_card: enterprise-semantics-governance#2
 ```
 
 ---
