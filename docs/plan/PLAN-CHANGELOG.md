@@ -1,4 +1,4 @@
-# PLAN-CHANGELOG.md — Enterprise Semantics Program Plan
+# PLAN-CHANGELOG.md ;;; Enterprise Semantics Program Plan
 
 This log tracks every committed change to `plans/PLAN.md`. The plan-keeper cronjob
 references this file's most recent entry when reconciling the live org state against
@@ -6,6 +6,69 @@ the plan.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/) semantics. Dates are
 local time of the committer.
+
+---
+
+## [0.7.0] ; 2026-09-02 ; ADR-ES-AG-001 Agentic Semantic Decision (Proposed)
+
+### User decision (2026-09-02)
+
+- Picked option #2 ;;; author ADR-ES-AG-001 early to lock in the Profile pattern before all sub-findings land.
+
+### Added
+
+- `00_inbox/ADR-ES-AG-001.md` ;;; authored (16,772 bytes, dash-normalized from the start).
+- `seed/ADR-ES-norm-AG-001.md` ;;; identical bytes (gitignored per D-004).
+- `enterprise-semantics-governance/docs/adr/0003-agentic-semantic-decision.md` ;;; 17,608 bytes with frontmatter, pushed to remote governance repo.
+- Program board: new Decision card `[ADR-ES-AG-001] Agentic Semantic Decision (Proposed)` (Issue #6 in `enterprise-semantics-governance`, on the board with `Item Type=Decision`, `Phase=Phase 3`, `Priority=High`, `Status=In Progress`).
+- Comments added to Finding cards #4 (FND-ES-AG-001) and #5 (FND-ES-AG-002) noting they are cited by ADR-ES-AG-001, not closed.
+
+### ADR-ES-AG-001 ;;; three architectural commitments
+
+1. **`Agentic` is a Profile modifier, not a new semantic kind.** `Agentic X` is a Profile of `X` under agent-augmented execution conditions.
+2. **`Agentic != Autonomous`** is established at the Profile-characteristic level, not at the semantic-kind level. Both are Profiles of the same base concept with different profile_type values.
+3. **First implementation family:** 11 concepts (Agentic Value Stream, Agentic Workflow, Agentic Flow, Agentic Operations, Agentic Enterprise, Agentic Capability, AI Agent, Agentic Agent, Agentic Service, Agentic Product, Agentic AI). `Agentic Culture` held back for separate investigation.
+
+### Profile characteristics (apply when the Agentic profile is active)
+
+- Goal-directed execution under bounded autonomy
+- AI-augmented decision-making
+- Adaptive behavior
+- Human governance, not human execution
+
+### Implementation sequence ;;; CR-ES-AG-001+ (13 CRs)
+
+- **CR-ES-AG-001** ;;; Profile semantic construct (registry + schema)
+- **CR-ES-AG-002** ;;; agentic-execution profile_type registration
+- **CR-ES-AG-003** ;;; Agentic Value Stream (per FND-ES-AG-002)
+- **CR-ES-AG-004** ;;; Agentic Workflow (per FND-ES-AG-003 pending)
+- **CR-ES-AG-005 through 011** ;;; one CR per remaining concept
+- **CR-ES-AG-012** ;;; Profile conformance gate validation
+- **CR-ES-AG-013** ;;; First semantic release tag
+
+### Acceptance criteria
+
+- Human owner (or delegated authority) explicitly approves.
+- The Profile hypothesis (FND-ES-AG-002) is reviewed and accepted.
+- The CR-ES-AG-001+ sequence is approved.
+
+Until `Accepted`, CR-ES-AG-001+ cannot land.
+
+### Architectural constraints reaffirmed
+
+- Value Stream != Process != Workflow != Task Flow
+- `executes-through` preferred over `contains`
+- Agentic and Autonomous are Profiles, not Distinct kinds
+
+### Updated decisions
+
+- **D-009** (resolved 2026-09-02): FND-ES-AG-001 and FND-ES-AG-002 landed and consumed by ADR-ES-AG-001.
+- **D-010** (open): CR-ES-AG-001+ sequence locked. CRs cannot land until ADR-ES-AG-001 is `Accepted`.
+
+### Verification
+
+- `python3 scripts/plan_keeper.py` ;;; `NO_DRIFT` after commit.
+- ADR-ES-AG-001 awaiting human-owner acceptance. `manny-es` will surface this on each daily check-in.
 
 ---
 

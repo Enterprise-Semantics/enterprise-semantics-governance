@@ -406,7 +406,8 @@ Per the user's directive ("always have a sub-agent responsible to keep the proje
 - **D-006 (open):** PNG renders of PlantUML diagrams pending until Phase 5 CI wires the renderer. Recorded in `enterprise-semantics-visuals/CHANGELOG.md`.
 - **D-007 (resolved 2026-09-02):** `manny-es` is the dedicated, named sub-agent for the Enterprise-Semantics organization. Implemented as cronjob `c0b35d4938af`. Identity surface updated across CODEOWNERS, profile README, program board (Decision card #2), and plan-keeper YAML.
 - **D-008 (resolved 2026-09-02, Path B):** ADR-ES-002 accepted with the dependency on ADR-ES-001 noted in the ADR frontmatter. ADR-ES-001 will land alongside or after. ADR-ES-002's frontmatter carries `dependency_status: pending`. `manny-es` will surface the outstanding dependency on every daily check-in until ADR-ES-001 lands.
-- **D-009 (in_progress 2026-09-02):** FND-ES-AG-001 (parent) and FND-ES-AG-002 (Agentic Value Stream ;;; Profile hypothesis) landed. Remaining sub-findings (FND-ES-AG-003+) ;;; per-concept and per-relationship investigations for the rest of the Agentic family. Until ADR-ES-AG-001 is approved, the Agentic semantic records stay at `Candidate` lifecycle status.
+- **D-009 (resolved 2026-09-02):** FND-ES-AG-001 (Agentic Semantic Grounding) and FND-ES-AG-002 (Agentic Value Stream Semantic Grounding ;;; Profile hypothesis) both landed and have been consumed by ADR-ES-AG-001 (Agentic Semantic Decision, `Proposed`). The Finding cards remain `In Progress` ;;; they are cited, not closed. Closing happens on ADR acceptance.
+- **D-010 (open, opened 2026-09-02):** CR-ES-AG-001+ ;;; 13-CR implementation sequence locked by ADR-ES-AG-001 §6. CRs cannot land until ADR-ES-AG-001 is `Accepted`.
 
 ---
 
@@ -436,7 +437,7 @@ phases:
     title: "Authority and Identifier Decisions"
     status: in_progress
     started: 2026-09-02
-    notes: "ADR-ES-002 ingested as Proposed (decision card #3 on the board, In Progress). FND-ES-AG-001 authored (finding card #4 on the board, In Progress). ADR-ES-001 still pending ;; surfaced to user (D-008 resolved via Path B)."
+    notes: "ADR-ES-002 ingested as Proposed (decision card #3, In Progress). FND-ES-AG-001 + FND-ES-AG-002 landed (finding cards #4 and #5, cited by ADR-ES-AG-001). ADR-ES-AG-001 ingested as Proposed (decision card #6, In Progress). ADR-ES-001 still pending ;; surfaced to user (D-008 resolved via Path B). CR-ES-AG-001+ sequence locked (D-010)."
   - id: 4
     title: "Semantic Seed Land"
     status: pending
