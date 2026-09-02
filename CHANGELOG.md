@@ -14,7 +14,52 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - CR-ES-001 ;; pending ADR-ES-001.
 - Finding records for FND-ES-000 and FND-ES-001 ;; pending.
 - FND-ES-AG-002+ sub-findings ;; pending (D-009). Author incrementally as the Agentic investigation progresses.
-- CR-ES-AG-002+ ;;; implementation in progress. CR-ES-AG-002 lands agentic-execution profile_type + Profile record with WSF grounding. CR-ES-AG-003+ (Agentic Value Stream, Agentic Workflow, etc.) follow.
+- FND-ES-AG-004+ (Agentic Operations, Enterprise, Agent scrutiny); CR-ES-AG-005+ (Agentic Flow, Capability, AI Agent, etc.) ;;; in progress or held back per FND-ES-AG-006.
+
+## [0.0.7] ; 2026-09-02 ; User-revised FND-ES-AG-001 + Grounding Result ;;; CR-ES-AG-002/003/004/006/007 ;;; Findings 004/005/006
+
+### User directive (2026-09-02, message 1544738104559009833)
+
+The user sent FND-ES-AG-001 (user-revised canonical) and FND-ES-AG-001_Grounding_Result (live WSF baseline grounding). Directive: 'Save them, use it to ground the initial set of concepts, then proceed with CR-ES-AG-002, then CR-ES-AG-003 then CR-ES-AG-004 then get into the attached required actions as well. Structure the actions out and follow through the systematic plan to deliver them.'
+
+### Added (governance repo)
+
+- `docs/finding/0001-agentic-semantic-grounding-canonical.md` ;;; user-revised canonical FND-ES-AG-001.
+- `docs/finding/0001-agentic-semantic-grounding-grounding-result.md` ;;; FND-ES-AG-001-Grounding-Result.
+- `docs/finding/0004-agentic-operations-semantic-grounding.md` ;;; FND-ES-AG-004.
+- `docs/finding/0005-agentic-enterprise-semantic-grounding.md` ;;; FND-ES-AG-005.
+- `docs/finding/0006-agentic-agent-scrutiny.md` ;;; FND-ES-AG-006 (held back from canonical).
+- `docs/cr/0002-agentic-execution-profile-type.md` ;;; CR-ES-AG-002.
+- `docs/cr/0003-agentic-value-stream-concept.md` ;;; CR-ES-AG-003.
+- `docs/cr/0004-agentic-workflow-concept.md` ;;; CR-ES-AG-004.
+- `docs/cr/0006-agentic-operations-concept.md` ;;; CR-ES-AG-006.
+- `docs/cr/0007-agentic-enterprise-concept.md` ;;; CR-ES-AG-007.
+
+### Implementation (Enterprise-Semantics repo, commits 063ab5c + c15f12c + 3869999)
+
+- CR-ES-AG-002 (commit 063ab5c) ;;; agentic-execution Profile record (Established, v1.0.0). Cites WSF live baseline in provenance.
+- CR-ES-AG-003 (commit c15f12c) ;;; Agentic Value Stream concept record. Value Stream base concept (Established, v1.0.0).
+- CR-ES-AG-004 (commit c15f12c) ;;; Agentic Workflow concept record. Workflow base concept (Established, v1.0.0).
+- CR-ES-AG-006 (commit 3869999) ;;; Agentic Operations concept record. Operations base concept (Established, v1.0.0).
+- CR-ES-AG-007 (commit 3869999) ;;; Agentic Enterprise concept record. Enterprise base concept (Established, v1.0.0).
+- Concept harness (`conformance/check_concepts.py`) + Concept schema (`schema/concept.schema.json`) + 5-case test suite.
+
+### Conformance
+
+- 1 Profile record validated.
+- 8 Concept records validated.
+- Both test suites (profile + concept) pass 5/5.
+
+### Program board
+
+- Card #4 (FND-ES-AG-001 prior) ;;; superseded, Status=Done.
+- Cards #9 (FND-ES-AG-001 canonical), #10 (FND-ES-AG-001-Grounding-Result) ;;; Status=In Progress.
+- Cards #11 (CR-ES-AG-002), #12 (CR-ES-AG-003), #13 (CR-ES-AG-004), #17 (CR-ES-AG-006), #18 (CR-ES-AG-007) ;;; Status=Done.
+- Cards #14 (FND-ES-AG-004), #15 (FND-ES-AG-005), #16 (FND-ES-AG-006) ;;; Status=In Progress.
+
+### Updated decisions
+
+- **D-011** (open, opened 2026-09-02): CR-ES-AG-005, 008, 009, 010 (conditional), 011, 012, 013 sequence remaining. CR-ES-AG-010 gated on FND-ES-AG-006 + FND-ES-AG-009.
 
 ## [0.0.6] ; 2026-09-02 ; User-revised FND-ES-AG-001 + Grounding Result + CR-ES-AG-002
 

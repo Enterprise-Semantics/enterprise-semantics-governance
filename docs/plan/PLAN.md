@@ -407,7 +407,8 @@ Per the user's directive ("always have a sub-agent responsible to keep the proje
 - **D-007 (resolved 2026-09-02):** `manny-es` is the dedicated, named sub-agent for the Enterprise-Semantics organization. Implemented as cronjob `c0b35d4938af`. Identity surface updated across CODEOWNERS, profile README, program board (Decision card #2), and plan-keeper YAML.
 - **D-008 (resolved 2026-09-02, Path B):** ADR-ES-002 accepted with the dependency on ADR-ES-001 noted in the ADR frontmatter. ADR-ES-001 will land alongside or after. ADR-ES-002's frontmatter carries `dependency_status: pending`. `manny-es` will surface the outstanding dependency on every daily check-in until ADR-ES-001 lands.
 - **D-009 (resolved 2026-09-02):** FND-ES-AG-001 (Agentic Semantic Grounding) and FND-ES-AG-002 (Agentic Value Stream Semantic Grounding ;;; Profile hypothesis) both landed and have been consumed by ADR-ES-AG-001 (Agentic Semantic Decision, `Proposed`). The Finding cards remain `In Progress` ;;; they are cited, not closed. Closing happens on ADR acceptance.
-- **D-010 (in_progress 2026-09-02):** CR-ES-AG-001+ ;;; 13-CR implementation sequence locked by ADR-ES-AG-001 §6. CR-ES-AG-001+ unblocked (ADR-ES-AG-001 Accepted 2026-09-02).
+- **D-010 (in_progress 2026-09-02):** CR-ES-AG-001+ ;;; 13-CR implementation sequence locked by ADR-ES-AG-001 §6. CR-ES-AG-002 (commit 063ab5c), CR-ES-AG-003+CR-ES-AG-004 (commit c15f12c), CR-ES-AG-006+CR-ES-AG-007 (commit 3869999) landed. CR-ES-AG-005, 008, 009, 010 (conditional), 011, 012, 013 remain.
+- **D-011 (open, opened 2026-09-02):** CR-ES-AG-010 (Agentic Agent) is held back per FND-ES-AG-006. Author FND-ES-AG-009 (AI Agent) first, then decide whether Agentic Agent is redundant, a Profile, or a Distinct concept.
 
 ---
 
@@ -437,7 +438,7 @@ phases:
     title: "Authority and Identifier Decisions"
     status: in_progress
     started: 2026-09-02
-    notes: "ADR-ES-002 ingested as Proposed (decision card #3, In Progress). FND-ES-AG-001 + FND-ES-AG-002 landed (finding cards #4 and #5, cited by ADR-ES-AG-001). ADR-ES-AG-001 ACCEPTED 2026-09-02 (decision card #6, Status=Done). CR-ES-AG-001 (Profile semantic construct) landed in enterprise-semantics (commit 8afee80). ADR-ES-001 still pending ;; surfaced to user (D-008 resolved via Path B). CR-ES-AG-002+ next (D-010 in_progress)."
+    notes: "ADR-ES-002 ingested as Proposed (decision card #3, In Progress). FND-ES-AG-001 + FND-ES-AG-002 landed (finding cards #4 and #5, cited by ADR-ES-AG-001). ADR-ES-AG-001 ACCEPTED 2026-09-02 (decision card #6, Status=Done). CR-ES-AG-001 + CR-ES-AG-002 + CR-ES-AG-003/004 + CR-ES-AG-006/007 landed in enterprise-semantics (commits 8afee80, 063ab5c, c15f12c, 3869999). Agentic concept records live: Value Stream, Workflow, Operations, Enterprise, Agentic Value Stream, Agentic Workflow, Agentic Operations, Agentic Enterprise (Candidate status). FND-ES-AG-004/005/006 authored ;;; CR-ES-AG-005/008/009/010(conditional)/011/012/013 remain. ADR-ES-001 still pending ;; surfaced to user (D-008 resolved via Path B)."
   - id: 4
     title: "Semantic Seed Land"
     status: pending
