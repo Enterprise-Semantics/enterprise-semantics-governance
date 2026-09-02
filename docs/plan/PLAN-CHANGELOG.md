@@ -9,27 +9,46 @@ local time of the committer.
 
 ---
 
-## [0.1.0] ; 2026-09-02 ; Phase 0 in progress
+## [0.6.0] ; 2026-09-02 ; FND-ES-AG-002 Agentic Value Stream Semantic Grounding
 
 ### Added
 
-- Initial `plans/PLAN.md` authored (Phases 0;;6, repo inventory, WBS, dependency graph, plan-keeper spec, decisions log, machine-readable summary).
-- `00_inbox/FND-ES-000.md` and `00_inbox/FND-ES-001.md` stored verbatim (em-dashes preserved per user directive).
-- `seed/FND-ES-norm-000.md` and `seed/FND-ES-norm-001.md` dash-normalized drafts (em-dash ;;; colon, en-dash ;;; semicolon); gitignored per D-004.
-- `scripts/plan_keeper.py` cronjob-driven drift detector (idempotent, read-only against GitHub).
-- `.gitignore` covering credential, AI-model, and workspace-noise patterns.
+- `00_inbox/FND-ES-AG-002.md` ;;; authored (16,887 bytes, dash-normalized from the start).
+- `seed/FND-ES-norm-AG-002.md` ;;; identical bytes (gitignored per D-004).
+- `enterprise-semantics-governance/docs/finding/0002-agentic-value-stream-semantic-grounding.md` ;;; 17,513 bytes with frontmatter, pushed to remote governance repo.
+- Program board: new Finding card `[FND-ES-AG-002] Agentic Value Stream Semantic Grounding (Proposed)` (Issue #5 in `enterprise-semantics-governance`, on the board with `Item Type=Spike`, `Phase=Phase 3`, `Priority=High`, `Status=In Progress`).
 
-### Decisions recorded (open)
+### FND-ES-AG-002 ;;; working conclusion (provisional, NOT normative)
 
-- **D-001** Plan-keeper cadence: every 15 minutes + Discord drift ping (subject to user override).
-- **D-002** Branch-protection bar: light during skeleton phase, tightened org-wide at Phase 3.5.
-- **D-003** Orphan org `Enterprise-Concepts-Model`: untouched (user decision pending).
-- **D-004** `seed/` directory: gitignored.
-- **D-005** Local workspace: not published as a separate `es-workspace` repo (subject to revisit).
+- `Agentic Value Stream` is a **Profile** of `Value Stream`, not a Specialization, pure Characteristic, or Distinct kind.
+- Justification: the four agentic characteristics (bounded autonomy, AI-augmented decision-making, adaptive value-realization, human governance) are characteristics of execution, not of value-realization semantics. A Profile preserves identity, governed relationships, lifecycle, and mappings while avoiding semantic duplication.
+- Candidate definition (provisional):
 
-### Pending (awaiting user Proceed)
+  > An Agentic Value Stream is a Value Stream whose realization is characterized by goal-directed execution under bounded autonomy, AI-augmented decision-making, adaptive value-realization, and human governance rather than human execution.
 
-- Phase 1 ;;; create `.github` profile repo, author org charter, create program board.
+- Candidate relationships (provisional):
+
+  ```text
+  Agentic Value Stream profile-of Value Stream
+  Agentic Value Stream realizes Value Outcome
+  Agentic Value Stream enabled-by Capability
+  Agentic Value Stream supported-by Process
+  Agentic Value Stream executes-through Agentic Workflow
+  ```
+
+- Architectural preservation per ADR-ES-002 §22: `executes-through` is preferred over `contains` to keep value-realization (semantics) and execution-choreography (mechanism) at the right level of abstraction.
+
+### Open questions for the consolidated review
+
+- Does Profile carry through to the entire Agentic family (Agentic Operations, Agentic Enterprise) or is it specific to Agentic Value Stream?
+- How does Agentic Value Stream map to OpenDEA metamodel constructs? (Phase 4.6.)
+- How does Agentic Value Stream map to WSF Value? (Phase 4.6.)
+
+### Updated decisions
+
+- **D-009** updated: FND-ES-AG-002 landed. Remaining sub-findings (FND-ES-AG-003+) ;;; per-concept and per-relationship investigations for the rest of the Agentic family.
+
+---
 
 ## [0.5.0] ; 2026-09-02 ; Path B ; ADR-ES-002 dependency accepted ; FND-ES-AG-001 authored
 
@@ -67,6 +86,8 @@ local time of the committer.
 - `python3 scripts/plan_keeper.py` ;;; `NO_DRIFT` after commit.
 - `manny-es` daily check-in will surface D-008 (ADR-ES-001 outstanding) and the active Phase 3 status.
 
+---
+
 ## [0.4.0] ; 2026-09-02 ; ADR-ES-002 ingested
 
 ### Added
@@ -84,6 +105,8 @@ local time of the committer.
   - **Path A:** Author ADR-ES-001 next (commit to it first), then return to implementing ADR-ES-002.
   - **Path B:** Accept ADR-ES-002 with the dependency noted in the ADR header, then author ADR-ES-001 alongside or after.
   Awaiting user decision. Default: surface on each `manny-es` check-in.
+
+---
 
 ## [0.3.0] ; 2026-09-02 ; Dedicated sub-agent manny-es established
 
@@ -106,6 +129,8 @@ local time of the committer.
 ### Pending (awaiting user)
 
 - Phase 3 ;;; ADR-ES-001, CR-ES-001, Finding records.
+
+---
 
 ## [0.2.0] ; 2026-09-02 ; Phase 1 + Phase 2 complete
 
@@ -136,3 +161,23 @@ local time of the committer.
 ### Plan-keeper
 
 - `es-plan-keeper` cronjob (job id `434b5c9c3023`) ran successfully after Phase 1 ;;; first drift report posted to Discord Home (the report reads "REPOS_MISSING: [all 8]"). Once the keeper ticks again, it should report either NO_DRIFT or remaining drift on missing branch-protection-only repos.
+
+---
+
+## [0.1.0] ; 2026-09-02 ; Phase 0 in progress
+
+### Added
+
+- Initial `plans/PLAN.md` authored (Phases 0;;6, repo inventory, WBS, dependency graph, plan-keeper spec, decisions log, machine-readable summary).
+- `00_inbox/FND-ES-000.md` and `00_inbox/FND-ES-001.md` stored verbatim (em-dashes preserved per user directive).
+- `seed/FND-ES-norm-000.md` and `seed/FND-ES-norm-001.md` dash-normalized drafts (em-dash ;;; colon, en-dash ;;; semicolon); gitignored per D-004.
+- `scripts/plan_keeper.py` cronjob-driven drift detector (idempotent, read-only against GitHub).
+- `.gitignore` covering credential, AI-model, and workspace-noise patterns.
+
+### Decisions recorded (open)
+
+- **D-001** Plan-keeper cadence: every 15 minutes + Discord drift ping (subject to user override).
+- **D-002** Branch-protection bar: light during skeleton phase, tightened org-wide at Phase 3.5.
+- **D-003** Orphan org `Enterprise-Concepts-Model`: untouched (user decision pending).
+- **D-004** `seed/` directory: gitignored.
+- **D-005** Local workspace: not published as a separate `es-workspace` repo (subject to revisit).

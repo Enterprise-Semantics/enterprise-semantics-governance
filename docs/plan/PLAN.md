@@ -406,7 +406,7 @@ Per the user's directive ("always have a sub-agent responsible to keep the proje
 - **D-006 (open):** PNG renders of PlantUML diagrams pending until Phase 5 CI wires the renderer. Recorded in `enterprise-semantics-visuals/CHANGELOG.md`.
 - **D-007 (resolved 2026-09-02):** `manny-es` is the dedicated, named sub-agent for the Enterprise-Semantics organization. Implemented as cronjob `c0b35d4938af`. Identity surface updated across CODEOWNERS, profile README, program board (Decision card #2), and plan-keeper YAML.
 - **D-008 (resolved 2026-09-02, Path B):** ADR-ES-002 accepted with the dependency on ADR-ES-001 noted in the ADR frontmatter. ADR-ES-001 will land alongside or after. ADR-ES-002's frontmatter carries `dependency_status: pending`. `manny-es` will surface the outstanding dependency on every daily check-in until ADR-ES-001 lands.
-- **D-009 (open, opened 2026-09-02):** FND-ES-AG-002+ sub-findings ;;; per-concept, per-relationship, Agentic/Autonomous. Will land incrementally as the investigation progresses. Until at least one sub-finding is authored, ADR-ES-AG-001 cannot land.
+- **D-009 (in_progress 2026-09-02):** FND-ES-AG-001 (parent) and FND-ES-AG-002 (Agentic Value Stream ;;; Profile hypothesis) landed. Remaining sub-findings (FND-ES-AG-003+) ;;; per-concept and per-relationship investigations for the rest of the Agentic family. Until ADR-ES-AG-001 is approved, the Agentic semantic records stay at `Candidate` lifecycle status.
 
 ---
 
