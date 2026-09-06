@@ -9,6 +9,106 @@ local time of the committer.
 
 ---
 
+## [3.0.0] ; 2026-09-03 ; Phase 5 complete + v0.1.0-seed tagged + 3 CRs landed
+
+### User directive (2026-09-03, message 1544933800973434910)
+
+> '1,2,3,4'
+
+Picked the full queue: CR-ES-AG-005, CR-ES-AG-008, CR-ES-AG-009, Phase 5.
+
+### Implementation sequence landed this turn
+
+- **FND-ES-AG-007** ;; AI Agent Semantic Grounding (10-step template). Working conclusion: AI Agent is a Distinct semantic kind, NOT a Profile. Gating prerequisite for FND-ES-AG-006 (Agentic Agent scrutiny).
+- **CR-ES-AG-009** (commit `a00f054`) ;; AI Agent concept record + Agent base. **Distinct kind.** 10 Concepts validated.
+- **CR-ES-AG-005** (commit `d8b1c98`) ;; Agentic Flow concept record + Flow base. Profile of Flow, binds `agentic-execution`. 12 Concepts validated. Cross-reference to `external:concept:agentic-flow` now resolves.
+- **CR-ES-AG-008** (commit `0839d93`) ;; Agentic Capability concept record + Capability base. Profile of Capability, binds `agentic-execution`. 14 Concepts validated. Profile-of-Profile reasoning: Profile characteristics apply to **Capability's outcome-realization aspect**, not to a specific bearer ;; distinguishes `Agentic Capability` (the *what*) from `AI Agent` (the *who*).
+
+### Phase 5 wiring
+
+- `enterprise-semantics-test-probe` promoted from skeleton (always return 1) to real harness. Sources `enterprise-semantics/conformance/check.py` and `check_concepts.py` directly ;; **no source duplication**.
+- GitHub Actions workflows on `enterprise-semantics` and `enterprise-semantics-mappings` invoke the harness on every push and PR to main.
+- `v0.1.0-seed` tagged on `enterprise-semantics` (commit `116304b`).
+- GitHub Release published at https://github.com/Enterprise-Semantics/enterprise-semantics/releases/tag/v0.1.0-seed
+
+### Conformance evidence (real run output)
+
+```text
+$ python3 ../enterprise-semantics-test-probe/tools/validate.py --mode all
+[profile]  exit=0  NO_DRIFT (1 Profile record(s) validated)
+[concepts] exit=0  NO_DRIFT (14 Concept record(s) validated)
+PASS: NO_DRIFT
+```
+
+### Program board
+
+- Cards #20-23 created (CR-ES-AG-005, CR-ES-AG-008, CR-ES-AG-009, Phase 5) ;; Status=Done + closed.
+
+### Final state
+
+- 1 Profile record (Established v1.0.0)
+- 14 Concept records (8 base + 6 profiled, all Candidate v0.1.0)
+- 7 Findings (FND-ES-AG-001/002/003/004/005/006/007)
+- 9 CRs (CR-ES-AG-001 through 009, all Implemented)
+- 1 ADR Accepted (ADR-ES-AG-001), 1 ADR Proposed (ADR-ES-002)
+- Phase 5 conformance gate live
+- v0.1.0-seed tagged
+
+### Updated decisions
+
+- **D-010** updated: 9 of 13 CRs landed ;; CR-ES-AG-010 (conditional), 011, 012, 013 remain.
+- **D-011** still open (CR-ES-AG-010 gating). Now unblocked by FND-ES-AG-007 (AI Agent Distinct kind hypothesis). The three plausible models from FND-ES-AG-006 §3 can now be evaluated.
+- **D-006** (PNG renders of PlantUML diagrams) still deferred ;; Phase 5.6.
+
+### Next-queue status
+
+- CR-ES-AG-010 (Agentic Agent) ;; now unblocked. Three plausible models to evaluate per FND-ES-AG-006 §3. FND-ES-AG-007 (AI Agent) provides the grounding target.
+- CR-ES-AG-011 (Agentic Service/Product/AI) ;; straightforward, can land after 010.
+- CR-ES-AG-012 (Profile conformance extension) ;; cross-record checks.
+- CR-ES-AG-013 (first semantic release tag) ;; now `v0.1.0-seed` ;;; subsequent releases v0.x.y.
+
+### Verification
+
+- `python3 ../enterprise-semantics-test-probe/tools/validate.py --mode all` ;; PASS: NO_DRIFT.
+
+---
+
+## [2.0.0] ; 2026-09-03 ; D-003 resolved (Path A) ;;; naming drift reconciled
+
+### User directive (2026-09-03, message 1544919802534035608)
+
+> 'A'
+
+Picked Path A on D-003: `Enterprise-Semantics` is canonical. The earlier `Enterprise-Concepts-Model` org remains an empty shell (no archive, no destroy).
+
+### Hygiene applied
+
+1. **PLAN bumped to v0.2.0.**
+2. **D-003 entry rewritten** with resolution narrative.
+3. **`Enterprise-Semantics/.github/profile/README.md`** ;; added a top-of-file `Canonical URL notice` section so any external reference to `Enterprise-Concepts-Model` resolves with an explicit redirect sentence. Commit `3a770ac1a0` on `Enterprise-Semantics/.github` main.
+4. **Empty `Enterprise-Concepts-Model` org preserved** (no destructive action per trust-first rule). External material that linked it now reads the alias notice.
+
+### Verification
+
+- `gh api /orgs/Enterprise-Concepts-Model -q .public_repos` ;;; 0 (unchanged, untouched).
+- `gh api /orgs/Enterprise-Semantics -q .public_repos` ;;; 9 (unchanged, full seed).
+- `gh api /repos/Enterprise-Semantics/.github/contents/profile/README.md -q .size` ;;; 9718 (was 9294).
+
+### What did NOT happen
+
+- No repos renamed.
+- No code moved.
+- No semantic artifacts relocated.
+- No program-board cards archived or recreated.
+- No CHANGELOG reissued.
+
+### Next-queue status
+
+- D-010 still in_progress ;;; CR-ES-AG-005, 008, 009, 010 (conditional), 011, 012, 013 remain.
+- Phase 5 (conformance gate + release tag) pending.
+
+---
+
 ## [1.0.0] ; 2026-09-02 ; Agentic Seed Release ;;; first Agentic semantic implementation landed
 
 ### User directive (2026-09-02, message 1544738104559009833)
