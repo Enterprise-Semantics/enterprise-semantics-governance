@@ -1,9 +1,9 @@
 CR-ES-003 : Value Stream Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552190004732756049)
+Status: Proposed
 Change Type: Foundational Semantic Grounding
 Priority: P0 : Foundational Enterprise Concept
-Related ADR: ADR-ES-003 : Value Stream Semantic Grounding (Accepted 2026-09-23)
+Related ADR: ADR-ES-003 : Value Stream Semantic Grounding
 Depends On: CR-ES-001, CR-ES-002
 Target Release: Enterprise-Semantics v0.2.0
 
@@ -1243,55 +1243,6 @@ Agentic Value Stream implementation
 
 This sequencing ensures that Agentic Value Stream is a semantically grounded specialization of Value Stream rather than an independently invented parallel concept.
 
-;;
-
-40. Acceptance
-
-This CR was promoted from Proposed to Accepted on 2026-09-23 per user directive message 1552190004732756049. The promotion ritual per ADR-ES-001 §10-§11 (body Status field + this §40 Acceptance section, with the cardinal author footer preserved) was executed in concert with the ADR-ES-003 promotion.
-
-40.1 Implementation surface (per §3-§35)
-
-All implementation surface requirements per CR-ES-003 §3-§35 are satisfied, evidenced by the following artefacts on main:
-
-- §6 Semantic Representation ;;; concepts/value-stream.concept.yaml + concepts/value-stage.concept.yaml on enterprise-semantics main (after VS-A PR #2 commit e68461a)
-- §9 Relationship Vocabulary ;;; 13 governed predicates in relationships/vocabulary.yaml v0.2.0 (after VS-B PR #5 commit 64b3e14)
-- §10 Relationships ;;; the 13 predicates are recorded with subject_type, object_type, inverse, definition, lifecycle_status, provenance per the §10 specification
-- §21 WSF Mapping ;;; mappings/wsf/value-stream.yaml on enterprise-semantics-mappings main (after VS-C PR #3 commit be7af0f)
-- §22 OpenDEA Mapping ;;; mappings/opendea/value-stream.yaml
-- §23 DEA Catalog Mapping ;;; mappings/dea-catalogs/value-stream.yaml
-- §27 Documentation ;;; 6 documentation files on enterprise-semantics-docs main (after VS-D1a PR #2 commit ec7f6fd)
-- §28 PlantUML Visuals ;;; 3 PlantUML sources on enterprise-semantics-visuals main (after VS-D2b PR #2 commit 86d0980)
-- §29-§31 Conformance Rules + Test Probe ;;; 8 test directories + 17 VS-CON rules + 5 identity rules on enterprise-semantics-test-probe main (after VS-D2a PR #2 commit fe99f85)
-- §32 Example Documentation ;;; 3 worked OTCHERE Inc examples on enterprise-semantics-examples main (after VS-D1b PR #2 commit e293e59)
-- §34 Versioning ;;; versions/v0.2.0.yaml published on enterprise-semantics main (after VS-B PR #5 commit 64b3e14)
-- §36 Acceptance Criteria ;;; all 30 checkboxes satisfied
-- §37 Completion Conditions ;;; the 6-layer model diagram is correct on main per §38 ;;; the 17 VS-CON conformance rules are documented (markdown stubs, future PR promotes to executable Python)
-- §38 Architectural Result ;;; diagram captured in value-stream.puml
-
-40.2 Compliance verification
-
-Compliance with the four cardinal rules + the WSF grounding classification:
-
-- Cardinal Author Rule ;;; Emmanuel A. Otchere signature on all 28 new files (6 docs + 3 examples + 9 tests + 3 visuals + 4 CHANGELOGs + 3 READMEs) plus the 4 commit messages
-- D-004 Dash Rule ;;; 0 en-dash (U+2013), 0 em-dash (U+2014), 0 horizontal-ellipsis divider (U+2E3B) across all 28 files + 4 commit messages
-- Vendor-specific Embargo ;;; 0 references to vendor-specific material from embargoed sources ;;; CHANGELOG cardinal-rule bullets use abstract phrasing "No vendor-specific material from embargoed sources"
-- Naming Convention ;;; OTCHERE Inc used in examples per §32 ;;; no ACME introduced
-- WSF Grounding ;;; Tier 1 Kernel Reference + ES-canonical novelty per FND-ES-AG-008 §1.3 ;;; enforced via mappings/wsf/value-stream.yaml
-
-40.3 Next governed change
-
-- Per §39, ADR-ES-004 (Agentic Semantic Grounding) is the immediate follow-on ;;; Agentic Value Stream (ADR-ES-005) is then a specialization of the established Value Stream semantic parent.
-- Capability (ADR-ES-002 / CR-ES-002) is still Proposed ;;; CR-ES-002 implementation was held (orphan stash from v3.1.7) ;;; ADR-ES-002 promotion awaits CR-ES-002 implementation completion.
-- Release tag (Enterprise-Semantics v0.2.0) is now defensible ;;; held pending v3.1.4 user directive (no automatic release tags without explicit user authorisation).
-
-40.4 Cardinal rules verified at promotion
-
-- Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
-- Promotion ritual executer: Emmanuel A. Otchere (per ADR-ES-001 §10-§11)
-- D-004 dash rule: no en-dash (U+2013), no em-dash (U+2014), no horizontal-ellipsis divider (U+2E3B) introduced by the body Status field change + this §40 Acceptance section
-- Vendor-specific embargo: no material from embargoed sources introduced
-
 <!--
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
-Promoted by: Emmanuel A. Otchere (promotion ritual per ADR-ES-001 §10-§11, 2026-09-23)
 -->
