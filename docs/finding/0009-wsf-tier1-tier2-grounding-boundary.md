@@ -1,9 +1,12 @@
 <!--
 FND-ES-AG-008 ;;; WSF Tier 1 / Tier 2 Grounding Boundary
 
-Status: Proposed Finding
+Status: Established (promoted from Proposed Finding on 2026-09-22, per user directive message 1551964731210866842)
 Authored by: Emmanuel A. Otchere
 Date: 2026-09-22
+Promotion date: 2026-09-22
+Promoted by: user directive (Emmanuel A. Otchere, message 1551964731210866842)
+Promotion rationale: per FND-ES-AG-008 §1.4 working hypothesis ;;; user directive 2026-09-22 explicitly accepts the per-concept WSF↔ES classification framework as Established
 Preceded by: Recon-ES-001a ;; ADR-ES-001 ;; FND-ES-AG-001 ;; FND-ES-AG-001-Grounding-Result
 Depends on: FND-ES-AG-001 ;; FND-ES-AG-001-Grounding-Result ;; ADR-ES-001 ;; ADR-ES-002 ;; Recon-ES-001a §7 ;; WSF Tier 1/2 synthesis ;; F-035
 Precedes: ADR-ES-002 ;; ADR-ES-003 ;; subsequent Phase 6 concept-specific ADRs ;; per-concept classification table
@@ -14,7 +17,7 @@ The current ES concept catalogue requires a per-concept WSF-grounding resolution
 
 # FND-ES-AG-008 ;;; WSF Tier 1 / Tier 2 Grounding Boundary
 
-**Status:** Proposed Finding
+**Status:** Established (promoted from Proposed Finding on 2026-09-22)
 **Scope:** The WSF ;;; Enterprise-Semantics grounding relationship for every concept currently in `concepts/` plus the structural pattern future concepts must satisfy.
 **Authored by:** Emmanuel A. Otchere
 **Date:** 2026-09-22
@@ -202,3 +205,21 @@ The Finding produces the classification framework and the per-concept table. The
 The current ES concept catalogue requires per-concept resolution of WSF grounding into one of three legitimate categories (Tier 1 Kernel Reference, Tier 2 Specialisation, ES-canonical). Mixed claims are defects under ADR-ES-001 §4.1 and must be resolved before any concept-specific ADR can land. The per-concept classification in §1.3 is provisional and explicitly subject to ADR-ES-002 through ADR-ES-### review.
 
 This Finding establishes the classification framework and the per-concept table. It does not amend any YAML, does not promote any ADR, and does not author any CR.
+
+
+---
+
+## 7. Acceptance
+
+Per user directive 2026-09-22 (message 1551964731210866842), this Finding is promoted from `Proposed Finding` to `Established`.
+
+The three-category WSF↔ES grounding taxonomy and the mixed-claim defect interpretation are therefore the authoritative baseline for subsequent concept-specific ADRs (ADR-ES-002..014).
+
+Consequences of Establishment:
+
+1. **ADR-ES-002 (Capability Semantic Grounding)** may be drafted assuming the Tier 2 Specialisation classification for `ES:CONCEPT:capability` is the canonical pattern. The provisional Business-Capability-equivalent call is the working baseline but may be overturned by ADR-ES-002.
+2. **ADR-ES-003 (Value Stream Semantic Grounding)** may be drafted assuming the Tier 1 Kernel Reference + ES-canonical novelty classification.
+3. **The 8 Resolution Required concepts** (`workflow`, `flow`, `operations`, `agent`, `ai-agent`, `agentic-workflow`, `agentic-flow`, `agentic-operations`) cannot proceed to ADR promotion without first resolving their mixed grounding claims.
+4. **Subsequent concept-specific ADRs** must declare their concept's WSF↔ES category explicitly, not use the historical uniform `specializes` verb.
+
+No concept YAML is modified by this Establishment. Establishment is a status change, not a content change.
