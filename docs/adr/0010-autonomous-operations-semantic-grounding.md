@@ -9,7 +9,7 @@ Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
 Depends on: ADR-ES-001 (Authority and Publication Architecture) ;;; ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) ;;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
-Related: CR-ES-008 (Autonomous Operations Semantic Grounding, Proposed) ;;; ADR-ES-009+ (Agentic Enterprise, future) ;;; ADR-ES-010+ (Autonomous Enterprise, future) ;;; ADR-ES-011+ (Agentic Network, future) ;;; ADR-ES-012+ (Agentic Ecosystem, future)
+Related: CR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-009+ (Agentic Enterprise, future) ;;; ADR-ES-010+ (Autonomous Enterprise, future) ;;; ADR-ES-011+ (Agentic Network, future) ;;; ADR-ES-012+ (Agentic Ecosystem, future)
 
 Decision: Establish Autonomous Operations as a specialisation of Operations. Autonomous Operations are operations capable of independently sensing ;; interpreting ;; deciding ;; coordinating ;; executing ;; and adapting operational behavior within defined objectives ;; authority ;; policies ;; and constraints without requiring human intervention for every operational decision or action. Deliberately avoids premature canonicalization of Autonomous Value Stream ;; Autonomous Enterprise ;; Autonomous Network ;; Autonomous Ecosystem ;; Autonomous Workflow ;; Autonomous Agent as a universal Entity subtype ;; autonomy maturity levels ;; autonomy certification ;; autonomy scoring ;; autonomy risk tiers.
 
