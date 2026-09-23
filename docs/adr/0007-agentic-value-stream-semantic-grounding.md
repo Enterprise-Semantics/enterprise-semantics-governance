@@ -4,27 +4,30 @@ ADR-ES-005 ;; Agentic Value Stream Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-005.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552289869429088307 ;;; "Save it, read and understand, then proceed with all tasks needed to make way to implement it appropriately. Then implement it.")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
 Depends on: ADR-ES-001 (Authority and Publication Architecture) ;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;; ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23) ;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
-Related: CR-ES-005 (Agentic Value Stream Semantic Grounding, Proposed) ;; ADR-ES-006 (Agentic Workflow, future) ;; ADR-ES-007 (Agentic Operations, future) ;; ADR-ES-008 (Autonomous, future) ;; ADR-ES-009 (Autonomous Value Stream, future)
+Related: CR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) ;; ADR-ES-006 (Agentic Workflow, future) ;; ADR-ES-007 (Agentic Operations, future) ;; ADR-ES-008 (Autonomous, future) ;; ADR-ES-009 (Autonomous Value Stream, future)
 
 Decision: Establish Agentic Value Stream as a specialization of Value Stream. Agentic Value Stream is a Value Stream in which one or more stages are materially realized through agentic behavior. The Agentic Value Stream concept retains the fundamental semantics of Value Stream while adding an explicit representation of agentic participation in value realization. Deliberately avoids premature canonicalization of Agentic Workflow ;; Agentic Operations ;; Agentic Flow ;; Autonomous Value Stream ;; Autonomous Agent ;; Autonomous Enterprise ;; Autonomous Operations ;; AI-specific semantics.
 
 Slot note: this ADR is filed at governance repo docs/adr/0007-... Slot 0007 is the next free slot in the ES series ;; distinct from the ES-AG series at slot 0003 (manny-es). The ES series slot sequence is 0001 (Authority), 0002 (Enterprise Semantic Model), 0003 (Agentic Semantic Decision, ES-AG), 0004 (Capability, ES), 0005 (Value Stream, ES), 0006 (Agentic, ES), 0007 (Agentic Value Stream, ES).
 
+Promotion rationale: All 23 acceptance criteria of CR-ES-005 §28 satisfied via 7 PRs across 6 repos. The 1 concept record (ES:CONCEPT:agentic-value-stream) rewritten to align with the specialisation hypothesis (replacing the prior FND-ES-AG-002 Profile hypothesis) ;; 3 governed predicates (specializes ;; engages ;; agent-realizes) ;; 3 inverse pairs ;; v0.4.0 version pointer ;; Agentic Value Realization Profile (ES:PROFILE:agentic-value-realization) ;; 2 mapping records (WSF + OpenDEA) ;; 9 docs files + 1 OTCHERE Inc example + 9 test files + 3 PlantUML sources.
+
 Implementation: CR-ES-005 (Agentic Value Stream Semantic Grounding). CR-ES-005 is the implementation specification ;; this ADR ratifies it as a governed semantic decision.
 
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual
 -->
 
 The next governed pair should establish Agentic Value Stream as a specialization of Value Stream, while deliberately avoiding premature canonicalization of Agentic Workflow, Agentic Operations, Autonomous Value Stream, or AI-specific semantics.
 
-ADR-ES-005 ;;; Agentic Value Stream Semantic Grounding
+ADR-ES-005 ; Agentic Value Stream Semantic Grounding
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552289869429088307)
 Date: 2026-09-23
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
@@ -641,3 +644,41 @@ Potential subsequent semantic decisions include:
 The sequencing should remain governed rather than establishing all downstream concepts within this ADR.
 
 The implementation CR should now translate that decision into the canonical semantic artifacts, schemas, mappings, examples, visuals, and conformance tests;;;without pulling the deferred concepts into the release.
+
+;;
+
+22. Acceptance
+
+This ADR was promoted from Proposed to Accepted on 2026-09-23 per user directive message 1552289869429088307. The promotion ritual per ADR-ES-001 §10-§11 (status header + body Status field + this §22 Acceptance section) was executed in concert with the CR-ES-005 promotion.
+
+The promotion to Accepted has the following consequences:
+
+* CR-ES-005 is binding on all subsequent Enterprise-Semantics concept records.
+* Agentic Value Stream (ES:CONCEPT:agentic-value-stream) is canonical at Candidate lifecycle.
+* The 3 Agentic Value Stream governed predicates (specializes ;; engages ;; agent-realizes) are registered in relationships/vocabulary.yaml v0.5.0.
+* The 3 inverse pairs are registered in relationships/inverse.yaml v0.5.0.
+* Enterprise-Semantics v0.4.0 is the canonical version pointer (per §26 ;; versions/v0.4.0.yaml).
+* ES:PROFILE:agentic-value-realization (per CR-ES-005 §14) is registered at registry/profiles/.
+* profile_type: agentic-value-realization is registered at registry/profile-types.yaml.
+* 2 mapping records (WSF + OpenDEA per CR-ES-005 §12 + §13) are PROPOSED.
+* The 9 documentation files (per CR-ES-005 §15 + §16 + §23) are published in enterprise-semantics-docs.
+* The 1 OTCHERE Inc example (per CR-ES-005 §19) is published in enterprise-semantics-examples.
+* The 9 test files (per CR-ES-005 §21 + §22) are published in enterprise-semantics-test-probe.
+* The 3 PlantUML sources (per CR-ES-005 §17 + §18) are published in enterprise-semantics-visuals.
+* No Agentic Workflow ;; Agentic Operations ;; Agentic Flow ;; Autonomous Value Stream ;; Autonomous Agent ;; Autonomous Enterprise ;; Autonomous Operations ;; AI-specific semantics ;; vendor-specific agent frameworks are canonicalised (per §3).
+* No WSF metamodel change has been made (per §3 + §16).
+* No OpenDEA metamodel change has been made (per §3 + §13).
+* No DEA catalog implementation has been made (per §3).
+* The follow-on sequence is unblocked: ADR-ES-006 (Agentic Workflow) ;; ADR-ES-007 (Agentic Operations) ;; ADR-ES-008 (Autonomous) ;; ADR-ES-009 (Autonomous Value Stream).
+
+The 7 PRs that satisfy the acceptance criteria:
+
+- enterprise-semantics PR #10 ;; VS-A ;; 1 concept record rewritten (specialisation hypothesis) + ES:PROFILE:agentic-value-realization
+- enterprise-semantics PR #11 ;; VS-B ;; 3 governed predicates + 3 inverse pairs + versions/v0.4.0.yaml
+- enterprise-semantics-mappings PR #5 ;; VS-C ;; 2 mapping records (WSF + OpenDEA)
+- enterprise-semantics-docs PR #4 ;; VS-D1a ;; 5 documentation files
+- enterprise-semantics-examples PR #4 ;; VS-D1b ;; 1 OTCHERE Inc Order-to-Cash (Agentic) example
+- enterprise-semantics-test-probe PR #4 ;; VS-D2a ;; 9 test files + 12 AVS-CON rules + 10 negative tests
+- enterprise-semantics-visuals PR #5 ;; VS-D2b ;; 3 PlantUML sources
+
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual.
