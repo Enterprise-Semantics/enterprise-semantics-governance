@@ -1,6 +1,6 @@
-CR-ES-004 ; Agentic Semantic Grounding
+CR-ES-004 : Agentic Semantic Grounding
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115 ;;; "Proceed with everything")
 Change Type: Foundational Semantic Grounding
 Priority: P0 ; Foundational Enterprise Concept
 Related ADR: ADR-ES-004 ; Agentic Semantic Grounding
@@ -803,6 +803,37 @@ Agentic Value Stream
 
 The resulting specialization must preserve the end-to-end value semantics of Value Stream while introducing agentic participation as a meaningful property of value-stream realization.
 
+;;
+
+34. Acceptance
+
+This CR was promoted from Proposed to Accepted on 2026-09-23 per user directive message 1552262422398767115. The promotion ritual per ADR-ES-001 §10-§11 (body Status field + this §34 Acceptance section, with the cardinal author footer preserved) was executed in concert with the ADR-ES-004 promotion.
+
+The promotion to Accepted has the following consequences:
+
+* All 24 acceptance criteria of §31 are satisfied via 7 PRs across 6 repos (PR #7 + PR #8 + PR #9 enterprise-semantics ;;; PR #4 enterprise-semantics-mappings ;;; PR #3 enterprise-semantics-docs ;;; PR #3 enterprise-semantics-examples ;;; PR #3 enterprise-semantics-test-probe ;;; PR #3 enterprise-semantics-visuals).
+* The 5 concept records (Agent + Agentic + Intent + Authority + Action) are canonical at Candidate lifecycle.
+* The 11 governed predicates from §10 are registered in relationships/vocabulary.yaml v0.4.0.
+* The 11 inverse pairs from §10 are registered in relationships/inverse.yaml v0.4.0.
+* The 2 mapping records (WSF + OpenDEA per §19 + §20) are PROPOSED.
+* The 9 documentation files (per §23) are published in enterprise-semantics-docs.
+* The 1 OTCHERE Inc example (per §24) is published in enterprise-semantics-examples.
+* The 9 test files + 13 AG-CON rules + 5 negative tests (per §26 + §27) are published in enterprise-semantics-test-probe.
+* The 3 PlantUML sources (per §28) are published in enterprise-semantics-visuals.
+* The Agentic Profile (ES:PROFILE:AGENTIC) per §22 is landed at v0.1.0 ;; Candidate in enterprise-semantics/profiles/agentic/.
+* Enterprise-Semantics v0.3.0 is the canonical version pointer (per §29) ;; ratifies the Agentic semantic establishment.
+* v0.4.0 of relationships/vocabulary.yaml is the canonical predicate vocabulary version (per §9 + §10).
+* No Agentic Value Stream semantics are canonicalized (per §3 + §17 + AG-CON-011).
+* No Autonomous semantics are established (per §3 + §14 + AG-INV-003 + AG-INV-010 + AG-CON-013).
+* No AI model / LLM / vendor-specific agent framework semantics are introduced (per §3 + §19).
+* No OpenDEA metamodel change has been made (per §3 + §20).
+* No WSF modification has been made (per §3 + §19 + FND-ES-AG-008 §1.3).
+
+The next governed change is ADR-ES-005 + CR-ES-005 (Agentic Value Stream Semantic Grounding), which will combine ADR-ES-003 (Value Stream) + ADR-ES-004 (Agentic) to establish the Agentic Value Stream specialization.
+
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual.
+
 <!--
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual
 -->
