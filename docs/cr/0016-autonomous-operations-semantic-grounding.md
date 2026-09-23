@@ -1,6 +1,6 @@
-CR-ES-008 ;;; Implement Autonomous Operations Semantic Grounding
+CR-ES-008: Implement Autonomous Operations Semantic Grounding
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552343053933748346 ;;; "Attached the next ADR and CR, save them, read them to understand and let's implement them accordingly")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0
@@ -1101,6 +1101,37 @@ Automation
 This distinction is essential for the subsequent grounding of Autonomous Value Streams and higher-order enterprise operating models.
 
 Target Release: v0.7.0
+
+;;
+
+36. Acceptance
+
+This CR was promoted from Proposed to Accepted on 2026-09-23 per user directive message 1552343053933748346 (*Attached the next ADR and CR, save them, read them to understand and let's implement them accordingly.*). The promotion ritual per ADR-ES-001 §10-§11 (body Status field + this §36 Acceptance section, with the cardinal author footer preserved) was executed in concert with the ADR-ES-008 promotion.
+
+The promotion to Accepted has the following consequences:
+
+* All 29 acceptance criteria of §32 are satisfied via 7 PRs across 6 repos.
+* Autonomous Operations (ES:CONCEPT:autonomous-operations) is canonical at Candidate lifecycle.
+* The 1 Autonomous Operations governed predicate from §9 (escalates-to) is registered in relationships/vocabulary.yaml v0.8.0 (PR #17 enterprise-semantics).
+* The 1 inverse pair from §9 is registered in relationships/inverse.yaml v0.8.0.
+* Enterprise-Semantics v0.7.0 is the canonical version pointer per §32 (versions/v0.7.0.yaml).
+* ES:PROFILE:autonomous-operations is registered at registry/profiles/ (PR #16 enterprise-semantics).
+* profile_type: autonomous-operations is registered at registry/profile-types.yaml (PR #16 enterprise-semantics).
+* 2 mapping records (WSF + OpenDEA per §19 + §20) are PROPOSED (PR #8 enterprise-semantics-mappings).
+* 5 documentation files (per §21) are published (PR #7 enterprise-semantics-docs).
+* 1 OTCHERE Inc example (per §23) is published (PR #8 enterprise-semantics-examples).
+* 10 test files (per §24 + §25 + §28) are published (PR #7 enterprise-semantics-test-probe).
+* 4 PlantUML sources (per §22) are published (PR #8 enterprise-semantics-visuals).
+* No Autonomous Value Stream ;; Autonomous Enterprise ;; Autonomous Network ;; Autonomous Ecosystem ;; Autonomous Workflow ;; Autonomous Agent as universal Entity subtype ;; autonomy maturity levels ;; autonomy certification ;; autonomy scoring ;; autonomy risk tiers ;; general autonomy ontology ;; AI-specific autonomy semantics ;; AIOps as Autonomous Operations are canonicalised (per §3 + §4.2 + §34).
+* No WSF ontology modification (per §3 + §19).
+* No OpenDEA metamodel modification (per §3 + §20).
+* No DEA catalog implementation (per §3).
+* The implementation sequence per §31 has been completed: dependency inspection ;; schema ;; registry ;; relationships ;; profile ;; WSF mapping ;; OpenDEA mapping ;; documentation ;; UML ;; OTCHERE Inc example ;; positive tests ;; negative tests ;; CI ;; semantic review ;; publish v0.7.0.
+* The follow-on sequence is unblocked: ADR-ES-009+ (Autonomous Value Stream) ;; ADR-ES-010+ (Autonomous Enterprise) ;; ADR-ES-011+ (Autonomous Network) ;; ADR-ES-012+ (Autonomous Ecosystem) ;; plus ADR-ES-013+ (Agentic Enterprise) and related concepts.
+
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual.
+
 <!--
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual
 -->
