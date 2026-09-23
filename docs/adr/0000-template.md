@@ -58,3 +58,18 @@ Chosen option: **<name>**, because <rationale, two or three sentences>.
 
 - FND-ES-NNN ;;; <title>
 - <any external references>
+
+<!--
+ADR template extension per CR-ES-001 §11. The original 0000-template.md is preserved for backwards-compatibility. New ADRs may adopt the extended section list below.
+
+New sections (additive, do not remove existing sections):
+
+- Semantic Definition
+- Semantic Boundaries
+- Relationships (predicate semantics, inverse semantics, cardinality)
+- WSF Grounding (Tier 1 / Tier 2 / ES-canonical per FND-ES-AG-008)
+- OpenDEA Implications (mapping boundary, specialisation pathway)
+- Rejected Alternatives (with rationale)
+
+Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-22).
+-->

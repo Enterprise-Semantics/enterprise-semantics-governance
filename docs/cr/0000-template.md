@@ -47,3 +47,21 @@ CR template. Dash-normalized. Each CR implements one ADR or an independent scope
 - FND-ES-NNN
 - ADR-ES-NNNN
 - <any external references>
+
+<!--
+CR template extension per CR-ES-001 §12. The original 0000-template.md is preserved for backwards-compatibility. New CRs may adopt the extended section list below.
+
+New sections (additive, do not remove existing sections):
+
+- Schema Changes
+- Relationship Changes
+- Mapping Changes
+- Documentation
+- Examples
+- Validation
+- Conformance
+- Completion Criteria
+- Out of Scope
+
+Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-22).
+-->

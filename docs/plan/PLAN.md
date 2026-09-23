@@ -3,7 +3,7 @@
 **Owner:** emmanuel-a-otchere
 **GitHub Org:** https://github.com/Enterprise-Semantics
 **Plan Source:** FND-ES-000 §3/§25 (canonical architecture) + FND-ES-001 §16 (governance sequence)
-**Plan Version:** 0.1.0 (Phase 0; will increment per release)
+**Plan Version:** 0.3.0 (Phase 5 completed 2026-09-03; D-003 resolved 2026-09-03)
 **Plan Status:** Phase 0 in progress; Phases 1;6 awaiting Proceed
 **Last Plan-Keeper Sync:** see `PLAN-CHANGELOG.md`
 
@@ -91,13 +91,13 @@ New Finding
 
 **Deliverables:**
 
-- [ ] **0.1** Local working folder `/home/hermes/Projects/Enterprise-Semantics/` with `00_inbox/` (verbatim FND-ES-000/001), `seed/` (dash-normalized drafts), `repos/` (clones), `plans/` (this file), `scripts/` (plan-keeper tooling)
-- [ ] **0.2** Verbatim copies of FND-ES-000 and FND-ES-001 in `00_inbox/`
-- [ ] **0.3** This `plans/PLAN.md` committed locally; `plans/PLAN-CHANGELOG.md` started
-- [ ] **0.4** Plan-keeper cronjob scheduled (15-minute drift check + drift-only Discord ping)
-- [ ] **0.5** Plan-keeper script at `scripts/plan_keeper.py` (idempotent, no destructive writes)
-- [ ] **0.6** `seed/` directory seeded with the dash-normalized FND-ES-000/001 (orgs, scope, dash-rule-aware)
-- [ ] **0.7** Git repo initialised in workspace; `.gitignore` blocks credential patterns
+- [x] **0.1** Local working folder `/home/hermes/Projects/Enterprise-Semantics/` with `00_inbox/` (verbatim FND-ES-000/001), `seed/` (dash-normalized drafts), `repos/` (clones), `plans/` (this file), `scripts/` (plan-keeper tooling)
+- [x] **0.2** Verbatim copies of FND-ES-000 and FND-ES-001 in `00_inbox/`
+- [x] **0.3** This `plans/PLAN.md` committed locally; `plans/PLAN-CHANGELOG.md` started
+- [x] **0.4** Plan-keeper cronjob scheduled (15-minute drift check + drift-only Discord ping)
+- [x] **0.5** Plan-keeper script at `scripts/plan_keeper.py` (idempotent, no destructive writes)
+- [x] **0.6** `seed/` directory seeded with the dash-normalized FND-ES-000/001 (orgs, scope, dash-rule-aware)
+- [x] **0.7** Git repo initialised in workspace; `.gitignore` blocks credential patterns
 
 **Verification:**
 
@@ -400,14 +400,14 @@ Per the user's directive ("always have a sub-agent responsible to keep the proje
 
 - **D-001 (open):** Plan-keeper cadence and notification channel — currently15min + Discord drift ping. Change here if user prefers daily digest only, or no automation.
 - **D-002 (open):** Branch-protection bar — currently light during skeleton phase, tightened org-wide at Phase 3.5.
-- **D-003 (open):** Orphan org `Enterprise-Concepts-Model` — currently untouched. User decision pending: delete / leave / archive.
+- **D-003 (resolved 2026-09-03, Path A):** Orphan org `Enterprise-Concepts-Model` ;;; **`Enterprise-Semantics` is canonical**. All 9 repos + seed v1.0.0 + governance + concept records + Profile already live on `Enterprise-Semantics`; the user's directive URL (`Enterprise-Concepts-Model`) was the empty earlier shell. Resolution: (1) keep `Enterprise-Concepts-Model` as an empty shell (no archive/destroy ;;; user may still link it from external material), (2) add an alias notice to `Enterprise-Semantics/.github/profile/README.md` so any external reference to `Enterprise-Concepts-Model` resolves with a redirect sentence, (3) update PLAN §0 Owner / GitHub Org pointer (already correct ;;; was always `Enterprise-Semantics`). No code moved. No repos renamed. Zero semantic churn.
 - **D-004 (open):** Whether the local `seed/` directory is gitignored (so dash-normalized drafts don't leak into a future remote push) — currently YES, ignored.
 - **D-005 (open):** Whether to publish the local working folder as a separate `es-workspace` repo (so the workspace is reproducible) — currently NO; revisit if user wants it.
 - **D-006 (open):** PNG renders of PlantUML diagrams pending until Phase 5 CI wires the renderer. Recorded in `enterprise-semantics-visuals/CHANGELOG.md`.
 - **D-007 (resolved 2026-09-02):** `manny-es` is the dedicated, named sub-agent for the Enterprise-Semantics organization. Implemented as cronjob `c0b35d4938af`. Identity surface updated across CODEOWNERS, profile README, program board (Decision card #2), and plan-keeper YAML.
 - **D-008 (resolved 2026-09-02, Path B):** ADR-ES-002 accepted with the dependency on ADR-ES-001 noted in the ADR frontmatter. ADR-ES-001 will land alongside or after. ADR-ES-002's frontmatter carries `dependency_status: pending`. `manny-es` will surface the outstanding dependency on every daily check-in until ADR-ES-001 lands.
 - **D-009 (resolved 2026-09-02):** FND-ES-AG-001 (Agentic Semantic Grounding) and FND-ES-AG-002 (Agentic Value Stream Semantic Grounding ;;; Profile hypothesis) both landed and have been consumed by ADR-ES-AG-001 (Agentic Semantic Decision, `Proposed`). The Finding cards remain `In Progress` ;;; they are cited, not closed. Closing happens on ADR acceptance.
-- **D-010 (in_progress 2026-09-02):** CR-ES-AG-001+ ;;; 13-CR implementation sequence locked by ADR-ES-AG-001 §6. CR-ES-AG-002 (commit 063ab5c), CR-ES-AG-003+CR-ES-AG-004 (commit c15f12c), CR-ES-AG-006+CR-ES-AG-007 (commit 3869999) landed. CR-ES-AG-005, 008, 009, 010 (conditional), 011, 012, 013 remain.
+- **D-010 (in_progress 2026-09-03):** CR-ES-AG-001+ ;;; 13-CR implementation sequence locked by ADR-ES-AG-001 §6. CR-ES-AG-002 (commit 063ab5c), CR-ES-AG-003+CR-ES-AG-004 (commit c15f12c), CR-ES-AG-006+CR-ES-AG-007 (commit 3869999) landed. CR-ES-AG-005 (commit d8b1c98), CR-ES-AG-008 (commit 0839d93), CR-ES-AG-009 (commit a00f054) landed. CR-ES-AG-010 (conditional), 011, 012, 013 remain. **Phase 5 conformance gate live on enterprise-semantics + enterprise-semantics-mappings ;; v0.1.0-seed tagged (commit 116304b).**
 - **D-011 (open, opened 2026-09-02):** CR-ES-AG-010 (Agentic Agent) is held back per FND-ES-AG-006. Author FND-ES-AG-009 (AI Agent) first, then decide whether Agentic Agent is redundant, a Profile, or a Distinct concept.
 
 ---
@@ -444,7 +444,10 @@ phases:
     status: pending
   - id: 5
     title: "Conformance Gate + Program Board Maturity"
-    status: pending
+    status: completed
+    started: 2026-09-02
+    completed: 2026-09-03
+    notes: "test-probe harness promoted from skeleton to real gate ;; sources authority conformance scripts (no duplication). GitHub Actions workflows live on enterprise-semantics + enterprise-semantics-mappings. v0.1.0-seed tagged on enterprise-semantics (commit 116304b) ;; GitHub Release published. CI green locally (PASS: NO_DRIFT)."
   - id: 6
     title: "First Concept ADRs"
     status: pending
