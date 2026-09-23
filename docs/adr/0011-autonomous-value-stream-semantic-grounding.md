@@ -4,7 +4,7 @@ ADR-ES-009 ;;; Autonomous Value Stream Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-009.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552351646762274856 ;;; "Merge, and attached is the next ADR and CR to be saved, read and understood and implemented accordingly")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
@@ -23,9 +23,9 @@ The next pair should establish Autonomous Value Stream as the value-realization 
 
 ADR-ES-009 ;;; Autonomous Value Stream Semantic Grounding
 
-ADR-ES-009 ;;; Autonomous Value Stream Semantic Grounding
+ADR-ES-009 ; Autonomous Value Stream Semantic Grounding
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552351646762274856)
 Date: 2026-09-23
 Decision Type: Foundational Semantic Specialization
 Scope: Enterprise-Semantics
@@ -556,7 +556,7 @@ Human-governed autonomous value realization
 
 without semantic distortion.
 
-;;;
+;;
 
 24. Decision Outcome
 
@@ -564,9 +564,47 @@ Adopt Autonomous Value Stream as a governed specialization of Value Stream.
 
 Autonomy shall be treated as an independent characteristic of value realization, bounded by stakeholder value, objectives, authority, policies, constraints, and escalation mechanisms.
 
-;;;
+;;
 
 25. Implementation Authorization
 
 This ADR authorizes:
+
+;;
+
+26. Acceptance
+
+This ADR was promoted from Proposed to Accepted on 2026-09-23 per user directive message 1552351646762274856. The promotion ritual per ADR-ES-001 §10-§11 (status header + body Status field + this §26 Acceptance section) was executed in concert with the CR-ES-009 promotion.
+
+The promotion to Accepted has the following consequences:
+
+* CR-ES-009 is binding on all subsequent Enterprise-Semantics concept records.
+* Autonomous Value Stream (ES:CONCEPT:autonomous-value-stream) is canonical at Candidate lifecycle.
+* The 1 Autonomous Value Stream governed predicate (contains) is registered in relationships/vocabulary.yaml v0.9.0.
+* The 1 inverse pair is registered in relationships/inverse.yaml v0.9.0.
+* Enterprise-Semantics v0.8.0 is the canonical version pointer (per §25 ;; versions/v0.8.0.yaml).
+* ES:PROFILE:autonomous-value-realization is registered at registry/profiles/.
+* profile_type: autonomous-value-realization is registered at registry/profile-types.yaml.
+* 2 mapping records (WSF + OpenDEA per CR-ES-009 §20 + §21) are PROPOSED.
+* The 5 documentation files (per CR-ES-009 §22) are published in enterprise-semantics-docs.
+* The 1 OTCHERE Inc example (per CR-ES-009 §24) is published in enterprise-semantics-examples.
+* The 10 test files (per CR-ES-009 §25 + §26 + §28) are published in enterprise-semantics-test-probe.
+* The 5 PlantUML sources (per CR-ES-009 §23) are published in enterprise-semantics-visuals.
+* No Autonomous Value Stage ;; Autonomous Workflow ;; Autonomous Enterprise ;; Autonomous Ecosystem ;; Autonomous Network ;; Autonomous Agent ;; value-stream autonomy scoring ;; autonomy maturity levels ;; general autonomy ontology are canonicalised (per §3 + §4.2 + §21).
+* No WSF ontology modification has been made (per §3 + §16 + §20).
+* No OpenDEA metamodel modification has been made (per §3 + §21).
+* No DEA catalog implementation has been made (per §3).
+* The follow-on sequence is unblocked: ADR-ES-010+ (Autonomous Enterprise) ;; ADR-ES-011+ (Autonomous Network) ;; ADR-ES-012+ (Autonomous Ecosystem) ;; plus ADR-ES-013+ (Agentic Enterprise) and related concepts.
+
+The 7 PRs that satisfy the acceptance criteria:
+
+- enterprise-semantics PR #18 ;; VS-A ;; 1 concept record + ES:PROFILE:autonomous-value-realization
+- enterprise-semantics PR #19 ;; VS-B ;; 1 governed predicate + 1 inverse pair + versions/v0.8.0.yaml
+- enterprise-semantics-mappings PR #9 ;; VS-C ;; 2 mapping records (WSF + OpenDEA)
+- enterprise-semantics-docs PR #8 ;; VS-D1a ;; 5 documentation files
+- enterprise-semantics-examples PR #9 ;; VS-D1b ;; 1 OTCHERE Inc Order-to-Cash Autonomous Value Stream worked example
+- enterprise-semantics-test-probe PR #8 ;; VS-D2a ;; 10 test files + 19 AVS-AUTO-CON rules + 12 negative tests + 6-field autonomy integrity test
+- enterprise-semantics-visuals PR #9 ;; VS-D2b ;; 5 PlantUML sources
+
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual.
 
