@@ -9,7 +9,7 @@ Date: 2026-09-23
 Decision Type: Foundational Semantic Architecture
 Scope: Enterprise-Semantics (Agentic as foundational semantic property)
 Supersedes: None
-Depends on: ADR-ES-001 (Authority and Publication Architecture) ;; ADR-ES-002 (Capability Semantic Grounding, Proposed) ;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Depends on: ADR-ES-001 (Authority and Publication Architecture) ;; ADR-ES-002 (Capability Semantic Grounding, Accepted 2026-09-23) ;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
 Related: CR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23) ;; ADR-ES-005 (Agentic Value Stream, future) ;; ADR-ES-006 (Agentic Workflow, future) ;; ADR-ES-007 (Autonomous Operations, future) ;; FND-ES-AG-001-Grounding-Result §1 (kernel/decomposition pattern)
 
 Decision: Establish Agentic as a foundational enterprise semantic property describing a mode of operation in which an Agent interprets a delegated objective or intent, determines or selects actions within defined authority, and acts or coordinates actions toward an intended outcome. Agentic shall remain distinct from AI, Automation, and Autonomous. Agent may be human, software-based, computational, organizational, or socio-technical. Agentic is modeled as a semantic property/mode rather than automatically as a universal Entity subtype ;;; this prevents the ontology from unnecessarily turning every agentic construct into a new top-level entity class.
