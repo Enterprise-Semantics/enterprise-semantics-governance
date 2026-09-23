@@ -4,7 +4,7 @@ ADR-ES-006 ;;; Agentic Workflow Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-006.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552318709853462599 ;;; "Attached is ADR-ES-006 and CR-ES-006 save them as separate files in their respective folders, read and understand then let's implement them")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
@@ -37,9 +37,9 @@ Agent / Human / System / Service
 
 This makes Agentic Workflow a realization and coordination construct, whereas Agentic Value Stream remains the value-realization construct.
 
-ADR-ES-006 ;;; Agentic Workflow Semantic Grounding
+ADR-ES-006 ; Agentic Workflow Semantic Grounding
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552318709853462599)
 Date: 2026-09-23
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
@@ -764,4 +764,41 @@ Process
           L-- produces -> Outcome
 
 Agentic Workflow therefore establishes agentic execution and coordination semantics without redefining the process being executed or the value stream being realized.
+
+;;
+
+27. Acceptance
+
+This ADR was promoted from Proposed to Accepted on 2026-09-23 per user directive message 1552318709853462599. The promotion ritual per ADR-ES-001 §10-§11 (status header + body Status field + this §27 Acceptance section) was executed in concert with the CR-ES-006 promotion.
+
+The promotion to Accepted has the following consequences:
+
+* CR-ES-006 is binding on all subsequent Enterprise-Semantics concept records.
+* Agentic Workflow (ES:CONCEPT:agentic-workflow) is canonical at Candidate lifecycle.
+* The 2 Agentic Workflow governed predicates (operates-within ;; process-realized-through) are registered in relationships/vocabulary.yaml v0.6.0.
+* The 2 inverse pairs are registered in relationships/inverse.yaml v0.6.0.
+* Enterprise-Semantics v0.5.0 is the canonical version pointer (per §26 ;; versions/v0.5.0.yaml).
+* ES:PROFILE:agentic-execution scope extension per CR-ES-006 §21.
+* 2 mapping records (WSF + OpenDEA per CR-ES-006 §19 + §20) are PROPOSED.
+* The 5 documentation files (per CR-ES-006 §15 + §16 + §23) are published in enterprise-semantics-docs.
+* The 2 OTCHERE Inc examples (per CR-ES-006 §27) are published in enterprise-semantics-examples.
+* The 9 test files (per CR-ES-006 §28 + §29) are published in enterprise-semantics-test-probe.
+* The 3 PlantUML sources (per CR-ES-006 §24 + §25 + §26) are published in enterprise-semantics-visuals.
+* No Agentic Operations ;; Agentic Flow ;; Autonomous Workflow ;; Autonomous Operations ;; Autonomous Value Stream ;; Autonomous Enterprise ;; Autonomous Agent ;; AI-specific workflow semantics ;; LLM Workflow ;; vendor-specific agent frameworks are canonicalised (per §3).
+* No WSF metamodel change has been made (per §3 + §16).
+* No OpenDEA metamodel change has been made (per §3 + §13 + §20).
+* No DEA catalog implementation has been made (per §3).
+* The follow-on sequence is unblocked: ADR-ES-007 (Agentic Operations) ;; ADR-ES-008 (Autonomous) ;; ADR-ES-009 (Autonomous Value Stream) ;; ADR-ES-010 (Autonomous Workflow).
+
+The 7 PRs that satisfy the acceptance criteria:
+
+- enterprise-semantics PR #12 ;; VS-A ;; 1 concept record rewritten (specialisation hypothesis) + 8 canonical relationships + 8 properties + 8 characteristics + 8 invariants + 2 mappings
+- enterprise-semantics PR #13 ;; VS-B ;; 2 governed predicates + 2 inverse pairs + versions/v0.5.0.yaml
+- enterprise-semantics-mappings PR #6 ;; VS-C ;; 2 mapping records (WSF + OpenDEA)
+- enterprise-semantics-docs PR #5 ;; VS-D1a ;; 5 documentation files
+- enterprise-semantics-examples PR #6 ;; VS-D1b ;; 2 OTCHERE Inc Order Fulfillment worked examples
+- enterprise-semantics-test-probe PR #5 ;; VS-D2a ;; 9 test files + 14 AWF-CON rules + 10 negative tests
+- enterprise-semantics-visuals PR #6 ;; VS-D2b ;; 3 PlantUML sources
+
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual.
 
