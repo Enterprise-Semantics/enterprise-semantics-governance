@@ -1,6 +1,6 @@
-CR-ES-006 ;;; Implement Agentic Workflow Semantic Grounding
+CR-ES-006: Implement Agentic Workflow Semantic Grounding
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552318709853462599 ;;; "Attached is ADR-ES-006 and CR-ES-006 save them as separate files in their respective folders, read and understand then let's implement them")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0
@@ -984,6 +984,37 @@ This gives the semantic stack a much stronger separation of concerns:
             Outcome
 
 The next logical semantic gap is Agentic Operations: unlike Agentic Workflow, it should describe the operating mode of an organization or operational environment, not another layer of workflow execution. That distinction will be important for ADR-ES-007.
+
+;;
+
+37. Acceptance
+
+This CR was promoted from Proposed to Accepted on 2026-09-23 per user directive message 1552318709853462599 (*Attached is ADR-ES-006 and CR-ES-006 save them as separate files in their respective folders, read and understand then let's implement them.*). The promotion ritual per ADR-ES-001 §10-§11 (body Status field + this §37 Acceptance section, with the cardinal author footer preserved) was executed in concert with the ADR-ES-006 promotion.
+
+The promotion to Accepted has the following consequences:
+
+* All 28 acceptance criteria of §34 are satisfied via 7 PRs across 6 repos.
+* Agentic Workflow (ES:CONCEPT:agentic-workflow) is canonical at Candidate lifecycle.
+* The 2 Agentic Workflow governed predicates from §5 + §18 are registered in relationships/vocabulary.yaml v0.6.0 (PR #13 enterprise-semantics).
+* The 2 inverse pairs from §18 are registered in relationships/inverse.yaml v0.6.0.
+* Enterprise-Semantics v0.5.0 is the canonical version pointer per §32 (versions/v0.5.0.yaml).
+* ES:PROFILE:agentic-execution scope extension per §21 (Workflow + Agentic Workflow added).
+* 2 mapping records (WSF + OpenDEA per §19 + §20) are PROPOSED (PR #6 enterprise-semantics-mappings).
+* 5 documentation files (per §15 + §16 + §23) are published (PR #5 enterprise-semantics-docs).
+* 2 OTCHERE Inc examples (per §27) are published (PR #6 enterprise-semantics-examples).
+* 9 test files (per §28 + §29) are published (PR #5 enterprise-semantics-test-probe).
+* 3 PlantUML sources (per §24 + §25 + §26) are published (PR #6 enterprise-semantics-visuals).
+* No Agentic Operations ;; Agentic Flow ;; Autonomous Workflow ;; Autonomous Operations ;; Autonomous Value Stream ;; Autonomous Enterprise ;; Autonomous Agent ;; AI Workflow ;; LLM Workflow ;; vendor-specific agent frameworks ;; workflow-engine-specific constructs are canonicalised (per §3).
+* No WSF metamodel change has been made (per §3 + §19 + ADR-ES-006 §16).
+* No OpenDEA metamodel change has been made (per §3 + §13 + §20).
+* No DEA catalog implementation has been made (per §3).
+* The implementation sequence per §33 has been completed: inspect Workflow ;; confirm reference ;; add schema ;; register ;; relationships ;; Intent/Authority ;; Process boundary ;; Activity/Task ;; profile ;; WSF mapping ;; OpenDEA mapping ;; documentation ;; UML ;; classic/agentic visualisation ;; OTCHERE Inc example ;; positive tests ;; negative tests ;; CI ;; semantic review ;; publish v0.5.0.
+* The FND-ES-AG-003 Profile hypothesis has been formally superseded by the specialisation hypothesis (per ADR-ES-006 §10).
+* The follow-on sequence is unblocked: ADR-ES-007 (Agentic Operations) ;; ADR-ES-008 (Autonomous) ;; ADR-ES-009 (Autonomous Value Stream) ;; ADR-ES-010 (Autonomous Workflow).
+
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual.
+
 <!--
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual
 -->
