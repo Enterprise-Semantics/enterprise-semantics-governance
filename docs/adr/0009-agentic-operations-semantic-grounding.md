@@ -9,7 +9,7 @@ Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
 Depends on: ADR-ES-001 (Authority and Publication Architecture) ;;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23) ;;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
-Related: CR-ES-007 (Agentic Operations Semantic Grounding, Proposed) ;;; ADR-ES-008+ (Autonomous Operations, future) ;;; ADR-ES-009+ (Agentic Enterprise, future) ;;; ADR-ES-010+ (Autonomous Enterprise, future) ;;; ADR-ES-011+ (Agentic Network, future) ;;; ADR-ES-012+ (Agentic Ecosystem, future)
+Related: CR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-008+ (Autonomous Operations, future) ;;; ADR-ES-009+ (Agentic Enterprise, future) ;;; ADR-ES-010+ (Autonomous Enterprise, future) ;;; ADR-ES-011+ (Agentic Network, future) ;;; ADR-ES-012+ (Agentic Ecosystem, future)
 
 Decision: Establish Agentic Operations as a specialization of Operations. Agentic Operations are operations in which operational sensing ;; interpretation ;; decision ;; coordination ;; adaptation ;; or execution is materially performed through agentic behavior within defined intent ;; authority ;; and policy boundaries. Deliberately avoids premature canonicalization of Autonomous Operations ;; Agentic Enterprise ;; Autonomous Enterprise ;; Agentic Network ;; Agentic Ecosystem ;; AI Operations ;; AIOps ;; MLOps ;; Digital Operations.
 
