@@ -4,7 +4,7 @@ ADR-ES-008 ;;; Autonomous Operations Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-008.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552343053933748346 ;;; "Attached the next ADR and CR, save them, read them to understand and let's implement them accordingly")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
@@ -21,9 +21,9 @@ Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 -->
 The next architectural step is ADR-ES-008. Given the sequence established through Agent, Agentic Value Stream, Agentic Workflow, and Agentic Operations, the next concept should be Autonomous Operations;;;but as a distinct semantic grounding rather than an assumed consequence of Agentic Operations.
 
-ADR-ES-008 ;;; Autonomous Operations Semantic Grounding
+ADR-ES-008 ; Autonomous Operations Semantic Grounding
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552343053933748346)
 Date: 2026-09-23
 Decision Type: Foundational Semantic Specialization
 Scope: Enterprise-Semantics
@@ -779,3 +779,41 @@ v0.7.0
 CR-ES-008 SHALL implement only the semantic scope established by this ADR.
 
 The important architectural move here is that autonomy becomes an independent dimension rather than the “next level” of agentic behavior. That gives us a cleaner foundation for the later concepts;;;particularly Autonomous Value Stream and Agentic/Autonomous Enterprise;;;without prematurely conflating them.
+
+;;
+
+29. Acceptance
+
+This ADR was promoted from Proposed to Accepted on 2026-09-23 per user directive message 1552343053933748346. The promotion ritual per ADR-ES-001 §10-§11 (status header + body Status field + this §29 Acceptance section) was executed in concert with the CR-ES-008 promotion.
+
+The promotion to Accepted has the following consequences:
+
+* CR-ES-008 is binding on all subsequent Enterprise-Semantics concept records.
+* Autonomous Operations (ES:CONCEPT:autonomous-operations) is canonical at Candidate lifecycle.
+* The 1 Autonomous Operations governed predicate (escalates-to) is registered in relationships/vocabulary.yaml v0.8.0.
+* The 1 inverse pair is registered in relationships/inverse.yaml v0.8.0.
+* Enterprise-Semantics v0.7.0 is the canonical version pointer (per §28 ;; versions/v0.7.0.yaml).
+* ES:PROFILE:autonomous-operations is registered at registry/profiles/.
+* profile_type: autonomous-operations is registered at registry/profile-types.yaml.
+* 2 mapping records (WSF + OpenDEA per CR-ES-008 §19 + §20) are PROPOSED.
+* The 5 documentation files (per CR-ES-008 §21) are published in enterprise-semantics-docs.
+* The 1 OTCHERE Inc example (per CR-ES-008 §23) is published in enterprise-semantics-examples.
+* The 10 test files (per CR-ES-008 §24 + §25 + §28) are published in enterprise-semantics-test-probe.
+* The 4 PlantUML sources (per CR-ES-008 §22) are published in enterprise-semantics-visuals.
+* No Autonomous Value Stream ;; Autonomous Enterprise ;; Autonomous Network ;; Autonomous Ecosystem ;; Autonomous Workflow ;; Autonomous Agent as universal Entity subtype ;; autonomy maturity levels ;; autonomy certification ;; autonomy scoring ;; autonomy risk tiers are canonicalised (per §3 + §4.2 + §24).
+* No WSF ontology modification has been made (per §3 + §16 + §19).
+* No OpenDEA metamodel modification has been made (per §3 + §20).
+* No DEA catalog implementation has been made (per §3).
+* The follow-on sequence is unblocked: ADR-ES-009+ (Autonomous Value Stream) ;; ADR-ES-010+ (Autonomous Enterprise) ;; ADR-ES-011+ (Autonomous Network) ;; ADR-ES-012+ (Autonomous Ecosystem) ;; plus ADR-ES-013+ (Agentic Enterprise) and related concepts.
+
+The 7 PRs that satisfy the acceptance criteria:
+
+- enterprise-semantics PR #16 ;; VS-A ;; 1 concept record + ES:PROFILE:autonomous-operations
+- enterprise-semantics PR #17 ;; VS-B ;; 1 governed predicate + 1 inverse pair + versions/v0.7.0.yaml
+- enterprise-semantics-mappings PR #8 ;; VS-C ;; 2 mapping records (WSF + OpenDEA)
+- enterprise-semantics-docs PR #7 ;; VS-D1a ;; 5 documentation files
+- enterprise-semantics-examples PR #8 ;; VS-D1b ;; 1 OTCHERE Inc Fulfillment Autonomous Operations worked example
+- enterprise-semantics-test-probe PR #7 ;; VS-D2a ;; 10 test files + 17 AOP-AUTO-CON rules + 12 negative tests + 7 autonomy integrity tests
+- enterprise-semantics-visuals PR #8 ;; VS-D2b ;; 4 PlantUML sources
+
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual.
