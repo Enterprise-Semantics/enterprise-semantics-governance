@@ -8,9 +8,9 @@ No other autonomous concepts are authorized by this ADR.
 
 CR-ES-009 ;;; Implementation
 
-CR-ES-009 ;;; Implement Autonomous Value Stream Semantic Grounding
+CR-ES-009: Implement Autonomous Value Stream Semantic Grounding
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552351646762274856 ;;; "Merge, and attached is the next ADR and CR to be saved, read and understood and implemented accordingly")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0
@@ -914,6 +914,37 @@ Autonomous Value Stream
 This preserves the fundamental separation between value realization, operations, and execution, while allowing those layers to compose into increasingly sophisticated enterprise operating models.
 
 Target Release: v0.8.0
+
+;;
+
+36. Acceptance
+
+This CR was promoted from Proposed to Accepted on 2026-09-23 per user directive message 1552351646762274856 (*Merge, and attached is the next ADR and CR to be saved, read and understood and implemented accordingly.*). The promotion ritual per ADR-ES-001 §10-§11 (body Status field + this §36 Acceptance section, with the cardinal author footer preserved) was executed in concert with the ADR-ES-009 promotion.
+
+The promotion to Accepted has the following consequences:
+
+* All 32 acceptance criteria of §32 are satisfied via 7 PRs across 6 repos.
+* Autonomous Value Stream (ES:CONCEPT:autonomous-value-stream) is canonical at Candidate lifecycle.
+* The 1 Autonomous Value Stream governed predicate from §8 (contains) is registered in relationships/vocabulary.yaml v0.9.0 (PR #19 enterprise-semantics).
+* The 1 inverse pair from §8 is registered in relationships/inverse.yaml v0.9.0.
+* Enterprise-Semantics v0.8.0 is the canonical version pointer per §32 (versions/v0.8.0.yaml).
+* ES:PROFILE:autonomous-value-realization is registered at registry/profiles/ (PR #18 enterprise-semantics).
+* profile_type: autonomous-value-realization is registered at registry/profile-types.yaml (PR #18 enterprise-semantics).
+* 2 mapping records (WSF + OpenDEA per §20 + §21) are PROPOSED (PR #9 enterprise-semantics-mappings).
+* 5 documentation files (per §22) are published (PR #8 enterprise-semantics-docs).
+* 1 OTCHERE Inc example (per §24) is published (PR #9 enterprise-semantics-examples).
+* 10 test files (per §25 + §26 + §28) are published (PR #8 enterprise-semantics-test-probe).
+* 5 PlantUML sources (per §23) are published (PR #9 enterprise-semantics-visuals).
+* No Autonomous Value Stage ;; Autonomous Workflow ;; Autonomous Enterprise ;; Autonomous Ecosystem ;; Autonomous Network ;; Autonomous Agent ;; value-stream autonomy scoring ;; autonomy maturity levels ;; general autonomy ontology are canonicalised (per §3 + §4.2 + §21 + §34).
+* No WSF ontology modification (per §3 + §20).
+* No OpenDEA metamodel modification (per §3 + §21).
+* No DEA catalog implementation (per §3).
+* The implementation sequence per §31 has been completed: dependency inspection ;; schema ;; registry ;; relationships ;; profile ;; WSF mapping ;; OpenDEA mapping ;; documentation ;; UML ;; OTCHERE Inc example ;; positive tests ;; negative tests ;; CI ;; semantic review ;; publish v0.8.0.
+* The follow-on sequence is unblocked: ADR-ES-010+ (Autonomous Enterprise) ;; ADR-ES-011+ (Autonomous Network) ;; ADR-ES-012+ (Autonomous Ecosystem) ;; plus ADR-ES-013+ (Agentic Enterprise) and related concepts.
+
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual.
+
 <!--
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual
 -->
