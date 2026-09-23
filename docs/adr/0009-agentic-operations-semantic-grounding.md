@@ -4,7 +4,7 @@ ADR-ES-007 ;;; Agentic Operations Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-007.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552333611045224559 ;;; "Attached are ADR-ES-007 and CR-ES-007, save them both, read and understand then implement e them appropriately")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
@@ -21,9 +21,9 @@ Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 -->
 The next decision should therefore be ADR-ES-007 ;;; Agentic Operations Semantic Grounding. It should deliberately move up one level from workflow execution into the operating model: how operational work is sensed, decided, coordinated, executed, monitored, and adapted. It should not become a synonym for Agentic Workflow or Agentic Value Stream.
 
-ADR-ES-007 ;;; Agentic Operations Semantic Grounding
+ADR-ES-007 ; Agentic Operations Semantic Grounding
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552333611045224559)
 Date: 2026-09-23
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
@@ -844,3 +844,41 @@ This ADR deliberately leaves the following for later governed decisions:
 * operational autonomy levels.
 
 These concepts shall not be canonicalized through ADR-ES-007.
+
+;;
+
+32. Acceptance
+
+This ADR was promoted from Proposed to Accepted on 2026-09-23 per user directive message 1552333611045224559. The promotion ritual per ADR-ES-001 §10-§11 (status header + body Status field + this §32 Acceptance section) was executed in concert with the CR-ES-007 promotion.
+
+The promotion to Accepted has the following consequences:
+
+* CR-ES-007 is binding on all subsequent Enterprise-Semantics concept records.
+* Agentic Operations (ES:CONCEPT:agentic-operations) is canonical at Candidate lifecycle.
+* The 2 Agentic Operations governed predicates (responds-to ;; governed-by) are registered in relationships/vocabulary.yaml v0.7.0.
+* The 2 inverse pairs are registered in relationships/inverse.yaml v0.7.0.
+* Enterprise-Semantics v0.6.0 is the canonical version pointer (per §30 ;; versions/v0.6.0.yaml).
+* ES:PROFILE:agentic-operations is registered at registry/profiles/.
+* profile_type: agentic-operations is registered at registry/profile-types.yaml.
+* 2 mapping records (WSF + OpenDEA per CR-ES-007 §17 + §18) are PROPOSED.
+* The 5 documentation files (per CR-ES-007 §19) are published in enterprise-semantics-docs.
+* The 1 OTCHERE Inc example (per CR-ES-007 §21) is published in enterprise-semantics-examples.
+* The 10 test files (per CR-ES-007 §23 + §24) are published in enterprise-semantics-test-probe.
+* The 4 PlantUML sources (per CR-ES-007 §20) are published in enterprise-semantics-visuals.
+* No Autonomous Operations ;; Autonomous Value Stream ;; Agentic Enterprise ;; Autonomous Enterprise ;; Agentic Network ;; Agentic Ecosystem ;; AI-specific operational semantics ;; AIOps ;; MLOps ;; Digital Operations are canonicalised (per §3 + §31).
+* No WSF metamodel change has been made (per §3 + §16 + §17).
+* No OpenDEA metamodel change has been made (per §3 + §18).
+* No DEA catalog implementation has been made (per §3).
+* The follow-on sequence is unblocked: ADR-ES-008+ (Autonomous Operations) ;; ADR-ES-009+ (Agentic Enterprise) ;; ADR-ES-010+ (Autonomous Enterprise) ;; ADR-ES-011+ (Agentic Network) ;; ADR-ES-012+ (Agentic Ecosystem).
+
+The 7 PRs that satisfy the acceptance criteria:
+
+- enterprise-semantics PR #14 ;; VS-A ;; 1 concept record rewritten (specialisation hypothesis) + ES:PROFILE:agentic-operations
+- enterprise-semantics PR #15 ;; VS-B ;; 2 governed predicates + 2 inverse pairs + versions/v0.6.0.yaml
+- enterprise-semantics-mappings PR #7 ;; VS-C ;; 2 mapping records (WSF + OpenDEA)
+- enterprise-semantics-docs PR #6 ;; VS-D1a ;; 5 documentation files
+- enterprise-semantics-examples PR #7 ;; VS-D1b ;; 1 OTCHERE Inc Fulfillment Operations worked example
+- enterprise-semantics-test-probe PR #6 ;; VS-D2a ;; 10 test files + 15 AOP-CON rules + 12 negative tests
+- enterprise-semantics-visuals PR #7 ;; VS-D2b ;; 4 PlantUML sources
+
+Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual.
