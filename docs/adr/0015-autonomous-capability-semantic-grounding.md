@@ -4,12 +4,12 @@ ADR-ES-013 , Autonomous Capability Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-013.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-24 per user directive message 1552724263121981440, "followup with appropriate implementation")
 Decision Type: Foundational Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
 Depends on: ADR-ES-002 (Enterprise Semantic Model) , ADR-ES-004 (Agentic Semantic Grounding) , ADR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23) , ADR-ES-009 (Autonomous Value Stream Semantic Grounding, Accepted 2026-09-23) , ADR-ES-011 (Autonomous Enterprise Semantic Grounding, Accepted 2026-09-24) , ADR-ES-012 (Agentic Capability Semantic Grounding, Accepted 2026-09-24)
-Related: CR-ES-013 (Autonomous Capability Semantic Grounding, Proposed) , ADR-ES-014 (Agentic Service Semantic Grounding, Proposed) , FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-013 (Autonomous Capability Semantic Grounding, Accepted 2026-09-24) , ADR-ES-014 (Agentic Service Semantic Grounding, Proposed) , FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
 
 Decision: Establish Autonomous Capability as a governed semantic specialization of Capability describing a Capability whose realization is capable of progressing through decisions, actions, coordination, and adaptation within defined objectives, authority, policies, constraints, and governance boundaries without requiring human intervention for every capability decision or action. Autonomous Capability is a contextual specialization of the universal Capability concept established by ADR-ES-002, not a new foundational type of ability, it does not redefine what a Capability is, and it does not equate ability with the Agent, Workflow, Operations, Value Stream, AI, automation, or autonomy mechanisms through which that ability may be realized. Deliberately avoids premature canonicalization of Autonomous Agent, Autonomous Workflow, Autonomous Process, Autonomous Service, Autonomous Organization, Autonomous Culture, Autonomous Ecosystem, Autonomous Network, Autonomous Enterprise maturity levels, Capability autonomy levels, AI Capability, Autonomous Value Stage, autonomous capability maturity model.
 
