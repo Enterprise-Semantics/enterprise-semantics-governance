@@ -1,6 +1,6 @@
 <!--
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-22)
-Filing: CR-ES-001 §10 + §11-§13 (governance scaffolding ;;; no destructive replaces)
+Filing: CR-ES-001 §10 + §11-§13 (governance scaffolding, no destructive replaces)
 -->
 
 # Templates
@@ -21,7 +21,7 @@ Use this directory for templates that:
 
 ## Status
 
-Empty at v0.0.1 ;;; first templates will be introduced as concept-specific CRs require them.
+Empty at v0.0.1, first templates will be introduced as concept-specific CRs require them.
 
 ## Cardinal rules
 

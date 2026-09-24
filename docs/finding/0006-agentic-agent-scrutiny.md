@@ -1,20 +1,20 @@
 <!--
-FND-ES-AG-006 ;;; Agentic Agent Scrutiny ;;; dash-normalized
+FND-ES-AG-006, Agentic Agent Scrutiny, dash-normalized
 Verbatim original: 00_inbox/FND-ES-AG-006.md.
 Status: Proposed Finding (scrutiny).
 Working conclusion: Agentic Agent is held back from the canonical seed pending
 further investigation, per FND-ES-AG-001-Grounding-Result §3 + §12. Three
-plausible models exist ;;; none is chosen. The recommendation is to ground
+plausible models exist, none is chosen. The recommendation is to ground
 AI Agent (FND-ES-AG-009) first, then decide whether Agentic Agent is redundant,
 a Profile, or a Distinct concept.
 -->
 
-# FND-ES-AG-006 ;;; Agentic Agent Semantic Grounding (Scrutiny)
+# FND-ES-AG-006, Agentic Agent Semantic Grounding (Scrutiny)
 
 **Status:** Proposed Finding
-**Scope:** `Agentic Agent` ;;; scrutiny per FND-ES-AG-001-Grounding-Result §3 + §12.
+**Scope:** `Agentic Agent`, scrutiny per FND-ES-AG-001-Grounding-Result §3 + §12.
 **Precedes:** Conditional CR-ES-AG-010 (Agentic Agent concept record) ;; ADR-ES-AG-001 §6.
-**Depends on:** FND-ES-AG-001 canonical ;;; FND-ES-AG-001-Grounding-Result §3 + §12 ;;; ADR-ES-AG-001 ;;; ADR-ES-002.
+**Depends on:** FND-ES-AG-001 canonical, FND-ES-AG-001-Grounding-Result §3 + §12, ADR-ES-AG-001, ADR-ES-002.
 **Related:** FND-ES-AG-002 ;; FND-ES-AG-003 ;; FND-ES-AG-004 ;; FND-ES-AG-005 ;; FND-ES-AG-009 (AI Agent).
 
 ---
@@ -33,7 +33,7 @@ The FND-ES-AG-001-Grounding-Result §3 explicitly warns:
 The Grounding Result §3 presents three plausible models for the
 Agent/AI Agent/Agentic Agent relationship:
 
-### Model A ;;; Specialization
+### Model A, Specialization
 
 ```text
 Agent
@@ -45,7 +45,7 @@ AI Agent
 Agentic Agent
 ```
 
-### Model B ;;; Intersection/Profile
+### Model B, Intersection/Profile
 
 ```text
          Agent
@@ -58,7 +58,7 @@ AI ────────┼───────────
    Agentic characteristic
 ```
 
-### Model C ;;; Agent as enterprise role/capability bearer
+### Model C, Agent as enterprise role/capability bearer
 
 ```text
 Entity
@@ -70,7 +70,7 @@ Entity
 The Grounding Result §3 concludes: "We should not choose among these yet."
 
 This Finding applies the 10-step grounding template from the Grounding Result
-§13, **treating `Agentic Agent` as a SCRUTINIZED candidate** ;;; not as an
+§13, **treating `Agentic Agent` as a SCRUTINIZED candidate**, not as an
 auto-accepted one.
 
 **Working conclusion (provisional, NOT normative):**
@@ -108,15 +108,15 @@ Without scrutiny of `Agentic Agent`:
 Per FND-ES-AG-001-Grounding-Result §3, three candidate grounding models exist.
 None of them is settled:
 
-- **Model A ;;; Specialization:** Agent -> AI Agent -> Agentic Agent. This
+- **Model A, Specialization:** Agent -> AI Agent -> Agentic Agent. This
   implies that each level adds properties. But the Grounding Result §3
   warns that `AI Agent` and `Agentic Agent` may be terminologically
   redundant.
-- **Model B ;;; Intersection/Profile:** AI and Agent intersect to form
-  AI Agent ;;; then Agentic is a characteristic. This implies that
+- **Model B, Intersection/Profile:** AI and Agent intersect to form
+  AI Agent, then Agentic is a characteristic. This implies that
   `Agentic Agent` is not a separate concept but a Profile of `AI Agent`.
-- **Model C ;;; Agent as enterprise role/capability bearer:** Agent is
-  an enterprise role or capability bearer ;;; not a separate kind. This
+- **Model C, Agent as enterprise role/capability bearer:** Agent is
+  an enterprise role or capability bearer, not a separate kind. This
   implies `Agentic Agent` is a Profile of Agent as Role/Capability bearer.
 
 No model is canonical. WSF grounding does not yet disambiguate.
@@ -205,34 +205,34 @@ Evidence for `Agentic Agent` as a separate concept:
 
 Evidence AGAINST `Agentic Agent` as a separate concept:
 
-- FND-ES-AG-001-Grounding-Result §3 ;;; three plausible models, none chosen.
-- FND-ES-AG-001-Grounding-Result §12 ;;; flagged as requiring particular
+- FND-ES-AG-001-Grounding-Result §3, three plausible models, none chosen.
+- FND-ES-AG-001-Grounding-Result §12, flagged as requiring particular
   scrutiny.
-- ADR-ES-002 §5 ;;; enterprise context is not sufficient reason to
+- ADR-ES-002 §5, enterprise context is not sufficient reason to
   duplicate foundational semantics.
 
 ### 3.11 Canonicality Recommendation
 
 ```text
-CHALLENGED ;;; do NOT proceed to Investigating/Proposed at this stage.
+CHALLENGED, do NOT proceed to Investigating/Proposed at this stage.
 ```
 
 Per the Grounding Result §12, the recommendation is:
 
-> **Candidate requiring particular scrutiny:** Agentic Agent ;;; because it
+> **Candidate requiring particular scrutiny:** Agentic Agent, because it
 > may be terminologically redundant with AI Agent or represent a different
 > semantic distinction.
 
 Therefore the recommendation is:
 
 1. Hold `Agentic Agent` back from CR-ES-AG-010.
-2. Author FND-ES-AG-009 (AI Agent semantic grounding) ;;; ground AI Agent
+2. Author FND-ES-AG-009 (AI Agent semantic grounding), ground AI Agent
    first.
 3. Investigate whether `Agentic Agent` is:
    - Redundant with `AI Agent` (drop the concept).
-   - A Profile of `AI Agent` (different from the Profile pattern ;;; agentic
+   - A Profile of `AI Agent` (different from the Profile pattern, agentic
      is a characteristic of an AI agent, not a Profile of the AI agent).
-   - A Distinct concept (rare ;;; would need strong justification).
+   - A Distinct concept (rare, would need strong justification).
 
 Until that investigation completes, `Agentic Agent` stays **out of the
 canonical seed**.
@@ -244,7 +244,7 @@ canonical seed**.
 > **`Agentic Agent` is held back from the canonical seed pending further investigation.**
 >
 > The Grounding Result §3 + §12 flag this concept as requiring particular
-> scrutiny. Three plausible models exist ;;; none is chosen.
+> scrutiny. Three plausible models exist, none is chosen.
 >
 > The recommendation is to:
 >

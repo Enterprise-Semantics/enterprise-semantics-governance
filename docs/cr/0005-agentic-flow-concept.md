@@ -1,13 +1,13 @@
 <!--
-CR-ES-AG-005 ;;; dash-normalized
+CR-ES-AG-005, dash-normalized
 Verbatim original: 00_inbox/CR-ES-AG-005.md.
 -->
 
-# CR-ES-AG-005 ;;; Agentic Flow Concept Record
+# CR-ES-AG-005, Agentic Flow Concept Record
 
 **Status:** Implemented
 **Implements:** ADR-ES-AG-001 §6 CR-ES-AG-005
-**Preceded by:** FND-ES-AG-001-Grounding-Result §7 ;;; FND-ES-AG-001 §7
+**Preceded by:** FND-ES-AG-001-Grounding-Result §7, FND-ES-AG-001 §7
 **Authored by:** manny-es (the dedicated Enterprise-Semantics sub-agent)
 
 ---

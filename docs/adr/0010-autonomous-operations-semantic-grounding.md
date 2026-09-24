@@ -1,15 +1,15 @@
 <!--
-ADR-ES-008 ;;; Autonomous Operations Semantic Grounding Decision
+ADR-ES-008, Autonomous Operations Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-008.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552343053933748346 ;;; "Attached the next ADR and CR, save them, read them to understand and let's implement them accordingly")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552343053933748346, "Attached the next ADR and CR, save them, read them to understand and let's implement them accordingly")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
-Depends on: ADR-ES-001 (Authority and Publication Architecture) ;;; ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) ;;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
-Related: CR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-009+ (Agentic Enterprise, future) ;;; ADR-ES-010+ (Autonomous Enterprise, future) ;;; ADR-ES-011+ (Agentic Network, future) ;;; ADR-ES-012+ (Agentic Ecosystem, future)
+Depends on: ADR-ES-001 (Authority and Publication Architecture), ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23), ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23), FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23), ADR-ES-009+ (Agentic Enterprise, future), ADR-ES-010+ (Autonomous Enterprise, future), ADR-ES-011+ (Agentic Network, future), ADR-ES-012+ (Agentic Ecosystem, future)
 
 Decision: Establish Autonomous Operations as a specialisation of Operations. Autonomous Operations are operations capable of independently sensing ;; interpreting ;; deciding ;; coordinating ;; executing ;; and adapting operational behavior within defined objectives ;; authority ;; policies ;; and constraints without requiring human intervention for every operational decision or action. Deliberately avoids premature canonicalization of Autonomous Value Stream ;; Autonomous Enterprise ;; Autonomous Network ;; Autonomous Ecosystem ;; Autonomous Workflow ;; Autonomous Agent as a universal Entity subtype ;; autonomy maturity levels ;; autonomy certification ;; autonomy scoring ;; autonomy risk tiers.
 
@@ -19,7 +19,7 @@ Implementation: CR-ES-008 (Autonomous Operations Semantic Grounding). CR-ES-008 
 
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 -->
-The next architectural step is ADR-ES-008. Given the sequence established through Agent, Agentic Value Stream, Agentic Workflow, and Agentic Operations, the next concept should be Autonomous Operations;;;but as a distinct semantic grounding rather than an assumed consequence of Agentic Operations.
+The next architectural step is ADR-ES-008. Given the sequence established through Agent, Agentic Value Stream, Agentic Workflow, and Agentic Operations, the next concept should be Autonomous Operations, but as a distinct semantic grounding rather than an assumed consequence of Agentic Operations.
 
 ADR-ES-008 ; Autonomous Operations Semantic Grounding
 
@@ -569,7 +569,7 @@ Adapt response
         v
 Escalate if authority boundary exceeded
 
-The semantic classification derives from the independence of operational decision and action within defined boundaries;;;not from whether the implementation uses AI.
+The semantic classification derives from the independence of operational decision and action within defined boundaries, not from whether the implementation uses AI.
 
 ;;;
 
@@ -770,7 +770,7 @@ This establishes autonomy as an independently governable semantic dimension rath
 
 This ADR authorizes the preparation of:
 
-CR-ES-008 ;;; Implement Autonomous Operations Semantic Grounding
+CR-ES-008, Implement Autonomous Operations Semantic Grounding
 
 Target release:
 
@@ -778,7 +778,7 @@ v0.7.0
 
 CR-ES-008 SHALL implement only the semantic scope established by this ADR.
 
-The important architectural move here is that autonomy becomes an independent dimension rather than the “next level” of agentic behavior. That gives us a cleaner foundation for the later concepts;;;particularly Autonomous Value Stream and Agentic/Autonomous Enterprise;;;without prematurely conflating them.
+The important architectural move here is that autonomy becomes an independent dimension rather than the “next level” of agentic behavior. That gives us a cleaner foundation for the later concepts, particularly Autonomous Value Stream and Agentic/Autonomous Enterprise, without prematurely conflating them.
 
 ;;
 

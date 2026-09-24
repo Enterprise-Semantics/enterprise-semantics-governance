@@ -1,16 +1,16 @@
-# CR-ES-AG-007 ;;; Agentic Enterprise (concept record)
+# CR-ES-AG-007, Agentic Enterprise (concept record)
 
-**Status:** Proposed ;;; implemented
+**Status:** Proposed, implemented
 **Scope:** `enterprise-semantics` repo
 **Implements:** ADR-ES-AG-001 §6 CR-ES-AG-007.
-**Depends on:** CR-ES-AG-002 ;;; CR-ES-AG-006 ;;; FND-ES-AG-005 ;;; ADR-ES-AG-001 ;;; ADR-ES-002 ;;; FND-ES-AG-001-Grounding-Result.
+**Depends on:** CR-ES-AG-002, CR-ES-AG-006, FND-ES-AG-005, ADR-ES-AG-001, ADR-ES-002, FND-ES-AG-001-Grounding-Result.
 **Enables:** Downstream CRs that reference Agentic Enterprise.
 
 ---
 
 ## 1. Change
 
-Land the `Agentic Enterprise` Concept record at `concepts/agentic-enterprise.concept.yaml`, plus the supporting `Enterprise` Concept record at `concepts/enterprise.concept.yaml`. Per FND-ES-AG-005 ;;; Agentic Enterprise is a Profile of Enterprise across the eight enterprise areas.
+Land the `Agentic Enterprise` Concept record at `concepts/agentic-enterprise.concept.yaml`, plus the supporting `Enterprise` Concept record at `concepts/enterprise.concept.yaml`. Per FND-ES-AG-005, Agentic Enterprise is a Profile of Enterprise across the eight enterprise areas.
 
 ---
 
@@ -18,17 +18,17 @@ Land the `Agentic Enterprise` Concept record at `concepts/agentic-enterprise.con
 
 ### 2.1 Records landed
 
-- `concepts/enterprise.concept.yaml` ;;; base Concept (Established, v1.0.0).
-- `concepts/agentic-enterprise.concept.yaml` ;;; profiled Concept (Candidate, v0.1.0). Profile binding to ES:PROFILE:agentic-execution.
+- `concepts/enterprise.concept.yaml`, base Concept (Established, v1.0.0).
+- `concepts/agentic-enterprise.concept.yaml`, profiled Concept (Candidate, v0.1.0). Profile binding to ES:PROFILE:agentic-execution.
 
 ### 2.2 WSF grounding (mandatory per FND-ES-AG-001-Grounding-Result)
 
-- Enterprise ;;; specializes `external:wsf:Entity`.
-- Agentic Enterprise ;;; references `external:wsf:Entity` (inherited via Enterprise).
+- Enterprise, specializes `external:wsf:Entity`.
+- Agentic Enterprise, references `external:wsf:Entity` (inherited via Enterprise).
 
 ### 2.3 Profile binding
 
-- Agentic Enterprise ;;; binds `ES:PROFILE:agentic-execution`.
+- Agentic Enterprise, binds `ES:PROFILE:agentic-execution`.
 
 ### 2.4 Governed relationships
 
@@ -38,8 +38,8 @@ Land the `Agentic Enterprise` Concept record at `concepts/agentic-enterprise.con
 
 ### 2.5 Conformance
 
-- `python3 conformance/check.py` ;;; `NO_DRIFT (1 Profile record(s) validated)`, exit 0.
-- `python3 conformance/check_concepts.py` ;;; `NO_DRIFT (8 Concept record(s) validated)`, exit 0.
+- `python3 conformance/check.py`, `NO_DRIFT (1 Profile record(s) validated)`, exit 0.
+- `python3 conformance/check_concepts.py`, `NO_DRIFT (8 Concept record(s) validated)`, exit 0.
 
 ---
 

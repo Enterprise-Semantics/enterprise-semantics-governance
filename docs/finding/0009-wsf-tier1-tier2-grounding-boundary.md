@@ -1,12 +1,12 @@
 <!--
-FND-ES-AG-008 ;;; WSF Tier 1 / Tier 2 Grounding Boundary
+FND-ES-AG-008, WSF Tier 1 / Tier 2 Grounding Boundary
 
 Status: Established (promoted from Proposed Finding on 2026-09-22, per user directive message 1551964731210866842)
 Authored by: Emmanuel A. Otchere
 Date: 2026-09-22
 Promotion date: 2026-09-22
 Promoted by: user directive (Emmanuel A. Otchere, message 1551964731210866842)
-Promotion rationale: per FND-ES-AG-008 §1.4 working hypothesis ;;; user directive 2026-09-22 explicitly accepts the per-concept WSF↔ES classification framework as Established
+Promotion rationale: per FND-ES-AG-008 §1.4 working hypothesis, user directive 2026-09-22 explicitly accepts the per-concept WSF↔ES classification framework as Established
 Preceded by: Recon-ES-001a ;; ADR-ES-001 ;; FND-ES-AG-001 ;; FND-ES-AG-001-Grounding-Result
 Depends on: FND-ES-AG-001 ;; FND-ES-AG-001-Grounding-Result ;; ADR-ES-001 ;; ADR-ES-002 ;; Recon-ES-001a §7 ;; WSF Tier 1/2 synthesis ;; F-035
 Precedes: ADR-ES-002 ;; ADR-ES-003 ;; subsequent Phase 6 concept-specific ADRs ;; per-concept classification table
@@ -15,10 +15,10 @@ Working conclusion (provisional, NOT normative):
 The current ES concept catalogue requires a per-concept WSF-grounding resolution into one of three legitimate categories (Tier 1 Kernel Reference, Tier 2 Specialisation, ES-canonical). Mixed claims (one concept specialising multiple WSF concepts, or specialising + referencing) are themselves a defect under ADR-ES-001 §4.1 and must be resolved before any concept-specific ADR can land.
 -->
 
-# FND-ES-AG-008 ;;; WSF Tier 1 / Tier 2 Grounding Boundary
+# FND-ES-AG-008, WSF Tier 1 / Tier 2 Grounding Boundary
 
 **Status:** Established (promoted from Proposed Finding on 2026-09-22)
-**Scope:** The WSF ;;; Enterprise-Semantics grounding relationship for every concept currently in `concepts/` plus the structural pattern future concepts must satisfy.
+**Scope:** The WSF, Enterprise-Semantics grounding relationship for every concept currently in `concepts/` plus the structural pattern future concepts must satisfy.
 **Authored by:** Emmanuel A. Otchere
 **Date:** 2026-09-22
 **Preceded by:** Recon-ES-001a ;; ADR-ES-001 ;; FND-ES-AG-001 ;; FND-ES-AG-001-Grounding-Result
@@ -37,11 +37,11 @@ Repository inspection of all 14 current concept YAMLs reveals that `wsf_groundin
 2. **Multi-WSF claims.** Several concepts claim relationships to *more than one* WSF concept (e.g. `workflow` claims `wsf:Activity specializes` AND `wsf:Event references`; `agent` and `ai-agent` claim `wsf:Entity specializes` AND `wsf:Capability references`). Such multi-WSF claims effectively redefine the relationship between the WSF concepts inside ES, which ADR-ES-001 §4.1 forbids.
 3. **Implicit ontological commits.** Profile records inherit the base concept's grounding via `references` (not `specializes`), but the YAMLs do not always make this inheritance explicit.
 
-The combination obscures the WSF ;;; ES boundary and produces concrete defects: semantic duplication of WSF's Capability specialisation pattern in ES; underspecification of how ES Value Stream builds on the WSF kernel `Value`; and implicit ontological commits that downstream consumers cannot audit.
+The combination obscures the WSF, ES boundary and produces concrete defects: semantic duplication of WSF's Capability specialisation pattern in ES; underspecification of how ES Value Stream builds on the WSF kernel `Value`; and implicit ontological commits that downstream consumers cannot audit.
 
 ### 1.2 The three legitimate grounding categories
 
-Per ADR-ES-001 §4.1, §4.2, §6, §15 and FND-ES-AG-001-Grounding-Result §1, the only legitimate ES ;;; WSF relationships are:
+Per ADR-ES-001 §4.1, §4.2, §6, §15 and FND-ES-AG-001-Grounding-Result §1, the only legitimate ES, WSF relationships are:
 
 | Category | WSF status | ES treatment |
 |----------|------------|--------------|
@@ -88,14 +88,14 @@ The 8 Resolution Required concepts each require a per-concept ADR decision befor
 
 Per ADR-ES-AG-001 §3, a Profile is a governed configuration overlay applied to a base concept. The base concept retains its semantic identity; the Profile adds characteristics (in this org's current pattern: the four `agentic-execution` characteristics).
 
-The semantic consequence is that a Profile record's relationship to WSF is *inherited from its base*, not independently established. A Profile that claims `wsf:Capability specializes` directly would be redefining the base's WSF relationship inside the Profile overlay ;;; which ADR-ES-001 §4.1 forbids and which is structurally unnecessary because the base already carries the grounding claim.
+The semantic consequence is that a Profile record's relationship to WSF is *inherited from its base*, not independently established. A Profile that claims `wsf:Capability specializes` directly would be redefining the base's WSF relationship inside the Profile overlay, which ADR-ES-001 §4.1 forbids and which is structurally unnecessary because the base already carries the grounding claim.
 
 The correct Profile pattern is therefore:
 - Base concept carries the primary WSF grounding claim (`specializes` for Tier 2; `references` for Tier 1 Kernel Reference or ES-canonical inheritance).
-- Profile record carries `references` (not `specializes`) for the base's WSF grounding ;;; declaring inheritance without re-asserting the specialisation.
+- Profile record carries `references` (not `specializes`) for the base's WSF grounding, declaring inheritance without re-asserting the specialisation.
 - Profile record additionally carries `profile_bindings` pointing to the Profile definition (`ES:PROFILE:agentic-execution` in this org's current pattern).
 
-All 6 current Profile records (`agentic-capability`, `agentic-value-stream`, `agentic-workflow`, `agentic-flow`, `agentic-operations`, `agentic-enterprise`) follow this pattern correctly. The Profile convention itself is therefore not in scope for the mixed-claim defect interpretation in §1.2 ;;; the defect applies only to base concepts.
+All 6 current Profile records (`agentic-capability`, `agentic-value-stream`, `agentic-workflow`, `agentic-flow`, `agentic-operations`, `agentic-enterprise`) follow this pattern correctly. The Profile convention itself is therefore not in scope for the mixed-claim defect interpretation in §1.2, the defect applies only to base concepts.
 
 ### 1.6 Foundational grounds
 
@@ -115,7 +115,7 @@ Without this classification:
 
 ## 3. Investigation methodology
 
-This Finding applies the same approach as FND-ES-AG-001-Grounding-Result §1 to the broader WSF ;;; ES boundary rather than to the Agentic family specifically.
+This Finding applies the same approach as FND-ES-AG-001-Grounding-Result §1 to the broader WSF, ES boundary rather than to the Agentic family specifically.
 
 ### 3.1 What WSF defines at Tier 1 vs Tier 2
 
@@ -125,7 +125,7 @@ Per WSF_Foundational_Semantic_Synthesis §3: Tier 1 includes the kernel (Entity,
 
 WSF explicitly states (§2) it is not an enterprise architecture model, business architecture model, assessment model, catalog of industry terminology, or repository of every possible domain concept. Constructs that are enterprise-specific (Value Stream as a Stream construct, Operations, Enterprise as an operating unit, Workflow, Flow, Agent in the AI sense, etc.) are not in WSF scope.
 
-### 3.3 What is the legitimate WSF ;;; ES relationship
+### 3.3 What is the legitimate WSF, ES relationship
 
 Per ADR-ES-001 §4.1 + §15: ES shall not redefine WSF concepts. The legitimate relationships are the three categories in §1.2. The mixed claims in §1.3 are defects to be resolved, not legitimate complexity.
 
@@ -139,7 +139,7 @@ All 14 concept YAMLs in `repos/enterprise-semantics/concepts/` were parsed and t
 
 ### 4.1 Primary deliverable
 
-Produce a machine-readable and human-readable per-concept WSF ;;; ES classification table covering all 14 concepts. The table is a separate artefact:
+Produce a machine-readable and human-readable per-concept WSF, ES classification table covering all 14 concepts. The table is a separate artefact:
 
 - `repos/enterprise-semantics-mappings/mappings/wsf-es-classification.v0.1.csv` (CSV)
 - `repos/enterprise-semantics-mappings/mappings/wsf-es-classification.v0.1.md` (Markdown render)

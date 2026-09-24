@@ -1,10 +1,10 @@
 <!--
-ADR-ES-002 ;;; Capability Semantic Grounding Decision
+ADR-ES-002, Capability Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-002.md (identical bytes; authored dash-normalized from the start).
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115 ;;; "Proceed with everything")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115, "Proceed with everything")
 Decision Type: Semantic Architecture / Semantic Governance
 Scope: ES:CONCEPT:capability (and its specialisation pathways)
 Supersedes: None
@@ -15,7 +15,7 @@ Decision: Establish Capability as the foundational enterprise semantic concept f
 
 Slot note: this ADR is filed at governance repo docs/adr/0004-... The slot sequence is 0000-template, 0001-authority-and-publication, 0002-enterprise-semantic-model, 0003-agentic-semantic-decision, 0004-capability-semantic-grounding. Slot 0004 is the next free slot. The ADR-ES-002 ID is reserved by ADR-ES-001 §27.
 
-Promotion rationale: All 12 acceptance criteria of §8 (lines 162-177) satisfied via 1 substantive PR + pre-existing parallel slices. CR-ES-002 implementation recovered from v3.1.7 orphan stash (PR #6 enterprise-semantics) adds 9 Capability governed predicates + 9 inverse pairs + v0.1.0 version pointer ;;; 2 namespaced predicates (capability-realized-through, capability-contributes-to) for cross-CR subject-type disambiguation. Parallel slices already landed on main: capability.md + capability-boundary.md in docs ;;; examples/foundational/capability.yaml ;;; tests/capability/{identity,schema,relationships,boundaries,provenance,grounding,specialization}.md covering CAP-001..012 ;;; mappings/{wsf,opendea,dea-catalogs}/capability.yaml (3 mapping records) ;;; PlantUML sources at docs/diagrams/capability/{capability,capability-boundary,capability-process-boundary}.puml (just landed PR #4 enterprise-semantics-visuals).
+Promotion rationale: All 12 acceptance criteria of §8 (lines 162-177) satisfied via 1 substantive PR + pre-existing parallel slices. CR-ES-002 implementation recovered from v3.1.7 orphan stash (PR #6 enterprise-semantics) adds 9 Capability governed predicates + 9 inverse pairs + v0.1.0 version pointer, 2 namespaced predicates (capability-realized-through, capability-contributes-to) for cross-CR subject-type disambiguation. Parallel slices already landed on main: capability.md + capability-boundary.md in docs, examples/foundational/capability.yaml, tests/capability/{identity,schema,relationships,boundaries,provenance,grounding,specialization}.md covering CAP-001..012, mappings/{wsf,opendea,dea-catalogs}/capability.yaml (3 mapping records), PlantUML sources at docs/diagrams/capability/{capability,capability-boundary,capability-process-boundary}.puml (just landed PR #4 enterprise-semantics-visuals).
 
 Implementation: CR-ES-002 (Capability Semantic Grounding). CR-ES-002 is the design artefact; this ADR ratifies it as a governed semantic decision.
 
@@ -23,9 +23,9 @@ Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-22)
 Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual
 -->
 
-# ADR-ES-002 ;;; Capability Semantic Grounding Decision
+# ADR-ES-002, Capability Semantic Grounding Decision
 
-**Status:** Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115 ;;; "Proceed with everything")
+**Status:** Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115, "Proceed with everything")
 **Decision Type:** Semantic Architecture / Semantic Governance
 **Scope:** `ES:CONCEPT:capability` (and its specialisation pathways)
 **Supersedes:** None
@@ -68,7 +68,7 @@ Per CR-ES-002 §8: Capability answers "what can be achieved?" while Process answ
 
 ### 2.4 The assessment boundary
 
-Per CR-ES-002 §14: Capability is assessable independently from its implementation. Assessment models and maturity constructs are governed by Assessment-Models/dea-catalog-assessment-tools (per CR-AM-01 Accepted 2026-08-20) ;;; not by this ADR. The boundary preserves:
+Per CR-ES-002 §14: Capability is assessable independently from its implementation. Assessment models and maturity constructs are governed by Assessment-Models/dea-catalog-assessment-tools (per CR-AM-01 Accepted 2026-08-20), not by this ADR. The boundary preserves:
 
 Semantic Definition -> Capability -> Assessment Application
 
@@ -80,7 +80,7 @@ The CR-ES-002 §7 example uses `ES:CAPABILITY:<K>` (4-segment, UPPERCASE name). 
 
 Implementation of this decision is governed by:
 
-CR-ES-002 ;;; Capability Semantic Grounding
+CR-ES-002, Capability Semantic Grounding
 
 CR-ES-002 establishes the canonical definition, semantic boundaries, core relationships, identity rules, representation, validation rules, conformance tests, mappings, and documentation for Capability. The CR is the design artefact; this ADR ratifies it as a governed semantic decision.
 
@@ -102,44 +102,44 @@ These exclusions are preserved by this ADR.
 
 The decision rests on:
 
-- **ADR-ES-001** §4.1 (WSF authority boundary ;;; no redefining WSF concepts).
+- **ADR-ES-001** §4.1 (WSF authority boundary, no redefining WSF concepts).
 - **ADR-ES-001** §4.2 (ES authority scope).
 - **ADR-ES-001** §6 (source of truth precedence).
-- **ADR-ES-001** §13 (Relationship semantics ;;; first-class governed predicates).
-- **ADR-ES-001** §14 (Provenance ;;; every canonical concept must identify its decision and implementation).
+- **ADR-ES-001** §13 (Relationship semantics, first-class governed predicates).
+- **ADR-ES-001** §14 (Provenance, every canonical concept must identify its decision and implementation).
 - **ADR-ES-002** (Enterprise Semantic Model) §6 (semantic kinds, identifiers, governance).
 - **ADR-ES-002** §22 (semantic-kind decisions must go through Finding / ADR process).
-- **FND-ES-AG-001-Grounding-Result** §1 (WSF grounding is stronger than previously assumed ;;; downstream systems specialise without redefining foundational meaning).
-- **FND-ES-AG-001-Grounding-Result** §7 (Capability grounds via WSF Capability (Tier 2) ;;; bearer-agnostic ;;; distinguishes from AI Agent (the bearer)).
-- **WSF_Foundational_Semantic_Synthesis** §3 (Tier 1 foundational domains ;;; Tier 2 derived dispositions).
-- **WSF_Foundational_Semantic_Synthesis** §3 (sub-bullets) (Capability is grounded as a specialised Disposition at Tier 2, derived from Capacity + Ability ;;; WSF pre-declares the Business/Operational/Technical/Organisational/Digital Capability sub-kinds).
-- **FND-ES-AG-008** §1.3 (per-concept WSF ↔ ES classification ;;; ES `capability` is Tier 2 Specialisation ;;; provisional Business-Capability equivalent).
-- **FND-ES-AG-008** §1.5 (Profile records use `references` not `specializes` ;;; this ADR does not govern the Profile pattern).
-- **CR-ES-001** (Proposed) §5 (lifecycle ;;; Capability currently `Candidate, v0.1.0` ;;; promotion to Established is held for a separate governed action).
+- **FND-ES-AG-001-Grounding-Result** §1 (WSF grounding is stronger than previously assumed, downstream systems specialise without redefining foundational meaning).
+- **FND-ES-AG-001-Grounding-Result** §7 (Capability grounds via WSF Capability (Tier 2), bearer-agnostic, distinguishes from AI Agent (the bearer)).
+- **WSF_Foundational_Semantic_Synthesis** §3 (Tier 1 foundational domains, Tier 2 derived dispositions).
+- **WSF_Foundational_Semantic_Synthesis** §3 (sub-bullets) (Capability is grounded as a specialised Disposition at Tier 2, derived from Capacity + Ability, WSF pre-declares the Business/Operational/Technical/Organisational/Digital Capability sub-kinds).
+- **FND-ES-AG-008** §1.3 (per-concept WSF ↔ ES classification, ES `capability` is Tier 2 Specialisation, provisional Business-Capability equivalent).
+- **FND-ES-AG-008** §1.5 (Profile records use `references` not `specializes`, this ADR does not govern the Profile pattern).
+- **CR-ES-001** (Proposed) §5 (lifecycle, Capability currently `Candidate, v0.1.0`, promotion to Established is held for a separate governed action).
 - **CR-ES-002** §2 (canonical definition, semantic characteristics, boundary).
-- **CR-ES-002** §3 (semantic boundary ;;; 12-row distinction table).
-- **CR-ES-002** §4-§5 (core relationships ;;; 8 predicates).
+- **CR-ES-002** §3 (semantic boundary, 12-row distinction table).
+- **CR-ES-002** §4-§5 (core relationships, 8 predicates).
 - **CR-ES-002** §6 (identity rules).
-- **CR-ES-002** §15 (WSF grounding ;;; no WSF modification).
-- **CR-ES-002** §16 (OpenDEA correspondence ;;; mapping only).
+- **CR-ES-002** §15 (WSF grounding, no WSF modification).
+- **CR-ES-002** §16 (OpenDEA correspondence, mapping only).
 
 ## 5. Consequences
 
 ### Positive
 
 - Establishes a durable, governed foundational semantic concept for Capability.
-- Preserves the WSF ↔ ES boundary (no redefining ;;; Tier 2 Specialisation, provisional Business-Capability equivalent).
+- Preserves the WSF ↔ ES boundary (no redefining, Tier 2 Specialisation, provisional Business-Capability equivalent).
 - Establishes the Capability-Process boundary essential for enterprise architecture.
-- Enables bounded autonomy and bearer-agnosticism (Capability is realised through Processes, Roles, Resources, Services, Systems ;;; not a synonym for any of them).
+- Enables bounded autonomy and bearer-agnosticism (Capability is realised through Processes, Roles, Resources, Services, Systems, not a synonym for any of them).
 - Sets up the specialisation pathway for Agentic Capability, Autonomous Capability, Business Capability, Operational Capability, Technical Capability, Organisational Capability, Digital Capability, etc.
 - Preserves the assessment boundary (Capability semantic vs Assessment maturity).
 - Provides mapping to OpenDEA without modifying OpenDEA.
 
 ### Negative
 
-- Introduces a namespace divergence (`ES:CAPABILITY:<K>` vs `ES:CONCEPT:<k>`) ;;; requires future housekeeping.
-- Locks the bearer-agnostic interpretation ;;; future bearer-specific Capability concepts (e.g. Human Capability, AI Capability as Distinct kinds rather than Profiles) would require new ADRs.
-- Excludes sector-specific catalogues from this ADR ;;; sector catalogues require their own ADRs.
+- Introduces a namespace divergence (`ES:CAPABILITY:<K>` vs `ES:CONCEPT:<k>`), requires future housekeeping.
+- Locks the bearer-agnostic interpretation, future bearer-specific Capability concepts (e.g. Human Capability, AI Capability as Distinct kinds rather than Profiles) would require new ADRs.
+- Excludes sector-specific catalogues from this ADR, sector catalogues require their own ADRs.
 
 The cost is intentional. Foundational semantic decisions must be explicit, not implicit.
 
@@ -147,13 +147,13 @@ The cost is intentional. Foundational semantic decisions must be explicit, not i
 
 This ADR enables subsequent:
 
-- CR-ES-002 implementation ;;; populate `concepts/capability.concept.yaml`, populate `relationships/vocabulary.yaml` with 9 predicates, populate `mappings/wsf|opendea|dea-catalogs/capability.yaml`, add 12 CAP-001..012 validation rules, add 7 capability test groups, add 3 docs, add OTCHERE Inc example, add `versions/v0.1.0.yaml`.
+- CR-ES-002 implementation, populate `concepts/capability.concept.yaml`, populate `relationships/vocabulary.yaml` with 9 predicates, populate `mappings/wsf|opendea|dea-catalogs/capability.yaml`, add 12 CAP-001..012 validation rules, add 7 capability test groups, add 3 docs, add OTCHERE Inc example, add `versions/v0.1.0.yaml`.
 - ADR-ES-002 (Capability) -> Accepted transition (after CR-ES-002 implementation lands and conformance is green).
-- ADR-ES-003 (Value Stream Semantic Grounding) ;;; the next foundational concept per ADR-ES-001 §27.
-- ADR-ES-005 (Agentic Value Stream Semantic Grounding) ;;; Profile of Value Stream.
-- ADR-ES-006 (Agentic Workflow Semantic Grounding) ;;; Profile of Workflow.
-- Future specialisation ADRs ;;; Agentic Capability, Autonomous Capability, Business Capability, Operational Capability, Technical Capability, Organisational Capability, Digital Capability.
-- Future assessment CRs ;;; capability maturity scoring, heatmaps, prioritisation (held by Assessment-Models).
+- ADR-ES-003 (Value Stream Semantic Grounding), the next foundational concept per ADR-ES-001 §27.
+- ADR-ES-005 (Agentic Value Stream Semantic Grounding), Profile of Value Stream.
+- ADR-ES-006 (Agentic Workflow Semantic Grounding), Profile of Workflow.
+- Future specialisation ADRs, Agentic Capability, Autonomous Capability, Business Capability, Operational Capability, Technical Capability, Organisational Capability, Digital Capability.
+- Future assessment CRs, capability maturity scoring, heatmaps, prioritisation (held by Assessment-Models).
 
 These remain independently governed.
 
@@ -193,10 +193,10 @@ This ADR was promoted from Proposed to Accepted on 2026-09-23 per user directive
 The promotion to Accepted has the following consequences:
 
 * CR-ES-002 is binding on all subsequent Enterprise-Semantics concept records.
-* The Capability concept (ES:CONCEPT:capability) is foundational at Candidate lifecycle ;;; bearer-agnostic per §2.2.
+* The Capability concept (ES:CONCEPT:capability) is foundational at Candidate lifecycle, bearer-agnostic per §2.2.
 * The 9 Capability governed predicates (per CR-ES-002 §5) are registered in relationships/vocabulary.yaml v0.4.0.
 * The 9 Capability inverse pairs are registered in relationships/inverse.yaml v0.4.0.
-* 2 predicates are namespaced (capability-realized-through, capability-contributes-to) for cross-CR subject-type disambiguation ;;; following the same pattern as stage-realized-through (VS-B).
+* 2 predicates are namespaced (capability-realized-through, capability-contributes-to) for cross-CR subject-type disambiguation, following the same pattern as stage-realized-through (VS-B).
 * v0.1.0 of versions/v0.1.0.yaml is the canonical version pointer for the Capability semantic establishment.
 * v0.4.0 of relationships/vocabulary.yaml is the canonical predicate vocabulary version.
 * 3 mapping records are PROPOSED: mappings/wsf/capability.yaml (Tier 2 Specialisation) ;; mappings/opendea/capability.yaml (architectural representation) ;; mappings/dea-catalogs/capability.yaml (instantiation boundary).

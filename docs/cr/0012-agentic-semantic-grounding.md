@@ -1,6 +1,6 @@
 CR-ES-004 : Agentic Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115 ;;; "Proceed with everything")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115, "Proceed with everything")
 Change Type: Foundational Semantic Grounding
 Priority: P0 ; Foundational Enterprise Concept
 Related ADR: ADR-ES-004 ; Agentic Semantic Grounding
@@ -811,7 +811,7 @@ This CR was promoted from Proposed to Accepted on 2026-09-23 per user directive 
 
 The promotion to Accepted has the following consequences:
 
-* All 24 acceptance criteria of §31 are satisfied via 7 PRs across 6 repos (PR #7 + PR #8 + PR #9 enterprise-semantics ;;; PR #4 enterprise-semantics-mappings ;;; PR #3 enterprise-semantics-docs ;;; PR #3 enterprise-semantics-examples ;;; PR #3 enterprise-semantics-test-probe ;;; PR #3 enterprise-semantics-visuals).
+* All 24 acceptance criteria of §31 are satisfied via 7 PRs across 6 repos (PR #7 + PR #8 + PR #9 enterprise-semantics, PR #4 enterprise-semantics-mappings, PR #3 enterprise-semantics-docs, PR #3 enterprise-semantics-examples, PR #3 enterprise-semantics-test-probe, PR #3 enterprise-semantics-visuals).
 * The 5 concept records (Agent + Agentic + Intent + Authority + Action) are canonical at Candidate lifecycle.
 * The 11 governed predicates from §10 are registered in relationships/vocabulary.yaml v0.4.0.
 * The 11 inverse pairs from §10 are registered in relationships/inverse.yaml v0.4.0.

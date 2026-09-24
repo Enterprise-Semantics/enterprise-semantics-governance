@@ -1,8 +1,8 @@
 <!--
-FND-ES-AG-001 ;;; Agentic Semantic Grounding ;;; SUPERSEDED 2026-09-02
+FND-ES-AG-001, Agentic Semantic Grounding, SUPERSEDED 2026-09-02
 
 This file is now a stub. The canonical FND-ES-AG-001 is the
-user-revised version (dash-normalized for governance) ;;; see
+user-revised version (dash-normalized for governance), see
 `0001-agentic-semantic-grounding-canonical.md` below.
 
 The earlier authored version of FND-ES-AG-001 (by manny-es) is
@@ -15,7 +15,7 @@ Companion document: FND-ES-AG-001-Grounding-Result.md (the live WSF
 baseline grounding performed against the canonical revision).
 -->
 
-# FND-ES-AG-001 ;;; Agentic Semantic Grounding (superseded)
+# FND-ES-AG-001, Agentic Semantic Grounding (superseded)
 
 **Status:** Superseded by the user-revised canonical version on 2026-09-02.
 

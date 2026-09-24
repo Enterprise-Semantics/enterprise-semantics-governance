@@ -1,6 +1,6 @@
 <!--
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-22)
-Filing: CR-ES-001 §10 + §11-§13 (governance scaffolding ;;; no destructive replaces)
+Filing: CR-ES-001 §10 + §11-§13 (governance scaffolding, no destructive replaces)
 -->
 
 # Decisions

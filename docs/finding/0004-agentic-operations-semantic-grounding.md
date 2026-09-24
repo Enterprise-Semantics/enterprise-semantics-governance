@@ -1,17 +1,17 @@
 <!--
-FND-ES-AG-004 ;;; Agentic Operations Semantic Grounding ;;; dash-normalized
+FND-ES-AG-004, Agentic Operations Semantic Grounding, dash-normalized
 Verbatim original: 00_inbox/FND-ES-AG-004.md.
 Status: Proposed Finding. Precedes: CR-ES-AG-006.
 Working conclusion: Agentic Operations is a Profile of Operations (with strong
 binding to Operating Model) under agent-augmented execution conditions.
 -->
 
-# FND-ES-AG-004 ;;; Agentic Operations Semantic Grounding
+# FND-ES-AG-004, Agentic Operations Semantic Grounding
 
 **Status:** Proposed Finding
 **Scope:** `Agentic Operations` (and its relationship to `Operations` + `Operating Model`)
 **Precedes:** CR-ES-AG-006 (Agentic Operations concept record) ;; ADR-ES-AG-001 §6.
-**Depends on:** FND-ES-AG-001 canonical ;;; FND-ES-AG-001-Grounding-Result ;;; ADR-ES-AG-001 ;;; ADR-ES-002.
+**Depends on:** FND-ES-AG-001 canonical, FND-ES-AG-001-Grounding-Result, ADR-ES-AG-001, ADR-ES-002.
 **Related:** FND-ES-AG-002 ;; FND-ES-AG-003 ;; FND-ES-AG-005.
 
 ---
@@ -32,7 +32,7 @@ Agentic Operations
 ```
 
 The Grounding Result §12 identifies `Agentic Operations` as one of the four
-strongest candidates for Enterprise-Semantics ;;; a genuine enterprise operating
+strongest candidates for Enterprise-Semantics, a genuine enterprise operating
 concept rather than an implementation-technology composite.
 
 This Finding applies the 10-step grounding template from the Grounding Result
@@ -83,15 +83,15 @@ Agentic Operations
 
 Specifically:
 
-- `Operating Model` ;;; WSF grounding via WSF `Entity` (Disposition +
+- `Operating Model`, WSF grounding via WSF `Entity` (Disposition +
   Capability). An Operating Model is an enterprise-level Disposition that
   characterizes how an Enterprise operates.
-- `Operations` ;;; WSF grounding via WSF `Activity` + `Event`. Operations is
+- `Operations`, WSF grounding via WSF `Activity` + `Event`. Operations is
   the recurring execution substrate.
-- `Agentic Operations` ;;; inherits via Profile.
+- `Agentic Operations`, inherits via Profile.
 
-The Profile pattern preserves WSF grounding ;;; ES does not redefine
-`Operating Model` or `Operations` ;;; it specializes them via Profile binding.
+The Profile pattern preserves WSF grounding, ES does not redefine
+`Operating Model` or `Operations`, it specializes them via Profile binding.
 
 ### 3.2 Enterprise Semantic Need
 
@@ -102,9 +102,9 @@ operating-model level.
 
 This need is not adequately captured by:
 
-- WSF `Activity` (too generic ;;; covers any activity, not operating-model
+- WSF `Activity` (too generic, covers any activity, not operating-model
   phenomena).
-- WSF `Disposition` alone (covers disposition ;;; not the operating
+- WSF `Disposition` alone (covers disposition, not the operating
   execution aspect).
 
 Therefore `Agentic Operations` is justified as a Profile overlay on
@@ -115,13 +115,13 @@ Therefore `Agentic Operations` is justified as a Profile overlay on
 A Profile of `Operations` under agent-augmented execution conditions exhibits
 the four governed characteristics from ADR-ES-AG-001 §3.3:
 
-1. **Goal-directed execution under bounded autonomy** ;;; operating-level
+1. **Goal-directed execution under bounded autonomy**, operating-level
    progression toward enterprise outcomes without continuous human routing.
-2. **AI-augmented decision-making** ;;; operating decisions are made by AI
+2. **AI-augmented decision-making**, operating decisions are made by AI
    agents under governed policy.
-3. **Adaptive behavior** ;;; operating configuration adjusts in response to
+3. **Adaptive behavior**, operating configuration adjusts in response to
    feedback and outcome signals.
-4. **Human governance, not human execution** ;;; humans set enterprise intent,
+4. **Human governance, not human execution**, humans set enterprise intent,
    policy, and outcome criteria. AI agents execute within those bounds.
 
 In addition to the four Profile characteristics, `Agentic Operations`
@@ -145,7 +145,7 @@ Adaptation
 ```
 
 This is the operating-model-level closed-loop, but the loop is governed (not
-self-governed ;;; per the Profile characteristic of human governance).
+self-governed, per the Profile characteristic of human governance).
 
 ### 3.4 Definition
 
@@ -154,7 +154,7 @@ Per ADR-ES-002 §7, the candidate definition for `Agentic Operations`:
 > An Agentic Operations is an Operations whose execution is characterized by
 > goal-directed operating progression under bounded autonomy, AI-augmented
 > operating decisions, adaptive operating configuration, and human governance
-> rather than human execution ;;; all anchored in the Operating Model of an
+> rather than human execution, all anchored in the Operating Model of an
 > Enterprise.
 
 This definition is provisional and subject to revision by the consolidated
@@ -162,7 +162,7 @@ Agentic semantic review.
 
 ### 3.5 Concept Type
 
-`operating-model-phenomenon` ;;; a Profile of `Operations` that operates at
+`operating-model-phenomenon`, a Profile of `Operations` that operates at
 the operating-model level rather than the activity/instance level.
 
 ### 3.6 Relationships
@@ -192,7 +192,7 @@ the operating-model level rather than the activity/instance level.
 ### 3.8 Examples
 
 - An Enterprise whose Operating Model systematically delegates operating
-  decisions to AI agents under governed policy ;;; the resulting operating
+  decisions to AI agents under governed policy, the resulting operating
   phenomena are Agentic Operations.
 - An Operations team that uses AI agents to monitor operational events,
   propose adaptive actions, and execute within human-set policy bounds.
@@ -200,41 +200,41 @@ the operating-model level rather than the activity/instance level.
 ### 3.9 Counterexamples
 
 - An Operations team that fully automates a single process without AI agent
-  participation ;;; this is `Digital Operations`, not Agentic.
+  participation, this is `Digital Operations`, not Agentic.
 - An Operations team that delegates operating decisions to a self-governed
-  AI system without human oversight ;;; this is `Autonomous Operations`,
+  AI system without human oversight, this is `Autonomous Operations`,
   not Agentic.
 - An Enterprise that deploys AI agents but does not anchor their operating
-  decisions in an Operating Model ;;; this is ad-hoc AI usage, not
+  decisions in an Operating Model, this is ad-hoc AI usage, not
   Agentic Operations.
 
 ### 3.10 Provenance
 
 Evidence supporting the Profile hypothesis:
 
-- FND-ES-AG-001-Grounding-Result §7 ;;; identifies Agentic Operations as a
+- FND-ES-AG-001-Grounding-Result §7, identifies Agentic Operations as a
   genuine enterprise operating concept.
-- FND-ES-000 §15 ;;; candidate relationship chain.
-- FND-ES-001 §14 ;;; the existing Agentic body of work uses the term
+- FND-ES-000 §15, candidate relationship chain.
+- FND-ES-001 §14, the existing Agentic body of work uses the term
   consistently.
-- ADR-ES-AG-001 §3 ;;; Profile pattern generalizes to the Agentic family.
+- ADR-ES-AG-001 §3, Profile pattern generalizes to the Agentic family.
 
 Evidence does NOT support:
 
 - Creating `Agentic Operations` as a Distinct semantic kind (per
   FND-ES-AG-002 §3.4 reasoning).
-- Re-defining `Operating Model` in ES ;;; WSF + existing work provides
+- Re-defining `Operating Model` in ES, WSF + existing work provides
   adequate grounding.
 
 ### 3.11 Canonicality Recommendation
 
 ```text
 Candidate (current)
-    ↓ Investigating ;;; landing with this Finding
-Proposed ;;; consolidated Agentic semantic review accepts the Profile hypothesis
+    ↓ Investigating, landing with this Finding
+Proposed, consolidated Agentic semantic review accepts the Profile hypothesis
     ↓
-Established ;;; CR-ES-AG-006 lands the concept record with conformance evidence
-Canonical ;;; post-release
+Established, CR-ES-AG-006 lands the concept record with conformance evidence
+Canonical, post-release
 ```
 
 Per ADR-ES-AG-001 §9, promotion to `Established` requires CR-ES-AG-006.
@@ -245,7 +245,7 @@ Per ADR-ES-AG-001 §9, promotion to `Established` requires CR-ES-AG-006.
 
 > **`Agentic Operations` is, on the evidence available to this Finding, a Profile of `Operations` (with strong binding to `Operating Model`) under agent-augmented execution conditions.**
 >
-> The Profile pattern follows ADR-ES-AG-001 §3 ;;; the agentic-execution Profile
+> The Profile pattern follows ADR-ES-AG-001 §3, the agentic-execution Profile
 > applies the four governed characteristics. The Profile binding is to
 > `Operations` (with `Operating Model` as the anchoring concept).
 >

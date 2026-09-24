@@ -1,11 +1,11 @@
 CR-ES-008: Implement Autonomous Operations Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552343053933748346 ;;; "Attached the next ADR and CR, save them, read them to understand and let's implement them accordingly")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552343053933748346, "Attached the next ADR and CR, save them, read them to understand and let's implement them accordingly")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0
 Target: Enterprise-Semantics
-Authorizing ADR: ADR-ES-008 ;;; Autonomous Operations Semantic Grounding
+Authorizing ADR: ADR-ES-008, Autonomous Operations Semantic Grounding
 Target Semantic Version: v0.7.0
 Depends On: CR-ES-001, CR-ES-004, CR-ES-006, CR-ES-007
 
@@ -766,71 +766,71 @@ The example SHALL explicitly identify:
 
 Implement at minimum:
 
-AOP-AUTO-CON-001 ;;; Operations Specialization
+AOP-AUTO-CON-001, Operations Specialization
 
 Autonomous Operations MUST specialize Operations.
 
-AOP-AUTO-CON-002 ;;; Independent Decision
+AOP-AUTO-CON-002, Independent Decision
 
 Autonomous Operations MUST support independent operational decisions within defined scope.
 
-AOP-AUTO-CON-003 ;;; Independent Action
+AOP-AUTO-CON-003, Independent Action
 
 Autonomous Operations MUST support independent authorized operational actions.
 
-AOP-AUTO-CON-004 ;;; Authority
+AOP-AUTO-CON-004, Authority
 
 Autonomous behavior MUST operate within defined authority.
 
-AOP-AUTO-CON-005 ;;; Policy
+AOP-AUTO-CON-005, Policy
 
 Autonomous behavior MUST remain subject to policies or equivalent constraints.
 
-AOP-AUTO-CON-006 ;;; Objective
+AOP-AUTO-CON-006, Objective
 
 Autonomous Operations MUST pursue a defined operational objective or intent.
 
-AOP-AUTO-CON-007 ;;; Context
+AOP-AUTO-CON-007, Context
 
 Autonomous Operations MUST be capable of responding to relevant operational context.
 
-AOP-AUTO-CON-008 ;;; Adaptation
+AOP-AUTO-CON-008, Adaptation
 
 Autonomous Operations MUST support adaptation where adaptation is part of the claimed autonomous scope.
 
-AOP-AUTO-CON-009 ;;; Escalation
+AOP-AUTO-CON-009, Escalation
 
 The implementation MUST define an escalation boundary for conditions beyond delegated authority.
 
-AOP-AUTO-CON-010 ;;; Human Compatibility
+AOP-AUTO-CON-010, Human Compatibility
 
 Human governance and intervention MUST remain valid.
 
-AOP-AUTO-CON-011 ;;; AI Independence
+AOP-AUTO-CON-011, AI Independence
 
 AI MUST NOT be a required semantic characteristic.
 
-AOP-AUTO-CON-012 ;;; Automation Distinction
+AOP-AUTO-CON-012, Automation Distinction
 
 Automation MUST NOT automatically qualify as Autonomous Operations.
 
-AOP-AUTO-CON-013 ;;; Agentic Independence
+AOP-AUTO-CON-013, Agentic Independence
 
 Agentic behavior MUST NOT be a prerequisite for Autonomous Operations.
 
-AOP-AUTO-CON-014 ;;; Agentic Distinction
+AOP-AUTO-CON-014, Agentic Distinction
 
 Autonomous Operations MUST remain distinct from Agentic Operations.
 
-AOP-AUTO-CON-015 ;;; Workflow Distinction
+AOP-AUTO-CON-015, Workflow Distinction
 
 Autonomous Operations MUST remain distinct from Agentic Workflow.
 
-AOP-AUTO-CON-016 ;;; Value Stream Distinction
+AOP-AUTO-CON-016, Value Stream Distinction
 
 Autonomous Operations MUST remain distinct from Agentic Value Stream.
 
-AOP-AUTO-CON-017 ;;; Provenance
+AOP-AUTO-CON-017, Provenance
 
 Canonical assertions MUST have provenance.
 

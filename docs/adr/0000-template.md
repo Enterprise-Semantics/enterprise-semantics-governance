@@ -2,7 +2,7 @@
 ADR template. Dash-normalized (no en-dash, no em-dash). Spec tone.
 -->
 
-# ADR-ES-NNNN ;;; <short title>
+# ADR-ES-NNNN, <short title>
 
 **Status:** Proposed | Accepted | Implemented | Superseded by ADR-ES-MMMM
 **Date:** YYYY-MM-DD
@@ -22,15 +22,15 @@ ADR template. Dash-normalized (no en-dash, no em-dash). Spec tone.
 
 ## Considered options
 
-1. **Option A ;;; <name>**
+1. **Option A, <name>**
    - Pro: ...
    - Con: ...
 
-2. **Option B ;;; <name>**
+2. **Option B, <name>**
    - Pro: ...
    - Con: ...
 
-3. **Option C ;;; <name>**
+3. **Option C, <name>**
    - Pro: ...
    - Con: ...
 
@@ -56,7 +56,7 @@ Chosen option: **<name>**, because <rationale, two or three sentences>.
 
 ## Links / references
 
-- FND-ES-NNN ;;; <title>
+- FND-ES-NNN, <title>
 - <any external references>
 
 <!--

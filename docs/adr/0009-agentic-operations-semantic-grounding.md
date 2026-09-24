@@ -1,15 +1,15 @@
 <!--
-ADR-ES-007 ;;; Agentic Operations Semantic Grounding Decision
+ADR-ES-007, Agentic Operations Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-007.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552333611045224559 ;;; "Attached are ADR-ES-007 and CR-ES-007, save them both, read and understand then implement e them appropriately")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552333611045224559, "Attached are ADR-ES-007 and CR-ES-007, save them both, read and understand then implement e them appropriately")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
-Depends on: ADR-ES-001 (Authority and Publication Architecture) ;;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23) ;;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
-Related: CR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-008+ (Autonomous Operations, future) ;;; ADR-ES-009+ (Agentic Enterprise, future) ;;; ADR-ES-010+ (Autonomous Enterprise, future) ;;; ADR-ES-011+ (Agentic Network, future) ;;; ADR-ES-012+ (Agentic Ecosystem, future)
+Depends on: ADR-ES-001 (Authority and Publication Architecture), ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23), ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23), ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23), ADR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23), FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23), ADR-ES-008+ (Autonomous Operations, future), ADR-ES-009+ (Agentic Enterprise, future), ADR-ES-010+ (Autonomous Enterprise, future), ADR-ES-011+ (Agentic Network, future), ADR-ES-012+ (Agentic Ecosystem, future)
 
 Decision: Establish Agentic Operations as a specialization of Operations. Agentic Operations are operations in which operational sensing ;; interpretation ;; decision ;; coordination ;; adaptation ;; or execution is materially performed through agentic behavior within defined intent ;; authority ;; and policy boundaries. Deliberately avoids premature canonicalization of Autonomous Operations ;; Agentic Enterprise ;; Autonomous Enterprise ;; Agentic Network ;; Agentic Ecosystem ;; AI Operations ;; AIOps ;; MLOps ;; Digital Operations.
 
@@ -19,7 +19,7 @@ Implementation: CR-ES-007 (Agentic Operations Semantic Grounding). CR-ES-007 is 
 
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 -->
-The next decision should therefore be ADR-ES-007 ;;; Agentic Operations Semantic Grounding. It should deliberately move up one level from workflow execution into the operating model: how operational work is sensed, decided, coordinated, executed, monitored, and adapted. It should not become a synonym for Agentic Workflow or Agentic Value Stream.
+The next decision should therefore be ADR-ES-007, Agentic Operations Semantic Grounding. It should deliberately move up one level from workflow execution into the operating model: how operational work is sensed, decided, coordinated, executed, monitored, and adapted. It should not become a synonym for Agentic Workflow or Agentic Value Stream.
 
 ADR-ES-007 ; Agentic Operations Semantic Grounding
 
@@ -606,7 +606,7 @@ Autonomy implication	None	None
 
 ;;;
 
-25. Example ;;; OTCHERE Inc Fulfillment Operations
+25. Example, OTCHERE Inc Fulfillment Operations
 
 An OTCHERE Inc fulfillment operation may operate as follows:
 

@@ -1,4 +1,4 @@
-CR-ES-009 ;;; Implement Autonomous Value Stream Semantic Grounding
+CR-ES-009, Implement Autonomous Value Stream Semantic Grounding
 
 Target release:
 
@@ -6,16 +6,16 @@ v0.8.0
 
 No other autonomous concepts are authorized by this ADR.
 
-CR-ES-009 ;;; Implementation
+CR-ES-009, Implementation
 
 CR-ES-009: Implement Autonomous Value Stream Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552351646762274856 ;;; "Merge, and attached is the next ADR and CR to be saved, read and understood and implemented accordingly")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552351646762274856, "Merge, and attached is the next ADR and CR to be saved, read and understood and implemented accordingly")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0
 Target: Enterprise-Semantics
-Authorizing ADR: ADR-ES-009 ;;; Autonomous Value Stream Semantic Grounding
+Authorizing ADR: ADR-ES-009, Autonomous Value Stream Semantic Grounding
 Target Semantic Version: v0.8.0
 Depends On: CR-ES-001, CR-ES-003, CR-ES-005, CR-ES-007, CR-ES-008
 
@@ -579,79 +579,79 @@ The example SHALL identify:
 
 Implement at minimum:
 
-AVS-AUTO-CON-001 ;;; Value Stream Specialization
+AVS-AUTO-CON-001, Value Stream Specialization
 
 Autonomous Value Stream MUST specialize Value Stream.
 
-AVS-AUTO-CON-002 ;;; Stakeholder Anchor
+AVS-AUTO-CON-002, Stakeholder Anchor
 
 A valid Autonomous Value Stream MUST retain a stakeholder/value-realization anchor.
 
-AVS-AUTO-CON-003 ;;; Initiating Condition
+AVS-AUTO-CON-003, Initiating Condition
 
 A valid Autonomous Value Stream MUST have an initiating condition.
 
-AVS-AUTO-CON-004 ;;; Realization Boundary
+AVS-AUTO-CON-004, Realization Boundary
 
 A valid Autonomous Value Stream MUST define a value-realization boundary.
 
-AVS-AUTO-CON-005 ;;; Value Stages
+AVS-AUTO-CON-005, Value Stages
 
 A valid Autonomous Value Stream MUST contain Value Stages.
 
-AVS-AUTO-CON-006 ;;; Material Autonomy
+AVS-AUTO-CON-006, Material Autonomy
 
 The value stream MUST demonstrate material autonomous value-realization behavior.
 
-AVS-AUTO-CON-007 ;;; Decision Independence
+AVS-AUTO-CON-007, Decision Independence
 
 The claimed autonomous scope MUST include defined independent value-realization decisions.
 
-AVS-AUTO-CON-008 ;;; Action Independence
+AVS-AUTO-CON-008, Action Independence
 
 The claimed autonomous scope MUST include defined authorized actions.
 
-AVS-AUTO-CON-009 ;;; Authority
+AVS-AUTO-CON-009, Authority
 
 Autonomous behavior MUST operate within explicit authority.
 
-AVS-AUTO-CON-010 ;;; Policy
+AVS-AUTO-CON-010, Policy
 
 Autonomous value realization MUST remain subject to policies or constraints.
 
-AVS-AUTO-CON-011 ;;; Adaptation
+AVS-AUTO-CON-011, Adaptation
 
 Adaptation MUST be represented where claimed.
 
-AVS-AUTO-CON-012 ;;; Human Compatibility
+AVS-AUTO-CON-012, Human Compatibility
 
 Human intervention and governance MUST remain valid.
 
-AVS-AUTO-CON-013 ;;; AI Independence
+AVS-AUTO-CON-013, AI Independence
 
 AI MUST NOT be required.
 
-AVS-AUTO-CON-014 ;;; Automation Distinction
+AVS-AUTO-CON-014, Automation Distinction
 
 Automation MUST NOT automatically qualify as autonomous value realization.
 
-AVS-AUTO-CON-015 ;;; Agentic Independence
+AVS-AUTO-CON-015, Agentic Independence
 
 Agentic behavior MUST NOT be required.
 
-AVS-AUTO-CON-016 ;;; Agentic Distinction
+AVS-AUTO-CON-016, Agentic Distinction
 
 Autonomous Value Stream MUST remain distinct from Agentic Value Stream.
 
-AVS-AUTO-CON-017 ;;; Operations Distinction
+AVS-AUTO-CON-017, Operations Distinction
 
 Autonomous Value Stream MUST remain distinct from Autonomous Operations.
 
-AVS-AUTO-CON-018 ;;; Workflow Distinction
+AVS-AUTO-CON-018, Workflow Distinction
 
 Autonomous Value Stream MUST remain distinct from Workflow and Agentic Workflow.
 
-AVS-AUTO-CON-019 ;;; Provenance
+AVS-AUTO-CON-019, Provenance
 
 Canonical assertions MUST include provenance.
 

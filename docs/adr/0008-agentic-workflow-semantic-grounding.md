@@ -1,15 +1,15 @@
 <!--
-ADR-ES-006 ;;; Agentic Workflow Semantic Grounding Decision
+ADR-ES-006, Agentic Workflow Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-006.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552318709853462599 ;;; "Attached is ADR-ES-006 and CR-ES-006 save them as separate files in their respective folders, read and understand then let's implement them")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552318709853462599, "Attached is ADR-ES-006 and CR-ES-006 save them as separate files in their respective folders, read and understand then let's implement them")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
-Depends on: ADR-ES-001 (Authority and Publication Architecture) ;;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
-Related: CR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-007 (Agentic Operations, future) ;;; ADR-ES-008 (Autonomous, future) ;;; ADR-ES-009 (Autonomous Value Stream, future) ;;; ADR-ES-010 (Autonomous Workflow, future)
+Depends on: ADR-ES-001 (Authority and Publication Architecture), ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23), ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23), ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23), FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23), ADR-ES-007 (Agentic Operations, future), ADR-ES-008 (Autonomous, future), ADR-ES-009 (Autonomous Value Stream, future), ADR-ES-010 (Autonomous Workflow, future)
 
 Decision: Establish Agentic Workflow as a specialization of Workflow. Agentic Workflow is a Workflow in which one or more work-coordination or execution decisions are materially performed through agentic behavior, enabling contextual interpretation, dynamic action selection, coordination, adaptation, or escalation within defined authority. Deliberately avoids premature canonicalization of Agentic Operations ;; Autonomous Workflow ;; Autonomous Value Stream ;; Autonomous Operations ;; AI-specific workflow semantics ;; LLM Workflow semantics.
 
@@ -566,7 +566,7 @@ This boundary is normative for Enterprise-Semantics.
 
 ;;;
 
-21. Example ;;; OTCHERE Inc Order Fulfillment
+21. Example, OTCHERE Inc Order Fulfillment
 
 A Process may represent:
 

@@ -19,7 +19,7 @@ Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 
 CR-ES-005: Implement Agentic Value Stream Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552289869429088307 ;;; "Save it, read and understand, then proceed with all tasks needed to make way to implement it appropriately. Then implement it.")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552289869429088307, "Save it, read and understand, then proceed with all tasks needed to make way to implement it appropriately. Then implement it.")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0
@@ -344,7 +344,7 @@ Agentic Value Stream must not be interpreted as:
 
 ;;;
 
-12. Mapping ;;; WSF
+12. Mapping, WSF
 
 Create:
 
@@ -370,7 +370,7 @@ Any WSF Agent/Agency mapping shall reuse the semantic grounding established by C
 
 ;;;
 
-13. Mapping ;;; OpenDEA
+13. Mapping, OpenDEA
 
 Create:
 
@@ -572,7 +572,7 @@ The illustration must make clear that the value journey remains the same semanti
 
 ;;;
 
-19. Example ;;; OTCHERE Inc Order-to-Cash
+19. Example, OTCHERE Inc Order-to-Cash
 
 Add:
 
@@ -618,7 +618,7 @@ The example shall explicitly identify:
 
 ;;;
 
-20. Example ;;; Pay-to-Fulfillment
+20. Example, Pay-to-Fulfillment
 
 Add an additional example illustrating a value stream where agentic participation is distributed across financial and operational stages.
 

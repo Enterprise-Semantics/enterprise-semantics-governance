@@ -1,9 +1,9 @@
-# CR-ES-AG-003 ;;; Agentic Value Stream (concept record)
+# CR-ES-AG-003, Agentic Value Stream (concept record)
 
-**Status:** Proposed ;;; implemented
+**Status:** Proposed, implemented
 **Scope:** `enterprise-semantics` repo
-**Implements:** ADR-ES-AG-001 §6 CR-ES-AG-003 ;;; the Agentic Value Stream concept record.
-**Depends on:** CR-ES-AG-001 (Profile semantic construct) ;;; CR-ES-AG-002 (agentic-execution Profile) ;;; FND-ES-AG-002 ;;; ADR-ES-AG-001 ;;; ADR-ES-002 ;;; FND-ES-AG-001-Grounding-Result.
+**Implements:** ADR-ES-AG-001 §6 CR-ES-AG-003, the Agentic Value Stream concept record.
+**Depends on:** CR-ES-AG-001 (Profile semantic construct), CR-ES-AG-002 (agentic-execution Profile), FND-ES-AG-002, ADR-ES-AG-001, ADR-ES-002, FND-ES-AG-001-Grounding-Result.
 **Enables:** Downstream CRs that reference Agentic Value Stream.
 
 ---
@@ -13,7 +13,7 @@
 Land the `Agentic Value Stream` Concept record at
 `concepts/agentic-value-stream.concept.yaml`, plus the supporting `Value Stream`
 Concept record at `concepts/value-stream.concept.yaml`. Per FND-ES-AG-002 and
-ADR-ES-AG-001 §3 ;;; Agentic Value Stream is a Profile of Value Stream under
+ADR-ES-AG-001 §3, Agentic Value Stream is a Profile of Value Stream under
 agent-augmented execution conditions.
 
 ---
@@ -22,18 +22,18 @@ agent-augmented execution conditions.
 
 ### 2.1 Records landed
 
-- `concepts/value-stream.concept.yaml` ;;; base Concept record, status=Established.
-- `concepts/agentic-value-stream.concept.yaml` ;;; profiled Concept record,
+- `concepts/value-stream.concept.yaml`, base Concept record, status=Established.
+- `concepts/agentic-value-stream.concept.yaml`, profiled Concept record,
   status=Candidate, profile_bindings to `ES:PROFILE:agentic-execution`.
 
 ### 2.2 WSF grounding (mandatory per FND-ES-AG-001-Grounding-Result)
 
-- Value Stream ;;; specializes `external:wsf:Value`.
-- Agentic Value Stream ;;; references `external:wsf:Value` (inherited via Profile).
+- Value Stream, specializes `external:wsf:Value`.
+- Agentic Value Stream, references `external:wsf:Value` (inherited via Profile).
 
 ### 2.3 Profile binding
 
-- Agentic Value Stream ;;; binds `ES:PROFILE:agentic-execution` (profile_type=agentic-execution, active=true).
+- Agentic Value Stream, binds `ES:PROFILE:agentic-execution` (profile_type=agentic-execution, active=true).
 
 ### 2.4 Governed relationships
 
@@ -42,14 +42,14 @@ agent-augmented execution conditions.
 - Agentic Value Stream enabled-by Capability (status=provisional).
 - Agentic Value Stream supported-by Process (status=provisional).
 - Agentic Value Stream executes-through Agentic Workflow (status=provisional).
-  Per ADR-ES-002 §22 ;;; not contains.
+  Per ADR-ES-002 §22, not contains.
 
 ### 2.5 Conformance
 
-- `python3 conformance/check.py` ;;; `NO_DRIFT (1 Profile record(s) validated)`, exit 0.
-- `python3 conformance/check_concepts.py` ;;; `NO_DRIFT (4 Concept record(s) validated)`, exit 0.
-- `python3 conformance/tests/test_profile_schema.py` ;;; `5/5 cases passed`, exit 0.
-- `python3 conformance/tests/test_concept_schema.py` ;;; `5/5 cases passed`, exit 0.
+- `python3 conformance/check.py`, `NO_DRIFT (1 Profile record(s) validated)`, exit 0.
+- `python3 conformance/check_concepts.py`, `NO_DRIFT (4 Concept record(s) validated)`, exit 0.
+- `python3 conformance/tests/test_profile_schema.py`, `5/5 cases passed`, exit 0.
+- `python3 conformance/tests/test_concept_schema.py`, `5/5 cases passed`, exit 0.
 
 ---
 

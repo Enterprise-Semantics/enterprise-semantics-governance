@@ -1,5 +1,5 @@
 <!--
-FND-ES-AG-001 ;;; Agentic Semantic Grounding ;;; CANONICAL (user-revised)
+FND-ES-AG-001, Agentic Semantic Grounding, CANONICAL (user-revised)
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original (em-dashes preserved): 00_inbox/FND-ES-AG-001.md.

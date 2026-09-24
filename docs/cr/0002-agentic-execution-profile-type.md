@@ -1,10 +1,10 @@
-# CR-ES-AG-002 ;;; agentic-execution profile_type + Profile record
+# CR-ES-AG-002, agentic-execution profile_type + Profile record
 
-**Status:** Proposed ;;; implemented
+**Status:** Proposed, implemented
 **Scope:** `enterprise-semantics` repo
-**Implements:** ADR-ES-AG-001 §6 CR-ES-AG-002 ;;; the agentic-execution profile_type + Profile record.
-**Depends on:** CR-ES-AG-001 (Profile semantic construct, landed) ;;; ADR-ES-AG-001 (Accepted) ;;; ADR-ES-002 ;;; FND-ES-AG-001 (canonical, user-revised) ;;; FND-ES-AG-001-Grounding-Result (WSF live baseline).
-**Enables:** CR-ES-AG-003 (Agentic Value Stream) ;;; CR-ES-AG-004 (Agentic Workflow).
+**Implements:** ADR-ES-AG-001 §6 CR-ES-AG-002, the agentic-execution profile_type + Profile record.
+**Depends on:** CR-ES-AG-001 (Profile semantic construct, landed), ADR-ES-AG-001 (Accepted), ADR-ES-002, FND-ES-AG-001 (canonical, user-revised), FND-ES-AG-001-Grounding-Result (WSF live baseline).
+**Enables:** CR-ES-AG-003 (Agentic Value Stream), CR-ES-AG-004 (Agentic Workflow).
 
 ---
 
@@ -14,7 +14,7 @@ Register the `agentic-execution` profile_type and land a governed Profile record
 that captures the architectural commitment from ADR-ES-AG-001 §3:
 
 1. Register `agentic-execution` in `registry/profile-types.yaml` (already done in
-   CR-ES-AG-001 ;;; status remains `Established`).
+   CR-ES-AG-001, status remains `Established`).
 2. Land the `Profile record` at `registry/profiles/agentic-execution.profile.yaml`
    with the four governed characteristics from ADR-ES-AG-001 §3.3.
 3. Cite WSF grounding in the Profile record's provenance per the
@@ -30,7 +30,7 @@ the first one.
 
 The `agentic-execution` profile_type is the foundation of the entire Agentic family
 per ADR-ES-AG-001 §3.3. Without this CR, downstream CRs (CR-ES-AG-003 Agentic Value
-Stream ;;; CR-ES-AG-004 Agentic Workflow ;;; etc.) cannot reference a registered
+Stream, CR-ES-AG-004 Agentic Workflow, etc.) cannot reference a registered
 profile_type, and the conformance harness will reject them.
 
 ---
@@ -39,7 +39,7 @@ profile_type, and the conformance harness will reject them.
 
 ### 3.1 Profile type registration
 
-Already done in CR-ES-AG-001 ;;; `registry/profile-types.yaml` lists
+Already done in CR-ES-AG-001, `registry/profile-types.yaml` lists
 `agentic-execution` as `Established`. No change needed here.
 
 ### 3.2 Profile record
@@ -52,7 +52,7 @@ canonical_name: Agentic Execution Profile
 definition: |
   A Profile that applies the four governed Agentic characteristics to a base concept
   (e.g. Value Stream, Workflow, Operations, Enterprise). The base concept retains its
-  identity ;;; the Profile adds a governed configuration overlay. Per ADR-ES-AG-001 §3.
+  identity, the Profile adds a governed configuration overlay. Per ADR-ES-AG-001 §3.
 status: Established
 version: 1.0.0
 profile_type: agentic-execution
@@ -97,7 +97,7 @@ updated: 2026-09-02
 
 ### 3.3 Conformance
 
-- `python3 conformance/check.py` ;;; `NO_DRIFT (1 Profile record(s) validated)`, exit 0.
+- `python3 conformance/check.py`, `NO_DRIFT (1 Profile record(s) validated)`, exit 0.
 - The four characteristics are non-empty, regex-compliant, and unique within the Profile.
 - The provenance cites the WSF live baseline per the Grounding Result.
 
@@ -136,5 +136,5 @@ This CR is accepted when:
 
 The Grounding Result document emphasizes that the Agentic family must specialize
 WSF, not duplicate it. The Profile record's provenance explicitly cites WSF as
-the foundational source ;;; this is the auditable trail that any future reviewer
+the foundational source, this is the auditable trail that any future reviewer
 can follow to confirm the Agentic profile is grounded rather than invented.

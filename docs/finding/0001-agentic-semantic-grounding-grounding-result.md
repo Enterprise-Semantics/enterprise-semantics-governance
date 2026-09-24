@@ -1,5 +1,5 @@
 <!--
-FND-ES-AG-001-Grounding-Result ;;; Agentic Semantic Grounding Result
+FND-ES-AG-001-Grounding-Result, Agentic Semantic Grounding Result
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original (em-dashes preserved): 00_inbox/FND-ES-AG-001-Grounding-Result.md.
@@ -8,11 +8,11 @@ Status: Proposed Finding (companion to FND-ES-AG-001).
 Author: eaojnr (user revision).
 Date authored: 2026-09-02.
 Date ingested: 2026-09-02.
-Depends on: FND-ES-AG-001 (canonical) ;;; WSF live baseline (Capability,
+Depends on: FND-ES-AG-001 (canonical), WSF live baseline (Capability,
   Entity, Disposition).
-Supplements: ADR-ES-002 ;;; ADR-ES-AG-001 (Accepted).
+Supplements: ADR-ES-002, ADR-ES-AG-001 (Accepted).
 
-Key correction: do not create a parallel Agentic ontology ;;; specialize
+Key correction: do not create a parallel Agentic ontology, specialize
 WSF where possible. Reject several "Agentic X" concepts that may be
 properties, profiles, or specializations rather than independent concepts.
 
