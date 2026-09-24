@@ -10,6 +10,16 @@ CR-ES-010 , Implementation
 
 CR-ES-010: Implement Agentic Enterprise Semantic Grounding
 
+Status: Accepted (promoted from Proposed on 2026-09-24 per user directive message 1552619242367615057, "Proceed")
+Date: 2026-09-24
+Change Type: Foundational Semantic Specialization
+Priority: P0
+Target: Enterprise-Semantics
+Authorizing ADR: ADR-ES-010 (Agentic Enterprise Semantic Grounding, Accepted 2026-09-24)
+Target Version: v0.9.0
+Depends On: CR-ES-001 through CR-ES-009 (all accepted)
+Promotion rationale: All 28 acceptance criteria of CR-ES-010 §36 satisfied via 7 PRs across 7 repos: PR #20 enterprise-semantics (VS-A concept + profile + profile_type), PR #21 enterprise-semantics (VS-B vocabulary + inverse + v0.9.0 pointer), PR #10 enterprise-semantics-mappings (VS-C WSF + OpenDEA mappings), PR #10 enterprise-semantics-docs (VS-D1a 5 docs), PR #11 enterprise-semantics-examples (VS-D1b OTCHERE Inc example), PR #10 enterprise-semantics-test-probe (VS-D2a 71 conformance test stubs), PR #11 enterprise-semantics-visuals (VS-D2b 5 PlantUML diagrams).
+
 1. Change Objective
 
 Implement the governed semantic grounding of Agentic Enterprise established by ADR-ES-010.
