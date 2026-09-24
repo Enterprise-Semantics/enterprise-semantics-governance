@@ -1,5 +1,5 @@
 <!--
-FND-ES-AG-003 ;;; Agentic Workflow Semantic Grounding
+FND-ES-AG-003, Agentic Workflow Semantic Grounding
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/FND-ES-AG-003.md (identical bytes; authored
@@ -8,8 +8,8 @@ dash-normalized from the start).
 Status: Proposed Finding.
 Authored by: manny-es (the dedicated sub-agent for Enterprise-Semantics).
 Date: 2026-09-02.
-Preceded by: FND-ES-AG-001 ;;; FND-ES-AG-002.
-Depends on: ADR-ES-AG-001 (Accepted) ;;; ADR-ES-002.
+Preceded by: FND-ES-AG-001, FND-ES-AG-002.
+Depends on: ADR-ES-AG-001 (Accepted), ADR-ES-002.
 Transitively: ADR-ES-001 pending.
 
 Working conclusion: Agentic Workflow is a Profile of Workflow under agent-augmented
@@ -17,7 +17,7 @@ execution conditions, applying the same Profile characteristics as the rest of t
 Agentic family per ADR-ES-AG-001.
 -->
 
-# FND-ES-AG-003 ;;; Agentic Workflow Semantic Grounding
+# FND-ES-AG-003, Agentic Workflow Semantic Grounding
 
 **Status:** Proposed Finding
 **Scope:** `Agentic Workflow` (and its relationship to `Workflow`)
@@ -70,7 +70,7 @@ Without semantic grounding of `Agentic Workflow`:
 
 ### 3.1 What is `Workflow`?
 
-A `Workflow` is a specific execution choreography ;;; a sequence of steps, decision points, and execution paths that produce a defined outcome. It is distinct from:
+A `Workflow` is a specific execution choreography, a sequence of steps, decision points, and execution paths that produce a defined outcome. It is distinct from:
 
 | Concept | Unit of analysis |
 |---------|------------------|
@@ -79,7 +79,7 @@ A `Workflow` is a specific execution choreography ;;; a sequence of steps, decis
 | Workflow | Specific execution choreography |
 | Task Flow | Individual task execution |
 
-`Workflow` is choreographic (about how steps are arranged) ;;; not value-realizational (about what value is realized) and not structural (about recurring capabilities).
+`Workflow` is choreographic (about how steps are arranged), not value-realizational (about what value is realized) and not structural (about recurring capabilities).
 
 ### 3.2 What is `Agentic`?
 
@@ -109,7 +109,7 @@ Each property is a **characteristic** of the Workflow's execution, not of its ch
 | **C. Characteristic** | `Agentic Workflow` is a Workflow that happens to have agentic characteristics. | No new concept; just an observation about a Workflow. |
 | **D. Distinct kind** | `Agentic Workflow` is its own ontological class. | Requires its own definition, relationships, lifecycle. |
 
-**Chosen hypothesis: B ;;; Profile.**
+**Chosen hypothesis: B, Profile.**
 
 Rationale:
 
@@ -119,7 +119,7 @@ Rationale:
 
 ### 3.5 Why not Specialization?
 
-A Specialization would imply that `Agentic Workflow` has additional properties that `Workflow` does not. The four agentic characteristics are not additional properties ;;; a Workflow without those characteristics is still a Workflow. They are execution constraints, not choreographic extensions.
+A Specialization would imply that `Agentic Workflow` has additional properties that `Workflow` does not. The four agentic characteristics are not additional properties, a Workflow without those characteristics is still a Workflow. They are execution constraints, not choreographic extensions.
 
 ### 3.6 Why not Distinct kind?
 
@@ -165,7 +165,7 @@ Per ADR-ES-002 §7:
 
 This definition is:
 
-- **Provisional ;;; not yet canonical.**
+- **Provisional, not yet canonical.**
 - **Subject to change** as the consolidated Agentic semantic review (per FND-ES-AG-001 §6) produces additional evidence.
 - **Traceable** to ADR-ES-AG-001 §3.3 and the existing Agentic Workflow investigation artifact.
 
@@ -189,7 +189,7 @@ Per FND-ES-000 §15 and the existing Agentic diagrams, `Agentic Workflow` orches
 
 ### 6.2 The indirect Value Outcome relationship
 
-`Agentic Workflow` does not directly realize `Value Outcome` ;;; that is `Agentic Value Stream`'s relationship per FND-ES-AG-002 §6.2. `Agentic Workflow` contributes to value-realization indirectly:
+`Agentic Workflow` does not directly realize `Value Outcome`, that is `Agentic Value Stream`'s relationship per FND-ES-AG-002 §6.2. `Agentic Workflow` contributes to value-realization indirectly:
 
 ```text
 Agentic Value Stream
@@ -229,12 +229,12 @@ Candidate (current) → Investigating → Proposed → Established → Canonical
 
 The candidate relationships and the Profile hypothesis are derived from:
 
-- **FND-ES-000** §15 ;;; candidate seed relationships.
-- **FND-ES-001** §9 ;;; Agentic vs Autonomous distinction.
-- **ADR-ES-002** §6, §20, §21 Q6, §22 ;;; governance of specialization, Agentic family, Q6 (Agentic Workflow vs Workflow).
-- **ADR-ES-AG-001** §3 ;;; Profile architectural commitment.
-- **FND-ES-AG-001** §5 ;;; working hypothesis on Agentic as a modifier.
-- **FND-ES-AG-002** §3.4 ;;; Profile hypothesis pattern (applied here to Workflow).
+- **FND-ES-000** §15, candidate seed relationships.
+- **FND-ES-001** §9, Agentic vs Autonomous distinction.
+- **ADR-ES-002** §6, §20, §21 Q6, §22, governance of specialization, Agentic family, Q6 (Agentic Workflow vs Workflow).
+- **ADR-ES-AG-001** §3, Profile architectural commitment.
+- **FND-ES-AG-001** §5, working hypothesis on Agentic as a modifier.
+- **FND-ES-AG-002** §3.4, Profile hypothesis pattern (applied here to Workflow).
 - The existing Agentic Workflow investigation (in the broader enterprise semantic workspace).
 
 These are **evidence** for the Profile hypothesis. They do not, by themselves, establish it as canonical.
@@ -258,7 +258,7 @@ These are **evidence** for the Profile hypothesis. They do not, by themselves, e
 ## 11. Cross-references
 
 - FND-ES-AG-001 (parent): https://github.com/Enterprise-Semantics/enterprise-semantics-governance/blob/main/docs/finding/0001-agentic-semantic-grounding.md
-- FND-ES-AG-002 (sibling ;;; Agentic Value Stream): https://github.com/Enterprise-Semantics/enterprise-semantics-governance/blob/main/docs/finding/0002-agentic-value-stream-semantic-grounding.md
+- FND-ES-AG-002 (sibling, Agentic Value Stream): https://github.com/Enterprise-Semantics/enterprise-semantics-governance/blob/main/docs/finding/0002-agentic-value-stream-semantic-grounding.md
 - ADR-ES-AG-001 (Accepted 2026-09-02): https://github.com/Enterprise-Semantics/enterprise-semantics-governance/blob/main/docs/adr/0003-agentic-semantic-decision.md
 - ADR-ES-002 (depends on): https://github.com/Enterprise-Semantics/enterprise-semantics-governance/blob/main/docs/adr/0002-enterprise-semantic-model.md
 - Local verbatim: `/home/hermes/Projects/Enterprise-Semantics/00_inbox/FND-ES-AG-003.md`

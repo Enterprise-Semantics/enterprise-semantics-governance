@@ -1,15 +1,15 @@
 <!--
-ADR-ES-009 ;;; Autonomous Value Stream Semantic Grounding Decision
+ADR-ES-009, Autonomous Value Stream Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-009.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552351646762274856 ;;; "Merge, and attached is the next ADR and CR to be saved, read and understood and implemented accordingly")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552351646762274856, "Merge, and attached is the next ADR and CR to be saved, read and understood and implemented accordingly")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
-Depends on: ADR-ES-001 (Authority and Publication Architecture) ;;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23) ;;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
-Related: CR-ES-009 (Autonomous Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-010+ (Autonomous Enterprise, future) ;;; ADR-ES-011+ (Autonomous Network, future) ;;; ADR-ES-012+ (Autonomous Ecosystem, future) ;;; ADR-ES-013+ (Agentic Enterprise, future)
+Depends on: ADR-ES-001 (Authority and Publication Architecture), ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23), ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23), ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23), ADR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23), FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-009 (Autonomous Value Stream Semantic Grounding, Accepted 2026-09-23), ADR-ES-010+ (Autonomous Enterprise, future), ADR-ES-011+ (Autonomous Network, future), ADR-ES-012+ (Autonomous Ecosystem, future), ADR-ES-013+ (Agentic Enterprise, future)
 
 Decision: Establish Autonomous Value Stream as a specialisation of Value Stream. An Autonomous Value Stream is a Value Stream in which value realization is capable of progressing through defined value stages through autonomous decision ;; coordination ;; action ;; and adaptation within defined objectives ;; authority ;; policies ;; and constraints ;; without requiring human intervention for every value-realization decision or action. Deliberately avoids premature canonicalization of Autonomous Value Stage ;; Autonomous Workflow ;; Autonomous Enterprise ;; Autonomous Ecosystem ;; Autonomous Network ;; Autonomous Agent ;; value-stream autonomy scoring ;; autonomy maturity levels ;; general autonomy ontology.
 
@@ -21,7 +21,7 @@ Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 -->
 The next pair should establish Autonomous Value Stream as the value-realization counterpart to Autonomous Operations. The key architectural constraint is that autonomy must be expressed at the Value Stream boundary, not simply inferred because the stream happens to use autonomous operations.
 
-ADR-ES-009 ;;; Autonomous Value Stream Semantic Grounding
+ADR-ES-009, Autonomous Value Stream Semantic Grounding
 
 ADR-ES-009 ; Autonomous Value Stream Semantic Grounding
 

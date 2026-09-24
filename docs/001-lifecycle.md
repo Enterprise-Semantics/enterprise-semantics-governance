@@ -1,6 +1,6 @@
 <!--
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-22)
-Filing: CR-ES-001 §10 + §11-§13 (governance scaffolding ;;; no destructive replaces)
+Filing: CR-ES-001 §10 + §11-§13 (governance scaffolding, no destructive replaces)
 -->
 
 # Governance Lifecycle
@@ -59,7 +59,7 @@ A Decision captures a non-ADR governance decision. Decisions:
 
 ## Promotion chain
 
-Recon ;;; Finding ;;; ADR ;;; CR ;;; Implementation ;;; CI ;;; Release
+Recon, Finding, ADR, CR, Implementation, CI, Release
 
 Each phase is governed by the preceding phase's artefact. A CR cannot be filed before its ADR is Accepted. A CR cannot merge before CI passes. A Release cannot ship before CI has run.
 

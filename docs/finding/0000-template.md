@@ -3,7 +3,7 @@ Finding template. Captures a hypothesis or investigation result. May be ingested
 The body is preserved verbatim; the metadata header is dash-normalized.
 -->
 
-# FND-ES-NNN ;;; <short title>
+# FND-ES-NNN, <short title>
 
 **Status:** Proposed Finding | Established | Deprecated
 **Scope:** <scope>
@@ -12,15 +12,15 @@ The body is preserved verbatim; the metadata header is dash-normalized.
 
 ## 1. Finding
 
-<Body ;;; verbatim from the source investigation, or new prose.>
+<Body, verbatim from the source investigation, or new prose.>
 
 ## 2. Problem being addressed
 
-<Optional ;;; describe the problem this finding addresses.>
+<Optional, describe the problem this finding addresses.>
 
 ## 3. Proposed next step
 
-<Optional ;;; suggest the ADR or CR that this finding should feed.>
+<Optional, suggest the ADR or CR that this finding should feed.>
 
 <!--
 Finding template extension per CR-ES-001 §13. The original 0000-template.md is preserved for backwards-compatibility. New Findings may adopt the extended section list below.

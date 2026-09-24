@@ -1,5 +1,5 @@
 <!--
-ADR-ES-AG-001 ;;; Agentic Semantic Decision
+ADR-ES-AG-001, Agentic Semantic Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-AG-001.md (identical bytes; authored
@@ -9,7 +9,7 @@ Status: Accepted (promoted from Proposed on 2026-09-02, per user Proceed, messag
 Authored by: manny-es (the dedicated sub-agent for Enterprise-Semantics).
 Date authored: 2026-09-02.
 Date accepted: 2026-09-02.
-Depends on: ADR-ES-002 (Enterprise Semantic Model) ;;; FND-ES-AG-001 ;;; FND-ES-AG-002.
+Depends on: ADR-ES-002 (Enterprise Semantic Model), FND-ES-AG-001, FND-ES-AG-002.
 Transitive: ADR-ES-001 (organization scaffolding) ;; pending.
 
 Decision: Agentic concepts are Profiles of their base concepts under agent-augmented
@@ -20,7 +20,7 @@ Implementation: CR-ES-AG-001+ (13 CRs). CR-ES-AG-001 (Profile registry + schema)
 landing in this turn.
 -->
 
-# ADR-ES-AG-001 ;;; Agentic Semantic Decision
+# ADR-ES-AG-001, Agentic Semantic Decision
 
 **Status:** Proposed
 **Decision Type:** Semantic Architecture / Semantic Governance
@@ -39,7 +39,7 @@ The Agentic concept family in `Enterprise-Semantics` shall be governed by three 
 2. **`Agentic != Autonomous`** is established as a semantic distinction at the Profile-characteristic level, not at the semantic-kind level.
 3. **The first implementation family shall be Agentic Value Stream, Agentic Workflow, Agentic Flow, Agentic Operations, Agentic Enterprise, Agentic Capability, AI Agent, Agentic Agent, Agentic Service, Agentic Product, and Agentic Culture**, with their governed relationships defined through CR-ES-AG-001+.
 
-This ADR accepts the Profile hypothesis from FND-ES-AG-002 and extends it to the Agentic concept family. It does not yet promote any specific concept to `Established` ;;; that requires CR-ES-AG-001+ landing the YAML records with appropriate conformance evidence.
+This ADR accepts the Profile hypothesis from FND-ES-AG-002 and extends it to the Agentic concept family. It does not yet promote any specific concept to `Established`, that requires CR-ES-AG-001+ landing the YAML records with appropriate conformance evidence.
 
 The ADR is **`Proposed`** until human-owner acceptance. Implementation CRs (CR-ES-AG-001+) cannot land until this ADR is `Accepted`.
 
@@ -63,7 +63,7 @@ The Agentic family needs an **architectural commitment** that all per-concept de
 
 ---
 
-## 3. Architectural commitment ;;; `Agentic` is a Profile modifier
+## 3. Architectural commitment, `Agentic` is a Profile modifier
 
 ### 3.1 The Profile semantic construct
 
@@ -135,7 +135,7 @@ The base concept (`X`) is unchanged. The Agentic concept is a Profile overlay.
 
 ---
 
-## 4. Architectural commitment ;;; `Agentic != Autonomous`
+## 4. Architectural commitment, `Agentic != Autonomous`
 
 ### 4.1 The semantic distinction
 
@@ -157,7 +157,7 @@ The two families occupy **different regions** of the autonomy spectrum:
 ```text
 Human-governed               Self-governed
    ;                              ;
-   ;; Agentic Enterprise ;;; Autonomous Enterprise
+   ;; Agentic Enterprise, Autonomous Enterprise
    ;;                              ;;
    ;                              ;
 Manual execution       Fully autonomous execution
@@ -237,19 +237,19 @@ Each relationship is `provisional` until CR-ES-AG-001+ lands the YAML record and
 
 ---
 
-## 6. Implementation sequence ;;; CR-ES-AG-001+
+## 6. Implementation sequence, CR-ES-AG-001+
 
 The implementation is sequenced as CRs, not as a single CR:
 
-### CR-ES-AG-001 ;;; Profile semantic construct
+### CR-ES-AG-001, Profile semantic construct
 
 Establishes the Profile registry and Profile YAML schema in `enterprise-semantics`. Profile characteristics are first-class semantic objects with their own identity, governance, and lifecycle.
 
-### CR-ES-AG-002 ;;; Agentic profile_type
+### CR-ES-AG-002, Agentic profile_type
 
 Registers the `agentic-execution` profile_type in the Profile registry. Establishes the four Profile characteristics from §3.3 as governed semantic objects.
 
-### CR-ES-AG-003 ;;; Agentic Value Stream
+### CR-ES-AG-003, Agentic Value Stream
 
 Lands the `Agentic Value Stream` Candidate-status YAML record in `enterprise-semantics`, with:
 
@@ -261,7 +261,7 @@ Lands the `Agentic Value Stream` Candidate-status YAML record in `enterprise-sem
 
 Per FND-ES-AG-002.
 
-### CR-ES-AG-004 ;;; Agentic Workflow
+### CR-ES-AG-004, Agentic Workflow
 
 Lands the `Agentic Workflow` Candidate-status YAML record. Per FND-ES-AG-003 (pending).
 
@@ -269,7 +269,7 @@ Lands the `Agentic Workflow` Candidate-status YAML record. Per FND-ES-AG-003 (pe
 
 One CR per remaining concept in §5. Each lands a Candidate-status YAML record.
 
-### CR-ES-AG-012 ;;; Conformance gate ;;; Profile validation
+### CR-ES-AG-012, Conformance gate, Profile validation
 
 Adds Profile-specific conformance checks to the harness:
 
@@ -278,7 +278,7 @@ Adds Profile-specific conformance checks to the harness:
 - Profile lifecycle status is valid.
 - Profile relationships do not duplicate base relationships.
 
-### CR-ES-AG-013 ;;; First semantic release
+### CR-ES-AG-013, First semantic release
 
 Tags the first Agentic semantic release (`v0.1.0-agentic-seed`) after CRs 1-12 land and conformance is green.
 
@@ -291,9 +291,9 @@ Each CR lands in sequence and must pass conformance before the next. Skipping ah
 Per ADR-ES-002 §22 and FND-ES-AG-002 §6.1, this ADR reaffirms:
 
 - `Value Stream`, `Process`, `Workflow`, and `Task Flow` are distinct semantic kinds.
-- An `Agentic Value Stream` does not `contain` an `Agentic Workflow` ;;; it `executes-through` it.
-- An `Agentic Workflow` does not `contain` an `Agentic Flow` ;;; it `orchestrates` it.
-- An `Agentic Flow` does not `contain` an `AI Agent` ;;; it `uses` it.
+- An `Agentic Value Stream` does not `contain` an `Agentic Workflow`, it `executes-through` it.
+- An `Agentic Workflow` does not `contain` an `Agentic Flow`, it `orchestrates` it.
+- An `Agentic Flow` does not `contain` an `AI Agent`, it `uses` it.
 
 These architectural constraints carry into the CR-ES-AG-001+ implementation. The conformance gate validates them.
 
@@ -337,7 +337,7 @@ Until `Accepted`, CR-ES-AG-001+ cannot land.
 - Profile semantic construct adds governance complexity (Profile registry, profile_type registry, characteristic registry).
 - Per-concept findings (FND-ES-AG-003+) still required for WSF grounding, definition, relationships.
 - Conformance gate must validate Profile-specific semantics.
-- Cultural change ;;; diagrams showing `Agentic X` as a box now need to be re-expressed as a Profile of `X`.
+- Cultural change, diagrams showing `Agentic X` as a box now need to be re-expressed as a Profile of `X`.
 
 These costs are intentional. Per ADR-ES-002 §24: "semantic authority without governance would rapidly become another uncontrolled vocabulary."
 

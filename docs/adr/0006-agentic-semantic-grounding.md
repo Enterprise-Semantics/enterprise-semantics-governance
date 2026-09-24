@@ -1,10 +1,10 @@
 <!--
-ADR-ES-004 ;;; Agentic Semantic Grounding Decision
+ADR-ES-004, Agentic Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-004.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115 ;;; "Proceed with everything")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115, "Proceed with everything")
 Date: 2026-09-23
 Decision Type: Foundational Semantic Architecture
 Scope: Enterprise-Semantics (Agentic as foundational semantic property)
@@ -12,13 +12,13 @@ Supersedes: None
 Depends on: ADR-ES-001 (Authority and Publication Architecture) ;; ADR-ES-002 (Capability Semantic Grounding, Accepted 2026-09-23) ;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
 Related: CR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23) ;; ADR-ES-005 (Agentic Value Stream, future) ;; ADR-ES-006 (Agentic Workflow, future) ;; ADR-ES-007 (Autonomous Operations, future) ;; FND-ES-AG-001-Grounding-Result §1 (kernel/decomposition pattern)
 
-Decision: Establish Agentic as a foundational enterprise semantic property describing a mode of operation in which an Agent interprets a delegated objective or intent, determines or selects actions within defined authority, and acts or coordinates actions toward an intended outcome. Agentic shall remain distinct from AI, Automation, and Autonomous. Agent may be human, software-based, computational, organizational, or socio-technical. Agentic is modeled as a semantic property/mode rather than automatically as a universal Entity subtype ;;; this prevents the ontology from unnecessarily turning every agentic construct into a new top-level entity class.
+Decision: Establish Agentic as a foundational enterprise semantic property describing a mode of operation in which an Agent interprets a delegated objective or intent, determines or selects actions within defined authority, and acts or coordinates actions toward an intended outcome. Agentic shall remain distinct from AI, Automation, and Autonomous. Agent may be human, software-based, computational, organizational, or socio-technical. Agentic is modeled as a semantic property/mode rather than automatically as a universal Entity subtype, this prevents the ontology from unnecessarily turning every agentic construct into a new top-level entity class.
 
-Slot note: this ADR is filed at governance repo docs/adr/0006-... The slot sequence is 0000-template, 0001-authority-and-publication, 0002-enterprise-semantic-model, 0003-agentic-semantic-decision, 0004-capability-semantic-grounding, 0005-value-stream-semantic-grounding, 0006-agentic-semantic-grounding. Slot 0006 is the next free slot. The pre-existing 0003-agentic-semantic-decision is the ES-AG series slot for ADR-ES-AG-001 by manny-es (separate lineage) ;;; the ES series continues with 0004-0005-0006.
+Slot note: this ADR is filed at governance repo docs/adr/0006-... The slot sequence is 0000-template, 0001-authority-and-publication, 0002-enterprise-semantic-model, 0003-agentic-semantic-decision, 0004-capability-semantic-grounding, 0005-value-stream-semantic-grounding, 0006-agentic-semantic-grounding. Slot 0006 is the next free slot. The pre-existing 0003-agentic-semantic-decision is the ES-AG series slot for ADR-ES-AG-001 by manny-es (separate lineage), the ES series continues with 0004-0005-0006.
 
-Promotion rationale: All 24 acceptance criteria of CR-ES-004 §31 satisfied via 6 PRs across 6 repos (PR #7 enterprise-semantics ;;; PR #8 enterprise-semantics ;;; PR #4 enterprise-semantics-mappings ;;; PR #3 enterprise-semantics-docs ;;; PR #3 enterprise-semantics-examples ;;; PR #3 enterprise-semantics-test-probe ;;; PR #3 enterprise-semantics-visuals ;;; PR #9 enterprise-semantics for the Agentic Profile per CR-ES-004 §22). The 5 concept records (Agent + Agentic + Intent + Authority + Action) are Candidate (per scope decision ;;; promotion to Established held for separate governed action). The 33 governed predicates (13 Value Stream + 9 Capability + 11 Agentic + 4 namespaced for cross-CR subject-type disambiguation) are registered in vocabulary.yaml v0.4.0. The 2 mapping records (WSF Tier 2 Specialisation + OpenDEA architectural pattern) are PROPOSED. The 9 docs files + 1 OTCHERE Inc example + 9 test files + 3 PlantUML sources are published. The Agentic Profile (ES:PROFILE:AGENTIC) is landed at v0.1.0 ;;; Candidate.
+Promotion rationale: All 24 acceptance criteria of CR-ES-004 §31 satisfied via 6 PRs across 6 repos (PR #7 enterprise-semantics, PR #8 enterprise-semantics, PR #4 enterprise-semantics-mappings, PR #3 enterprise-semantics-docs, PR #3 enterprise-semantics-examples, PR #3 enterprise-semantics-test-probe, PR #3 enterprise-semantics-visuals, PR #9 enterprise-semantics for the Agentic Profile per CR-ES-004 §22). The 5 concept records (Agent + Agentic + Intent + Authority + Action) are Candidate (per scope decision, promotion to Established held for separate governed action). The 33 governed predicates (13 Value Stream + 9 Capability + 11 Agentic + 4 namespaced for cross-CR subject-type disambiguation) are registered in vocabulary.yaml v0.4.0. The 2 mapping records (WSF Tier 2 Specialisation + OpenDEA architectural pattern) are PROPOSED. The 9 docs files + 1 OTCHERE Inc example + 9 test files + 3 PlantUML sources are published. The Agentic Profile (ES:PROFILE:AGENTIC) is landed at v0.1.0, Candidate.
 
-Implementation: CR-ES-004 (Agentic Semantic Grounding). CR-ES-004 is the implementation specification ;;; this ADR ratifies it as a governed semantic decision.
+Implementation: CR-ES-004 (Agentic Semantic Grounding). CR-ES-004 is the implementation specification, this ADR ratifies it as a governed semantic decision.
 
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual
@@ -26,7 +26,7 @@ Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-0
 
 ADR-ES-004 ; Agentic Semantic Grounding
 
-|Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115 ;;; "Proceed with everything")
+|Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115, "Proceed with everything")
 Date: 2026-09-23
 Decision Type: Foundational Semantic Architecture
 Scope: Enterprise-Semantics
@@ -695,12 +695,12 @@ The promotion to Accepted has the following consequences:
 
 * CR-ES-004 is binding on all subsequent Enterprise-Semantics concept records.
 * The 5 Agentic concepts (Agent + Agentic + Intent + Authority + Action) are foundational ;; further specialisations must reference this ADR rather than independently redefining Agentic.
-* The 11 Agentic governed predicates (per CR-ES-004 §10) are authoritative ;;; any new Agentic relationship must be added via the governed vocabulary process (relationships/vocabulary.yaml).
-* The 4 critical boundary distinctions are now load-bearing ;;; AI Agent = Agent or AI = Agentic or Agentic = Autonomous are rejected by AG-CON-004 + AG-CON-005 + AG-CON-006 conformance rules.
-* v0.4.0 is the canonical version pointer for the Agentic semantic establishment ;;; the v0.3.0 version pointer established by VS-B ratifies this decision.
-* FND-ES-AG-008 §1.3 classification (ES-canonical novelty ;;; Tier 2 Specialisation) is operationally enforced for the Agentic construct.
-* The follow-on sequence is unblocked: ADR-ES-005 (Agentic Value Stream) ;;; ADR-ES-006 (Agentic Workflow) ;;; ADR-ES-007 (Autonomous Operations) ;;; ADR-ES-008 (Agentic Capability, if needed).
-* Human participation patterns (human-in/on/over-the-loop) are first-class ;;; not exclusions ;;; per ADR-ES-004 §16.
+* The 11 Agentic governed predicates (per CR-ES-004 §10) are authoritative, any new Agentic relationship must be added via the governed vocabulary process (relationships/vocabulary.yaml).
+* The 4 critical boundary distinctions are now load-bearing, AI Agent = Agent or AI = Agentic or Agentic = Autonomous are rejected by AG-CON-004 + AG-CON-005 + AG-CON-006 conformance rules.
+* v0.4.0 is the canonical version pointer for the Agentic semantic establishment, the v0.3.0 version pointer established by VS-B ratifies this decision.
+* FND-ES-AG-008 §1.3 classification (ES-canonical novelty, Tier 2 Specialisation) is operationally enforced for the Agentic construct.
+* The follow-on sequence is unblocked: ADR-ES-005 (Agentic Value Stream), ADR-ES-006 (Agentic Workflow), ADR-ES-007 (Autonomous Operations), ADR-ES-008 (Agentic Capability, if needed).
+* Human participation patterns (human-in/on/over-the-loop) are first-class, not exclusions, per ADR-ES-004 §16.
 
 The 6 PRs across 6 repos that satisfy the acceptance criteria:
 

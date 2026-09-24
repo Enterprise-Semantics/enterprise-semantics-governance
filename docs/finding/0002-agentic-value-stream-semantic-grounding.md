@@ -1,5 +1,5 @@
 <!--
-FND-ES-AG-002 ;;; Agentic Value Stream Semantic Grounding
+FND-ES-AG-002, Agentic Value Stream Semantic Grounding
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/FND-ES-AG-002.md (identical bytes; authored
@@ -9,14 +9,14 @@ Status: Proposed Finding
 Authored by: manny-es (the dedicated sub-agent for Enterprise-Semantics)
 Date: 2026-09-02
 Preceded by: FND-ES-AG-001 (Agentic Semantic Grounding).
-Depends on: ADR-ES-002 ;;; ADR-ES-001 pending.
+Depends on: ADR-ES-002, ADR-ES-001 pending.
 
 Working conclusion (provisional, NOT normative):
 Agentic Value Stream is a Profile of Value Stream, not a Specialization,
 a pure Characteristic, or a Distinct kind.
 -->
 
-# FND-ES-AG-002 ;;; Agentic Value Stream Semantic Grounding
+# FND-ES-AG-002, Agentic Value Stream Semantic Grounding
 
 **Status:** Proposed Finding
 **Scope:** `Agentic Value Stream` (and its relationship to `Value Stream`)
@@ -115,13 +115,13 @@ Each property is a **characteristic** of the Value Stream, not a separate class 
 | **C. Characteristic** | `Agentic Value Stream` is a Value Stream that happens to have agentic characteristics. | No new concept; just an observation about a Value Stream. |
 | **D. Distinct kind** | `Agentic Value Stream` is its own ontological class, separate from Value Stream. | Requires its own definition, relationships, lifecycle. |
 
-**Chosen hypothesis: B ;;; Profile.**
+**Chosen hypothesis: B, Profile.**
 
 Rationale:
 
 - A `Profile` is the right semantic tool when a concept has the same identity as its base, but applies a configuration overlay that constrains how it relates to other concepts.
-- A `Specialization` (A) would imply a strict subclass with non-shared properties. The four agentic characteristics in §3.3 are not non-shared ;;; a Value Stream without those characteristics is still a Value Stream.
-- A `Characteristic` (C) would reduce `Agentic Value Stream` to an observation ;;; useful for description but not for governance. Governance requires `Agentic Value Stream` to be referenceable as an entity.
+- A `Specialization` (A) would imply a strict subclass with non-shared properties. The four agentic characteristics in §3.3 are not non-shared, a Value Stream without those characteristics is still a Value Stream.
+- A `Characteristic` (C) would reduce `Agentic Value Stream` to an observation, useful for description but not for governance. Governance requires `Agentic Value Stream` to be referenceable as an entity.
 - A `Distinct kind` (D) would create semantic duplication and would violate the WSF grounding principle in ADR-ES-002 §5.
 
 ### 3.5 Why not Specialization?
@@ -133,8 +133,8 @@ A `Specialization` is appropriate when:
 
 For `Agentic Value Stream`, neither is true:
 
-- It does not have **additional properties** beyond a Value Stream ;;; the agentic characteristics are characteristics of execution, not of the value-realization semantics.
-- It is not a **different semantic kind** ;;; it still realizes Value Outcomes; it still has Stages; it is still a Value Stream.
+- It does not have **additional properties** beyond a Value Stream, the agentic characteristics are characteristics of execution, not of the value-realization semantics.
+- It is not a **different semantic kind**, it still realizes Value Outcomes; it still has Stages; it is still a Value Stream.
 
 A Profile is the lighter-weight tool that captures the constraint without forcing a new ontological class.
 
@@ -152,9 +152,9 @@ This violates the architectural principle in ADR-ES-002 §5: "Enterprise context
 
 A characteristic is an **observation about an entity**. Treating `Agentic Value Stream` as a pure characteristic would mean:
 
-- No stable identity for `Agentic Value Stream` ;;; it is just `Value Stream` with a flag.
-- No governable relationships ;;; "Agentic Value Stream enables Capability" would not be expressible as a governed semantic assertion.
-- No lifecycle ;;; the agentic-ness cannot be promoted from candidate to canonical.
+- No stable identity for `Agentic Value Stream`, it is just `Value Stream` with a flag.
+- No governable relationships, "Agentic Value Stream enables Capability" would not be expressible as a governed semantic assertion.
+- No lifecycle, the agentic-ness cannot be promoted from candidate to canonical.
 
 The Profile hypothesis preserves the identity (because the Value Stream still has an identity) and the governability (because the Profile can carry governed characteristics and relationships).
 
@@ -202,7 +202,7 @@ Per ADR-ES-002 §7, the candidate definition for `Agentic Value Stream` is:
 
 This definition is:
 
-- **Provisional ;;; not yet canonical.**
+- **Provisional, not yet canonical.**
 - **Subject to change** as the consolidated Agentic semantic review (per FND-ES-AG-001 §6) produces additional evidence.
 - **Traceable** to ADR-ES-002 §21 Q7 and to the existing Agentic Value Stream investigation artifact.
 
@@ -223,7 +223,7 @@ Per FND-ES-000 §15 and FND-ES-AG-001 §4 Q14, the candidate relationships for `
 Each relationship is:
 
 - **provisional** until FND-ES-AG-002+ produces evidence supporting `proposed` or `established`.
-- **subject to qualification.** For example, `executes-through Agentic Workflow` holds only when the Value Stream has reached a state of AI-augmented execution ;;; a partially-executed Value Stream that is mid-transition to agentic execution may not satisfy this relationship.
+- **subject to qualification.** For example, `executes-through Agentic Workflow` holds only when the Value Stream has reached a state of AI-augmented execution, a partially-executed Value Stream that is mid-transition to agentic execution may not satisfy this relationship.
 - **subject to ADR-ES-AG-001** for promotion to governed status.
 
 ### 6.1 Why `executes-through` (not `contains`)?
@@ -273,7 +273,7 @@ Per ADR-ES-002 §13, the candidate lifecycle status for `Agentic Value Stream`:
 | Proposed | Established | ADR-ES-AG-001 is approved with the Profile hypothesis as the governed decision. |
 | Established | Canonical | `enterprise-semantics` releases a Candidate-status YAML record for `Agentic Value Stream` and a Profile record linking it to `Value Stream`. |
 
-`Agentic Value Stream` does **not** skip Candidate ;;; per ADR-ES-002 §25, "Canonical != implemented elsewhere" and "implementation is the consequence of an approved semantic decision."
+`Agentic Value Stream` does **not** skip Candidate, per ADR-ES-002 §25, "Canonical != implemented elsewhere" and "implementation is the consequence of an approved semantic decision."
 
 ---
 
@@ -300,7 +300,7 @@ The following questions are not answered by this Finding and must be addressed i
 3. Is `Agentic Enterprise` also a Profile of `Enterprise`, or is it a Specialization?
 4. What is the relationship between `Agentic Value Stream`, `Agentic Operations`, and `Agentic Enterprise`? Are they co-profiled?
 5. How does `Agentic Value Stream` map to OpenDEA metamodel constructs? (Phase 4.6 deliverable.)
-6. How does `Agentic Value Stream` map to WSF `Value`? (The Profile relationship is internal to Enterprise-Semantics ;;; the WSF grounding is via `Value Stream`'s existing WSF grounding.)
+6. How does `Agentic Value Stream` map to WSF `Value`? (The Profile relationship is internal to Enterprise-Semantics, the WSF grounding is via `Value Stream`'s existing WSF grounding.)
 
 ---
 
@@ -311,8 +311,8 @@ The following questions are not answered by this Finding and must be addressed i
 > The Profile relationship is the right semantic tool because:
 >
 > - The four agentic characteristics (bounded autonomy, AI-augmented decision-making, adaptive value-realization, human governance) are characteristics of execution, not of value-realization semantics.
-> - The Agentic Value Stream shares its identity with Value Stream ;;; promoting/demoting its agentic profile does not change its identity.
-> - A Profile preserves governed relationships, lifecycle, and mappings ;;; a pure characteristic would not.
+> - The Agentic Value Stream shares its identity with Value Stream, promoting/demoting its agentic profile does not change its identity.
+> - A Profile preserves governed relationships, lifecycle, and mappings, a pure characteristic would not.
 > - A Profile avoids the semantic duplication that a distinct kind would create.
 >
 > The Finding does not, by itself, establish `Agentic Value Stream` as canonical. Promotion to `Proposed` requires the consolidated Agentic semantic review (FND-ES-AG-001 §6) to accept this hypothesis. Promotion to `Established` requires ADR-ES-AG-001.

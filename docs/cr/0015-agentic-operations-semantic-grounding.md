@@ -2,12 +2,12 @@ Below is CR-ES-007, scoped strictly to implement ADR-ES-007 without prematurely 
 
 CR-ES-007: Implement Agentic Operations Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552333611045224559 ;;; "Attached are ADR-ES-007 and CR-ES-007, save them both, read and understand then implement e them appropriately")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552333611045224559, "Attached are ADR-ES-007 and CR-ES-007, save them both, read and understand then implement e them appropriately")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0
 Target: Enterprise-Semantics
-Authorizing ADR: ADR-ES-007 ;;; Agentic Operations Semantic Grounding
+Authorizing ADR: ADR-ES-007, Agentic Operations Semantic Grounding
 Target Semantic Version: v0.6.0
 Depends On: CR-ES-001, CR-ES-003, CR-ES-004, CR-ES-005, CR-ES-006
 
@@ -675,63 +675,63 @@ Agentic Operations is Agentic Value Stream
 
 Implement conformance tests covering the following requirements.
 
-AOP-CON-001 ;;; Specialization
+AOP-CON-001, Specialization
 
 Agentic Operations MUST specialize Operations.
 
-AOP-CON-002 ;;; Material Agentic Participation
+AOP-CON-002, Material Agentic Participation
 
 An implementation MUST demonstrate material agentic participation in operational sensing, interpretation, decision, coordination, adaptation, or execution.
 
-AOP-CON-003 ;;; Authority
+AOP-CON-003, Authority
 
 Agentic Operations MUST operate within a defined authority boundary.
 
-AOP-CON-004 ;;; Policy
+AOP-CON-004, Policy
 
 Operational behavior MUST be capable of being constrained by policies or equivalent operational constraints.
 
-AOP-CON-005 ;;; Outcome Orientation
+AOP-CON-005, Outcome Orientation
 
 Agentic Operations MUST be oriented toward operational outcomes.
 
-AOP-CON-006 ;;; Agent Engagement
+AOP-CON-006, Agent Engagement
 
 Agentic Operations MUST support engagement of an Agent where agentic behavior is asserted.
 
-AOP-CON-007 ;;; Agentic Workflow Compatibility
+AOP-CON-007, Agentic Workflow Compatibility
 
 Agentic Operations MAY use Agentic Workflow.
 
-AOP-CON-008 ;;; Process Coordination
+AOP-CON-008, Process Coordination
 
 Agentic Operations MAY coordinate one or more Processes.
 
-AOP-CON-009 ;;; Human Participation
+AOP-CON-009, Human Participation
 
 Human participation MUST remain semantically valid.
 
-AOP-CON-010 ;;; Automation Compatibility
+AOP-CON-010, Automation Compatibility
 
 Automation MAY coexist with Agentic Operations.
 
-AOP-CON-011 ;;; AI Independence
+AOP-CON-011, AI Independence
 
 Agentic Operations MUST NOT require AI.
 
-AOP-CON-012 ;;; Autonomy Independence
+AOP-CON-012, Autonomy Independence
 
 Agentic Operations MUST NOT imply Autonomous Operations.
 
-AOP-CON-013 ;;; Workflow Distinction
+AOP-CON-013, Workflow Distinction
 
 Agentic Operations MUST NOT be classified as Agentic Workflow.
 
-AOP-CON-014 ;;; Value Stream Distinction
+AOP-CON-014, Value Stream Distinction
 
 Agentic Operations MUST NOT be classified as Agentic Value Stream.
 
-AOP-CON-015 ;;; Provenance
+AOP-CON-015, Provenance
 
 Every canonical Agentic Operations assertion MUST identify its semantic provenance.
 
@@ -955,11 +955,11 @@ The resulting semantic artifact SHALL be suitable for downstream mapping into WS
 
 The following remain future semantic decisions:
 
-ADR-ES-008+ ;;; Autonomous Operations
-ADR-ES-009+ ;;; Agentic Enterprise
-ADR-ES-010+ ;;; Autonomous Enterprise
-ADR-ES-011+ ;;; Agentic Network
-ADR-ES-012+ ;;; Agentic Ecosystem
+ADR-ES-008+, Autonomous Operations
+ADR-ES-009+, Agentic Enterprise
+ADR-ES-010+, Autonomous Enterprise
+ADR-ES-011+, Agentic Network
+ADR-ES-012+, Agentic Ecosystem
 
 Exact sequencing remains subject to subsequent architectural investigation.
 

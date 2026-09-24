@@ -14,9 +14,9 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - CR-ES-001 ;; pending ADR-ES-001.
 - Finding records for FND-ES-000 and FND-ES-001 ;; pending.
 - FND-ES-AG-002+ sub-findings ;; pending (D-009). Author incrementally as the Agentic investigation progresses.
-- FND-ES-AG-004+ (Agentic Operations, Enterprise, Agent scrutiny); CR-ES-AG-005+ (Agentic Flow, Capability, AI Agent, etc.) ;;; in progress or held back per FND-ES-AG-006.
+- FND-ES-AG-004+ (Agentic Operations, Enterprise, Agent scrutiny); CR-ES-AG-005+ (Agentic Flow, Capability, AI Agent, etc.), in progress or held back per FND-ES-AG-006.
 
-## [0.0.7] ; 2026-09-02 ; User-revised FND-ES-AG-001 + Grounding Result ;;; CR-ES-AG-002/003/004/006/007 ;;; Findings 004/005/006
+## [0.0.7] ; 2026-09-02 ; User-revised FND-ES-AG-001 + Grounding Result, CR-ES-AG-002/003/004/006/007, Findings 004/005/006
 
 ### User directive (2026-09-02, message 1544738104559009833)
 
@@ -24,24 +24,24 @@ The user sent FND-ES-AG-001 (user-revised canonical) and FND-ES-AG-001_Grounding
 
 ### Added (governance repo)
 
-- `docs/finding/0001-agentic-semantic-grounding-canonical.md` ;;; user-revised canonical FND-ES-AG-001.
-- `docs/finding/0001-agentic-semantic-grounding-grounding-result.md` ;;; FND-ES-AG-001-Grounding-Result.
-- `docs/finding/0004-agentic-operations-semantic-grounding.md` ;;; FND-ES-AG-004.
-- `docs/finding/0005-agentic-enterprise-semantic-grounding.md` ;;; FND-ES-AG-005.
-- `docs/finding/0006-agentic-agent-scrutiny.md` ;;; FND-ES-AG-006 (held back from canonical).
-- `docs/cr/0002-agentic-execution-profile-type.md` ;;; CR-ES-AG-002.
-- `docs/cr/0003-agentic-value-stream-concept.md` ;;; CR-ES-AG-003.
-- `docs/cr/0004-agentic-workflow-concept.md` ;;; CR-ES-AG-004.
-- `docs/cr/0006-agentic-operations-concept.md` ;;; CR-ES-AG-006.
-- `docs/cr/0007-agentic-enterprise-concept.md` ;;; CR-ES-AG-007.
+- `docs/finding/0001-agentic-semantic-grounding-canonical.md`, user-revised canonical FND-ES-AG-001.
+- `docs/finding/0001-agentic-semantic-grounding-grounding-result.md`, FND-ES-AG-001-Grounding-Result.
+- `docs/finding/0004-agentic-operations-semantic-grounding.md`, FND-ES-AG-004.
+- `docs/finding/0005-agentic-enterprise-semantic-grounding.md`, FND-ES-AG-005.
+- `docs/finding/0006-agentic-agent-scrutiny.md`, FND-ES-AG-006 (held back from canonical).
+- `docs/cr/0002-agentic-execution-profile-type.md`, CR-ES-AG-002.
+- `docs/cr/0003-agentic-value-stream-concept.md`, CR-ES-AG-003.
+- `docs/cr/0004-agentic-workflow-concept.md`, CR-ES-AG-004.
+- `docs/cr/0006-agentic-operations-concept.md`, CR-ES-AG-006.
+- `docs/cr/0007-agentic-enterprise-concept.md`, CR-ES-AG-007.
 
 ### Implementation (Enterprise-Semantics repo, commits 063ab5c + c15f12c + 3869999)
 
-- CR-ES-AG-002 (commit 063ab5c) ;;; agentic-execution Profile record (Established, v1.0.0). Cites WSF live baseline in provenance.
-- CR-ES-AG-003 (commit c15f12c) ;;; Agentic Value Stream concept record. Value Stream base concept (Established, v1.0.0).
-- CR-ES-AG-004 (commit c15f12c) ;;; Agentic Workflow concept record. Workflow base concept (Established, v1.0.0).
-- CR-ES-AG-006 (commit 3869999) ;;; Agentic Operations concept record. Operations base concept (Established, v1.0.0).
-- CR-ES-AG-007 (commit 3869999) ;;; Agentic Enterprise concept record. Enterprise base concept (Established, v1.0.0).
+- CR-ES-AG-002 (commit 063ab5c), agentic-execution Profile record (Established, v1.0.0). Cites WSF live baseline in provenance.
+- CR-ES-AG-003 (commit c15f12c), Agentic Value Stream concept record. Value Stream base concept (Established, v1.0.0).
+- CR-ES-AG-004 (commit c15f12c), Agentic Workflow concept record. Workflow base concept (Established, v1.0.0).
+- CR-ES-AG-006 (commit 3869999), Agentic Operations concept record. Operations base concept (Established, v1.0.0).
+- CR-ES-AG-007 (commit 3869999), Agentic Enterprise concept record. Enterprise base concept (Established, v1.0.0).
 - Concept harness (`conformance/check_concepts.py`) + Concept schema (`schema/concept.schema.json`) + 5-case test suite.
 
 ### Conformance
@@ -52,10 +52,10 @@ The user sent FND-ES-AG-001 (user-revised canonical) and FND-ES-AG-001_Grounding
 
 ### Program board
 
-- Card #4 (FND-ES-AG-001 prior) ;;; superseded, Status=Done.
-- Cards #9 (FND-ES-AG-001 canonical), #10 (FND-ES-AG-001-Grounding-Result) ;;; Status=In Progress.
-- Cards #11 (CR-ES-AG-002), #12 (CR-ES-AG-003), #13 (CR-ES-AG-004), #17 (CR-ES-AG-006), #18 (CR-ES-AG-007) ;;; Status=Done.
-- Cards #14 (FND-ES-AG-004), #15 (FND-ES-AG-005), #16 (FND-ES-AG-006) ;;; Status=In Progress.
+- Card #4 (FND-ES-AG-001 prior), superseded, Status=Done.
+- Cards #9 (FND-ES-AG-001 canonical), #10 (FND-ES-AG-001-Grounding-Result), Status=In Progress.
+- Cards #11 (CR-ES-AG-002), #12 (CR-ES-AG-003), #13 (CR-ES-AG-004), #17 (CR-ES-AG-006), #18 (CR-ES-AG-007), Status=Done.
+- Cards #14 (FND-ES-AG-004), #15 (FND-ES-AG-005), #16 (FND-ES-AG-006), Status=In Progress.
 
 ### Updated decisions
 
@@ -65,19 +65,19 @@ The user sent FND-ES-AG-001 (user-revised canonical) and FND-ES-AG-001_Grounding
 
 ### Added
 
-- `docs/finding/0001-agentic-semantic-grounding-canonical.md` ;;; user-revised canonical FND-ES-AG-001 (16,016 bytes with frontmatter, dash-normalized).
-- `docs/finding/0001-agentic-semantic-grounding-grounding-result.md` ;;; FND-ES-AG-001-Grounding-Result (18,181 bytes with frontmatter, dash-normalized). Records the live WSF baseline grounding that informed the user revision.
-- `docs/cr/0002-agentic-execution-profile-type.md` ;;; CR-ES-AG-002 (5,995 bytes, dash-normalized). Implements ADR-ES-AG-001 §6 CR-ES-AG-002 ;;; the agentic-execution profile_type + Profile record.
+- `docs/finding/0001-agentic-semantic-grounding-canonical.md`, user-revised canonical FND-ES-AG-001 (16,016 bytes with frontmatter, dash-normalized).
+- `docs/finding/0001-agentic-semantic-grounding-grounding-result.md`, FND-ES-AG-001-Grounding-Result (18,181 bytes with frontmatter, dash-normalized). Records the live WSF baseline grounding that informed the user revision.
+- `docs/cr/0002-agentic-execution-profile-type.md`, CR-ES-AG-002 (5,995 bytes, dash-normalized). Implements ADR-ES-AG-001 §6 CR-ES-AG-002, the agentic-execution profile_type + Profile record.
 
 ### Updated
 
-- `docs/finding/0001-agentic-semantic-grounding.md` ;;; replaced with a stub pointing to canonical + grounding (preserves audit trail of the earlier authored version).
+- `docs/finding/0001-agentic-semantic-grounding.md`, replaced with a stub pointing to canonical + grounding (preserves audit trail of the earlier authored version).
 
 ### Program board
 
-- Finding card #4 ;;; commented + Status=Done (superseded by canonical).
-- Finding card #9 ;;; new ;;; FND-ES-AG-001 canonical (user-revised). Status=In Progress.
-- Finding card #10 ;;; new ;;; FND-ES-AG-001-Grounding-Result. Status=In Progress.
+- Finding card #4, commented + Status=Done (superseded by canonical).
+- Finding card #9, new, FND-ES-AG-001 canonical (user-revised). Status=In Progress.
+- Finding card #10, new, FND-ES-AG-001-Grounding-Result. Status=In Progress.
 
 ### Implementation
 
@@ -87,7 +87,7 @@ The user sent FND-ES-AG-001 (user-revised canonical) and FND-ES-AG-001_Grounding
 
 ### Added
 
-- `docs/adr/0003-agentic-semantic-decision.md` ;;; ADR-ES-AG-001 ;;; Agentic Semantic Decision.
+- `docs/adr/0003-agentic-semantic-decision.md`, ADR-ES-AG-001, Agentic Semantic Decision.
   Status: Proposed (awaiting human-owner acceptance). Three architectural commitments:
   (1) `Agentic` is a Profile modifier, not a new semantic kind. (2) `Agentic != Autonomous` at the Profile-characteristic level. (3) First implementation family: 11 concepts (Agentic Value Stream, Agentic Workflow, Agentic Flow, Agentic Operations, Agentic Enterprise, Agentic Capability, AI Agent, Agentic Agent, Agentic Service, Agentic Product, Agentic AI). `Agentic Culture` held back for separate investigation.
   Implementation sequence: CR-ES-AG-001+ (13 CRs).
@@ -95,14 +95,14 @@ The user sent FND-ES-AG-001 (user-revised canonical) and FND-ES-AG-001_Grounding
 ### Updated
 
 - FND-ES-AG-001 (card #4) and FND-ES-AG-002 (card #5) cards received comments noting they are cited by ADR-ES-AG-001, not closed.
-- `docs/plan/PLAN.md` ;;; v0.7.0 (D-009 resolved, D-010 opened).
-- `docs/plan/PLAN-CHANGELOG.md` ;;; v0.7.0 entry.
+- `docs/plan/PLAN.md`, v0.7.0 (D-009 resolved, D-010 opened).
+- `docs/plan/PLAN-CHANGELOG.md`, v0.7.0 entry.
 
 ## [0.0.4] ; 2026-09-02 ; FND-ES-AG-002 ingested
 
 ### Added
 
-- `docs/finding/0002-agentic-value-stream-semantic-grounding.md` ;;; FND-ES-AG-002 ;;; Agentic Value Stream Semantic Grounding.
+- `docs/finding/0002-agentic-value-stream-semantic-grounding.md`, FND-ES-AG-002, Agentic Value Stream Semantic Grounding.
   Status: Proposed Finding. Working conclusion: `Agentic Value Stream` is a **Profile** of `Value Stream`, not a Specialization, pure Characteristic, or Distinct kind.
   Justification: the four agentic characteristics (bounded autonomy, AI-augmented decision-making, adaptive value-realization, human governance) are characteristics of execution, not of value-realization semantics. A Profile preserves identity, governed relationships, lifecycle, and mappings while avoiding semantic duplication.
   Candidate relationships: `Agentic Value Stream profile-of Value Stream` ;; `realizes Value Outcome` ;; `enabled-by Capability` ;; `supported-by Process` ;; `executes-through Agentic Workflow`.
@@ -112,7 +112,7 @@ The user sent FND-ES-AG-001 (user-revised canonical) and FND-ES-AG-001_Grounding
 
 ### Added
 
-- `docs/finding/0001-agentic-semantic-grounding.md` ;;; FND-ES-AG-001 ;;; Agentic Semantic Grounding.
+- `docs/finding/0001-agentic-semantic-grounding.md`, FND-ES-AG-001, Agentic Semantic Grounding.
   Status: Proposed Finding. Establishes the first substantive semantic investigation
   under ADR-ES-002. Addresses the 14 questions from ADR-ES-002 §21. Working
   hypothesis: Agentic != Autonomous; Agentic Value Stream is a specialization of
@@ -122,16 +122,16 @@ The user sent FND-ES-AG-001 (user-revised canonical) and FND-ES-AG-001_Grounding
 
 ### Updated
 
-- `docs/adr/0002-enterprise-semantic-model.md` ;;; frontmatter updated with
+- `docs/adr/0002-enterprise-semantic-model.md`, frontmatter updated with
   `dependency_status: pending` (Path B accepted; ADR-ES-001 outstanding).
-- `docs/plan/PLAN.md` ;;; v0.5.0 (D-008 resolved via Path B; D-009 opened).
-- `docs/plan/PLAN-CHANGELOG.md` ;;; v0.5.0 entry.
+- `docs/plan/PLAN.md`, v0.5.0 (D-008 resolved via Path B; D-009 opened).
+- `docs/plan/PLAN-CHANGELOG.md`, v0.5.0 entry.
 
 ## [0.0.2] ; 2026-09-02 ; ADR-ES-002 ingested (dash-normalized)
 
 ### Added
 
-- `docs/adr/0002-enterprise-semantic-model.md` ;;; ADR-ES-002 ;;; Enterprise Semantic Model.
+- `docs/adr/0002-enterprise-semantic-model.md`, ADR-ES-002, Enterprise Semantic Model.
   Status: Proposed (per the source). Establishes the semantic authority boundary
   between WSF, Enterprise-Semantics, OpenDEA, and DEA Catalogs. Defines the
   enterprise semantic scope, the concept model, relationships as first-class

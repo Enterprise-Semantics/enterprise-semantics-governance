@@ -1,9 +1,9 @@
 <!--
-CR-ES-AG-009 ;;; dash-normalized
+CR-ES-AG-009, dash-normalized
 Verbatim original: 00_inbox/CR-ES-AG-009.md.
 -->
 
-# CR-ES-AG-009 ;;; AI Agent Concept Record
+# CR-ES-AG-009, AI Agent Concept Record
 
 **Status:** Implemented
 **Implements:** ADR-ES-AG-001 §6 CR-ES-AG-009

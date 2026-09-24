@@ -1,6 +1,6 @@
 <!--
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-22)
-Filing: CR-ES-001 §10 + §11-§13 (governance scaffolding ;;; no destructive replaces)
+Filing: CR-ES-001 §10 + §11-§13 (governance scaffolding, no destructive replaces)
 -->
 
 # Policies
@@ -21,7 +21,7 @@ Use this directory for:
 
 ## Status
 
-Empty at v0.0.1. Cardinal rules are stated in `plans/PLAN-CHANGELOG.md` and MEMORY.md ;;; migration to this directory as standalone policy documents is held for a future housekeeping CR.
+Empty at v0.0.1. Cardinal rules are stated in `plans/PLAN-CHANGELOG.md` and MEMORY.md, migration to this directory as standalone policy documents is held for a future housekeeping CR.
 
 ## Cardinal rules
 

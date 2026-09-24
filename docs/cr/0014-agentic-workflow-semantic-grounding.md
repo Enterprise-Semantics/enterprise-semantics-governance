@@ -1,6 +1,6 @@
 CR-ES-006: Implement Agentic Workflow Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552318709853462599 ;;; "Attached is ADR-ES-006 and CR-ES-006 save them as separate files in their respective folders, read and understand then let's implement them")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552318709853462599, "Attached is ADR-ES-006 and CR-ES-006 save them as separate files in their respective folders, read and understand then let's implement them")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0

@@ -1,9 +1,9 @@
 <!--
-CR-ES-AG-008 ;;; dash-normalized
+CR-ES-AG-008, dash-normalized
 Verbatim original: 00_inbox/CR-ES-AG-008.md.
 -->
 
-# CR-ES-AG-008 ;;; Agentic Capability Concept Record
+# CR-ES-AG-008, Agentic Capability Concept Record
 
 **Status:** Implemented
 **Implements:** ADR-ES-AG-001 §6 CR-ES-AG-008

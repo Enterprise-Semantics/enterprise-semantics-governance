@@ -1,11 +1,11 @@
 <!--
-ADR-ES-003 ;;; Value Stream Semantic Grounding Decision
+ADR-ES-003, Value Stream Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-003.md (em-dashes and ellipsis dividers preserved in source).
 
 Status: Accepted (promoted from Proposed on 2026-09-23)
-Promotion rationale: CR-ES-003 implementation completed via 7 PRs across 4 repos (VS-A + VS-B + VS-C + VS-D tranches) on 2026-09-23 ;;; see v3.1.7 + v3.1.8 + v3.1.9 in plans/PLAN-CHANGELOG.md for the full chain. All 30 acceptance-criteria checkboxes per ADR-ES-003 §34 are satisfied. Per CR-ES-003 §36 acceptance criteria + §37 completion conditions + §38 architectural result diagram.
+Promotion rationale: CR-ES-003 implementation completed via 7 PRs across 4 repos (VS-A + VS-B + VS-C + VS-D tranches) on 2026-09-23, see v3.1.7 + v3.1.8 + v3.1.9 in plans/PLAN-CHANGELOG.md for the full chain. All 30 acceptance-criteria checkboxes per ADR-ES-003 §34 are satisfied. Per CR-ES-003 §36 acceptance criteria + §37 completion conditions + §38 architectural result diagram.
 Promoted by: user directive (message 1552190004732756049, 2026-09-23)
 Decision Type: Foundational Semantic Architecture
 Scope: Enterprise-Semantics (Value Stream as foundational concept)
@@ -13,11 +13,11 @@ Supersedes: None
 Depends on: ADR-ES-001 (Authority and Publication Architecture) ;; ADR-ES-002 (Capability Semantic Grounding, Proposed) ;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
 Related: CR-ES-003 (Value Stream Semantic Grounding, Accepted) ;; ADR-ES-002 §22 (semantic-kind distinction) ;; CR-ES-003 §17 (Workflow boundary) ;; ADR-ES-005 (Agentic Value Stream, future)
 
-Decision: Establish Value Stream as the foundational enterprise semantic concept for the end-to-end progression of stakeholder value realization, from an initiating need, demand, or trigger to a resulting stakeholder outcome or value realization. Per FND-ES-AG-008 §1.3, the canonical grounding classification is Tier 1 Kernel Reference + ES-canonical novelty: WSF grounds the kernel Value ;;; ES adds the Stream construct that WSF does not define. Value Stream is implementation-independent ;;; distinct from Process, Capability, Service, Workflow, Organization, Product. Agentic Value Stream and Autonomous Value Stream are explicitly excluded from this ADR ;;; held for ADR-ES-005+.
+Decision: Establish Value Stream as the foundational enterprise semantic concept for the end-to-end progression of stakeholder value realization, from an initiating need, demand, or trigger to a resulting stakeholder outcome or value realization. Per FND-ES-AG-008 §1.3, the canonical grounding classification is Tier 1 Kernel Reference + ES-canonical novelty: WSF grounds the kernel Value, ES adds the Stream construct that WSF does not define. Value Stream is implementation-independent, distinct from Process, Capability, Service, Workflow, Organization, Product. Agentic Value Stream and Autonomous Value Stream are explicitly excluded from this ADR, held for ADR-ES-005+.
 
 Slot note: this ADR is filed at governance repo docs/adr/0005-... The slot sequence is 0000-template, 0001-authority-and-publication, 0002-enterprise-semantic-model, 0003-agentic-semantic-decision, 0004-capability-semantic-grounding, 0005-value-stream-semantic-grounding. Slot 0005 is the next free slot.
 
-Implementation: CR-ES-003 (Value Stream Semantic Grounding). CR-ES-003 is the design artefact ;;; this ADR ratifies it as a governed semantic decision. CR-ES-003 implementation landed via 7 PRs across 4 repos on 2026-09-23.
+Implementation: CR-ES-003 (Value Stream Semantic Grounding). CR-ES-003 is the design artefact, this ADR ratifies it as a governed semantic decision. CR-ES-003 implementation landed via 7 PRs across 4 repos on 2026-09-23.
 
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 Promoted by: Emmanuel A. Otchere (promotion ritual per ADR-ES-001 §10-§11, 2026-09-23)
@@ -1063,25 +1063,25 @@ All 30 acceptance-criteria checkboxes per ADR-ES-003 §34 are satisfied, evidenc
 
 The promotion to Accepted has the following consequences:
 
-- ADR-ES-003 is now binding on all subsequent Enterprise-Semantics concept records ;;; any future concept record that conflicts with the foundational Value Stream definition (e.g. redefining Value Stream as a Process) is automatically rejected by the conformance gate.
-- CR-ES-003 is now binding as the implementation specification ;;; the 13 governed predicates + 3 mapping records + 28 associated files constitute the authoritative implementation surface.
-- v0.2.0 is the canonical version pointer for the Value Stream semantic establishment ;;; v0.0.1 (initial release pointer) is superseded for any record governed by this ADR.
-- FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary) is now operationally enforced ;;; Value Stream is classified as Tier 1 Kernel Reference + ES-canonical novelty.
+- ADR-ES-003 is now binding on all subsequent Enterprise-Semantics concept records, any future concept record that conflicts with the foundational Value Stream definition (e.g. redefining Value Stream as a Process) is automatically rejected by the conformance gate.
+- CR-ES-003 is now binding as the implementation specification, the 13 governed predicates + 3 mapping records + 28 associated files constitute the authoritative implementation surface.
+- v0.2.0 is the canonical version pointer for the Value Stream semantic establishment, v0.0.1 (initial release pointer) is superseded for any record governed by this ADR.
+- FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary) is now operationally enforced, Value Stream is classified as Tier 1 Kernel Reference + ES-canonical novelty.
 - The follow-on sequence per §35 is now unblocked:
-  - ADR-ES-004 (Agentic Semantic Grounding) is unblocked ;;; it can build on the established Value Stream semantics without redefining the parent.
-  - ADR-ES-005 (Agentic Value Stream) is unblocked ;;; Agentic Value Stream is now a valid specialization rather than a parallel invention.
+  - ADR-ES-004 (Agentic Semantic Grounding) is unblocked, it can build on the established Value Stream semantics without redefining the parent.
+  - ADR-ES-005 (Agentic Value Stream) is unblocked, Agentic Value Stream is now a valid specialization rather than a parallel invention.
   - ADR-ES-006 (Agentic Workflow) is unblocked.
   - ADR-ES-007 (Autonomous Operations) is unblocked.
 
 37.3 Next governance action
 
-- Capability (ADR-ES-002 / CR-ES-002) is still Proposed ;;; CR-ES-002 implementation was held (orphan stash from v3.1.7) ;;; the Capability YAML §10 maturity gate work is still incomplete per v3.1.4. ADR-ES-002 promotion awaits CR-ES-002 implementation completion.
-- Release tag (Enterprise-Semantics v0.2.0) is now defensible per the acceptance criteria ;;; held pending v3.1.4 user directive (no automatic release tags without explicit user authorisation).
-- Plan-keeper cron should suppress any drift alarm on the v0.2.0 surface ;;; the 28 associated files (plus 2 CHANGELOG + 2 README updates) are the authoritative state as of this promotion.
+- Capability (ADR-ES-002 / CR-ES-002) is still Proposed, CR-ES-002 implementation was held (orphan stash from v3.1.7), the Capability YAML §10 maturity gate work is still incomplete per v3.1.4. ADR-ES-002 promotion awaits CR-ES-002 implementation completion.
+- Release tag (Enterprise-Semantics v0.2.0) is now defensible per the acceptance criteria, held pending v3.1.4 user directive (no automatic release tags without explicit user authorisation).
+- Plan-keeper cron should suppress any drift alarm on the v0.2.0 surface, the 28 associated files (plus 2 CHANGELOG + 2 README updates) are the authoritative state as of this promotion.
 
 37.4 Cardinal rules verified at promotion
 
 - Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 - Promotion ritual executer: Emmanuel A. Otchere (per ADR-ES-001 §10-§11)
 - D-004 dash rule: no en-dash (U+2013), no em-dash (U+2014), no horizontal-ellipsis divider (U+2E3B) introduced by the promotion header block + this §37 Acceptance section
-- Vendor-specific embargo: no material from embargoed sources introduced ;;; the canonical SDO-neutral sourcing (ISO/IEC, ITU-T, ETSI, NIST) is preserved
+- Vendor-specific embargo: no material from embargoed sources introduced, the canonical SDO-neutral sourcing (ISO/IEC, ITU-T, ETSI, NIST) is preserved

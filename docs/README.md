@@ -1,6 +1,6 @@
 <!--
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-22)
-Filing: CR-ES-001 §10 + §11-§13 (governance scaffolding ;;; no destructive replaces)
+Filing: CR-ES-001 §10 + §11-§13 (governance scaffolding, no destructive replaces)
 -->
 
 # Governance Documentation
@@ -21,7 +21,7 @@ Use this directory for:
 
 ## Initial content
 
-`001-lifecycle.md` ;;; the governed lifecycle from Finding to Release, with operational guidance for each artefact type.
+`001-lifecycle.md`, the governed lifecycle from Finding to Release, with operational guidance for each artefact type.
 
 ## Cardinal rules
 

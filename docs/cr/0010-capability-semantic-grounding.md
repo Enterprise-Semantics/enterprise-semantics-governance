@@ -1,6 +1,6 @@
 CR-ES-002: Capability Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115 ;;; "Proceed with everything")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115, "Proceed with everything")
 Change Type: Semantic Grounding
 Priority: P0 Foundational Enterprise Concept
 Related ADR: ADR-ES-002 Capability Semantic Grounding
@@ -909,7 +909,7 @@ The promotion to Accepted has the following consequences:
 * The Capability concept (ES:CONCEPT:capability) is foundational at Candidate lifecycle.
 * The 9 Capability governed predicates from §21 are registered in relationships/vocabulary.yaml v0.4.0 (PR #6 enterprise-semantics, recovered from v3.1.7 orphan stash).
 * The 9 Capability inverse pairs are registered in relationships/inverse.yaml v0.4.0.
-* 2 predicates are namespaced (capability-realized-through, capability-contributes-to) for cross-CR subject-type disambiguation ;;; following the stage-realized-through pattern.
+* 2 predicates are namespaced (capability-realized-through, capability-contributes-to) for cross-CR subject-type disambiguation, following the stage-realized-through pattern.
 * v0.1.0 of versions/v0.1.0.yaml is the canonical version pointer per §24.
 * v0.4.0 of relationships/vocabulary.yaml is the canonical predicate vocabulary version.
 * 3 mapping records are PROPOSED per §22 + §15-§17: mappings/wsf/capability.yaml ;; mappings/opendea/capability.yaml ;; mappings/dea-catalogs/capability.yaml.
@@ -917,7 +917,7 @@ The promotion to Accepted has the following consequences:
 * Worked example per §20: examples/foundational/capability.yaml (OTCHERE Inc).
 * Conformance tests per §23: 7 test groups (identity + schema + relationships + boundaries + provenance + grounding + specialization) covering CAP-001..012.
 * PlantUML sources (parallel slice landed in PR #4 enterprise-semantics-visuals): 3 PlantUML files documenting the Capability semantic concept + boundary + Capability-Process-Workflow boundary.
-* ES Capability is bearer-agnostic per §2.2 ;;; not specifically human or AI.
+* ES Capability is bearer-agnostic per §2.2, not specifically human or AI.
 * No Agentic Capability, Autonomous Capability, or other specialisations are canonicalized (per §25).
 * No business Capability maturity models, scoring, or heatmaps are introduced.
 * No OpenDEA metamodel change has been made (per §22 + ADR-ES-002 §1.6).
@@ -925,9 +925,9 @@ The promotion to Accepted has the following consequences:
 
 The next governed change sequence remains:
 
-* ADR-ES-005 + CR-ES-005 (Agentic Value Stream, future ;;; per ADR-ES-003 + ADR-ES-004)
-* ADR-ES-006 + CR-ES-006 (Agentic Workflow, future ;;; per ADR-ES-004)
-* ADR-ES-007 + CR-ES-007 (Autonomous Operations, future ;;; per ADR-ES-004)
+* ADR-ES-005 + CR-ES-005 (Agentic Value Stream, future, per ADR-ES-003 + ADR-ES-004)
+* ADR-ES-006 + CR-ES-006 (Agentic Workflow, future, per ADR-ES-004)
+* ADR-ES-007 + CR-ES-007 (Autonomous Operations, future, per ADR-ES-004)
 
 Promoted by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23) per ADR-ES-001 §10-§11 promotion ritual.
 

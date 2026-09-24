@@ -1,11 +1,11 @@
 <!--
-ADR-ES-002 ;;; Enterprise Semantic Model
+ADR-ES-002, Enterprise Semantic Model
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original (with em-dashes preserved): 00_inbox/ADR-ES-002.md
 
 Dependency status (2026-09-02):
-- Depends on ADR-ES-001 ;;; Organization Scaffolding and Initial Content.
+- Depends on ADR-ES-001, Organization Scaffolding and Initial Content.
 - ADR-ES-001 has not been authored yet.
 - Per user decision (2026-09-02, message 1544720255153082421), Path B:
   Accept ADR-ES-002 with the dependency noted, author ADR-ES-001

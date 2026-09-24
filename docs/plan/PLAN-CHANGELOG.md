@@ -1,4 +1,4 @@
-# PLAN-CHANGELOG.md ;;; Enterprise Semantics Program Plan
+# PLAN-CHANGELOG.md, Enterprise Semantics Program Plan
 
 This log tracks every committed change to `plans/PLAN.md`. The plan-keeper cronjob
 references this file's most recent entry when reconciling the live org state against
@@ -65,7 +65,7 @@ PASS: NO_DRIFT
 - CR-ES-AG-010 (Agentic Agent) ;; now unblocked. Three plausible models to evaluate per FND-ES-AG-006 §3. FND-ES-AG-007 (AI Agent) provides the grounding target.
 - CR-ES-AG-011 (Agentic Service/Product/AI) ;; straightforward, can land after 010.
 - CR-ES-AG-012 (Profile conformance extension) ;; cross-record checks.
-- CR-ES-AG-013 (first semantic release tag) ;; now `v0.1.0-seed` ;;; subsequent releases v0.x.y.
+- CR-ES-AG-013 (first semantic release tag) ;; now `v0.1.0-seed`, subsequent releases v0.x.y.
 
 ### Verification
 
@@ -73,7 +73,7 @@ PASS: NO_DRIFT
 
 ---
 
-## [2.0.0] ; 2026-09-03 ; D-003 resolved (Path A) ;;; naming drift reconciled
+## [2.0.0] ; 2026-09-03 ; D-003 resolved (Path A), naming drift reconciled
 
 ### User directive (2026-09-03, message 1544919802534035608)
 
@@ -90,9 +90,9 @@ Picked Path A on D-003: `Enterprise-Semantics` is canonical. The earlier `Enterp
 
 ### Verification
 
-- `gh api /orgs/Enterprise-Concepts-Model -q .public_repos` ;;; 0 (unchanged, untouched).
-- `gh api /orgs/Enterprise-Semantics -q .public_repos` ;;; 9 (unchanged, full seed).
-- `gh api /repos/Enterprise-Semantics/.github/contents/profile/README.md -q .size` ;;; 9718 (was 9294).
+- `gh api /orgs/Enterprise-Concepts-Model -q .public_repos`, 0 (unchanged, untouched).
+- `gh api /orgs/Enterprise-Semantics -q .public_repos`, 9 (unchanged, full seed).
+- `gh api /repos/Enterprise-Semantics/.github/contents/profile/README.md -q .size`, 9718 (was 9294).
 
 ### What did NOT happen
 
@@ -104,12 +104,12 @@ Picked Path A on D-003: `Enterprise-Semantics` is canonical. The earlier `Enterp
 
 ### Next-queue status
 
-- D-010 still in_progress ;;; CR-ES-AG-005, 008, 009, 010 (conditional), 011, 012, 013 remain.
+- D-010 still in_progress, CR-ES-AG-005, 008, 009, 010 (conditional), 011, 012, 013 remain.
 - Phase 5 (conformance gate + release tag) pending.
 
 ---
 
-## [1.0.0] ; 2026-09-02 ; Agentic Seed Release ;;; first Agentic semantic implementation landed
+## [1.0.0] ; 2026-09-02 ; Agentic Seed Release, first Agentic semantic implementation landed
 
 ### User directive (2026-09-02, message 1544738104559009833)
 
@@ -120,40 +120,40 @@ Picked Path A on D-003: `Enterprise-Semantics` is canonical. The earlier `Enterp
 
 The user sent:
 
-1. FND-ES-AG-001 (user-revised canonical) ;;; replaces my earlier authored version.
-2. FND-ES-AG-001-Grounding-Result ;;; live WSF baseline grounding result.
+1. FND-ES-AG-001 (user-revised canonical), replaces my earlier authored version.
+2. FND-ES-AG-001-Grounding-Result, live WSF baseline grounding result.
 
 ### Key correction from Grounding Result
 
 **Do not create a parallel Agentic ontology. Specialize WSF where possible.**
 
 - WSF already grounds Capability in Disposition + Capacity + Ability + Entity + Role + Context. ES must specialize, not redefine.
-- Agentic Capability may NOT be a new kind ;;; could be Capability with agentic characteristic (bearer -> AI Agent, agentic execution).
-- Agentic Agent ;;; requires scrutiny (may be redundant with AI Agent).
+- Agentic Capability may NOT be a new kind, could be Capability with agentic characteristic (bearer -> AI Agent, agentic execution).
+- Agentic Agent, requires scrutiny (may be redundant with AI Agent).
 - Strong candidates: Agentic Operations, Agentic Enterprise, Agentic Value Stream, Agentic Workflow.
 
 ### Implementation sequence landed this turn
 
-- **CR-ES-AG-002** (commit 063ab5c) ;;; agentic-execution Profile record (Established, v1.0.0). Cites WSF live baseline in provenance.
-- **CR-ES-AG-003** (commit c15f12c) ;;; Agentic Value Stream concept record + Value Stream base.
-- **CR-ES-AG-004** (commit c15f12c) ;;; Agentic Workflow concept record + Workflow base.
-- **CR-ES-AG-006** (commit 3869999) ;;; Agentic Operations concept record + Operations base.
-- **CR-ES-AG-007** (commit 3869999) ;;; Agentic Enterprise concept record + Enterprise base.
+- **CR-ES-AG-002** (commit 063ab5c), agentic-execution Profile record (Established, v1.0.0). Cites WSF live baseline in provenance.
+- **CR-ES-AG-003** (commit c15f12c), Agentic Value Stream concept record + Value Stream base.
+- **CR-ES-AG-004** (commit c15f12c), Agentic Workflow concept record + Workflow base.
+- **CR-ES-AG-006** (commit 3869999), Agentic Operations concept record + Operations base.
+- **CR-ES-AG-007** (commit 3869999), Agentic Enterprise concept record + Enterprise base.
 
 ### Findings authored
 
-- **FND-ES-AG-001** (user-revised canonical) ;;; supersedes my earlier authored version (audit trail preserved).
-- **FND-ES-AG-001-Grounding-Result** ;;; live WSF baseline grounding that informed the revision.
-- **FND-ES-AG-004** ;;; Agentic Operations semantic grounding (10-step template from Grounding Result §13).
-- **FND-ES-AG-005** ;;; Agentic Enterprise semantic grounding (10-step template).
-- **FND-ES-AG-006** ;;; Agentic Agent scrutiny ;;; held back from canonical per Grounding Result §3 + §12.
+- **FND-ES-AG-001** (user-revised canonical), supersedes my earlier authored version (audit trail preserved).
+- **FND-ES-AG-001-Grounding-Result**, live WSF baseline grounding that informed the revision.
+- **FND-ES-AG-004**, Agentic Operations semantic grounding (10-step template from Grounding Result §13).
+- **FND-ES-AG-005**, Agentic Enterprise semantic grounding (10-step template).
+- **FND-ES-AG-006**, Agentic Agent scrutiny, held back from canonical per Grounding Result §3 + §12.
 
 ### Program board
 
 - 18 cards live (3 decisions + 3 findings pre-work + 4 new decisions + 3 new findings + manny-es + 4 roadmap placeholders closed).
-- Finding card #4 (my earlier authored FND-ES-AG-001) ;;; superseded, Status=Done.
-- Cards #9, #10, #14, #15, #16 ;;; new findings, Status=In Progress.
-- Cards #11, #12, #13, #17, #18 ;;; new CRs (implemented), Status=Done.
+- Finding card #4 (my earlier authored FND-ES-AG-001), superseded, Status=Done.
+- Cards #9, #10, #14, #15, #16, new findings, Status=In Progress.
+- Cards #11, #12, #13, #17, #18, new CRs (implemented), Status=Done.
 
 ### Conformance evidence (real run output)
 
@@ -177,11 +177,11 @@ exit: 0
 
 ### Updated decisions
 
-- **D-011** (open, opened 2026-09-02): CR-ES-AG-005 (Agentic Flow), 008 (Agentic Capability), 009 (AI Agent), 010 (Agentic Agent ;;; conditional, gated on FND-ES-AG-006 + FND-ES-AG-009), 011 (Agentic Service/Product/AI), 012 (Profile conformance extension), 013 (first semantic release tag).
+- **D-011** (open, opened 2026-09-02): CR-ES-AG-005 (Agentic Flow), 008 (Agentic Capability), 009 (AI Agent), 010 (Agentic Agent, conditional, gated on FND-ES-AG-006 + FND-ES-AG-009), 011 (Agentic Service/Product/AI), 012 (Profile conformance extension), 013 (first semantic release tag).
 
 ### Verification
 
-- `python3 scripts/plan_keeper.py` ;;; `NO_DRIFT`, exit 0.
+- `python3 scripts/plan_keeper.py`, `NO_DRIFT`, exit 0.
 
 ---
 
@@ -190,20 +190,20 @@ exit: 0
 ### Implementation
 
 - **CR-ES-AG-001 (Profile registry + schema)** landed in `enterprise-semantics` repo:
-  - `schema/profile.schema.json` (4,061 bytes) ;;; JSON Schema Draft 2020-12.
-  - `registry/profile-types.yaml` (1,689 bytes) ;;; Profile type registry (agentic-execution, autonomous-operation, example-do-not-use).
-  - `registry/profiles/_base.profile.yaml` (2,284 bytes) ;;; Profile conventions + canonical example.
-  - `conformance/check.py` (6,939 bytes) ;;; Profile conformance harness.
-  - `conformance/tests/test_profile_schema.py` (10,656 bytes) ;;; 5-case test suite.
-  - `conformance/tests/fixtures/*.yaml` (1,560 bytes total) ;;; 3 test fixtures.
-  - `docs/profile.md` (5,266 bytes) ;;; Profile semantic construct documentation.
+  - `schema/profile.schema.json` (4,061 bytes), JSON Schema Draft 2020-12.
+  - `registry/profile-types.yaml` (1,689 bytes), Profile type registry (agentic-execution, autonomous-operation, example-do-not-use).
+  - `registry/profiles/_base.profile.yaml` (2,284 bytes), Profile conventions + canonical example.
+  - `conformance/check.py` (6,939 bytes), Profile conformance harness.
+  - `conformance/tests/test_profile_schema.py` (10,656 bytes), 5-case test suite.
+  - `conformance/tests/fixtures/*.yaml` (1,560 bytes total), 3 test fixtures.
+  - `docs/profile.md` (5,266 bytes), Profile semantic construct documentation.
   - `CHANGELOG.md` v0.1.0.
 - Remote commit: 8afee80 on `Enterprise-Semantics/enterprise-semantics` main branch.
 
 ### Conformance evidence
 
-- `python3 conformance/check.py` ;;; `NO_DRIFT (0 Profile record(s) validated)`, exit 0.
-- `python3 conformance/tests/test_profile_schema.py` ;;; `5/5 cases passed`, exit 0.
+- `python3 conformance/check.py`, `NO_DRIFT (0 Profile record(s) validated)`, exit 0.
+- `python3 conformance/tests/test_profile_schema.py`, `5/5 cases passed`, exit 0.
 
 ### Documentation
 
@@ -212,11 +212,11 @@ exit: 0
 
 ### Next CR
 
-- **CR-ES-AG-002** ;;; register `agentic-execution` profile_type and land Agentic Value Stream + Agentic Workflow Profile records (next step in the sequence per ADR-ES-AG-001 §6).
+- **CR-ES-AG-002**, register `agentic-execution` profile_type and land Agentic Value Stream + Agentic Workflow Profile records (next step in the sequence per ADR-ES-AG-001 §6).
 
 ### Verification
 
-- `python3 scripts/plan_keeper.py` ;;; `NO_DRIFT` after commit.
+- `python3 scripts/plan_keeper.py`, `NO_DRIFT` after commit.
 
 ---
 
@@ -224,18 +224,18 @@ exit: 0
 
 ### User decision (2026-09-02)
 
-- Picked option #1 (recommended) ;;; promote ADR-ES-AG-001 to Accepted and begin the CR-ES-AG-001+ implementation sequence.
+- Picked option #1 (recommended), promote ADR-ES-AG-001 to Accepted and begin the CR-ES-AG-001+ implementation sequence.
 
 ### ADR-ES-AG-001 acceptance
 
-- `docs/adr/0003-agentic-semantic-decision.md` ;;; frontmatter updated: `Status: Accepted` (promoted from Proposed).
-- Program board: Decision card #6 (`[ADR-ES-AG-001] Agentic Semantic Decision (Proposed)`) ;;; Status promoted to `Done`.
+- `docs/adr/0003-agentic-semantic-decision.md`, frontmatter updated: `Status: Accepted` (promoted from Proposed).
+- Program board: Decision card #6 (`[ADR-ES-AG-001] Agentic Semantic Decision (Proposed)`), Status promoted to `Done`.
 - Acceptance comment added on issue #6 with the three architectural commitments in force.
 - Local copies (`00_inbox/ADR-ES-AG-001.md` + `seed/ADR-ES-norm-AG-001.md`) updated to reflect the accepted status.
 
 ### Implementation unlocked
 
-- CR-ES-AG-001+ (13 CRs) ;;; sequence locked by ADR-ES-AG-001 §6. CR-ES-AG-001 (Profile semantic construct + registry + YAML schema) lands in this turn as the first concrete implementation.
+- CR-ES-AG-001+ (13 CRs), sequence locked by ADR-ES-AG-001 §6. CR-ES-AG-001 (Profile semantic construct + registry + YAML schema) lands in this turn as the first concrete implementation.
 
 ### Updated decisions
 
@@ -243,7 +243,7 @@ exit: 0
 
 ### Verification
 
-- `python3 scripts/plan_keeper.py` ;;; `NO_DRIFT` after commit.
+- `python3 scripts/plan_keeper.py`, `NO_DRIFT` after commit.
 
 ---
 
@@ -251,17 +251,17 @@ exit: 0
 
 ### User decision (2026-09-02)
 
-- Picked option #2 ;;; author ADR-ES-AG-001 early to lock in the Profile pattern before all sub-findings land.
+- Picked option #2, author ADR-ES-AG-001 early to lock in the Profile pattern before all sub-findings land.
 
 ### Added
 
-- `00_inbox/ADR-ES-AG-001.md` ;;; authored (16,772 bytes, dash-normalized from the start).
-- `seed/ADR-ES-norm-AG-001.md` ;;; identical bytes (gitignored per D-004).
-- `enterprise-semantics-governance/docs/adr/0003-agentic-semantic-decision.md` ;;; 17,608 bytes with frontmatter, pushed to remote governance repo.
+- `00_inbox/ADR-ES-AG-001.md`, authored (16,772 bytes, dash-normalized from the start).
+- `seed/ADR-ES-norm-AG-001.md`, identical bytes (gitignored per D-004).
+- `enterprise-semantics-governance/docs/adr/0003-agentic-semantic-decision.md`, 17,608 bytes with frontmatter, pushed to remote governance repo.
 - Program board: new Decision card `[ADR-ES-AG-001] Agentic Semantic Decision (Proposed)` (Issue #6 in `enterprise-semantics-governance`, on the board with `Item Type=Decision`, `Phase=Phase 3`, `Priority=High`, `Status=In Progress`).
 - Comments added to Finding cards #4 (FND-ES-AG-001) and #5 (FND-ES-AG-002) noting they are cited by ADR-ES-AG-001, not closed.
 
-### ADR-ES-AG-001 ;;; three architectural commitments
+### ADR-ES-AG-001, three architectural commitments
 
 1. **`Agentic` is a Profile modifier, not a new semantic kind.** `Agentic X` is a Profile of `X` under agent-augmented execution conditions.
 2. **`Agentic != Autonomous`** is established at the Profile-characteristic level, not at the semantic-kind level. Both are Profiles of the same base concept with different profile_type values.
@@ -274,15 +274,15 @@ exit: 0
 - Adaptive behavior
 - Human governance, not human execution
 
-### Implementation sequence ;;; CR-ES-AG-001+ (13 CRs)
+### Implementation sequence, CR-ES-AG-001+ (13 CRs)
 
-- **CR-ES-AG-001** ;;; Profile semantic construct (registry + schema)
-- **CR-ES-AG-002** ;;; agentic-execution profile_type registration
-- **CR-ES-AG-003** ;;; Agentic Value Stream (per FND-ES-AG-002)
-- **CR-ES-AG-004** ;;; Agentic Workflow (per FND-ES-AG-003 pending)
-- **CR-ES-AG-005 through 011** ;;; one CR per remaining concept
-- **CR-ES-AG-012** ;;; Profile conformance gate validation
-- **CR-ES-AG-013** ;;; First semantic release tag
+- **CR-ES-AG-001**, Profile semantic construct (registry + schema)
+- **CR-ES-AG-002**, agentic-execution profile_type registration
+- **CR-ES-AG-003**, Agentic Value Stream (per FND-ES-AG-002)
+- **CR-ES-AG-004**, Agentic Workflow (per FND-ES-AG-003 pending)
+- **CR-ES-AG-005 through 011**, one CR per remaining concept
+- **CR-ES-AG-012**, Profile conformance gate validation
+- **CR-ES-AG-013**, First semantic release tag
 
 ### Acceptance criteria
 
@@ -305,7 +305,7 @@ Until `Accepted`, CR-ES-AG-001+ cannot land.
 
 ### Verification
 
-- `python3 scripts/plan_keeper.py` ;;; `NO_DRIFT` after commit.
+- `python3 scripts/plan_keeper.py`, `NO_DRIFT` after commit.
 - ADR-ES-AG-001 awaiting human-owner acceptance. `manny-es` will surface this on each daily check-in.
 
 ---
@@ -314,12 +314,12 @@ Until `Accepted`, CR-ES-AG-001+ cannot land.
 
 ### Added
 
-- `00_inbox/FND-ES-AG-002.md` ;;; authored (16,887 bytes, dash-normalized from the start).
-- `seed/FND-ES-norm-AG-002.md` ;;; identical bytes (gitignored per D-004).
-- `enterprise-semantics-governance/docs/finding/0002-agentic-value-stream-semantic-grounding.md` ;;; 17,513 bytes with frontmatter, pushed to remote governance repo.
+- `00_inbox/FND-ES-AG-002.md`, authored (16,887 bytes, dash-normalized from the start).
+- `seed/FND-ES-norm-AG-002.md`, identical bytes (gitignored per D-004).
+- `enterprise-semantics-governance/docs/finding/0002-agentic-value-stream-semantic-grounding.md`, 17,513 bytes with frontmatter, pushed to remote governance repo.
 - Program board: new Finding card `[FND-ES-AG-002] Agentic Value Stream Semantic Grounding (Proposed)` (Issue #5 in `enterprise-semantics-governance`, on the board with `Item Type=Spike`, `Phase=Phase 3`, `Priority=High`, `Status=In Progress`).
 
-### FND-ES-AG-002 ;;; working conclusion (provisional, NOT normative)
+### FND-ES-AG-002, working conclusion (provisional, NOT normative)
 
 - `Agentic Value Stream` is a **Profile** of `Value Stream`, not a Specialization, pure Characteristic, or Distinct kind.
 - Justification: the four agentic characteristics (bounded autonomy, AI-augmented decision-making, adaptive value-realization, human governance) are characteristics of execution, not of value-realization semantics. A Profile preserves identity, governed relationships, lifecycle, and mappings while avoiding semantic duplication.
@@ -347,7 +347,7 @@ Until `Accepted`, CR-ES-AG-001+ cannot land.
 
 ### Updated decisions
 
-- **D-009** updated: FND-ES-AG-002 landed. Remaining sub-findings (FND-ES-AG-003+) ;;; per-concept and per-relationship investigations for the rest of the Agentic family.
+- **D-009** updated: FND-ES-AG-002 landed. Remaining sub-findings (FND-ES-AG-003+), per-concept and per-relationship investigations for the rest of the Agentic family.
 
 ---
 
@@ -360,12 +360,12 @@ Until `Accepted`, CR-ES-AG-001+ cannot land.
 
 ### Added
 
-- `00_inbox/FND-ES-AG-001.md` ;;; authored (14,202 bytes, dash-normalized from the start ;;; 0 em-dashes, 0 en-dashes).
-- `seed/FND-ES-norm-AG-001.md` ;;; identical bytes (gitignored per D-004).
-- `enterprise-semantics-governance/docs/finding/0001-agentic-semantic-grounding.md` ;;; 14,668 bytes with frontmatter, pushed to remote governance repo.
+- `00_inbox/FND-ES-AG-001.md`, authored (14,202 bytes, dash-normalized from the start, 0 em-dashes, 0 en-dashes).
+- `seed/FND-ES-norm-AG-001.md`, identical bytes (gitignored per D-004).
+- `enterprise-semantics-governance/docs/finding/0001-agentic-semantic-grounding.md`, 14,668 bytes with frontmatter, pushed to remote governance repo.
 - Program board: new Finding card `[FND-ES-AG-001] Agentic Semantic Grounding (Proposed)` (Issue #4 in `enterprise-semantics-governance`, on the board with `Item Type=Spike`, `Phase=Phase 3`, `Priority=High`, `Status=In Progress`).
 
-### FND-ES-AG-001 ;;; summary
+### FND-ES-AG-001, summary
 
 - Establishes the **Agentic Semantic Grounding** investigation as the first substantive semantic implementation under ADR-ES-002.
 - Addresses the 14 questions from ADR-ES-002 §21.
@@ -380,11 +380,11 @@ Until `Accepted`, CR-ES-AG-001+ cannot land.
 ### Updated decisions
 
 - **D-008** updated: Path B accepted (ADR-ES-002 dependency noted, not blocking).
-- New **D-009** (open): FND-ES-AG-002+ sub-findings ;;; not yet authored. Will land incrementally as the investigation progresses.
+- New **D-009** (open): FND-ES-AG-002+ sub-findings, not yet authored. Will land incrementally as the investigation progresses.
 
 ### Verification
 
-- `python3 scripts/plan_keeper.py` ;;; `NO_DRIFT` after commit.
+- `python3 scripts/plan_keeper.py`, `NO_DRIFT` after commit.
 - `manny-es` daily check-in will surface D-008 (ADR-ES-001 outstanding) and the active Phase 3 status.
 
 ---
@@ -393,12 +393,12 @@ Until `Accepted`, CR-ES-AG-001+ cannot land.
 
 ### Added
 
-- `00_inbox/ADR-ES-002.md` ;;; verbatim (17,751 bytes, em-dashes preserved).
-- `seed/ADR-ES-norm-002.md` ;;; dash-normalized (17,742 bytes, em-dash ;;; colon, en-dash ;;; semicolon). Gitignored per D-004.
-- `enterprise-semantics-governance/docs/adr/0002-enterprise-semantic-model.md` ;;; dash-normalized ADR with frontmatter (17,929 bytes), pushed to remote governance repo.
-- `enterprise-semantics-governance/CHANGELOG.md` ;;; v0.0.2 entry recording the ADR-ES-002 ingest.
+- `00_inbox/ADR-ES-002.md`, verbatim (17,751 bytes, em-dashes preserved).
+- `seed/ADR-ES-norm-002.md`, dash-normalized (17,742 bytes, em-dash, colon, en-dash, semicolon). Gitignored per D-004.
+- `enterprise-semantics-governance/docs/adr/0002-enterprise-semantic-model.md`, dash-normalized ADR with frontmatter (17,929 bytes), pushed to remote governance repo.
+- `enterprise-semantics-governance/CHANGELOG.md`, v0.0.2 entry recording the ADR-ES-002 ingest.
 - Program board: new Decision card `[ADR-ES-002] Enterprise Semantic Model (Proposed)` (Issue #3 in `enterprise-semantics-governance`, on the board with `Item Type=Decision`, `Phase=Phase 3`, `Priority=High`, `Status=In Progress`).
-- PLAN.md ;;; v0.4.0: D-008 logged (open), Phase 3 marked in_progress, plan-keeper YAML reflects the new state.
+- PLAN.md, v0.4.0: D-008 logged (open), Phase 3 marked in_progress, plan-keeper YAML reflects the new state.
 
 ### Open question
 
@@ -429,20 +429,20 @@ Until `Accepted`, CR-ES-AG-001+ cannot land.
 
 ### Pending (awaiting user)
 
-- Phase 3 ;;; ADR-ES-001, CR-ES-001, Finding records.
+- Phase 3, ADR-ES-001, CR-ES-001, Finding records.
 
 ---
 
 ## [0.2.0] ; 2026-09-02 ; Phase 1 + Phase 2 complete
 
-### Phase 1 ;;; Org landing page
+### Phase 1, Org landing page
 
 - `.github` profile repo created (public, Apache-2.0, charter at `profile/README.md`).
 - Org description set: "Enterprise-level semantic definitions, relationships, and mappings: governed, public, machine-accessible."
 - Org-level GitHub Project #1 "Enterprise Semantics Program" created with custom fields `Item Type`, `Priority`, `Phase`.
 - 8 future-repo epics created in `.github` (Issues #1-#8) + 1 roadmap tracker (#9); board seeded.
 
-### Phase 2 ;;; Domain repo skeleton
+### Phase 2, Domain repo skeleton
 
 - 8 domain repos created (public, Apache-2.0, descriptive descriptions):
   - `enterprise-semantics`, `enterprise-semantics-spec`, `enterprise-semantics-governance`,
@@ -461,7 +461,7 @@ Until `Accepted`, CR-ES-AG-001+ cannot land.
 
 ### Plan-keeper
 
-- `es-plan-keeper` cronjob (job id `434b5c9c3023`) ran successfully after Phase 1 ;;; first drift report posted to Discord Home (the report reads "REPOS_MISSING: [all 8]"). Once the keeper ticks again, it should report either NO_DRIFT or remaining drift on missing branch-protection-only repos.
+- `es-plan-keeper` cronjob (job id `434b5c9c3023`) ran successfully after Phase 1, first drift report posted to Discord Home (the report reads "REPOS_MISSING: [all 8]"). Once the keeper ticks again, it should report either NO_DRIFT or remaining drift on missing branch-protection-only repos.
 
 ---
 
@@ -471,7 +471,7 @@ Until `Accepted`, CR-ES-AG-001+ cannot land.
 
 - Initial `plans/PLAN.md` authored (Phases 0;;6, repo inventory, WBS, dependency graph, plan-keeper spec, decisions log, machine-readable summary).
 - `00_inbox/FND-ES-000.md` and `00_inbox/FND-ES-001.md` stored verbatim (em-dashes preserved per user directive).
-- `seed/FND-ES-norm-000.md` and `seed/FND-ES-norm-001.md` dash-normalized drafts (em-dash ;;; colon, en-dash ;;; semicolon); gitignored per D-004.
+- `seed/FND-ES-norm-000.md` and `seed/FND-ES-norm-001.md` dash-normalized drafts (em-dash, colon, en-dash, semicolon); gitignored per D-004.
 - `scripts/plan_keeper.py` cronjob-driven drift detector (idempotent, read-only against GitHub).
 - `.gitignore` covering credential, AI-model, and workspace-noise patterns.
 

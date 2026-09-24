@@ -2,7 +2,7 @@
 CR template. Dash-normalized. Each CR implements one ADR or an independent scope change.
 -->
 
-# CR-ES-NNNN ;;; <short title>
+# CR-ES-NNNN, <short title>
 
 **Status:** Draft | Proposed | Accepted | Implemented | Closed
 **Date:** YYYY-MM-DD

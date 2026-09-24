@@ -1,5 +1,5 @@
 <!--
-FND-ES-AG-007 ;;; AI Agent Semantic Grounding ;;; dash-normalized
+FND-ES-AG-007, AI Agent Semantic Grounding, dash-normalized
 Verbatim original: 00_inbox/FND-ES-AG-007.md.
 Status: Proposed Finding. Precedes: CR-ES-AG-009.
 Working conclusion: AI Agent is a Distinct semantic kind ;; not a Profile.
@@ -7,12 +7,12 @@ Grounds via WSF Entity + WSF Capability. Gating prerequisite for
 FND-ES-AG-006 (Agentic Agent scrutiny).
 -->
 
-# FND-ES-AG-007 ;;; AI Agent Semantic Grounding
+# FND-ES-AG-007, AI Agent Semantic Grounding
 
 **Status:** Proposed Finding
 **Scope:** `AI Agent` (and its relationship to `Agent`, `Agentic Agent`, `Capability bearer`)
 **Precedes:** CR-ES-AG-009 (AI Agent concept record) ;; ADR-ES-AG-001 §6.
-**Depends on:** FND-ES-AG-001 canonical ;;; FND-ES-AG-001-Grounding-Result ;;; ADR-ES-AG-001 ;;; ADR-ES-002.
+**Depends on:** FND-ES-AG-001 canonical, FND-ES-AG-001-Grounding-Result, ADR-ES-AG-001, ADR-ES-002.
 **Related:** FND-ES-AG-002 ;; FND-ES-AG-003 ;; FND-ES-AG-004 ;; FND-ES-AG-005 ;; FND-ES-AG-006 (scrutiny of `Agentic Agent`).
 
 ---
@@ -170,11 +170,11 @@ Evidence does NOT support:
 
 ```text
 Candidate (current)
-    ↓ Investigating ;;; landing with this Finding
-Proposed ;;; consolidated Agentic semantic review accepts the Distinct kind hypothesis
+    ↓ Investigating, landing with this Finding
+Proposed, consolidated Agentic semantic review accepts the Distinct kind hypothesis
     ↓
-Established ;;; CR-ES-AG-009 lands the concept record with conformance evidence
-Canonical ;;; post-release
+Established, CR-ES-AG-009 lands the concept record with conformance evidence
+Canonical, post-release
 ```
 
 Per ADR-ES-AG-001 §9, promotion to `Established` requires CR-ES-AG-009.

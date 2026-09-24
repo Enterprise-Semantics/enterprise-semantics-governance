@@ -1,17 +1,17 @@
 <!--
-FND-ES-AG-005 ;;; Agentic Enterprise Semantic Grounding ;;; dash-normalized
+FND-ES-AG-005, Agentic Enterprise Semantic Grounding, dash-normalized
 Verbatim original: 00_inbox/FND-ES-AG-005.md.
 Status: Proposed Finding. Precedes: CR-ES-AG-007.
 Working conclusion: Agentic Enterprise is a Profile of Enterprise under agent-
 augmented operating-model conditions.
 -->
 
-# FND-ES-AG-005 ;;; Agentic Enterprise Semantic Grounding
+# FND-ES-AG-005, Agentic Enterprise Semantic Grounding
 
 **Status:** Proposed Finding
 **Scope:** `Agentic Enterprise` (and its relationship to `Enterprise`)
 **Precedes:** CR-ES-AG-007 (Agentic Enterprise concept record) ;; ADR-ES-AG-001 §6.
-**Depends on:** FND-ES-AG-001 canonical ;;; FND-ES-AG-001-Grounding-Result ;;; ADR-ES-AG-001 ;;; ADR-ES-002.
+**Depends on:** FND-ES-AG-001 canonical, FND-ES-AG-001-Grounding-Result, ADR-ES-AG-001, ADR-ES-002.
 **Related:** FND-ES-AG-002 ;; FND-ES-AG-003 ;; FND-ES-AG-004.
 
 ---
@@ -29,7 +29,7 @@ Agentic Enterprise
 
 The Grounding Result §8 identifies `Agentic Enterprise` as one of the four
 strongest candidates. The Grounding Result also warns that `Agentic Enterprise`
-must NOT be defined merely as "an enterprise using AI agents" ;;; that would
+must NOT be defined merely as "an enterprise using AI agents", that would
 collapse important semantic distinctions.
 
 This Finding applies the 10-step grounding template from the Grounding Result
@@ -40,7 +40,7 @@ This Finding applies the 10-step grounding template from the Grounding Result
 `Agentic Enterprise` is a Profile of `Enterprise` under agent-augmented
 operating-model conditions. Per ADR-ES-AG-001 §3, the agentic-execution Profile
 applies the four governed characteristics. The Profile binding is to
-`Enterprise` (not to `Operating Model` directly ;;; the binding reaches the
+`Enterprise` (not to `Operating Model` directly, the binding reaches the
 operating-model via the Enterprise binding).
 
 The rationale follows in the 10-step structure.
@@ -51,7 +51,7 @@ The rationale follows in the 10-step structure.
 
 Without semantic grounding of `Agentic Enterprise`:
 
-- The term collapses to a vague "uses AI" ;;; this prevents precise
+- The term collapses to a vague "uses AI", this prevents precise
   specification of what makes an Enterprise Agentic.
 - Downstream systems cannot stably reference `Agentic Enterprise`.
 - The boundary between `Agentic Enterprise`, `Digital Enterprise`, `AI-Native
@@ -80,9 +80,9 @@ Agentic Enterprise
 
 Specifically:
 
-- `Enterprise` ;;; WSF grounding via WSF `Entity` (Disposition + Capability).
+- `Enterprise`, WSF grounding via WSF `Entity` (Disposition + Capability).
   An Enterprise is a complex Entity that operates to realize value.
-- `Agentic Enterprise` ;;; inherits via Profile.
+- `Agentic Enterprise`, inherits via Profile.
 
 ### 3.2 Enterprise Semantic Need
 
@@ -111,15 +111,15 @@ A Profile of `Enterprise` under agent-augmented operating-model conditions
 exhibits the four governed characteristics from ADR-ES-AG-001 §3.3, applied
 across the eight enterprise areas from §3.2:
 
-1. **Goal-directed execution under bounded autonomy** ;;; at the enterprise
+1. **Goal-directed execution under bounded autonomy**, at the enterprise
    level, this means the enterprise pursues stated outcomes without requiring
    continuous human-driven routing across its strategy, governance, capability,
    value creation, operations, decision, work, and culture dimensions.
-2. **AI-augmented decision-making** ;;; at the enterprise level, decisions
+2. **AI-augmented decision-making**, at the enterprise level, decisions
    across all eight dimensions are made by AI agents under governed policy.
-3. **Adaptive behavior** ;;; at the enterprise level, the enterprise
+3. **Adaptive behavior**, at the enterprise level, the enterprise
    reconfigures its operating model in response to feedback and outcome signals.
-4. **Human governance, not human execution** ;;; at the enterprise level,
+4. **Human governance, not human execution**, at the enterprise level,
    humans set intent, policy, and outcome criteria. AI agents execute within
    those bounds across all eight dimensions.
 
@@ -130,14 +130,14 @@ Per ADR-ES-002 §7, the candidate definition for `Agentic Enterprise`:
 > An Agentic Enterprise is an Enterprise whose operating model systematically
 > incorporates agent-augmented decision-making, adaptive operating configuration,
 > goal-directed execution under bounded autonomy, and human governance rather
-> than human execution ;;; across its strategy, governance, capability, value
+> than human execution, across its strategy, governance, capability, value
 > creation, operations, decision, work, and culture.
 
 This definition is provisional and subject to revision.
 
 ### 3.5 Concept Type
 
-`enterprise-profile` ;;; a Profile of `Enterprise` that operates at the
+`enterprise-profile`, a Profile of `Enterprise` that operates at the
 enterprise level rather than the operating-model or activity level.
 
 ### 3.6 Relationships
@@ -160,41 +160,41 @@ enterprise level rather than the operating-model or activity level.
 
 `Agentic Enterprise` does NOT apply when:
 
-- The Enterprise merely deploys AI agents ;;; ad-hoc AI usage is not Agentic
+- The Enterprise merely deploys AI agents, ad-hoc AI usage is not Agentic
   Enterprise.
-- The Enterprise exhibits self-governance across all areas ;;; this is
+- The Enterprise exhibits self-governance across all areas, this is
   `Autonomous Enterprise`.
-- The Enterprise uses AI in only one or two areas ;;; partial adoption is
+- The Enterprise uses AI in only one or two areas, partial adoption is
   not the full Profile.
 
 ### 3.8 Examples
 
 - An Enterprise whose Strategy, Governance, Capability, Value Creation,
   Operations, Decision, Work, and Culture all systematically incorporate
-  AI agents under human-set policy ;;; the Enterprise exhibits Agentic
+  AI agents under human-set policy, the Enterprise exhibits Agentic
   Enterprise characteristics across all eight areas.
 
 ### 3.9 Counterexamples
 
-- An Enterprise that deploys AI agents in Customer Service only ;;; this is
+- An Enterprise that deploys AI agents in Customer Service only, this is
   partial adoption, not the full Profile.
 - An Enterprise where AI agents make all strategic decisions without human
-  oversight ;;; this is Autonomous Enterprise.
-- An Enterprise that has fully automated a single process ;;; this is
+  oversight, this is Autonomous Enterprise.
+- An Enterprise that has fully automated a single process, this is
   Digital Operations, not Agentic Enterprise.
 
 ### 3.10 Provenance
 
 Evidence supporting the Profile hypothesis:
 
-- FND-ES-AG-001-Grounding-Result §8 ;;; identifies Agentic Enterprise as a
+- FND-ES-AG-001-Grounding-Result §8, identifies Agentic Enterprise as a
   legitimate enterprise specialization candidate.
-- FND-ES-000 §15 ;;; candidate relationship chain.
-- FND-ES-001 §14 ;;; existing Agentic body of work uses the term consistently.
+- FND-ES-000 §15, candidate relationship chain.
+- FND-ES-001 §14, existing Agentic body of work uses the term consistently.
 
 Evidence does NOT support:
 
-- Defining Agentic Enterprise as "Enterprise using AI agents" (too vague ;;;
+- Defining Agentic Enterprise as "Enterprise using AI agents" (too vague, 
   per Grounding Result §8).
 - Creating Agentic Enterprise as a Distinct kind (per ADR-ES-002 §5).
 
@@ -202,11 +202,11 @@ Evidence does NOT support:
 
 ```text
 Candidate (current)
-    ↓ Investigating ;;; landing with this Finding
-Proposed ;;; consolidated Agentic semantic review accepts the Profile hypothesis
+    ↓ Investigating, landing with this Finding
+Proposed, consolidated Agentic semantic review accepts the Profile hypothesis
     ↓
-Established ;;; CR-ES-AG-007 lands the concept record
-Canonical ;;; post-release
+Established, CR-ES-AG-007 lands the concept record
+Canonical, post-release
 ```
 
 Per ADR-ES-AG-001 §9, promotion to `Established` requires CR-ES-AG-007.

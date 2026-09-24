@@ -1,23 +1,23 @@
 <!--
-CR-ES-AG-001 ;;; Profile semantic construct
+CR-ES-AG-001, Profile semantic construct
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/CR-ES-AG-001.md (identical bytes; authored
 dash-normalized from the start).
 
-Status: Proposed ;;; implemented (lands with this turn's CR body).
+Status: Proposed, implemented (lands with this turn's CR body).
 Authored by: manny-es (the dedicated sub-agent for Enterprise-Semantics).
 Date: 2026-09-02.
-Depends on: ADR-ES-AG-001 (Accepted) ;;; ADR-ES-002.
-Implements: ADR-ES-AG-001 §3 (Profile modifier) ;;; §6 CR-ES-AG-001.
+Depends on: ADR-ES-AG-001 (Accepted), ADR-ES-002.
+Implements: ADR-ES-AG-001 §3 (Profile modifier), §6 CR-ES-AG-001.
 
 Lands in: enterprise-semantics repo (registry/profiles/ + schema/profile.schema.json
 + conformance/check.py + docs/profile.md + CHANGELOG.md).
 -->
 
-# CR-ES-AG-001 ;;; Profile semantic construct
+# CR-ES-AG-001, Profile semantic construct
 
-**Status:** Proposed ;;; implemented
+**Status:** Proposed, implemented
 **Scope:** `enterprise-semantics` repo (semantic authority repository)
 **Implements:** ADR-ES-AG-001 §3 (Agentic is a Profile modifier) ;; §6 CR-ES-AG-001 (Profile semantic construct)
 **Depends on:** ADR-ES-AG-001 (Accepted 2026-09-02) ;; ADR-ES-002 (Enterprise Semantic Model)
@@ -55,7 +55,7 @@ The Profile semantic construct provides the governance scaffolding that all subs
 
 ### 3.1 Repository
 
-`enterprise-semantics` ;;; the semantic authority repository per ADR-ES-002 §14.
+`enterprise-semantics`, the semantic authority repository per ADR-ES-002 §14.
 
 ### 3.2 Directory structure
 
@@ -63,18 +63,18 @@ The Profile semantic construct provides the governance scaffolding that all subs
 enterprise-semantics/
   registry/
     profiles/
-      _base.profile.yaml                 ;;; documents Profile conventions + example
-      agentic-execution.profile.yaml     ;;; (lands in CR-ES-AG-002)
+      _base.profile.yaml                , documents Profile conventions + example
+      agentic-execution.profile.yaml    , (lands in CR-ES-AG-002)
       ...
   schema/
-    profile.schema.json                  ;;; JSON Schema for Profile YAML records
+    profile.schema.json                 , JSON Schema for Profile YAML records
   concepts/
-    value-stream.yaml                    ;;; (lands in CR-ES-AG-003 for Agentic Value Stream)
+    value-stream.yaml                   , (lands in CR-ES-AG-003 for Agentic Value Stream)
     ...
   mappings/
     (lands in Phase 4.6)
   conformance/
-    check.py                             ;;; reads registry + schema + concepts, validates invariants
+    check.py                            , reads registry + schema + concepts, validates invariants
     tests/
       test_profile_registry.py
       test_profile_schema.py
@@ -86,21 +86,21 @@ Each Profile is a YAML record conforming to `schema/profile.schema.json`:
 
 ```yaml
 # Profile record structure (canonical example)
-id: ES:PROFILE:<profile-id>           ;;; stable semantic identity
+id: ES:PROFILE:<profile-id>          , stable semantic identity
 canonical_name: <profile-canonical-name>
 definition: <governed semantic definition>
-status: Candidate                       ;;; Candidate ;; Investigating ;; Proposed ;; Established ;; Canonical ;; Mapped ;; Deprecated ;; Retired
+status: Candidate                      , Candidate ;; Investigating ;; Proposed ;; Established ;; Canonical ;; Mapped ;; Deprecated ;; Retired
 version: 1.0.0
-profile_type: <profile-type-name>       ;;; e.g. agentic-execution
-characteristics:                        ;;; governed set of properties that apply when the profile is active
+profile_type: <profile-type-name>      , e.g. agentic-execution
+characteristics:                       , governed set of properties that apply when the profile is active
   - id: ES:CHAR:<characteristic-id>
     canonical_name: <characteristic-name>
     description: <governed description>
-governance: enterprise-semantics         ;;; authority that governs this Profile
+governance: enterprise-semantics        , authority that governs this Profile
 provenance:
   - source: <evidence-source>
     note: <evidence note>
-mappings: []                             ;;; bi-directional mappings to WSF ;; OpenDEA ;; catalogs
+mappings: []                            , bi-directional mappings to WSF ;; OpenDEA ;; catalogs
 created: 2026-09-02
 ```
 
@@ -164,7 +164,7 @@ A test harness at `conformance/tests/test_profile_schema.py` exercises:
 | `conformance/tests/fixtures/profile-invalid-id.yaml` | Test fixture ;; invalid Profile id |
 | `conformance/tests/fixtures/profile-missing-provenance.yaml` | Test fixture ;; missing provenance |
 | `docs/profile.md` | Profile semantic construct documentation |
-| `CHANGELOG.md` | v0.1.0 ;;; CR-ES-AG-001 entry |
+| `CHANGELOG.md` | v0.1.0, CR-ES-AG-001 entry |
 
 ---
 
