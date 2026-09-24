@@ -1,5 +1,5 @@
 <!--
-ADR-ES-011 ;;; Autonomous Enterprise Semantic Grounding Decision
+ADR-ES-011 , Autonomous Enterprise Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-011.md (em-dashes and ellipsis dividers preserved in source).
@@ -8,21 +8,21 @@ Status: Proposed
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
-Depends on: ADR-ES-001 (Authority and Publication Architecture) ;;; ADR-ES-002 (Enterprise Semantic Model) ;;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-004 (Agentic Semantic Grounding) ;;; ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-009 (Autonomous Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-010 (Agentic Enterprise Semantic Grounding, Proposed)
-Related: CR-ES-011 (Autonomous Enterprise Semantic Grounding, Proposed) ;;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Depends on: ADR-ES-001 (Authority and Publication Architecture) , ADR-ES-002 (Enterprise Semantic Model) , ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) , ADR-ES-004 (Agentic Semantic Grounding) , ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) , ADR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23) , ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) , ADR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23) , ADR-ES-009 (Autonomous Value Stream Semantic Grounding, Accepted 2026-09-23) , ADR-ES-010 (Agentic Enterprise Semantic Grounding, Proposed)
+Related: CR-ES-011 (Autonomous Enterprise Semantic Grounding, Proposed) , FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
 
-Decision: Establish Autonomous Enterprise as a governed semantic specialization describing an enterprise capable of independently progressing material enterprise decisions ;; coordination ;; execution ;; and adaptation within defined objectives ;; authority ;; policies ;; constraints ;; and governance boundaries. Autonomous Enterprise is deliberately NOT a specialization of Agentic Enterprise ;;; the two concepts are orthogonal semantic dimensions that coexist as parallel specializations of Enterprise. An enterprise may satisfy neither ;; either ;; or both classifications. Deliberately avoids premature canonicalization of Autonomous Workflow ;; Autonomous Agent ;; Autonomous Capability ;; Autonomous Organization ;; Autonomous Culture ;; Autonomous Ecosystem ;; Autonomous Network ;; Enterprise Autonomy Levels ;; Enterprise Autonomy Maturity Model ;; AI-Native Enterprise ;; Self-Governing Enterprise.
+Decision: Establish Autonomous Enterprise as a governed semantic specialization describing an enterprise capable of independently progressing material enterprise decisions ;; coordination ;; execution ;; and adaptation within defined objectives ;; authority ;; policies ;; constraints ;; and governance boundaries. Autonomous Enterprise is deliberately NOT a specialization of Agentic Enterprise , the two concepts are orthogonal semantic dimensions that coexist as parallel specializations of Enterprise. An enterprise may satisfy neither ;; either ;; or both classifications. Deliberately avoids premature canonicalization of Autonomous Workflow ;; Autonomous Agent ;; Autonomous Capability ;; Autonomous Organization ;; Autonomous Culture ;; Autonomous Ecosystem ;; Autonomous Network ;; Enterprise Autonomy Levels ;; Enterprise Autonomy Maturity Model ;; AI-Native Enterprise ;; Self-Governing Enterprise.
 
 Slot note: this ADR is filed at governance repo docs/adr/0013-... Slot 0013 is the next free slot in the ES series ;; distinct from the ES-AG series. The ES series slot sequence is 0001 (Authority) ;; 0002 (Enterprise Semantic Model) ;; 0003 (Agentic Semantic Decision ;; ES-AG) ;; 0004 (Capability ;; ES) ;; 0005 (Value Stream ;; ES) ;; 0006 (Agentic ;; ES) ;; 0007 (Agentic Value Stream ;; ES) ;; 0008 (Agentic Workflow ;; ES) ;; 0009 (Agentic Operations ;; ES) ;; 0010 (Autonomous Operations ;; ES) ;; 0011 (Autonomous Value Stream ;; ES) ;; 0012 (Agentic Enterprise ;; ES, ADR-ES-010) ;; 0013 (Autonomous Enterprise ;; ES, this ADR).
 
-Implementation: CR-ES-011 (Autonomous Enterprise Semantic Grounding). CR-ES-011 is the implementation specification ;;; this ADR ratifies it as a governed semantic decision.
+Implementation: CR-ES-011 (Autonomous Enterprise Semantic Grounding). CR-ES-011 is the implementation specification , this ADR ratifies it as a governed semantic decision.
 
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 -->
 
-ADR-ES-011 ;;; Autonomous Enterprise Semantic Grounding
+ADR-ES-011 , Autonomous Enterprise Semantic Grounding
 
-ADR-ES-011 ;;; Autonomous Enterprise Semantic Grounding
+ADR-ES-011 , Autonomous Enterprise Semantic Grounding
 
 1. Decision
 

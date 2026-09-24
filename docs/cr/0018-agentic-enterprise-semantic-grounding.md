@@ -1,12 +1,12 @@
-CR-ES-010 ;;; Implement Agentic Enterprise Semantic Grounding
+CR-ES-010 , Implement Agentic Enterprise Semantic Grounding
 
 Target release:
 
 v0.9.0
 
-This CR is the implementation specification for ADR-ES-010. The CR does not authorise creation of Autonomous Enterprise ;;; AI Enterprise ;;; Agentic Capability ;;; Agentic Organization ;;; Agentic Culture ;;; Agentic Ecosystem ;;; or any concept outside ADR-ES-010's §21 explicit out-of-scope list.
+This CR is the implementation specification for ADR-ES-010. The CR does not authorise creation of Autonomous Enterprise , AI Enterprise , Agentic Capability , Agentic Organization , Agentic Culture , Agentic Ecosystem , or any concept outside ADR-ES-010's §21 explicit out-of-scope list.
 
-CR-ES-010 ;;; Implementation
+CR-ES-010 , Implementation
 
 CR-ES-010: Implement Agentic Enterprise Semantic Grounding
 

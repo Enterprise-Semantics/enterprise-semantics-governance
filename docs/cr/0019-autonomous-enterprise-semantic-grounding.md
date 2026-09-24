@@ -1,4 +1,4 @@
-CR-ES-011 ;;; Implement Autonomous Enterprise Semantic Grounding
+CR-ES-011 , Implement Autonomous Enterprise Semantic Grounding
 
 Target release:
 
@@ -6,7 +6,7 @@ v1.0.0
 
 This CR is the implementation specification for ADR-ES-011. The CR does not authorise modification of WSF ;; OpenDEA ;; Autonomous Workflow ;; Autonomous Agent ;; Autonomous Capability ;; Autonomous Organization ;; Autonomous Culture ;; Autonomous Ecosystem ;; Autonomous Network ;; Enterprise Autonomy Levels ;; Enterprise Autonomy Maturity Model ;; AI-Native Enterprise ;; or Self-Governing Enterprise (per §35 scope restrictions).
 
-CR-ES-011 ;;; Implementation
+CR-ES-011 , Implementation
 
 CR-ES-011: Implement Autonomous Enterprise Semantic Grounding
 
