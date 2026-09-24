@@ -10,6 +10,16 @@ CR-ES-012 , Implementation
 
 CR-ES-012: Implement Agentic Capability Semantic Grounding
 
+Status: Accepted (promoted from Proposed on 2026-09-24 per user directive message 1552696611153649796, "Proceed promotion")
+Date: 2026-09-24
+Change Type: Foundational Semantic Specialization
+Priority: P0
+Target: Enterprise-Semantics
+Authorizing ADR: ADR-ES-012 (Agentic Capability Semantic Grounding, Accepted 2026-09-24)
+Target Version: v1.1.0
+Depends On: CR-ES-002 (Capability, Accepted 2026-09-23), CR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23), CR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23), CR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23), CR-ES-010 (Agentic Enterprise Semantic Grounding, Accepted 2026-09-24)
+Promotion rationale: All 26 acceptance criteria of CR-ES-012 §31 satisfied via 8 PRs across 6 repos: PR (vs-a) enterprise-semantics (concept YAML canonicalization with canonical-identity preservation rewrite from prior Profile-of hypothesis to specialization-of hypothesis, 15 relationships, 16 provenance entries), PR (vs-b) enterprise-semantics (vocabulary version 0.9.0 to 1.0.0, inverse map matched, versions/v1.1.0.yaml semantic establishment pointer), PR (vs-c) enterprise-semantics-mappings (WSF + OpenDEA mappings), PR (vs-d1a) enterprise-semantics-docs (1 concept doc + 4 architecture boundary docs), PR (vs-d1b) enterprise-semantics-examples (OTCHERE Inc agentic capabilities worked example), PR (vs-d2a) enterprise-semantics-test-probe (32 conformance test stubs, 18 positive ACAP-CON-001..018 + 14 negative ACAP-NEG-001..014), PR (vs-d2b) enterprise-semantics-visuals (5 PlantUML diagrams), PR (vs-d2c) enterprise-semantics (profile + profile_type registration).
+
 1. Change Objective
 
 Implement the governed semantic grounding of Agentic Capability established by ADR-ES-012.

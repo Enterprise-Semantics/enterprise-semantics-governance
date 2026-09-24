@@ -4,12 +4,12 @@ ADR-ES-012 , Agentic Capability Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-012.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-24 per user directive message 1552696611153649796, "Proceed promotion")
 Decision Type: Foundational Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
 Depends on: ADR-ES-001 (Authority and Publication Architecture) , ADR-ES-002 (Enterprise Semantic Model) , ADR-ES-004 (Agentic Semantic Grounding) , ADR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23) , ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) , ADR-ES-010 (Agentic Enterprise Semantic Grounding, Accepted 2026-09-24) , ADR-ES-011 (Autonomous Enterprise Semantic Grounding, Accepted 2026-09-24)
-Related: CR-ES-012 (Agentic Capability Semantic Grounding, Proposed) , ADR-ES-013 (Autonomous Capability Semantic Grounding, Deferred per ADR-ES-012 §25) , FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-012 (Agentic Capability Semantic Grounding, Accepted 2026-09-24) , ADR-ES-013 (Autonomous Capability Semantic Grounding, Deferred per ADR-ES-012 §25) , FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
 
 Decision: Establish Agentic Capability as a governed semantic specialization of Capability describing a Capability whose realization materially incorporates agentic behavior in achieving or enabling an intended Outcome within defined authority, policy, and contextual boundaries. Agentic Capability is a contextual specialization of the universal Capability concept established by ADR-ES-002, not a new foundational type of ability, it does not redefine what a Capability is, and it does not equate ability with the Agent, Workflow, Operations, Value Stream, AI, automation, or autonomy mechanisms through which that ability may be realized. Deliberately avoids premature canonicalization of Autonomous Capability, AI Capability, Agentic Capability maturity levels, Agentic Organization, Agentic Culture, Agentic Ecosystem.
 
