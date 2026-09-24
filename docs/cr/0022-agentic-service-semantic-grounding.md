@@ -10,6 +10,15 @@ CR-ES-014 , Implementation
 
 CR-ES-014: Implement Agentic Service
 
+## Promotion Metadata
+
+- **Status:** Accepted
+- **Promotion Date:** 2026-09-24
+- **Authorizing ADR:** ADR-ES-014 (Accepted 2026-09-24)
+- **Implementation Target:** v1.3.0
+- **Depends On:** ADR-ES-002, ADR-ES-003, ADR-ES-004, ADR-ES-005, ADR-ES-006, ADR-ES-007, ADR-ES-012
+- **Promotion Rationale:** All 34 acceptance criteria from CR-ES-014 §18 satisfied via 8 implementation PRs across 6 repos ; validator NO_DRIFT (22 Concept records validated) ; v1.3.0 Agentic Service release pointer established ; Agentic Materiality rule enforced per ASVC-CON-003 ; Agentic Capability -> Agentic Service -> Agentic Value Stream traceability chain established ; Agentic/Autonomous orthogonality at service boundary preserved per ASVC-NEG-006 ; AI/Automation independence verified per ASVC-CON-014..015 ; human participation preserved per ASVC-CON-013 ; per user directive message 1552724263121981440, "followup with appropriate implementation"
+
 1. Decision
 
 Establish Agentic Service as a governed semantic specialization of Service.

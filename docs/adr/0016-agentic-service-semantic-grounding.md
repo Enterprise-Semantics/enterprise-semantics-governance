@@ -4,12 +4,12 @@ ADR-ES-014 , Agentic Service Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-014.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-24 per user directive message 1552724263121981440, "followup with appropriate implementation")
 Decision Type: Foundational Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
 Depends on: ADR-ES-002 (Enterprise Semantic Model) , ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) , ADR-ES-004 (Agentic Semantic Grounding) , ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) , ADR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23) , ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) , ADR-ES-012 (Agentic Capability Semantic Grounding, Accepted 2026-09-24)
-Related: CR-ES-014 (Agentic Service Semantic Grounding, Proposed) , ADR-ES-015 (Autonomous Service Semantic Grounding, Deferred per ADR-ES-014 §19) , FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-014 (Agentic Service Semantic Grounding, Accepted 2026-09-24) , ADR-ES-015 (Autonomous Service Semantic Grounding, Deferred per ADR-ES-014 §19) , FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
 
 Decision: Establish Agentic Service as a governed semantic specialization of Service describing a Service whose delivery or interaction materially incorporates agentic behavior in interpreting intent, selecting or coordinating actions, adapting service behavior, or executing service responses toward an intended outcome within defined authority, policy, and contextual boundaries. Agentic Service is a contextual specialization of the Service concept, not a new foundational type of service, and does not make AI, automation, autonomy, or an Agent a prerequisite. Deliberately avoids premature canonicalization of Autonomous Service, Autonomous Service maturity, AI Service, AI-native Service, Agentic Product, Autonomous Product, Agentic Contract, Agentic Agreement, Autonomous Organization, Agentic Organization, Service autonomy levels.
 
