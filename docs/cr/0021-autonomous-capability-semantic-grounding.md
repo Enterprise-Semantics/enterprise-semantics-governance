@@ -10,6 +10,15 @@ CR-ES-013 , Implementation
 
 CR-ES-013: Implement Autonomous Capability
 
+## Promotion Metadata
+
+- **Status:** Accepted
+- **Promotion Date:** 2026-09-24
+- **Authorizing ADR:** ADR-ES-013 (Accepted 2026-09-24)
+- **Implementation Target:** v1.2.0
+- **Depends On:** ADR-ES-002, ADR-ES-004, ADR-ES-008, ADR-ES-009, ADR-ES-011, ADR-ES-012
+- **Promotion Rationale:** All 33 acceptance criteria from CR-ES-013 §18 satisfied via 8 implementation PRs across 6 repos ; validator NO_DRIFT (22 Concept records validated) ; v1.2.0 Autonomous Capability release pointer established ; 2x2 matrix at capability boundary structurally complete (Conventional, Agentic, Autonomous, Agentic+Autonomous-as-composition) ; orthogonal dimensions preserved per ACAP-AUTO-CON-015 ; bounded autonomy enforced per ACAP-AUTO-CON-007..009 ; forbidden inheritance blocked per ACAP-AUTO-NEG-001..006 ; AI/automation independence verified per ACAP-AUTO-CON-013..014 ; per user directive message 1552724263121981440, "followup with appropriate implementation"
+
 1. Objective
 
 Implement Autonomous Capability as a canonical Enterprise-Semantics specialization of Capability.
