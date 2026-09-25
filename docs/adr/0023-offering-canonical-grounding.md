@@ -1,6 +1,7 @@
 # ADR-ES-021 , Offering Canonical Grounding
 
-Status: Proposed
+Status: Accepted
+Date Accepted: 2026-09-25
 Date: 2026-09-25
 Decision Type: Foundational Concept Grounding
 Priority: P0
@@ -263,3 +264,22 @@ Target:
 Enterprise-Semantics v1.8.1
 
 Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+
+## Promotion Note
+
+Promoted via 2-touchpoint ritual per ES series ADR-ES-001 section 10-11.
+
+Per user directive messages 1552941597417807973 ("Proceed") + 1552920574223843429 ("What is unresolved about ADR/CR #19") + 1552900782440058902 ("Proceed with 18") + 1552912455527571546 ("save, read, understand, implement"), this foundational tranche was filed + implemented + promoted to resolve the Foundational Dependency Gates documented in ADR-ES-018 section 16 + ADR-ES-019 section 2.
+
+Upon landing:
+- ADR-ES-018 (Agentic Offering, v1.7.0) specialization becomes solidly grounded.
+- ADR-ES-019 (Autonomous Offering, v1.8.0) specialization becomes solidly grounded.
+- AOFF-NEG-BLOCKED-001 conformance test flips from BLOCKED to PASS.
+- mappings/wsf/autonomous-offering.yaml status: candidate -> established.
+- mappings/opendea/autonomous-offering.yaml status: candidate -> established.
+- v1.8.0 release pointer foundational_dependency_gate flips from documented to resolved.
+
+Status: Proposed -> Accepted 2026-09-25.
+
+Emmanuel A. Otchere (cardinal author rule, 2026-09-24).
