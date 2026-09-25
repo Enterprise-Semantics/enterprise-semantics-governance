@@ -4,7 +4,7 @@ ADR-ES-016 , Agentic Product Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-016.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-25 per user directive message 1552856516682317857, "Save, understand and implement accordingly")
 Decision Type: Foundational Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
