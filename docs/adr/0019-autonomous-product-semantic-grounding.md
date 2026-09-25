@@ -4,7 +4,7 @@ ADR-ES-017 , Autonomous Product Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-017.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-25 per user directive message 1552885930522706062, "Audit and confirm inventory")
 Decision Type: Foundational Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
