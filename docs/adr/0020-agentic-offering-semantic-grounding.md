@@ -4,7 +4,8 @@ ADR-ES-018 , Agentic Offering Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-018.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted
+Date Accepted: 2026-09-25
 Decision Type: Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
@@ -332,3 +333,18 @@ No WSF or OpenDEA implementation changes are authorized.
 Target:
 
 Enterprise-Semantics v1.7.0
+
+
+## Promotion Note
+
+Per user directive message 1552900782440058902 ("Proceed with 18"), the
+Foundational Dependency Gate documented in §16 was overridden. The
+implementation chain (8 PRs across 6 repos) was executed with the
+dependency documented rather than blocked. ADR-ES-019 (Offering
+canonical grounding) remains the next-foundational tranche and
+remains unresolved at time of acceptance.
+
+Promotion ritual: 2-touchpoint per ES series ADR-ES-001 §10-§11.
+Status: Proposed -> Accepted 2026-09-25.
+
+Emmanuel A. Otchere (cardinal author rule, 2026-09-24).

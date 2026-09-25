@@ -429,3 +429,15 @@ Architectural note: 017 completes the Product pair cleanly. 018 deliberately int
 <!--
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 -->
+
+
+## Promotion Metadata
+
+- Status: Proposed -> Accepted
+- Date Accepted: 2026-09-25
+- Authorising Directive: USER-DIRECTIVE-1552900782440058902 ("Proceed with 18")
+- Foundational Dependency Gate: documented, not blocked, per user override of Path X (ADR-ES-018 §16 + CR-ES-018 §2)
+- Implementation Chain: 8 PRs across 6 repos (VS-A through VS-D2c)
+- Dependency Resolution: ADR-ES-019 (Offering canonical grounding) remains unresolved at acceptance
+- Promotion Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- Promotion Ritual: 2-touchpoint per ES series ADR-ES-001 §10-§11
