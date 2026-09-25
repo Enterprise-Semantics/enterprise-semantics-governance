@@ -4,7 +4,8 @@ ADR-ES-019 , Autonomous Offering019 Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-019.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted
+Date Accepted: 2026-09-25
 Decision Type: Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
@@ -388,3 +389,13 @@ Target:
 
 Enterprise-Semantics v1.8.0
 
+
+
+## Promotion Note
+
+Per user directive messages 1552900782440058902 ("Proceed with 18") + 1552912455527571546 ("save, read, understand, implement"), the Foundational Dependency Gate documented in section 2 was overridden. The implementation chain (8 PRs across 6 repos) was executed with the dependency documented rather than blocked. The next-foundational tranche is ADR-ES-019 (Offering canonical grounding), which remains unresolved at acceptance.
+
+Promotion ritual: 2-touchpoint per ES series ADR-ES-001 section 10-11.
+Status: Proposed -> Accepted 2026-09-25.
+
+Emmanuel A. Otchere (cardinal author rule, 2026-09-24).
