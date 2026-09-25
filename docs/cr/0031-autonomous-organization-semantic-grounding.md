@@ -418,4 +418,17 @@ Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Promotion Metadata (preliminary)
 
-Status: Accepted per user authoritative text.
+Status: Accepted
+Date Accepted: 2026-09-25
+
+
+## Promotion Metadata
+
+- Status: Accepted per user authoritative text -> Accepted (canonical)
+- Date Accepted: 2026-09-25
+- Authorising Directives: USER-DIRECTIVE-1552962576894394389 ("save, read, understand, implement accordingly" + "Reconcile both, if they are about the same concept and salvage any enrichment that's possible")
+- Implementation Chain: 8 PRs across 6 repos (VS-A through VS-D2c)
+- Foundational Dependency: parent Organization concept canonical on branch per ADR-ES-022 + CR-ES-022 Accepted (slot 0024/0030)
+- Slot Collision Resolution: prior ES-021 (Offering canonical grounding, slot 0023) preserved per user reconcile directive; new ES-021 (Autonomous Organization, v2.0.0) at slot 0025
+- Promotion Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- Promotion Ritual: 2-touchpoint per ES series ADR-ES-001 section 10-11
