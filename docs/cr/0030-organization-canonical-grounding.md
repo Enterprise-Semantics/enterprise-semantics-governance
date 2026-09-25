@@ -272,3 +272,14 @@ Upon landing:
 - v1.9.0 release pointer foundational_dependency_gate flips from documented to resolved.
 
 Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+
+## Promotion Metadata
+
+- Status: Proposed -> Accepted
+- Date Accepted: 2026-09-25
+- Authorising Directives: USER-DIRECTIVE-1552941597417807973 ("Proceed") + USER-DIRECTIVE-1552920574223843429 ("What is unresolved about ADR/CR #19") + USER-DIRECTIVE-1552900782440058902 ("Proceed with 18") + USER-DIRECTIVE-1552912455527571546 ("save, read, understand, implement")
+- Implementation Chain: 8 PRs across 6 repos (VS-A through VS-D2c)
+- Dependency Resolution: resolves the Foundational Dependency Gate documented in ADR-ES-020 section 2.
+- Promotion Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- Promotion Ritual: 2-touchpoint per ES series ADR-ES-001 section 10-11
