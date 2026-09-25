@@ -5,6 +5,7 @@ The next specialization passes the ES-022 gate because System is materially affe
 ADR-ES-025 : Agentic System Semantic Grounding
 
 Status: Accepted
+Date Accepted: 2026-09-25
 Semantic Version: v2.3.0
 Scope: Enterprise-Semantics
 Depends on: ADR-ES-004, ADR-ES-007, ADR-ES-022
@@ -248,3 +249,18 @@ Target release: v2.3.0.
 
 
 Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+
+## Promotion Note
+
+Promoted via 2-touchpoint ritual per ES series ADR-ES-001 section 10-11.
+
+Per user directive message 1553040695345025105 + Culture-System_Resolution.md, this specialization tranche was implemented + promoted after foundational System (ES-027) was established.
+
+Dependency gate RESOLVED: parent System concept is now canonical on origin/main per ADR-ES-027 + CR-ES-027 Accepted.
+
+Autonomous System remains deferred per ADR-ES-022 section 13 (mechanical symmetry prohibition).
+
+Status: Accepted. Date Accepted: 2026-09-25.
+
+Emmanuel A. Otchere (cardinal author rule, 2026-09-24).
