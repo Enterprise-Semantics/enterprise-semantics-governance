@@ -288,3 +288,16 @@ Enterprise-Semantics v2.0.0
 
 
 Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+
+## Promotion Metadata
+
+- Status: Ready for Implementation -> Accepted
+- Date Accepted: 2026-09-25
+- Authorising Directives: USER-DIRECTIVE-1552967203022962688 ("save it, read and understand, then let's implement accordingly")
+- Implementation Chain: 7 PRs across 6 repos (VS-A, VS-B, VS-C, VS-D1a, VS-D2a, VS-D2b, VS-D2c ; VS-D1b examples skipped per governance-artefact scope)
+- Coverage Registry: 9 entries (capability, value-stream, service, product, offering, operations, organization, enterprise, workflow)
+- Candidate Register: 17 candidates
+- Cross-Cutting Vocabulary: 17 governance concepts
+- Promotion Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- Promotion Ritual: 2-touchpoint per ES series ADR-ES-001 section 10-11
