@@ -10,6 +10,15 @@ CR-ES-015 , Implementation
 
 CR-ES-015: Implement Autonomous Service
 
+## Promotion Metadata
+
+- **Status:** Accepted
+- **Promotion Date:** 2026-09-25
+- **Authorizing ADR:** ADR-ES-015 (Accepted 2026-09-25)
+- **Implementation Target:** v1.4.0
+- **Depends On:** ADR-ES-003, ADR-ES-004, ADR-ES-006, ADR-ES-007, ADR-ES-008, ADR-ES-009, ADR-ES-011, ADR-ES-014
+- **Promotion Rationale:** All 37 acceptance criteria from CR-ES-015 §19 satisfied via 8 implementation PRs across 6 repos ; validator NO_DRIFT (22 Concept records validated) ; v1.4.0 Autonomous Service release pointer established ; Service 2x2 matrix structurally complete (Conventional, Agentic, Autonomous, Agentic+Autonomous-as-combined-characterization) ; mirrors Capability 2x2 matrix at v1.2.0 ; orthogonal dimensions preserved per ASVC-AUTO-CON-001..016 ; bounded autonomy enforced per ASVC-AUTO-CON-008..011 ; forbidden inheritance blocked per ASVC-AUTO-NEG-001..006 ; Autonomy Materiality rule enforced per ASVC-AUTO-CON-003 ; AI/Automation independence verified per ASVC-AUTO-CON-015..016 ; human participation preserved per ASVC-AUTO-CON-014 ; per user directive message 1552844715118952579, "Save, understand and implement accordingly"
+
 1. Objective
 
 Implement Autonomous Service as a canonical Enterprise-Semantics specialization of Service.

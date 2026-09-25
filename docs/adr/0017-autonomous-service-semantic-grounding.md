@@ -4,12 +4,12 @@ ADR-ES-015 , Autonomous Service Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-015.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-25 per user directive message 1552844715118952579, "Save, understand and implement accordingly")
 Decision Type: Foundational Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
 Depends on: ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) , ADR-ES-004 (Agentic Semantic Grounding) , ADR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23) , ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) , ADR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23) , ADR-ES-009 (Autonomous Value Stream Semantic Grounding, Accepted 2026-09-23) , ADR-ES-011 (Autonomous Enterprise Semantic Grounding, Accepted 2026-09-24) , ADR-ES-014 (Agentic Service Semantic Grounding, Accepted 2026-09-24)
-Related: CR-ES-015 (Autonomous Service Semantic Grounding, Proposed) , ADR-ES-016 (Agentic Product / Autonomous Product, Deferred per ADR-ES-015 §19) , FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-015 (Autonomous Service Semantic Grounding, Accepted 2026-09-25) , ADR-ES-016 (Agentic Product / Autonomous Product, Deferred per ADR-ES-015 §19) , FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
 
 Decision: Establish Autonomous Service as a governed semantic specialization of Service describing a Service whose delivery or interaction is capable of progressing through decisions, actions, coordination, and adaptation within defined service objectives, authority, policies, constraints, and governance boundaries without requiring human intervention for every service decision or action. Autonomous Service is a contextual specialization of the universal Service concept, not a new foundational type of service, it does not redefine what a Service is, and it does not equate service with the Agent, Capability, Operations, Value Stream, AI, automation, or autonomy mechanisms through which the service may be realized. Deliberately avoids premature canonicalization of Autonomous Service maturity, Service autonomy levels, Autonomous Product, Agentic Product, Autonomous Contract, Autonomous Agreement, Autonomous Organization, Autonomous Culture, Autonomous Ecosystem, Autonomous Network, Autonomous Agent, Autonomous Workflow.
 
