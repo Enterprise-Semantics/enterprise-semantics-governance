@@ -4,7 +4,8 @@ ADR-ES-020 , Agentic Organization020 Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-020.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted
+Date Accepted: 2026-09-25
 Decision Type: Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
@@ -383,3 +384,15 @@ Target:
 
 Enterprise-Semantics v1.9.0
 
+
+
+## Promotion Note
+
+Per user directive messages 1552900782440058902 ("Proceed with 18") + 1552912455527571546 ("save, read, understand, implement"), the Foundational Dependency Gate documented in section 2 was overridden. The implementation chain (8 PRs across 6 repos) was executed with the dependency documented rather than blocked. The next-foundational tranche is ADR-ES-021 (Organization canonical grounding), which remains unresolved at acceptance.
+
+Per ADR-ES-020 section 20: "we are moving from things that are offered or realized into the organizational boundary that coordinates people, agents, capabilities, processes, and operations. That makes Organization a materially different semantic branch from the Product/Service/Offering sequence rather than just another variation of it."
+
+Promotion ritual: 2-touchpoint per ES series ADR-ES-001 section 10-11.
+Status: Proposed -> Accepted 2026-09-25.
+
+Emmanuel A. Otchere (cardinal author rule, 2026-09-24).

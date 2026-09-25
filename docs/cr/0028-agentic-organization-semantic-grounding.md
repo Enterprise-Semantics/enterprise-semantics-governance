@@ -438,3 +438,15 @@ Enterprise
 
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 -->
+
+
+## Promotion Metadata
+
+- Status: Proposed -> Accepted
+- Date Accepted: 2026-09-25
+- Authorising Directives: USER-DIRECTIVE-1552900782440058902 ("Proceed with 18") + USER-DIRECTIVE-1552912455527571546 ("save, read, understand, implement")
+- Foundational Dependency Gate: documented, not blocked, per user override of Path X (ADR-ES-020 section 2 + CR-ES-020 section 2)
+- Implementation Chain: 8 PRs across 6 repos (VS-A through VS-D2c)
+- Dependency Resolution: ADR-ES-021 (Organization canonical grounding) remains unresolved at acceptance
+- Promotion Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- Promotion Ritual: 2-touchpoint per ES series ADR-ES-001 section 10-11
