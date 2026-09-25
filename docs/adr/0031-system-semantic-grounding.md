@@ -1,6 +1,7 @@
 # ADR-ES-027 ; System Semantic Grounding
 
 Status: Accepted
+Date Accepted: 2026-09-25
 Decision Type: Foundational Definition
 Semantic Version Target: v2.5.0
 Scope: Enterprise-Semantics
@@ -129,3 +130,23 @@ System is established as a foundational canonical concept.
 The concept is released at v2.5.0, subject to successful implementation through CR-ES-027 and conformance validation.
 
 Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+
+## Promotion Note
+
+Promoted via 2-touchpoint ritual per ES series ADR-ES-001 section 10-11.
+
+Per user directive message 1553040695345025105 + Culture-System_Resolution.md, this foundational tranche was filed + implemented + promoted after Foundation Recon (Recon-ES-004).
+
+Key architectural consequences:
+
+- System is now a foundational canonical concept in Enterprise-Semantics.
+- System specializes Entity (not Organization, Service, etc.).
+- Per Recon-ES-004, System is NOT reducible to Entity/Organization/Service/Resource/Process/Workflow/Capability.
+- System accommodates business, information, technical, socio-technical, operational, and distributed systems.
+- System is the canonical base for ES-025 (Agentic System).
+- Autonomous System remains deferred per ADR-ES-022 specialization gate + mechanical symmetry prohibition.
+
+Status: Accepted. Date Accepted: 2026-09-25.
+
+Emmanuel A. Otchere (cardinal author rule, 2026-09-24).
