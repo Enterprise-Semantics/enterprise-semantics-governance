@@ -1,342 +1,257 @@
-<!--
-ADR-ES-020 , Agentic Organization020 Semantic Grounding Decision
+Below are the formal ADR/CR pairs for ES-020 and ES-021, keeping the semantic discipline established through ES-019. ES-021 therefore establishes the autonomous counterpart to Agentic Organization, while explicitly preserving the orthogonality between agentic behavior and autonomous progression.
 
-Dash-normalized: colons (:) and semicolons (;) used consistently.
-Verbatim original: 00_inbox/ADR-ES-020.md (em-dashes and ellipsis dividers preserved in source).
+ADR-ES-020 : Agentic Organization Semantic Grounding
+
+ADR-ES-020 : Agentic Organization Semantic Grounding
 
 Status: Accepted
-Date Accepted: 2026-09-25
-Decision Type: Semantic Specialization
+Decision Type: Semantic Definition
+Semantic Version Target: v1.9.0
 Scope: Enterprise-Semantics
-Supersedes: None
-Depends on: ADR-ES-018 (Agentic Offering Semantic Grounding, Accepted 2026-09-25)
-Related: CR-ES-020 (Agentic Organization Semantic Grounding, Proposed) , ADR-ES-018 (Agentic Offering Semantic Grounding, Accepted 2026-09-25) , ADR-ES-017 (Autonomous Product Semantic Grounding, Accepted 2026-09-25)
+Depends On: ADR-ES-004, ADR-ES-007, ADR-ES-010, ADR-ES-011
+Implementation: CR-ES-020
 
-Decision: Establish Agentic Organization as a governed specialization of Organization, subject to Organization being canonically established. This ADR does NOT redefine foundational Organization semantics. If Organization is not yet canonical at implementation time, CR-ES-020 shall record the dependency rather than silently creating an Organization ontology. The principal risk is conflating Agentic Organization with Agentic Enterprise or with an organization containing Agents. CR-ES-020 must validate the Organization dependency before canonical implementation.
-
-Slot note: this ADR is filed at governance repo docs/adr/0022-... Slot 0022 is the next free slot in the ES series. The ES series slot sequence is 0001 (Authority) , 0002 (Enterprise Semantic Model) , 0003 (Agentic Semantic Decision, ES-AG) , 0004 (Capability, ES) , 0005 (Value Stream, ES) , 0006 (Agentic, ES) , 0007 (Agentic Value Stream, ES) , 0008 (Agentic Workflow, ES) , 0009 (Agentic Operations, ES) , 0010 (Autonomous Operations, ES) , 0011 (Autonomous Value Stream, ES) , 0012 (Agentic Enterprise, ES) , 0013 (Autonomous Enterprise, ES) , 0014 (Agentic Capability, ES) , 0015 (Autonomous Capability, ES) , 0016 (Agentic Service, ES) , 0017 (Autonomous Service, ES) , 0018 (Agentic Product, ES) , 0019 (Autonomous Product, ES) , 0020 (Agentic Offering, ES) , 0021 (Autonomous Offering, ES, this ADR).
-
-Implementation: CR-ES-020 (Agentic Organization Semantic Grounding). The CR is the implementation specification, this ADR ratifies it as a governed semantic decision. The implementation must verify the Organization dependency per ADR-ES-020 §2 + CR-ES-020 §2.
-
-Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
--->
-
-ADR-ES-020 / CR-ES-020 , Agentic Organization
-
-ADR-ES-020 , Agentic Organization Semantic Grounding
-
-Status: Proposed
-Date: 2026-09-25
-Decision Type: Semantic Specialization
-Priority: P0
-Target: Enterprise-Semantics
-Authorizing Decision: ADR-ES-020
-Target Release: v1.9.0
----
 1. Decision
 
-Establish Agentic Organization as a governed specialization of Organization, subject to Organization being canonically established.
+Establish Agentic Organization as a governed specialization of Organization within Enterprise-Semantics.
 
-Canonical Definition
+The canonical definition is:
 
 An Agentic Organization is an Organization in which material organizational activities, coordination, decision-making, or execution incorporate agentic behavior to interpret delegated intent, select or coordinate actions, adapt to context, or pursue organizational outcomes within defined authority, policy, and governance boundaries.
 
-The specialization is:
+The semantic relationship is:
 
 Organization
       |
-      -- specializes → Agentic Organization
+      +--- specializes -> Agentic Organization
 
-Agentic Organization describes an organizational mode of operation, not an organization’s use of a particular technology.
----
-2. Why Organization Is a Distinct Boundary
+Agentic Organization describes an organizational mode of operation. It does not define a technology architecture, AI architecture, organizational structure, or degree of autonomy.
 
-Organization is not equivalent to:
 
-* Enterprise;
-* Capability;
-* Process;
-* Operations;
-* Product;
-* Service;
-* Value Stream.
 
-An organization establishes a boundary for coordinated actors, roles, responsibilities, authority, resources, and activities.
+2. Rationale
 
-Agentic Organization therefore concerns agentic behavior at the organizational coordination and operating boundary.
----
+An organization may increasingly incorporate agentic behavior into how it:
+
+* interprets organizational intent;
+* delegates objectives;
+* coordinates work;
+* makes operational or managerial decisions;
+* selects actions;
+* responds to changing circumstances;
+* manages exceptions;
+* coordinates people, systems, services, and agents;
+* adapts organizational activity toward intended outcomes.
+
+These characteristics warrant a semantic distinction from an organization that merely uses Agents.
+
+The presence of an Agent, AI system, automation, or agentic workflow inside an organization does not by itself make the organization Agentic.
+
+Agentic characterization requires material organizational behavior.
+
+
+
 3. Semantic Principle
 
-An Agentic Organization is not merely an organization that contains Agents.
+The following distinctions remain normative:
 
-The agentic behavior must materially affect organizational:
-
-* decision-making;
-* coordination;
-* execution;
-* adaptation;
-* delegation;
-* exception management;
-* organizational response.
+Concept	Semantic meaning
+Agentic	Mode of operation involving interpretation, action selection, coordination, adaptation, or delegated action
+Autonomous	Independent progression within defined objectives, authority, policies, constraints, and governance
+AI	Technology or computational capability
+Automation	Mechanism for executing predefined or configured behavior
+Organization	Entity organized to coordinate people, roles, capabilities, resources, processes, and activities toward intended outcomes
 
 Therefore:
 
-Organization
- +
-Material Agentic Organizational Behavior
- =
-Agentic Organization
----
-4. Organizational Agentic Pattern
+Agentic ≠ Autonomous
+Agentic ≠ AI
+Agentic ≠ Automation
+Organization ≠ Enterprise
+
+An Agentic Organization may contain autonomous components without being an Autonomous Organization.
+
+
+
+4. Materiality Requirement
+
+An Organization SHALL NOT be classified as Agentic merely because it:
+
+* employs an Agent;
+* uses AI;
+* uses automation;
+* invokes an AI service;
+* operates an Agentic Workflow;
+* has automated business processes;
+* uses autonomous software;
+* exposes an API to an Agent.
+
+Agentic characterization requires material incorporation of agentic behavior into organizational activity.
+
+Relevant material behavior may include:
+
+1. organizational decision-making;
+2. organizational coordination;
+3. organizational execution;
+4. interpretation of delegated intent;
+5. dynamic action selection;
+6. organizational adaptation;
+7. delegated operational response;
+8. exception management;
+9. contextual organizational response.
+
+
+
+5. Semantic Realization Pattern
+
+The normative organizational pattern is:
 
 Organizational Intent
-        
-        
+        ->
 Agentic Organization
-        
-        
+        ->
 Interpret Context
-        
-        
-Determine / Interpret Delegated Intent
-        
-        
+        ->
+Interpret Delegated Intent
+        ->
 Select / Coordinate Actions
-        
-        
+        ->
 Execute
-        
-        
+        ->
 Observe Organizational Outcome
-        
-        
+        ->
 Adapt / Escalate
-        ↺
 
-Bounded by:
+The behavior is bounded by:
 
 Authority
 Policy
+Constraint
 Governance
-Constraints
 Accountability
 Escalation
----
-5. Agentic Organization vs Agentic Enterprise
 
-These concepts are related but distinct.
+Agentic behavior therefore does not imply unrestricted organizational discretion.
 
-Agentic Organization
-        
-        
-organizational operating boundary
-Agentic Enterprise
-        
-        
-enterprise-wide value realization and operation
 
-An Agentic Enterprise may comprise multiple Agentic Organizations.
 
-An Agentic Organization does not automatically establish an Agentic Enterprise.
----
-6. Agentic Organization vs Agent
+6. Core Relationships
 
-Agent
-   = acting entity
-Agentic Organization
-   = organization-level operating mode
-
-An Agent may operate within an Agentic Organization.
-
-An Organization does not become Agentic merely because it contains an Agent.
----
-7. Agentic Organization vs Agentic Operations
+Where the referenced concepts are canonical, Agentic Organization may participate in the following relationships:
 
 Agentic Organization
-        
-        
-organizational boundary
-        
-        
-may operate through
-        
-        
-Agentic Operations
+    +--- specializes -> Organization
+    +--- engages -> Agent
+    +--- interprets -> Intent
+    +--- operates-within -> Authority
+    +--- governed-by -> Policy
+    +--- constrained-by -> Constraint
+    +--- coordinates -> Process
+    +--- uses -> Agentic Workflow
+    +--- uses -> Agentic Operations
+    +--- produces -> Organizational Outcome
+    +--- adapts-to -> Organizational Context
+    +--- exercises -> Capability
+    +--- contributes-to -> Value
 
-Agentic Operations describes the operating mode of operational activity.
+Only relationships whose target concepts are already canonical SHALL be activated in the implementation.
 
-Agentic Organization describes the broader organizational coordination boundary.
----
-8. Agentic / Autonomous Orthogonality
 
-Agentic Organization does not imply Autonomous Organization.
 
-The dimensions are independent:
+7. Boundaries
 
-Agentic Organization
-       ≠
-Autonomous Organization
+Agentic Organization vs Agentic Enterprise
 
-A future Autonomous Organization requires separate semantic grounding.
----
-9. AI Boundary
+Agentic Organization concerns organizational behavior.
 
-AI is not required.
+Agentic Enterprise concerns enterprise-level value realization and enterprise operation.
 
-AI-enabled Organization
-       ≠
-Agentic Organization
+An enterprise may contain Agentic Organizations without the entire enterprise being characterized as Agentic.
 
-AI may be used to enable agentic organizational behavior but does not define it.
----
-10. Automation Boundary
+Agentic Organization vs Agentic Operations
 
-Automation does not establish Agentic Organization.
+Agentic Operations describe the agentic operation of an operational environment.
 
-Automated Organization
-       ≠
-Agentic Organization
+Agentic Organization describes the organizational entity and its organizational behavior.
 
-Material agentic interpretation, decision selection, coordination, adaptation, or equivalent behavior is required.
----
-11. Human Participation
+Agentic Organization vs Agentic Workflow
 
-Agentic Organization remains compatible with human organizational participation.
+Agentic Workflow describes agentic coordination or execution of work.
 
-Valid configurations include:
+Agentic Organization describes organizational behavior that may use such workflows.
 
-* human decision-makers;
-* human supervisors;
-* human escalation;
+Agentic Organization vs Agent
+
+An Agent performs or coordinates actions.
+
+An Agentic Organization is an Organization whose material behavior incorporates agentic operation.
+
+Agentic Organization vs Agentic Culture
+
+Agentic Culture concerns organizational norms, values, behaviors, and cultural patterns.
+
+Agentic Organization concerns organizational operation and coordination.
+
+Agentic Organization vs Autonomous Organization
+
+Agentic behavior does not establish organizational autonomy.
+
+Autonomous Organization requires a separate semantic decision.
+
+
+
+8. Human Participation
+
+Human participation remains compatible with Agentic Organization.
+
+Agentic organizational behavior may include:
+
 * human-in-the-loop;
 * human-on-the-loop;
 * human-over-the-loop;
-* delegated agent participation;
-* mixed human/agent coordination.
+* delegated human authority;
+* escalation to human authority;
+* collaborative human-agent decision-making.
 
-Agentic Organization does not require replacing human organizational actors.
----
-12. Canonical Relationships
+Agentic Organization therefore does not imply removal of managers, employees, governance bodies, or human accountability.
 
-Where canonical targets exist:
 
-Agentic Organization
-    +-- specializes → Organization
-    +-- engages → Agent
-    +-- interprets → Intent
-    +-- operates-within → Authority
-    +-- governed-by → Policy
-    +-- constrained-by → Constraint
-    +-- coordinates → Process
-    +-- uses → Agentic Workflow
-    +-- uses → Agentic Operations
-    +-- produces → Organizational Outcome
-    +-- adapts-to → Organizational Context
-    +-- exercises → Capability
-    -- contributes-to → Value
 
-Only relationships whose targets are canonical shall be activated.
----
-13. Organizational Authority Boundary
+9. Explicit Non-Equivalences
 
-The central boundary is:
+The following SHALL NOT be inferred:
 
-Intent
-   
-        
-Delegation
-   
-        
-Authority
-   
-        
-Policy / Governance
-   
-        
-Decision
-   
-        
-Action
-   
-        
-Outcome
-   
-        
-Adaptation / Escalation
+Agentic Organization -> AI Organization
+Agentic Organization -> Automated Organization
+Agentic Organization -> Agentic Enterprise
+Agentic Organization -> Agentic Operations
+Agentic Organization -> Agentic Workflow
+Agentic Organization -> Autonomous Organization
+Agentic Organization -> Human-free Organization
+Agentic Organization -> Agent-controlled Organization
 
-Agentic organizational behavior must remain bounded by organizational authority and governance.
----
-14. Agentic Organization and Organizational Culture
 
-Agentic Organization does not imply Agentic Culture.
 
-Agentic Organization
-       ≠
-Agentic Culture
+10. Enterprise Example
 
-Organizational culture may influence how agentic behavior is adopted and governed, but culture is a distinct semantic concern.
----
-15. OTCHERE Inc Example
+For OTCHERE Inc, an Agentic Organization may have organizational intent delegated through defined authority boundaries.
 
-An OTCHERE Inc organization may delegate portions of customer operations to agents.
+The organization may:
 
-A conventional organizational pattern:
+1. interpret organizational context;
+2. interpret delegated organizational intent;
+3. coordinate people, agents, systems, and services;
+4. dynamically select organizational actions;
+5. execute coordinated responses;
+6. observe organizational outcomes;
+7. adapt organizational activity;
+8. escalate decisions exceeding delegated authority.
 
-Customer Context
-      
-        
-Organizational Team
-      
-        
-Human Decision
-      
-        
-Operational Action
+The organization remains governed by policies, accountability structures, constraints, and human authority.
 
-An Agentic Organization pattern:
 
-Organizational Intent
-      
-        
-Delegated Authority
-      
-        
-Agentic Organizational Coordination
-      
-        
-Interpret Customer / Operational Context
-      
-        
-Select Permitted Action
-      
-        
-Coordinate Human + Agent + System
-      
-        
-Observe Outcome
-      
-        
-Adapt / Escalate
 
-The organization is agentic because agentic behavior materially participates in organizational coordination and decision execution.
----
-16. Rejected Interpretations
-
-The following are rejected:
-
-* Agentic Organization = AI Organization
-* Agentic Organization = automated organization
-* Agentic Organization = organization containing Agents
-* Agentic Organization = Agentic Enterprise
-* Agentic Organization = Agentic Operations
-* Agentic Organization = Agentic Workflow
-* Agentic Organization = Autonomous Organization
-* Agentic Organization = human-free organization
-* Agentic Organization = organization without managers
-* Agentic Organization = organization controlled entirely by Agents
-* Agentic Organization = AI-native organization
----
-17. Deferred Concepts
+11. Deferred Concepts
 
 This ADR does not establish:
 
@@ -347,52 +262,45 @@ This ADR does not establish:
 * Autonomous Ecosystem;
 * Agentic Network;
 * Autonomous Network;
-* organizational autonomy maturity;
-* organizational agent hierarchy;
 * Agentic Management;
-* Autonomous Management.
+* Autonomous Management;
+* Agent hierarchy;
+* Organizational autonomy maturity;
+* Agentic organizational maturity.
 
-Each requires independent governance.
----
-18. Consequences
+These require independent semantic decisions.
+
+
+
+12. Consequences
 
 Positive
 
-* Establishes organization as a distinct agentic semantic boundary.
-* Prevents Agentic Enterprise and Agentic Organization from collapsing into one concept.
-* Preserves human participation.
-* Connects organizational semantics with Agentic Operations and Agentic Workflow.
-* Provides a foundation for future organizational agentic/cultural analysis.
+* Establishes an organizational semantic boundary for agentic behavior.
+* Prevents Agentic Enterprise from absorbing organizational semantics.
+* Preserves Agentic/Autonomous orthogonality.
+* Separates organizational behavior from AI technology.
+* Supports future autonomous organization semantics without prematurely defining them.
+* Provides a reusable semantic foundation for enterprise architecture and organizational modeling.
 
-Risk
+Constraints
 
-The principal risk is conflating Agentic Organization with Agentic Enterprise or simply an organization containing Agents.
+* Materiality must be demonstrated.
+* Agent presence alone is insufficient.
+* Implementations must respect canonical dependency gates.
+* Autonomous Organization must not be inferred from this ADR.
 
-Material organizational behavior must therefore be demonstrated.
----
-19. Governance
 
-Implementation is authorized through:
 
-CR-ES-020 , Agentic Organization Semantic Grounding
+13. Decision Outcome
 
-No WSF or OpenDEA implementation change is authorized.
----
-20. Release
+Agentic Organization is established as a specialization of Organization.
 
-Target:
+Target semantic release:
 
 Enterprise-Semantics v1.9.0
 
 
+Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
-## Promotion Note
 
-Per user directive messages 1552900782440058902 ("Proceed with 18") + 1552912455527571546 ("save, read, understand, implement"), the Foundational Dependency Gate documented in section 2 was overridden. The implementation chain (8 PRs across 6 repos) was executed with the dependency documented rather than blocked. The next-foundational tranche is ADR-ES-021 (Organization canonical grounding), which remains unresolved at acceptance.
-
-Per ADR-ES-020 section 20: "we are moving from things that are offered or realized into the organizational boundary that coordinates people, agents, capabilities, processes, and operations. That makes Organization a materially different semantic branch from the Product/Service/Offering sequence rather than just another variation of it."
-
-Promotion ritual: 2-touchpoint per ES series ADR-ES-001 section 10-11.
-Status: Proposed -> Accepted 2026-09-25.
-
-Emmanuel A. Otchere (cardinal author rule, 2026-09-24).
