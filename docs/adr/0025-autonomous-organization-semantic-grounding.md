@@ -355,4 +355,34 @@ Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Promotion Note (preliminary)
 
-Filing for promotion in this tranche. Status: Accepted per user authoritative text.
+Filing for promotion in this tranche. Status: Accepted
+Date Accepted: 2026-09-25
+
+
+## Promotion Note
+
+Promoted via 2-touchpoint ritual per ES series ADR-ES-001 section 10-11.
+
+Per user directive message 1552962576894394389 ("save, read, understand, implement accordingly" + "Reconcile both, if they are about the same concept and salvage any enrichment that's possible"), this foundational tranche was filed + implemented + promoted.
+
+Per ADR-ES-021 final section, the resulting organization model:
+
+```
+                         Organization
+                              |
+                    +---------+---------+
+                    |                   |
+             Agentic Organization   Autonomous Organization
+                    |                   |
+                    +---------+---------+
+                              |
+                    Agentic + Autonomous
+                    Organization
+                    (orthogonal state)
+```
+
+This is the important completion point per ADR-ES-021: Organization now has the same Agentic/Autonomous semantic treatment as Capability, Service, Product, Offering, Value Stream, Operations, and Enterprise, while retaining the explicit rule that neither dimension subsumes the other.
+
+Status: Accepted per user authoritative text. Date Accepted: 2026-09-25.
+
+Emmanuel A. Otchere (cardinal author rule, 2026-09-24).
