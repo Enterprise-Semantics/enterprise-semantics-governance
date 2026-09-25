@@ -334,3 +334,14 @@ Agentic Organization   Agentic Culture
 The dependency gate on Culture is intentional. We should not manufacture a foundational Culture concept just to make ES-023 implementable. That is exactly the kind of semantic debt ES-022 is designed to prevent.
 
 Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+
+## Promotion Metadata
+
+- Status: Conditional / Dependency-Gated -> Accepted
+- Date Accepted: 2026-09-25
+- Authorising Directives: USER-DIRECTIVE-1553040695345025105 + Culture-System_Resolution.md
+- Implementation Chain: 8 PRs across 6 repos (VS-A through VS-D2c)
+- Foundational Dependency: parent Culture canonical (RESOLVED per ADR-ES-026 + CR-ES-026 Accepted)
+- Promotion Author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- Promotion Ritual: 2-touchpoint per ES series ADR-ES-001 section 10-11
