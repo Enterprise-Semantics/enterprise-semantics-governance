@@ -213,6 +213,16 @@ This ADR is ready for implementation when:
 6. Mapping and provenance are established.
 7. Conformance tests validate the dependency.
 
+## WSF Cross-Reference
+
+Filed on github.com/World-Semantic-Foundation/wsf-governance:
+
+- ADR-WSF-33 ; Culture Semantic Grounding (ES Integration) ; Status: Proposed
+  - Subject-namespace alias: WSF-ADR-CULTURE-001 (per LOCKED-PICKS v9 section 313-318)
+  - PR #12 merged 2026-09-26
+- CR-WSF-33 ; Culture Implementation in WSF (ES Integration)
+  - Subject-namespace alias: WSF-CR-CULTURE-001
+
 ## Author
 
 Emmanuel A. Otchere (cardinal author rule, 2026-09-24)

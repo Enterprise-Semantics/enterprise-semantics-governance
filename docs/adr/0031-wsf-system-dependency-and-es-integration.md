@@ -200,6 +200,16 @@ This ADR is ready for implementation when:
 6. Mapping and provenance are established.
 7. Conformance tests pass.
 
+## WSF Cross-Reference
+
+Filed on github.com/World-Semantic-Foundation/wsf-governance:
+
+- ADR-WSF-34 ; System Semantic Validation and Regrounding (ES Integration) ; Status: Proposed
+  - Subject-namespace alias: WSF-ADR-SYSTEM-001 (per LOCKED-PICKS v9 section 313-318)
+  - PR #12 merged 2026-09-26
+- CR-WSF-34 ; System Validation Implementation (ES Integration)
+  - Subject-namespace alias: WSF-CR-SYSTEM-001
+
 ## Author
 
 Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
