@@ -247,6 +247,10 @@ This ADR is ready for implementation when:
 4. The definition is demonstrably distinct from Agentic System.
 5. No unauthorized foundational concepts are introduced.
 
+## WSF Cross-Reference
+
+ES-028 depends on ADR-WSF-34 ; System Semantic Validation and Regrounding (ES Integration) ; Status: Proposed ; filed on github.com/World-Semantic-Foundation/wsf-governance ; PR #12 merged 2026-09-26. Subject-namespace alias: WSF-ADR-SYSTEM-001 per LOCKED-PICKS v9 section 313-318.
+
 ## Author
 
 Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
