@@ -1,6 +1,10 @@
 # ES-ADR-028 ; Autonomous System Semantic Grounding
 
-Status: Proposed
+Status: Accepted
+Semantic Version: 2.4.0
+Scope: Enterprise-Semantics
+Depends on: WSF-ADR-SYSTEM-001 (provisional, per LOCKED-PICKS v9), ES-ADR-027, ES-022
+Implementation: CR-ES-028
 Authority: Enterprise-Semantics
 Depends On: WSF-ADR-ES-027 (System Semantic Validation and Regrounding), ES-ADR-027 (WSF System Dependency and ES Integration)
 Related: ES-ADR-008, ES-ADR-022, ES-ADR-025

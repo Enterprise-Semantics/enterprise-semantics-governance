@@ -1,6 +1,14 @@
 # ES-CR-028 ; Autonomous System Semantic Grounding Implementation
 
-Status: Proposed
+Status: Accepted
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_basis: ES-028 implementation chain complete + validator NO_DRIFT (24)
+- semantic_version_landed: 2.4.0
+- boundary_dimension_matrix_status: 9-of-9 complete
+- related_promotions: ES-026, ES-027, ES-023, ES-024, ES-025, ES-026, ES-027
 Implements: ES-ADR-028
 Depends On: WSF-ADR-SYSTEM-001 (provisional subject-namespace), ES-ADR-027
 Related: ES-ADR-008, ES-ADR-022, ES-ADR-025
