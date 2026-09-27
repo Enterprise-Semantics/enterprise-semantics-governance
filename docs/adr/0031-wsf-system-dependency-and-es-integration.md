@@ -210,6 +210,16 @@ Filed on github.com/World-Semantic-Foundation/wsf-governance:
 - CR-WSF-34 ; System Validation Implementation (ES Integration)
   - Subject-namespace alias: WSF-CR-SYSTEM-001
 
+## WSF Cross-Reference (Baseline Update)
+
+Per user directive message 1553459854071562394 + Change Control Lifecycle Stage 6:
+
+- ADR-WSF-34 ; System Semantic Validation and Regrounding (ES Integration) ; Status: **Baseline** (was Proposed)
+- CR-WSF-34 ; System Validation Implementation (ES Integration) ; Status: **Baseline** (was Proposed)
+- PR #13 MERGED on github.com/World-Semantic-Foundation/wsf-governance 2026-09-26
+
+WSF System is now at Baseline status. ES-025 (Agentic System) + ES-028 (Autonomous System) dependency gates are satisfied.
+
 ## Author
 
 Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
