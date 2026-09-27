@@ -1,6 +1,6 @@
 # CR-ES-030 ; Per-Concept Repository + Test-Kit + Conformance Section Implementation
 
-Status: Approved for Implementation
+Status: Accepted
 Date: 2026-09-26
 Implements: ES-ADR-030
 Scope: Enterprise-Semantics (org-wide)
@@ -66,6 +66,13 @@ In `enterprise-semantics-test-probe`:
 3. `generate_conformance.py` runs clean and produces the conformance section
 4. Conformance section committed to docs repo
 5. D-004 clean ; cardinal author stamp on all commits
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: all 6 acceptance criteria met at full scale (39 concepts, 5 waves)
+- prior_status: Approved for Implementation
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 
