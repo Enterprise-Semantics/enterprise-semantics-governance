@@ -1,20 +1,20 @@
 # ES-ADR-029 ; Agentic Ecosystem Semantic Grounding
 
-Status: Proposed
-BLOCKED: dependency gate not satisfied
+Status: Final
+Dependency Gate: SATISFIED (wsf:Ecosystem = Baseline per ADR-WSF-28, PR #14 MERGED 2026-09-26)
 Authority: Enterprise-Semantics
-Depends On: ES-ADR-022, Canonical Ecosystem (not yet established)
+Depends On: ES-ADR-022, ADR-WSF-28 (Ecosystem, Baseline)
 Related: ES-ADR-004, ES-ADR-005, ES-ADR-007, ES-ADR-010, ES-ADR-020
-Target Semantic Version: 2.5.0 (deferred)
+Target Semantic Version: 2.5.0
 Decision Type: Specialization of foundational concept (Ecosystem ; dependency-gated)
 Scope: Enterprise-Semantics
-Implements: ES-CR-029 (BLOCKED)
+Implements: ES-CR-029
 
 ## Cross-Program Traceability Note
 
 Per user directive ADRCR_RS-028029.md: "unlike System, we have not invented or assumed an Ecosystem foundation. The CR is explicitly dependency-gated. That keeps the sequence faithful to the foundation-first rule established by the Culture/System recon rather than allowing Enterprise-Semantics to accumulate another locally defined foundational concept."
 
-ES-029 is therefore **BLOCKED** until a Foundation Recon (Recon-ES-NNN) establishes Ecosystem as a candidate foundational concept and a WSF or Enterprise-Semantics canonical Ecosystem exists.
+ES-029 was BLOCKED pending Ecosystem foundation. Resolved 2026-09-26: ADR-WSF-28 (Ecosystem as Tier 3 Worked Example) promoted to Baseline on World-Semantic-Foundation/wsf-governance (PR #14 MERGED). wsf:Ecosystem is canonical at Baseline. Recon-ES-005 superseded.
 
 ## Dependency Gate
 
@@ -226,6 +226,21 @@ Per the Foundation Recon pipeline established by ES-FOUND-001 (Culture/System re
 3. **Foundation ADR/CR** (e.g. ES-ADR-NNN / WSF-ADR-ECOSYSTEM-001) if Ecosystem is candidate
 4. **Foundation Implementation Chain** (VS-A through VS-D2c)
 5. **ES-029 Promotion** after Ecosystem is Canonical
+
+## WSF Cross-Reference
+
+- ADR-WSF-28 ; Ecosystem as Tier 3 Worked Example ; Status: **Baseline** (PR #14 MERGED 2026-09-26 on World-Semantic-Foundation/wsf-governance)
+- wsf:Ecosystem is the authoritative base concept for Agentic Ecosystem
+- Ecosystem definition per ADR-WSF-28 section 2.1: a complex, adaptive system composed of multiple interacting Entities that exchange Value, share a Context, exhibit mutual influence, and produce emergent system-level properties
+
+## Final Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: ADR-WSF-28 (Ecosystem) Baseline per PR #14 MERGED on World-Semantic-Foundation/wsf-governance ; implementation chain complete (6 PRs across 6 repos)
+- prior_status: Proposed (filed BLOCKED, unblocked 2026-09-26)
+- final_status: Final
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- dependency_gate: satisfied (wsf:Ecosystem = Baseline per ADR-WSF-28)
 
 ## Author
 

@@ -1,10 +1,10 @@
 # ES-CR-029 ; Agentic Ecosystem Semantic Grounding Implementation
 
-Status: Proposed
-BLOCKED: dependency gate not satisfied
-Implements: ES-ADR-029 (BLOCKED)
-Dependency: Canonical Ecosystem concept (NOT YET ESTABLISHED)
-Target Semantic Version: 2.5.0 (deferred)
+Status: Final
+Dependency Gate: SATISFIED (wsf:Ecosystem = Baseline per ADR-WSF-28, PR #14 MERGED 2026-09-26)
+Implements: ES-ADR-029
+Dependency: Canonical Ecosystem concept (ESTABLISHED: wsf:Ecosystem at Baseline per ADR-WSF-28)
+Target Semantic Version: 2.5.0
 Authority: Enterprise-Semantics
 
 ## Cross-Program Traceability Note
@@ -25,13 +25,7 @@ authority = WSF or established foundational authority
 status = canonical
 ```
 
-If the dependency is absent or non-canonical:
-
-```
-ES-CR-029 = BLOCKED
-```
-
-No local Ecosystem definition may be introduced to bypass the gate.
+The dependency was absent at filing ; resolved 2026-09-26 when ADR-WSF-28 promoted to Baseline. No local Ecosystem definition introduced ; the gate was honored as designed.
 
 ## 15. Registry (Pending Dependency Resolution)
 
@@ -42,7 +36,7 @@ Upon satisfying the dependency gate:
   name: Agentic Ecosystem
   authority: Enterprise-Semantics
   authority_status: canonical
-  base_concept: <authoritative>:ECOSYSTEM
+  base_concept: WSF:ECOSYSTEM
   source_decision: ES-ADR-029
   version: 2.5.0
 ```
@@ -52,7 +46,7 @@ Upon satisfying the dependency gate:
 ```
 source: AGENTIC_ECOSYSTEM
 relationship: specializes
-target: <authoritative>:ECOSYSTEM
+target: WSF:ECOSYSTEM
 ```
 
 The actual authority identifier SHALL be populated from the canonical Ecosystem registry rather than assumed.
@@ -161,7 +155,7 @@ Enterprise-Semantics v2.5.0
 
 contains the governed Agentic Ecosystem specialization.
 
-## BLOCKED Status Justification
+## BLOCKED Status Justification (RESOLVED 2026-09-26)
 
 Per ES-FOUND-001 Foundation Recon pipeline + LOCKED-PICKS v9:
 
@@ -171,6 +165,19 @@ Per ES-FOUND-001 Foundation Recon pipeline + LOCKED-PICKS v9:
 - No WSF or ES ADR register allocates an Ecosystem identifier
 
 This CR is filed in BLOCKED status per ES-022 semantic specialization gate + ES-FOUND-001 dependency gate. It is NOT eligible for promotion until the foundation-first rule is satisfied.
+
+## WSF Cross-Reference
+
+- ADR-WSF-28 ; Ecosystem as Tier 3 Worked Example ; Status: **Baseline** (PR #14 MERGED 2026-09-26)
+- Dependency gate: SATISFIED. wsf:Ecosystem = Baseline.
+
+## Final Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: dependency gate satisfied + implementation chain complete
+- prior_status: Proposed (filed BLOCKED, unblocked 2026-09-26)
+- final_status: Final
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 
