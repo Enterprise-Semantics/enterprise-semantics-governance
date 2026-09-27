@@ -1,6 +1,6 @@
 # ADR-ES-031 ; WSF Service Dependency and Enterprise-Semantics Integration
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-26
 Deciders: eaojnr
 Decision Type: Dependency integration (NOT foundational definition)
@@ -28,6 +28,13 @@ Satisfied at filing: wsf:Service = Baseline per ADR-WSF-35 (promoted 2026-09-26,
 
 - The Recon-ES-006 Service gap is closed end-to-end (WSF foundation -> ES integration -> specialization dependency gates)
 - ES-014 + ES-015 dependency gates are retroactively satisfied
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: implementation chain complete (base concept records validator NO_DRIFT 25 ; mappings filed ; kits + conformance landed) ; WSF dependencies at Baseline (PR #16)
+- prior_status: Proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 
