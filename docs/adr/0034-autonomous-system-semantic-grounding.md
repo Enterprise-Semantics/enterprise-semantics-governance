@@ -1,6 +1,6 @@
 # ES-ADR-028 ; Autonomous System Semantic Grounding
 
-Status: Accepted
+Status: Final
 Semantic Version: 2.4.0
 Scope: Enterprise-Semantics
 Depends on: WSF-ADR-SYSTEM-001 (provisional, per LOCKED-PICKS v9), ES-ADR-027, ES-022
@@ -260,6 +260,16 @@ Per user directive message 1553459854071562394 + Change Control Lifecycle Stage 
 - PR #13 MERGED on github.com/World-Semantic-Foundation/wsf-governance 2026-09-26
 
 WSF System is now at Baseline status. ES-028 (Autonomous System) dependency gate is satisfied.
+
+## Final Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: WSF System dependency satisfied at Baseline per ADR-WSF-34 (PR #13 MERGED on World-Semantic-Foundation/wsf-governance)
+- prior_status: Accepted
+- final_status: Final
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- dependency_gate: satisfied (WSF System = Baseline)
+- change_control_lifecycle: Stage 13 (Version / Deprecate) terminal state for this tranche
 
 ## Author
 
