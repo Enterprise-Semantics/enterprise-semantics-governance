@@ -1,6 +1,6 @@
 # ADR-ES-030 ; Per-Concept Repository + Test-Kit + Conformance Section Structure
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-26
 Deciders: eaojnr
 Decision Type: Structural repository architecture
@@ -85,6 +85,13 @@ Backfill waves follow for the remaining 20 concepts.
 - D-004: zero forbidden glyphs
 - No inline triple-semicolon dividers in body content
 - Cardinal author stamp: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: full backfill complete (39 concept repos + 39 kit manifests + 39-page conformance section) ; pattern confirmed at scale
+- prior_status: Proposed
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 
