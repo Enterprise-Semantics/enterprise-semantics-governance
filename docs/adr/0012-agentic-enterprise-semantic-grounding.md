@@ -4,12 +4,12 @@ ADR-ES-010 , Agentic Enterprise Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-010.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Proposed
+Status: Accepted (promoted from Proposed on 2026-09-24 per user directive message 1552619242367615057, "Proceed")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
 Depends on: ADR-ES-001 (Authority and Publication Architecture) , ADR-ES-002 (Enterprise Semantic Model) , ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) , ADR-ES-004 (Agentic Semantic Grounding) , ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) , ADR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23) , ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) , ADR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23) , ADR-ES-009 (Autonomous Value Stream Semantic Grounding, Accepted 2026-09-23)
-Related: CR-ES-010 (Agentic Enterprise Semantic Grounding, Proposed) , ADR-ES-011 (Autonomous Enterprise Semantic Grounding, Proposed) , FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-010 (Agentic Enterprise Semantic Grounding, Accepted 2026-09-24) , ADR-ES-011 (Autonomous Enterprise Semantic Grounding, Proposed, held for v1.0.0 release boundary per CR-ES-011 §38) , FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
 
 Decision: Establish Agentic Enterprise as a governed semantic specialization describing an enterprise whose organization ;; value realization ;; and operational behavior materially incorporate agentic modes of operation. The Agentic Enterprise is a specialization of Enterprise and not of Agent ;; Agentic Operations ;; or Agentic Value Stream , it materializes as an enterprise-level operating condition in which agentic behavior is materially embedded in enterprise value realization ;; operational coordination ;; decision-making ;; execution ;; or adaptation within defined intent ;; authority ;; policy ;; and governance boundaries. Deliberately avoids premature canonicalization of Autonomous Enterprise ;; AI Enterprise ;; AI-Native Enterprise ;; Agentic Capability ;; Agentic Organization ;; Agentic Culture ;; Agentic Ecosystem ;; enterprise agentic maturity levels.
 
