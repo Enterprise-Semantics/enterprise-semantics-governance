@@ -2,7 +2,7 @@ ADR-ES-023 : Agentic Culture Semantic Grounding
 
 ADR-ES-023 : Agentic Culture Semantic Grounding
 
-Status: Accepted
+Status: Final
 Date Accepted: 2026-09-25
 Decision Type: Semantic Definition
 Semantic Version Target: v2.1.0
@@ -330,3 +330,13 @@ Dependency gate RESOLVED: parent Culture concept is now canonical on origin/main
 Status: Accepted. Date Accepted: 2026-09-25.
 
 Emmanuel A. Otchere (cardinal author rule, 2026-09-24).
+
+## Final Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: WSF Culture dependency satisfied at Baseline per ADR-WSF-33 (PR #13 MERGED on World-Semantic-Foundation/wsf-governance)
+- prior_status: Accepted
+- final_status: Final
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- dependency_gate: satisfied (WSF Culture = Baseline)
+- change_control_lifecycle: Stage 13 (Version / Deprecate) terminal state for this tranche

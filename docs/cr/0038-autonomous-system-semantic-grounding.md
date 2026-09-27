@@ -1,6 +1,6 @@
 # ES-CR-028 ; Autonomous System Semantic Grounding Implementation
 
-Status: Accepted
+Status: Final
 
 ## Promotion Metadata
 
@@ -191,6 +191,16 @@ The 9-of-9 boundary dimension matrix is complete:
 - Enterprise: Agentic, Autonomous
 - Culture: Agentic, Autonomous
 - System: Agentic, Autonomous
+
+## Final Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: WSF System dependency satisfied at Baseline per CR-WSF-34 (PR #13 MERGED on World-Semantic-Foundation/wsf-governance)
+- prior_status: Accepted
+- final_status: Final
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- dependency_gate: satisfied (WSF System = Baseline)
+- change_control_lifecycle: Stage 13 (Version / Deprecate) terminal state for this tranche
 
 ## Author
 

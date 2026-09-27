@@ -4,7 +4,7 @@ The next specialization passes the ES-022 gate because System is materially affe
 
 ADR-ES-025 : Agentic System Semantic Grounding
 
-Status: Accepted
+Status: Final
 Date Accepted: 2026-09-25
 Semantic Version: v2.3.0
 Scope: Enterprise-Semantics
@@ -264,3 +264,13 @@ Autonomous System remains deferred per ADR-ES-022 section 13 (mechanical symmetr
 Status: Accepted. Date Accepted: 2026-09-25.
 
 Emmanuel A. Otchere (cardinal author rule, 2026-09-24).
+
+## Final Promotion Metadata
+
+- promotion_date: 2026-09-26
+- promotion_trigger: WSF System dependency satisfied at Baseline per ADR-WSF-34 (PR #13 MERGED on World-Semantic-Foundation/wsf-governance)
+- prior_status: Accepted
+- final_status: Final
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+- dependency_gate: satisfied (WSF System = Baseline)
+- change_control_lifecycle: Stage 13 (Version / Deprecate) terminal state for this tranche
