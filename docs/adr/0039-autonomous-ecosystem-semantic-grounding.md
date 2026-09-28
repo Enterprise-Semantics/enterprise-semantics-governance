@@ -1,6 +1,6 @@
 # ADR-ES-033 ; Autonomous Ecosystem Semantic Grounding
 
-Status: Proposed
+Status: Final
 Date: 2026-09-27
 Deciders: eaojnr
 Decision Type: Specialization of foundational concept (Ecosystem)
@@ -52,6 +52,14 @@ Autonomous Ecosystem is NOT reducible to: Autonomous System (single system scope
 ## 8. Semantic Version
 
 Target: v2.6.0 (next minor after v2.5.0 Agentic Ecosystem).
+
+## Final Promotion Metadata
+
+- promotion_date: 2026-09-27
+- promotion_trigger: dependency gate satisfied at filing (wsf:Ecosystem Baseline per ADR-WSF-28) ; implementation chain complete (6 PRs across 6 repos + concept repo + kit + conformance)
+- prior_status: Proposed
+- final_status: Final
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 
