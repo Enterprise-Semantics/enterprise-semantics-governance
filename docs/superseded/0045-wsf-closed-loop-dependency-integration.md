@@ -1,6 +1,6 @@
 # CR-ES-035 ; WSF Closed Loop Dependency and ES Integration Implementation
 
-Status: Accepted
+Status: Voided (superseded by ES-034 Closed Loop behavioral_pattern + ES-035 Autonomous Closed Loop specialization)
 Date: 2026-09-27
 Implements: ES-ADR-035
 Scope: Enterprise-Semantics
@@ -35,6 +35,13 @@ SATISFIED: wsf:ClosedLoop = Baseline (ADR-WSF-38, WSF PR #19 MERGED 2026-09-27).
 - prior_status: Proposed
 - final_status: Accepted
 - promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+## Void Note (2026-09-28)
+
+- Voided in favor of the user-authoritative ES-034 / ES-035 pair, which establishes Closed Loop as a behavioral_pattern (semantic_kind), not as an integration pair
+- ES-035 (Autonomous Closed Loop) is a behavioral_pattern_specialization of ES-034
+- wsf:ClosedLoop remains declared in WSF turtle vocabulary (Tier 3 Baseline per ADR-WSF-38)
+- Superseding ADRs/CRs land at slots 0048/0049 (ADR) and corresponding CR slots
 
 ## Author
 

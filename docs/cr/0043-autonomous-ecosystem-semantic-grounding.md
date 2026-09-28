@@ -1,4 +1,4 @@
-# CR-ES-033 ; Autonomous Ecosystem Semantic Grounding Implementation
+# CR-ES-030 ; Autonomous Ecosystem Semantic Grounding Implementation
 
 Status: Final
 Date: 2026-09-27
