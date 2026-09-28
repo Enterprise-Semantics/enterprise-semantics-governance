@@ -1,6 +1,6 @@
 # CR-ES-031 ; Agentic Network Semantic Grounding Implementation
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Implements: ES-ADR-031
 Target Semantic Version: 2.7.0
@@ -61,6 +61,14 @@ implementation: [ES-CR-031]
 ## 8. Release Effect
 
 Enterprise-Semantics v2.7.0.
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-28
+- promotion_trigger: dependency gates satisfied at filing ; implementation chain complete (concept + vocabulary + version + profile + profile-types + mappings + docs + examples + tests + visuals + concept repo + kit + conformance)
+- prior_status: Proposed
+- final_status: Accepted
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 

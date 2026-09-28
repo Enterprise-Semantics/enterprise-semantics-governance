@@ -1,6 +1,6 @@
 # ADR-ES-031 ; Agentic Network Semantic Grounding
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Deciders: eaojnr
 Foundation Dependency: Canonical Network (wsf:Network, Tier 3 Baseline per ADR-WSF-37)
@@ -84,6 +84,14 @@ This ADR does not define Network (Network is canonical via wsf:Network ; ES-031 
 ## 10. Dependency Gate
 
 Implementation SHALL remain blocked until wsf:Network = Tier 3 Baseline. SATISFIED at filing (ADR-WSF-37, WSF PR #19 MERGED 2026-09-27).
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-28
+- promotion_trigger: dependency gates satisfied at filing ; implementation chain complete (concept + vocabulary + version + profile + profile-types + mappings + docs + examples + tests + visuals + concept repo + kit + conformance)
+- prior_status: Proposed
+- final_status: Accepted
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 
