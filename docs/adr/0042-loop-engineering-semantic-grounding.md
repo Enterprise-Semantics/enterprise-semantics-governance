@@ -1,6 +1,6 @@
 # ADR-ES-033 ; Loop Engineering Semantic Grounding
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Deciders: eaojnr
 Target Semantic Version: 2.9.0
@@ -74,6 +74,14 @@ This ADR does not define Closed Loop, establish Autonomous Closed Loop, define A
 3. Its relationship to Closed Loop is explicit.
 4. Its relationship to Agentic and Autonomous behavior is explicit.
 5. Conformance tests prevent incorrect specialization.
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-28
+- promotion_trigger: dependency gates satisfied at filing ; implementation chain complete (concept + vocabulary + version + profile + profile-types + mappings + docs + examples + tests + visuals + concept repo + kit + conformance)
+- prior_status: Proposed
+- final_status: Accepted
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 

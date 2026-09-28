@@ -1,6 +1,6 @@
 # CR-ES-033 ; Loop Engineering Semantic Grounding Implementation
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Implements: ES-ADR-033
 Target Semantic Version: 2.9.0
@@ -38,6 +38,14 @@ Negative: not subtype of System, not subtype of Process, not equivalent to Close
 - [ ] Negative semantic-kind tests pass
 - [ ] Provenance complete
 - [ ] CI validates
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-28
+- promotion_trigger: dependency gates satisfied at filing ; implementation chain complete (concept + vocabulary + version + profile + profile-types + mappings + docs + examples + tests + visuals + concept repo + kit + conformance)
+- prior_status: Proposed
+- final_status: Accepted
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 

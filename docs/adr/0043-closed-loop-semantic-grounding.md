@@ -1,6 +1,6 @@
 # ADR-ES-034 ; Closed Loop Semantic Grounding
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Deciders: eaojnr
 Target Semantic Version: 2.10.0
@@ -82,6 +82,14 @@ This ADR does not define Autonomous Closed Loop, define AI Closed Loop, equate f
 2. Closed Loop is separated from Loop Engineering.
 3. Agentic and Autonomous dimensions remain orthogonal.
 4. The concept is usable across multiple semantic contexts.
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-28
+- promotion_trigger: dependency gates satisfied at filing ; implementation chain complete (concept + vocabulary + version + profile + profile-types + mappings + docs + examples + tests + visuals + concept repo + kit + conformance)
+- prior_status: Proposed
+- final_status: Accepted
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 

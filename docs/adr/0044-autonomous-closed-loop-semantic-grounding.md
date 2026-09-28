@@ -1,6 +1,6 @@
 # ADR-ES-035 ; Autonomous Closed Loop Semantic Grounding
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Deciders: eaojnr
 Foundation Dependency: Canonical Closed Loop (ES-034, behavioral_pattern)
@@ -63,6 +63,14 @@ This ADR does not define AI Closed Loop, define Agentic Closed Loop as separate 
 3. Authority, policy, constraint, and governance boundaries are representable.
 4. Agentic and Autonomous dimensions remain independent.
 5. Human exception intervention remains valid.
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-28
+- promotion_trigger: dependency gates satisfied at filing ; implementation chain complete (concept + vocabulary + version + profile + profile-types + mappings + docs + examples + tests + visuals + concept repo + kit + conformance)
+- prior_status: Proposed
+- final_status: Accepted
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 
