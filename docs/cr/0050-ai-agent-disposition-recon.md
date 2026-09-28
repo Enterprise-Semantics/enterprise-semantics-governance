@@ -1,6 +1,6 @@
 # CR-ES-037 ; AI Agent Semantic Disposition Recon Implementation
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Implements: ES-ADR-037
 

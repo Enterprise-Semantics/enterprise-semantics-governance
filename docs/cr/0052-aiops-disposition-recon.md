@@ -1,6 +1,6 @@
 # CR-ES-039 ; AIOps Semantic Disposition Recon Implementation
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Implements: ES-ADR-039
 
