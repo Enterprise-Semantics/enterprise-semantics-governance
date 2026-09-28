@@ -1,6 +1,6 @@
 # ADR-ES-038 ; Agentic AI Semantic Disposition Recon
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Deciders: eaojnr
 Semantic Area: Agentic Behavior, Artificial Intelligence

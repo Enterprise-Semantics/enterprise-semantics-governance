@@ -1,6 +1,6 @@
 # ADR-ES-037 ; AI Agent Semantic Disposition Recon
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Deciders: eaojnr
 Semantic Area: Agent, Artificial Intelligence

@@ -1,6 +1,6 @@
 # ADR-ES-039 ; AIOps Semantic Disposition Recon
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Deciders: eaojnr
 Semantic Area: Operational Discipline, AI

@@ -1,6 +1,6 @@
 # CR-ES-041 ; AI-Native Operations Semantic Disposition Recon Implementation
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Implements: ES-ADR-041
 

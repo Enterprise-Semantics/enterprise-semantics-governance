@@ -1,6 +1,6 @@
 # ADR-ES-041 ; AI-Native Operations Semantic Disposition Recon
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-28
 Deciders: eaojnr
 Semantic Area: Operating-Model Characteristic
