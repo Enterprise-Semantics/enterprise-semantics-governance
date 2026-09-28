@@ -1,6 +1,6 @@
 # ADR-ES-035 ; WSF Closed Loop Dependency and ES Integration
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-27
 Deciders: eaojnr
 Source: ADR-WSF-38 (Baseline) ; Recon-ES-008 resolution (Option A)
@@ -22,6 +22,14 @@ wsf:ClosedLoop is canonical per WSF. ES specializes and references but does not 
 ## 4. Semantic Version
 
 Target: v2.8.0 (Closed Loop integration).
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-27
+- promotion_trigger: dependency gate satisfied at filing (wsf:Network + wsf:ClosedLoop at Baseline per ADR-WSF-37/38) ; implementation chain complete
+- prior_status: Proposed
+- final_status: Accepted
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 

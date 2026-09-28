@@ -1,6 +1,6 @@
 # ADR-ES-034 ; WSF Network Dependency and ES Integration
 
-Status: Proposed
+Status: Accepted
 Date: 2026-09-27
 Deciders: eaojnr
 Source: ADR-WSF-37 (Baseline) ; Recon-ES-007 resolution (Option A)
@@ -24,6 +24,14 @@ Both gate on this ADR landing.
 ## 4. Semantic Version
 
 Target: v2.7.0 (Network integration).
+
+## Promotion Metadata
+
+- promotion_date: 2026-09-27
+- promotion_trigger: dependency gate satisfied at filing (wsf:Network + wsf:ClosedLoop at Baseline per ADR-WSF-37/38) ; implementation chain complete
+- prior_status: Proposed
+- final_status: Accepted
+- promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
 
 ## Author
 
