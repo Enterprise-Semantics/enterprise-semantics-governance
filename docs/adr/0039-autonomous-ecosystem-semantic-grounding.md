@@ -1,11 +1,11 @@
-# ADR-ES-033 ; Autonomous Ecosystem Semantic Grounding
+# ADR-ES-030 ; Autonomous Ecosystem Semantic Grounding
 
 Status: Final
 Date: 2026-09-27
 Deciders: eaojnr
 Decision Type: Specialization of foundational concept (Ecosystem)
 Scope: Enterprise-Semantics
-Implements: ES-CR-033
+Implements: ES-CR-030
 Depends On: ES-ADR-022, ES-ADR-029, ADR-WSF-28 (Ecosystem, Baseline)
 
 ## 1. Context

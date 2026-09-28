@@ -1,6 +1,6 @@
 # ADR-ES-034 ; WSF Network Dependency and ES Integration
 
-Status: Accepted
+Status: Voided (superseded by ES-031 Agentic Network + ES-032 Autonomous Network)
 Date: 2026-09-27
 Deciders: eaojnr
 Source: ADR-WSF-37 (Baseline) ; Recon-ES-007 resolution (Option A)
@@ -32,6 +32,13 @@ Target: v2.7.0 (Network integration).
 - prior_status: Proposed
 - final_status: Accepted
 - promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+## Void Note (2026-09-28)
+
+- Voided in favor of the user-authoritative ES-031 / ES-032 pair (Agentic Network + Autonomous Network), which specialize Network as a canonical concept with full specialization semantics (not integration pair)
+- wsf:Network remains declared in WSF turtle vocabulary (Tier 3 Baseline per ADR-WSF-37)
+- Network canonical concept is now established via ES-031 + ES-032 specialization pair
+- Superseding ADRs/CRs land at slots 0046/0047 (ADR) and corresponding CR slots
 
 ## Author
 
