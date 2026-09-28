@@ -1,11 +1,11 @@
-# ADR-ES-032 ; WSF Product Dependency and Enterprise-Semantics Integration
+# ADR-ES-032-PRD ; WSF Product Dependency and Enterprise-Semantics Integration
 
 Status: Accepted
 Date: 2026-09-26
 Deciders: eaojnr
 Decision Type: Dependency integration (NOT foundational definition)
 Scope: Enterprise-Semantics
-Implements: ES-CR-032
+Implements: ES-CR-032-PRD
 
 ## 1. Context
 
@@ -35,6 +35,11 @@ Satisfied at filing: wsf:Product = Baseline per ADR-WSF-36 (promoted 2026-09-26,
 - promotion_trigger: implementation chain complete (base concept records validator NO_DRIFT 25 ; mappings filed ; kits + conformance landed) ; WSF dependencies at Baseline (PR #16)
 - prior_status: Proposed
 - promotion_authority: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+
+## Compound ID Note (2026-09-28)
+
+- Logical ID was ES-031 (Service integration). Per the user-authoritative model, ES-031 is reassigned to Agentic Network (slot 0040). This Service integration tranche is renamed ES-031-SVC (compound ID convention) to preserve history + signal that logical ES-031 now belongs to a different concept.
+- Same convention applies to ES-032-PRD (Product integration ; was ES-032).
 
 ## Author
 
