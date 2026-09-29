@@ -496,3 +496,15 @@ Per user directive 1554532746037174465 (corrected D-004 scope: en/em-dashes + U+
 - Validation: zero forbidden glyphs remaining in all 9 repos post-sweep. All 21 flagged YAML files parse cleanly. 156 `;;;` remain in YAML literal block structured data fields (intentional, preserved).
 - Cardinal author rule preserved on all PRs.
 
+
+
+[3.1.99] structural: Per-Concept Repo Self-Containment (ES-ADR-049 + CR-ES-049, Accepted 2026-09-30)
+Per user directive 1554547354756063314. Amendment to ES-ADR-030 §2.1.
+- Slice 1: Test Kit Completion (110 new tests for 11 zero-test concepts) ; enterprise-semantics-test-probe PR #35 MERGED.
+- Slice 2: Per-concept docs enrichment (192 docs across 48 concepts: target-architectures.md + capability-maturity-model.yaml + assessment.md + measurement.md) ; enterprise-semantics-docs PR #35 MERGED.
+- Slice 3: Mirror to per-concept repos (48 PRs landing in 48 repos on main) ; 30 of 48 had been pushed in earlier session work, 18 pushed in this session.
+- Slice 4: CI sync workflow ; .github/workflows/sync-concept-repos.yml to be authored.
+- Slice 5: authority-chain.md updated (direct push to enterprise-semantics main) ; PLAN entry [3.1.99] committed.
+- Slice 6: validation sweep ; to be executed.
+Total resources now in per-concept repos: 840 files across 48 repos (10-44 files per repo).
+Cardinal author rule preserved on all commits.
