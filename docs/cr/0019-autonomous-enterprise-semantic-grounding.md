@@ -35,7 +35,7 @@ Automation
 
 and must not introduce an implicit hierarchy between Agentic Enterprise and Autonomous Enterprise.
 
-;;;
+. 
 
 2. Canonical Concept
 
@@ -54,7 +54,7 @@ specializes: Enterprise
 
 Where Enterprise is not independently canonicalized within Enterprise-Semantics, reference its authoritative semantic grounding rather than creating a duplicate Enterprise concept.
 
-;;;
+. 
 
 3. Semantic Classification
 
@@ -76,7 +76,7 @@ Agentic Enterprise
 Autonomous Operations
 Autonomous Value Stream
 
-;;;
+. 
 
 4. Required Properties
 
@@ -121,7 +121,7 @@ realization_mode	Describes the mixture of autonomous, agentic, automated, and hu
 
 The schema shall distinguish semantic requirements from optional implementation metadata.
 
-;;;
+. 
 
 5. Required Semantic Relationships
 
@@ -162,7 +162,7 @@ Only relationships whose target concepts and predicates are already canonical sh
 
 Where a target concept is not canonical, record the intended correspondence in the mapping layer rather than creating it implicitly.
 
-;;;
+. 
 
 6. Registry
 
@@ -187,7 +187,7 @@ version:
 
 The concept identifier must follow the repository’s established identifier convention.
 
-;;;
+. 
 
 7. Profile
 
@@ -220,7 +220,7 @@ Profile membership
  ≠
 is-a relationship
 
-;;;
+. 
 
 8. Autonomy Integrity Model
 
@@ -241,7 +241,7 @@ Enterprise
 
 An instance may satisfy both classifications.
 
-;;;
+. 
 
 9. Agentic / Autonomous Matrix
 
@@ -257,7 +257,7 @@ The fourth state must not result in creation of a new canonical concept.
 
 It is a valid combination of semantic characteristics.
 
-;;;
+. 
 
 10. Autonomous Value Stream Integration
 
@@ -279,7 +279,7 @@ Nor does the presence of one Autonomous Value Stream automatically qualify an en
 
 Enterprise-level autonomy requires material enterprise-level evidence.
 
-;;;
+. 
 
 11. Autonomous Operations Integration
 
@@ -302,7 +302,7 @@ Autonomous Operations represent an operational boundary.
 
 Autonomous Enterprise represents an enterprise boundary.
 
-;;;
+. 
 
 12. Agentic Integration
 
@@ -326,7 +326,7 @@ Autonomous without Agentic
 
 as a valid semantic configuration.
 
-;;;
+. 
 
 13. Human Intervention Model
 
@@ -351,7 +351,7 @@ Instead, autonomy means:
 
 Human intervention is not required for every enterprise decision or action.
 
-;;;
+. 
 
 14. Authority Model
 
@@ -377,7 +377,7 @@ authority = unrestricted
 
 shall fail conformance.
 
-;;;
+. 
 
 15. Governance Model
 
@@ -402,7 +402,7 @@ A valid autonomous enterprise therefore remains compatible with:
 * accountability
 * policy enforcement
 
-;;;
+. 
 
 16. Decision / Action Independence
 
@@ -422,7 +422,7 @@ This is necessary because an enterprise may:
 
 Only the appropriate combination should qualify for the relevant autonomy claim.
 
-;;;
+. 
 
 17. Autonomous Enterprise Operating Loop
 
@@ -459,7 +459,7 @@ Constraints
 Governance
 Escalation
 
-;;;
+. 
 
 18. Enterprise Boundary Documentation
 
@@ -487,7 +487,7 @@ Agent / Human / System / Service
 
 The diagram must explicitly state that these are semantic boundaries rather than a strict containment hierarchy.
 
-;;;
+. 
 
 19. Agentic vs Autonomous Enterprise Documentation
 
@@ -515,7 +515,7 @@ Relationship	Independent dimension	Independent dimension
 
 No evaluative ranking shall be introduced.
 
-;;;
+. 
 
 20. Visual Assets
 
@@ -533,7 +533,7 @@ enterprise-semantics-visuals/
 
 The diagrams shall use existing Enterprise-Semantics visual conventions.
 
-;;;
+. 
 
 21. Example
 
@@ -578,7 +578,7 @@ This is intentional.
 
 The example must demonstrate that an Autonomous Enterprise does not require every enterprise activity to be autonomous.
 
-;;;
+. 
 
 22. Conformance Tests
 
@@ -613,7 +613,7 @@ AE-AUTO-CON-020
 AE-AUTO-CON-021
 AE-AUTO-CON-022
 
-;;;
+. 
 
 23. Negative Conformance Tests
 
@@ -691,7 +691,7 @@ AE-AUTO-NEG-018
 
 Autonomous Enterprise is-a Autonomous Value Stream
 
-;;;
+. 
 
 24. Semantic Integrity Tests
 
@@ -721,7 +721,7 @@ Agentic
 AI
 Automation
 
-;;;
+. 
 
 25. Enterprise Qualification Test
 
@@ -745,7 +745,7 @@ Escalation Boundary
 
 An enterprise lacking material autonomous decision or action scope must not qualify as Autonomous Enterprise merely because it possesses autonomous technologies.
 
-;;;
+. 
 
 26. Autonomous Capability Boundary
 
@@ -759,7 +759,7 @@ Autonomous Enterprise operating condition
 
 If a future semantic model requires Autonomous Capability, it shall be introduced through a separate ADR.
 
-;;;
+. 
 
 27. AI Integrity
 
@@ -773,7 +773,7 @@ No AI concept is authorized by this CR.
 
 No AI dependency may be added to the Autonomous Enterprise schema.
 
-;;;
+. 
 
 28. Automation Integrity
 
@@ -783,7 +783,7 @@ Automation ≠ Autonomous
 
 Automated mechanisms may be referenced as implementation mechanisms but must not satisfy enterprise autonomy requirements by themselves.
 
-;;;
+. 
 
 29. Agentic Integrity
 
@@ -806,7 +806,7 @@ autonomous: true
 
 must remain valid.
 
-;;;
+. 
 
 30. WSF Mapping
 
@@ -827,7 +827,7 @@ The mapping shall document:
 
 No WSF modification is authorized.
 
-;;;
+. 
 
 31. OpenDEA Mapping
 
@@ -845,7 +845,7 @@ Enterprise autonomy semantic characteristic
 
 No OpenDEA metamodel modification is authorized.
 
-;;;
+. 
 
 32. Documentation
 
@@ -875,7 +875,7 @@ Required sections:
 18. Conformance
 19. Deferred concepts
 
-;;;
+. 
 
 33. Provenance
 
@@ -893,7 +893,7 @@ provenance:
 
 Any external grounding used during implementation must be explicitly classified according to the established provenance vocabulary.
 
-;;;
+. 
 
 34. Versioning
 
@@ -908,7 +908,7 @@ CR-ES-011
 
 The release must not introduce concepts outside the authorized scope.
 
-;;;
+. 
 
 35. Scope Restrictions
 
@@ -930,7 +930,7 @@ CR-ES-011 does not authorize:
 
 Each requires separate governance.
 
-;;;
+. 
 
 36. Acceptance Criteria
 
@@ -965,7 +965,7 @@ CR-ES-011 is complete when:
 27. No unauthorized foundational concepts are introduced.
 28. Release metadata identifies v1.0.0.
 
-;;;
+. 
 
 37. Architectural Outcome
 
@@ -1003,7 +1003,7 @@ Agentic describes a mode of enterprise behavior; Autonomous describes the indepe
 
 Neither dimension is reducible to AI, automation, or the absence of humans.
 
-;;;
+. 
 
 38. Release Gate
 
@@ -1036,7 +1036,7 @@ Governance Validation ✓
 
 No release shall be published if the Agentic/Autonomous orthogonality tests fail.
 
-;;;
+. 
 
 39. Final Architectural Principle
 

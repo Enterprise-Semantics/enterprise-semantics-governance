@@ -39,7 +39,7 @@ Service
    |-- Autonomous Service
 
 Autonomous Service preserves the semantic identity of Service. It does not redefine Service and does not require Agentic behavior, AI, automation, or removal of human participation.
-;;;
+. 
 2. Semantic Rationale
 
 ADR-ES-014 established Agentic Service as the agentic specialization of Service.
@@ -63,7 +63,7 @@ Therefore:
 Agentic Service ≠ Autonomous Service
 
 An instance may exhibit either characteristic independently or both simultaneously.
-;;;
+. 
 3. Service Semantics Remain Foundational
 
 Autonomous Service retains the existing semantic identity of Service, including applicable relationships to:
@@ -80,7 +80,7 @@ Autonomous Service retains the existing semantic identity of Service, including 
 Autonomy qualifies the manner in which service realization progresses.
 
 It does not transform the Service into an Operation, Workflow, Capability, Agent, Value Stream, or Enterprise.
-;;;
+. 
 4. Meaning of Service Autonomy
 
 Autonomous Service requires material capability for independent service progression.
@@ -99,7 +99,7 @@ This may include:
 Autonomy must be established at the service realization boundary.
 
 A service merely implemented by an autonomous component is not automatically an Autonomous Service.
-;;;
+. 
 5. Autonomous Service Realization Pattern
 
 Service Objective
@@ -131,7 +131,7 @@ Service Contract
 Escalation
 
 Human intervention remains available for defined conditions.
-;;;
+. 
 6. Autonomy Boundary
 
 Autonomous Service does not mean:
@@ -146,7 +146,7 @@ Autonomous Service does not mean:
 Instead:
 
 Autonomy is bounded independent progression within an explicitly defined semantic and governance boundary.
-;;;
+. 
 7. Agentic / Autonomous Orthogonality
 
 The model shall recognize four possible service states:
@@ -170,7 +170,7 @@ and:
 Agentic Service + Autonomous Service
 
 may coexist on the same Service instance.
-;;;
+. 
 8. Autonomous Service vs Agentic Service
 
 Dimension	Agentic Service	Autonomous Service
@@ -189,7 +189,7 @@ Agentic Workflow	May be used	May be used
 Autonomous Operations	May support	May support
 Agentic Value Stream	May participate	May participate
 Autonomous Value Stream	May participate	May participate
-;;;
+. 
 9. AI Boundary
 
 Autonomous Service does not require AI.
@@ -210,7 +210,7 @@ Conversely:
 
 Autonomous Service
 does not require AI
-;;;
+. 
 10. Automation Boundary
 
 Automation is an execution mechanism.
@@ -224,7 +224,7 @@ Automated Service ≠ Autonomous Service
 Automation may support autonomous realization but is not sufficient to establish it.
 
 A service executing predefined rules without independent decision scope remains automated rather than autonomous.
-;;;
+. 
 11. Human Participation
 
 Human participation remains compatible with Autonomous Service.
@@ -240,7 +240,7 @@ Possible intervention models include:
 * governance intervention.
 
 The defining condition is that humans do not need to intervene in every service decision or action.
-;;;
+. 
 12. Autonomous Service vs Autonomous Operations
 
 The distinction is semantic scope.
@@ -261,7 +261,7 @@ Autonomous Operations
 Autonomous Service
 
 and Autonomous Operations do not automatically make every Service autonomous.
-;;;
+. 
 13. Autonomous Service vs Autonomous Value Stream
 
 Autonomous Service
@@ -274,7 +274,7 @@ end-to-end autonomous value realization
 An Autonomous Value Stream may use multiple Autonomous Services.
 
 An Autonomous Service does not establish autonomy across the entire Value Stream.
-;;;
+. 
 14. Autonomous Service vs Autonomous Capability
 
 Autonomous Capability
@@ -287,7 +287,7 @@ service delivery or interaction whose realization can progress autonomously
 An Autonomous Service may deliver or expose an Autonomous Capability.
 
 Neither concept subsumes the other.
-;;;
+. 
 15. Canonical Relationships
 
 Subject to existing canonical vocabulary:
@@ -310,7 +310,7 @@ Autonomous Service
 Only relationships whose concepts and predicates are already canonical shall be implemented.
 
 No new foundational concept shall be introduced solely to satisfy a relationship.
-;;;
+. 
 16. Service Autonomy Boundary
 
 The canonical boundary is:
@@ -343,7 +343,7 @@ Activity / Task
 Human / Agent / System / Service
 
 This is not a mandatory containment hierarchy.
-;;;
+. 
 17. Canonical Invariants
 
 Autonomous Service is-a Service
@@ -364,7 +364,7 @@ Autonomous Service does not require removal of humans
 Autonomous Service does not have unlimited authority
 Autonomous Service remains outcome-oriented
 Autonomous Service operates within defined governance boundaries
-;;;
+. 
 18. Example: OTCHERE Inc Customer Resolution Service
 
 OTCHERE Inc operates a Customer Resolution Service.
@@ -401,7 +401,7 @@ The service may autonomously resolve routine requests while escalating:
 The service remains a Service throughout.
 
 If its realization also materially interprets delegated intent and dynamically coordinates actions, it may additionally exhibit the Agentic characteristic.
-;;;
+. 
 19. Deferred Concepts
 
 This ADR does not establish:
@@ -420,7 +420,7 @@ This ADR does not establish:
 * Autonomous Workflow.
 
 Each requires separate semantic grounding.
-;;;
+. 
 20. Consequences
 
 Positive
@@ -440,7 +440,7 @@ Constraints
 * AI cannot be used as a proxy for autonomy;
 * automation cannot be used as a proxy for autonomy;
 * human intervention remains a valid design characteristic.
-;;;
+. 
 21. Provenance
 
 provenance:

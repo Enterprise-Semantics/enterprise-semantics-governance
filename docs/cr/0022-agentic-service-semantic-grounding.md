@@ -34,7 +34,7 @@ Service
    |-- Agentic Service
 
 Agentic Service does not redefine Service and does not make AI, automation, autonomy, or an Agent a prerequisite.
-;;;
+. 
 2. Semantic Rationale
 
 The semantic architecture currently establishes agentic specializations across:
@@ -56,7 +56,7 @@ Agentic Capability
         |-- may enable ----------------> Agentic Value Stream
 
 An Agentic Service is consequently concerned with agentic service delivery or interaction, rather than with the entire value stream or the underlying capability.
-;;;
+. 
 3. Service Semantics
 
 The existing semantic meaning of Service shall remain authoritative.
@@ -73,7 +73,7 @@ Agentic Service retains the essential characteristics of Service, including its 
 Agentic behavior qualifies how the service is delivered or interacted with.
 
 It does not change the fundamental identity of Service.
-;;;
+. 
 4. Agentic Materiality
 
 A Service shall not become Agentic merely because it:
@@ -98,7 +98,7 @@ Examples of material agentic behavior include:
 6. interpreting service exceptions;
 7. deciding within bounded service authority;
 8. escalating when authority or policy boundaries are reached.
-;;;
+. 
 5. Canonical Agentic Service Pattern
 
 Service Intent
@@ -137,7 +137,7 @@ Workflow
 Agentic Workflow
 
 No particular implementation mechanism is required.
-;;;
+. 
 6. Core Semantic Distinctions
 
 Agentic Service vs Agent
@@ -154,7 +154,7 @@ An Agent may participate in an Agentic Service without being the Service itself.
 Therefore:
 
 Agent ≠ Agentic Service
-;;;
+. 
 7. Agentic Service vs Agentic Capability
 
 Agentic Capability
@@ -171,7 +171,7 @@ An Agentic Service may expose or enable capabilities that are not themselves Age
 Therefore:
 
 Agentic Capability ≠ Agentic Service
-;;;
+. 
 8. Agentic Service vs Agentic Workflow
 
 Agentic Workflow
@@ -186,7 +186,7 @@ The workflow is an execution mechanism; the service is the service-level offerin
 Therefore:
 
 Agentic Service ≠ Agentic Workflow
-;;;
+. 
 9. Agentic Service vs Agentic Operations
 
 Agentic Operations
@@ -201,7 +201,7 @@ Agentic Operations do not make every Service Agentic.
 Therefore:
 
 Agentic Service ≠ Agentic Operations
-;;;
+. 
 10. Agentic Service vs Agentic Value Stream
 
 Agentic Value Stream
@@ -218,7 +218,7 @@ An Agentic Service does not imply an Agentic Value Stream.
 Therefore:
 
 Agentic Service ≠ Agentic Value Stream
-;;;
+. 
 11. Agentic / Autonomous Orthogonality
 
 Agentic Service establishes only the agentic dimension.
@@ -238,7 +238,7 @@ Autonomous Service requires a separate ADR.
 This ADR therefore does not establish:
 
 Autonomous Service
-;;;
+. 
 12. AI Boundary
 
 AI may be used to implement an Agentic Service.
@@ -252,7 +252,7 @@ and:
 Agentic Service does not require AI
 
 A deterministic or non-AI mechanism may exhibit agentic service behavior where the semantic conditions are satisfied.
-;;;
+. 
 13. Automation Boundary
 
 Automation may participate in an Agentic Service.
@@ -264,7 +264,7 @@ Automated Service ≠ Agentic Service
 Automation provides an execution mechanism.
 
 Agentic behavior concerns contextual interpretation, action selection, coordination, adaptation, and bounded decision behavior.
-;;;
+. 
 14. Human Participation
 
 Human participation does not invalidate Agentic Service.
@@ -279,7 +279,7 @@ An Agentic Service may use:
 * exception handling.
 
 The defining property is agentic service realization, not removal of humans.
-;;;
+. 
 15. Canonical Relationships
 
 Subject to existing canonical vocabulary:
@@ -299,7 +299,7 @@ Agentic Service
 Only relationships whose predicates and target concepts are already canonical shall be implemented.
 
 No relationship shall silently create a new foundational concept.
-;;;
+. 
 16. Service Interaction Boundary
 
 The service-level semantic boundary is:
@@ -329,7 +329,7 @@ Agentic Workflow
 Activity / Task
        ->
 Agent / Human / System
-;;;
+. 
 17. Conformance Invariants
 
 The following are canonical invariants:
@@ -351,7 +351,7 @@ Agentic Service does not imply Autonomous Value Stream
 Agentic Service does not imply Autonomous Enterprise
 Human participation does not invalidate Agentic Service
 Agentic behavior must be material to service realization
-;;;
+. 
 18. Example: OTCHERE Inc Customer Resolution Service
 
 OTCHERE Inc provides a Customer Resolution Service.
@@ -387,7 +387,7 @@ A human may intervene where:
 * policy requires approval;
 * an exception is ambiguous;
 * the customer requests human escalation.
-;;;
+. 
 19. Deferred Concepts
 
 This ADR does not establish:
@@ -405,7 +405,7 @@ This ADR does not establish:
 * Service autonomy levels
 
 Each requires separate semantic grounding.
-;;;
+. 
 20. Consequences
 
 Positive
@@ -424,7 +424,7 @@ Constraints
 * automation cannot be used as a semantic shortcut;
 * autonomous behavior cannot be inferred;
 * service contracts, authority, policies, and escalation boundaries must remain explicit where applicable.
-;;;
+. 
 21. Provenance
 
 provenance:
@@ -452,7 +452,7 @@ Priority: P0
 Target: Enterprise-Semantics
 Authorizing ADR: ADR-ES-014
 Target Release: v1.3.0
-;;;
+. 
 1. Objective
 
 Implement Agentic Service as a canonical Enterprise-Semantics specialization of Service.
@@ -468,7 +468,7 @@ The implementation shall establish agentic service realization while maintaining
 * Agentic Value Stream
 * Autonomous Service
 * Autonomous Enterprise
-;;;
+. 
 2. Scope
 
 In scope
@@ -514,7 +514,7 @@ Out of scope
 * modifications to OpenDEA metamodel
 * new foundational Service ontology
 * new Agent ontology
-;;;
+. 
 3. Canonical Concept
 
 Create:
@@ -533,7 +533,7 @@ Specialization:
 
 specializes:
   - Service
-;;;
+. 
 4. Required Properties
 
 The schema shall support:
@@ -555,7 +555,7 @@ properties:
   realization_mode
 
 These properties describe the agentic realization of the Service, not a replacement for the underlying Service semantics.
-;;;
+. 
 5. Registry
 
 Add:
@@ -572,7 +572,7 @@ semantic_type: AgenticService
 specializes:
   - SERVICE
 status: Candidate
-;;;
+. 
 6. Profile
 
 Create:
@@ -580,7 +580,7 @@ Create:
 ES:PROFILE:AGENTIC_SERVICE
 
 The profile shall group the Agentic Service characteristics without implying additional ontology or inheritance.
-;;;
+. 
 7. Relationships
 
 Mandatory specialization
@@ -616,7 +616,7 @@ Agentic Service
     |-- supports -> Capability
 
 Do not introduce missing foundational concepts solely to satisfy these relationships.
-;;;
+. 
 8. Materiality Rule
 
 The implementation must encode a materiality requirement.
@@ -642,7 +642,7 @@ At least one meaningful agentic realization characteristic must be evidenced, su
 * adaptive service behavior;
 * contextual exception interpretation;
 * bounded service decision-making.
-;;;
+. 
 9. Agentic / Autonomous Boundary
 
 CR-ES-014 shall explicitly prevent:
@@ -657,7 +657,7 @@ Agentic = true
 Autonomous = false
 
 Future autonomous service semantics require a separate ADR.
-;;;
+. 
 10. Conformance Tests
 
 Create:
@@ -704,7 +704,7 @@ ASVC-CON-018
 Agentic Service remains distinct from Agentic Value Stream
 ASVC-CON-019
 Agentic Service retains provenance and grounding
-;;;
+. 
 11. Negative Tests
 
 Create:
@@ -739,7 +739,7 @@ ASVC-NEG-014
 Agentic Service implies Autonomous Value Stream
 ASVC-NEG-015
 Agentic Service implies Autonomous Enterprise
-;;;
+. 
 12. Architecture Documentation
 
 Create:
@@ -771,7 +771,7 @@ Agentic Workflow
 Execution
 
 where applicable, while making clear that this is a semantic relationship architecture and not a mandatory containment hierarchy.
-;;;
+. 
 13. Visualizations
 
 Create:
@@ -811,7 +811,7 @@ Required primary model
                   Outcome
                        ↺
                    Adaptation
-;;;
+. 
 14. Example
 
 Create:
@@ -840,7 +840,7 @@ and demonstrate:
 The example shall explicitly show that human escalation remains possible.
 
 A second example may demonstrate an Agentic Fulfillment Service.
-;;;
+. 
 15. Mappings
 
 Create:
@@ -853,7 +853,7 @@ Mappings shall document semantic correspondence, specialization, realization, or
 No unsupported equivalence shall be asserted.
 
 No WSF or OpenDEA implementation change is authorized by this CR.
-;;;
+. 
 16. Provenance
 
 The canonical concept shall contain:
@@ -871,7 +871,7 @@ provenance:
     - ADR-ES-014
   implementation:
     - CR-ES-014
-;;;
+. 
 17. CI Requirements
 
 CI shall validate:
@@ -907,7 +907,7 @@ or:
 Agent -> Agentic Service
 
 as a necessary semantic implication.
-;;;
+. 
 18. Acceptance Criteria
 
 CR-ES-014 is complete when:
@@ -946,7 +946,7 @@ CR-ES-014 is complete when:
 * [ ]	CI passes.
 * [ ]	No unauthorized foundational concepts are introduced.
 * [ ]	v1.3.0 release gate passes.
-;;;
+. 
 19. Governance
 
 Implementation follows:

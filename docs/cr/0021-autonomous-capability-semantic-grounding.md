@@ -35,7 +35,7 @@ The implementation shall establish capability-level autonomy while preserving th
 * Autonomous Enterprise
 
 No new foundational ontology shall be introduced beyond the scope authorized by ADR-ES-013.
-;;;
+. 
 2. Scope
 
 In scope
@@ -81,7 +81,7 @@ Out of scope
 * changes to OpenDEA metamodel
 * new autonomy ontology
 * new AI ontology
-;;;
+. 
 3. Canonical Concept
 
 Create:
@@ -100,7 +100,7 @@ Specialization:
 
 specializes:
   - Capability
-;;;
+. 
 4. Required Properties
 
 The schema shall support, at minimum:
@@ -140,7 +140,7 @@ intervention_model	Defines human intervention semantics
 escalation_boundary	Defines when control must transfer
 observation_scope	Defines what realization observes
 realization_mode	Defines conventional, automated, agentic, autonomous, or combined realization characteristics
-;;;
+. 
 5. Registry
 
 Add:
@@ -159,7 +159,7 @@ specializes:
 status: Candidate
 
 The final status shall follow the Enterprise-Semantics publication lifecycle.
-;;;
+. 
 6. Profile
 
 Create:
@@ -167,7 +167,7 @@ Create:
 ES:PROFILE:AUTONOMOUS_CAPABILITY
 
 The profile shall include the Autonomous Capability semantic characteristics without implying ontology inheritance beyond the canonical specialization.
-;;;
+. 
 7. Relationships
 
 Implement only relationships supported by existing canonical concepts and predicates.
@@ -203,7 +203,7 @@ Autonomous Capability
     |-- enables -> Autonomous Value Stream
 
 Do not create missing concepts merely to satisfy these relationships.
-;;;
+. 
 8. Agentic / Autonomous Integrity
 
 The implementation must explicitly preserve:
@@ -226,7 +226,7 @@ Agentic = true
 Autonomous = true
 
 The final state is a combined semantic characterization rather than a new concept.
-;;;
+. 
 9. Conformance Tests
 
 Create:
@@ -271,7 +271,7 @@ ACAP-AUTO-CON-017
 Autonomous Capability may be supported by Autonomous Operations
 ACAP-AUTO-CON-018
 Autonomous Capability retains provenance and grounding
-;;;
+. 
 10. Negative Tests
 
 Create at minimum:
@@ -304,7 +304,7 @@ ACAP-AUTO-NEG-013
 Autonomous Value Stream automatically makes every enabling Capability autonomous
 ACAP-AUTO-NEG-014
 Autonomous Capability implies Agentic Capability
-;;;
+. 
 11. Semantic Integrity Tests
 
 The test probe shall verify:
@@ -337,7 +337,7 @@ It shall additionally verify:
 
 Agentic = independent dimension
 Autonomous = independent dimension
-;;;
+. 
 12. Documentation
 
 Create:
@@ -366,7 +366,7 @@ Documentation must explicitly explain:
 * capability versus enterprise
 * human intervention and escalation
 * authority and governance boundaries
-;;;
+. 
 13. Visualizations
 
 Create:
@@ -399,7 +399,7 @@ Capability       Capability
         realization
 
 The diagram must not imply that Agentic Capability inherits Autonomous Capability or vice versa.
-;;;
+. 
 14. Example
 
 Create:
@@ -435,7 +435,7 @@ Fulfillment Coordination Capability
 Autonomous Fulfillment Coordination Capability
 
 The example shall demonstrate that autonomous capability does not require removal of human intervention.
-;;;
+. 
 15. Mappings
 
 Create:
@@ -464,7 +464,7 @@ realization
 as justified by evidence.
 
 No unsupported equivalence shall be asserted.
-;;;
+. 
 16. Provenance
 
 The canonical concept shall include:
@@ -481,7 +481,7 @@ provenance:
     - ADR-ES-013
   implementation:
     - CR-ES-013
-;;;
+. 
 17. CI Requirements
 
 CI shall validate:
@@ -517,7 +517,7 @@ or:
 Autonomous Capability -> Automation
 
 is encoded as a necessary condition.
-;;;
+. 
 18. Acceptance Criteria
 
 CR-ES-013 is complete when:
@@ -555,7 +555,7 @@ CR-ES-013 is complete when:
 * [ ]	CI passes.
 * [ ]	No unauthorized foundational concepts are introduced.
 * [ ]	Release target v1.2.0 is satisfied.
-;;;
+. 
 19. Release
 
 Upon successful implementation and governance approval:
@@ -576,7 +576,7 @@ v0.8.0  Autonomous Value Stream
 v1.0.0  Autonomous Enterprise
 v1.1.0  Agentic Capability
 v1.2.0  Autonomous Capability
-;;;
+. 
 20. Governance
 
 Implementation authority:

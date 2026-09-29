@@ -4,7 +4,7 @@ ADR-ES-005 ;; Agentic Value Stream Semantic Grounding Decision
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-005.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552289869429088307 ;;; "Save it, read and understand, then proceed with all tasks needed to make way to implement it appropriately. Then implement it.")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552289869429088307. "Save it, read and understand, then proceed with all tasks needed to make way to implement it appropriately. Then implement it.")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
@@ -35,7 +35,7 @@ Depends On: ADR-ES-001, ADR-ES-003, ADR-ES-004
 Implementation: CR-ES-005
 Target Semantic Version: 0.4.0
 
-;;;
+. 
 
 1. Context
 
@@ -57,7 +57,7 @@ The resulting concept must not collapse:
 
 The semantic requirement is therefore to represent agency within the value-realization structure, rather than to redefine the value stream around a particular technology.
 
-;;;
+. 
 
 2. Decision
 
@@ -76,7 +76,7 @@ Agentic Value Stream
 
 Agentic Value Stream does not replace the Value Stream concept.
 
-;;;
+. 
 
 3. Semantic Principle
 
@@ -115,7 +115,7 @@ Agentic Value Stream
 
 The distinction is therefore primarily semantic and operational, rather than technological.
 
-;;;
+. 
 
 4. Agentic Value Stream Characteristics
 
@@ -153,7 +153,7 @@ Human intervention, escalation, approval, or oversight may remain part of the va
 
 Agentic behavior remains directed toward intended stakeholder and value outcomes rather than merely executing predetermined tasks.
 
-;;;
+. 
 
 5. Agentic Does Not Mean Entirely Agentic
 
@@ -188,7 +188,7 @@ Settlement             Automated
 
 The value stream remains one end-to-end value realization construct despite having heterogeneous realization modes.
 
-;;;
+. 
 
 6. Relationship to Value Stage
 
@@ -206,11 +206,11 @@ Value Stream
 
 This preserves the distinction between:
 
-* what transition in value occurs ;;; Value Stage;
-* how that transition is realized ;;; Process and its execution mechanisms;
-* whether agentic behavior participates ;;; Agentic realization.
+* what transition in value occurs, and Value Stage;
+* how that transition is realized, and Process and its execution mechanisms;
+* whether agentic behavior participates. Agentic realization.
 
-;;;
+. 
 
 7. Canonical Relationships
 
@@ -254,7 +254,7 @@ Agent
 
 The value stream therefore provides the value-realization context within which agentic behavior operates.
 
-;;;
+. 
 
 8. Agentic Value Stream Property Model
 
@@ -273,7 +273,7 @@ realization_mode	Describes the mixture of conventional, automated, human, and ag
 
 These properties describe the agentic characteristics of realization and do not replace the underlying Value Stream properties.
 
-;;;
+. 
 
 9. Classic and Agentic Value Stream
 
@@ -299,7 +299,7 @@ Autonomy implication	None	None
 
 The distinction does not imply that conventional Value Streams cannot be dynamic or adaptive. Rather, Agentic Value Stream explicitly represents agency as part of value realization.
 
-;;;
+. 
 
 10. Execution Boundary
 
@@ -335,7 +335,7 @@ Service / System / Resource / Technology
 
 Agentic behavior may influence any appropriate execution layer, but this does not make those layers semantically equivalent.
 
-;;;
+. 
 
 11. Relationship to AI
 
@@ -355,7 +355,7 @@ Agentic Value Stream ≠ AI Value Stream
 
 AI-based agents are an implementation possibility rather than a semantic requirement.
 
-;;;
+. 
 
 12. Relationship to Automation
 
@@ -387,7 +387,7 @@ Contextual Adaptation
 
 Automation may participate in an Agentic Value Stream without itself being agentic.
 
-;;;
+. 
 
 13. Relationship to Autonomy
 
@@ -408,7 +408,7 @@ A future Autonomous Value Stream ADR may establish additional criteria for self-
 
 Such semantics are explicitly outside this decision.
 
-;;;
+. 
 
 14. Relationship to Agentic Workflow and Agentic Operations
 
@@ -433,9 +433,9 @@ is sufficient.
 
 More specialized execution relationships should be introduced only when their corresponding concepts become canonical.
 
-;;;
+. 
 
-15. Illustrative Example ;;; Order-to-Cash
+15. Illustrative Example, and Order-to-Cash
 
 Conventional representation
 
@@ -485,7 +485,7 @@ The difference is not that the second representation contains “more AI.”
 
 The difference is that agentic interpretation, decision selection, coordination and adaptation have become material mechanisms of value realization.
 
-;;;
+. 
 
 16. Architectural Position
 
@@ -516,7 +516,7 @@ Enterprise-Semantics therefore provides the semantic grounding while OpenDEA may
 
 No WSF metamodel change is required by this ADR.
 
-;;;
+. 
 
 17. Conformance Requirements
 
@@ -558,7 +558,7 @@ Agentic Value Stream shall preserve stakeholder value realization as its primary
 AVS-CON-012
 Agentic Value Stream instances shall carry appropriate grounding and provenance.
 
-;;;
+. 
 
 18. Rejected Alternatives
 
@@ -586,7 +586,7 @@ Rejected because Agentic Value Stream is a specialization and must inherit the f
 
 Rejected for this release because the existing Value Stage construct can represent the value transition independently of its realization mode.
 
-;;;
+. 
 
 19. Consequences
 
@@ -607,7 +607,7 @@ Constraints
 * Autonomous behavior requires a subsequent semantic decision.
 * Specialized execution concepts remain intentionally deferred.
 
-;;;
+. 
 
 20. Decision Summary
 
@@ -628,22 +628,22 @@ Agentic Value Stream
                        |---- coordinates > Action
                        `---- produces > Outcome
 
-Agentic Value Stream therefore represents the transformation of value realization from a predominantly predefined progression into a value stream capable of delegated interpretation, dynamic action selection, coordination, and contextual adaptation;;;without making AI or autonomy part of its definition.
+Agentic Value Stream therefore represents the transformation of value realization from a predominantly predefined progression into a value stream capable of delegated interpretation, dynamic action selection, coordination, and contextual adaptation. Without making AI or autonomy part of its definition.
 
-;;;
+. 
 
 21. Next Decision Candidates
 
 Potential subsequent semantic decisions include:
 
-1. ADR-ES-006 ;;; Agentic Workflow Semantic Grounding
-2. ADR-ES-007 ;;; Agentic Operations Semantic Grounding
-3. ADR-ES-008 ;;; Autonomous Semantic Grounding
-4. ADR-ES-009 ;;; Autonomous Value Stream Semantic Grounding
+1. ADR-ES-006, and Agentic Workflow Semantic Grounding
+2. ADR-ES-007, and Agentic Operations Semantic Grounding
+3. ADR-ES-008, and Autonomous Semantic Grounding
+4. ADR-ES-009, and Autonomous Value Stream Semantic Grounding
 
 The sequencing should remain governed rather than establishing all downstream concepts within this ADR.
 
-The implementation CR should now translate that decision into the canonical semantic artifacts, schemas, mappings, examples, visuals, and conformance tests;;;without pulling the deferred concepts into the release.
+The implementation CR should now translate that decision into the canonical semantic artifacts, schemas, mappings, examples, visuals, and conformance tests. Without pulling the deferred concepts into the release.
 
 ;;
 

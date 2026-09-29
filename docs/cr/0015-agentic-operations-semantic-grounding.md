@@ -2,16 +2,16 @@ Below is CR-ES-007, scoped strictly to implement ADR-ES-007 without prematurely 
 
 CR-ES-007: Implement Agentic Operations Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552333611045224559 ;;; "Attached are ADR-ES-007 and CR-ES-007, save them both, read and understand then implement e them appropriately")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552333611045224559. "Attached are ADR-ES-007 and CR-ES-007, save them both, read and understand then implement e them appropriately")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0
 Target: Enterprise-Semantics
-Authorizing ADR: ADR-ES-007 ;;; Agentic Operations Semantic Grounding
+Authorizing ADR: ADR-ES-007, and Agentic Operations Semantic Grounding
 Target Semantic Version: v0.6.0
 Depends On: CR-ES-001, CR-ES-003, CR-ES-004, CR-ES-005, CR-ES-006
 
-;;;
+. 
 
 1. Change Objective
 
@@ -35,7 +35,7 @@ The implementation shall preserve the distinction between:
 
 The implementation shall not introduce an implicit dependency in which Agentic Operations becomes synonymous with AI, automation, autonomy, workflow execution, or value-stream realization.
 
-;;;
+. 
 
 2. Authoritative Semantic Definition
 
@@ -45,7 +45,7 @@ Agentic Operations are operations in which operational sensing, interpretation, 
 
 The implementation SHALL preserve this wording unless a subsequent governed ADR supersedes it.
 
-;;;
+. 
 
 3. Architectural Decision Being Implemented
 
@@ -63,7 +63,7 @@ It does not redefine Operations.
 
 It does not establish Agentic Operations as a subtype of Process or Workflow.
 
-;;;
+. 
 
 4. Scope
 
@@ -90,7 +90,7 @@ This CR shall implement:
 17. Semantic invariant validation.
 18. v0.6.0 release preparation.
 
-;;;
+. 
 
 4.2 Explicitly Out of Scope
 
@@ -117,7 +117,7 @@ This CR shall not establish:
 
 Where a referenced concept is not yet canonically established, this CR shall document the dependency or correspondence rather than silently creating a new foundational concept.
 
-;;;
+. 
 
 5. Semantic Position
 
@@ -153,7 +153,7 @@ Agentic Operations is an operational mode and semantic context, not merely a par
 
 Agentic Operations may coordinate multiple processes and workflows, while an Agentic Workflow represents a particular mechanism for coordinating or executing work.
 
-;;;
+. 
 
 6. Canonical Concept Artifact
 
@@ -204,7 +204,7 @@ version: 0.6.0
 
 The exact repository schema SHALL prevail over this illustrative structure.
 
-;;;
+. 
 
 7. Semantic Properties
 
@@ -224,7 +224,7 @@ escalation_boundary	Defines conditions requiring escalation beyond delegated aut
 
 These properties SHALL describe semantic characteristics rather than prescribe a particular technology.
 
-;;;
+. 
 
 8. Canonical Relationships
 
@@ -286,7 +286,7 @@ Every relationship SHALL specify:
 
 No relationship SHALL be inferred merely from naming similarity.
 
-;;;
+. 
 
 9. Agentic Operational Loop
 
@@ -333,7 +333,7 @@ Outcome
 
 The loop is a semantic model of operational behavior, not a requirement for a particular control-loop implementation.
 
-;;;
+. 
 
 10. Agentic Operations vs Agentic Workflow
 
@@ -356,7 +356,7 @@ A workflow does not become Agentic Operations merely because it invokes an Agent
 
 Conversely, Agentic Operations may use conventional workflows, Agentic Workflows, human work, automated mechanisms, or combinations thereof.
 
-;;;
+. 
 
 11. Agentic Operations vs Agentic Value Stream
 
@@ -375,7 +375,7 @@ Autonomy implication	None	None
 
 A Value Stream may therefore depend on or use Agentic Operations without being reducible to them.
 
-;;;
+. 
 
 12. Agentic Operations and Human Participation
 
@@ -396,7 +396,7 @@ Agentic Operations requires removal of humans
 
 Human participation does not invalidate the Agentic Operations semantic classification.
 
-;;;
+. 
 
 13. AI and Automation Boundary
 
@@ -419,7 +419,7 @@ AI Agent = Agentic Operations
 
 AI may implement or support agentic behavior, but AI is not the defining semantic characteristic.
 
-;;;
+. 
 
 14. Autonomy Boundary
 
@@ -433,7 +433,7 @@ Autonomy requires separate semantic grounding and governance.
 
 A future Autonomous Operations concept SHALL therefore require its own ADR and CR.
 
-;;;
+. 
 
 15. Registry
 
@@ -455,7 +455,7 @@ The registry entry SHALL identify:
 
 No autonomous or AI-specific registry entries shall be introduced through this CR.
 
-;;;
+. 
 
 16. Profile
 
@@ -481,7 +481,7 @@ The profile SHALL be treated as a semantic grouping mechanism.
 
 It SHALL NOT imply inheritance among its members.
 
-;;;
+. 
 
 17. WSF Mapping
 
@@ -509,7 +509,7 @@ Instead, it SHALL record:
 
 This CR does not authorize WSF ontology modification.
 
-;;;
+. 
 
 18. OpenDEA Mapping
 
@@ -530,7 +530,7 @@ This CR does not modify the OpenDEA metamodel.
 
 No OpenDEA metamodel change shall be implied by the mapping.
 
-;;;
+. 
 
 19. Documentation
 
@@ -561,7 +561,7 @@ The concept document SHALL include:
 16. Conformance requirements.
 17. Provenance.
 
-;;;
+. 
 
 20. Visualizations
 
@@ -589,7 +589,7 @@ Implementation
 
 They SHALL not visually imply that Agentic Operations is a subtype of Agentic Workflow.
 
-;;;
+. 
 
 21. Enterprise Example
 
@@ -637,7 +637,7 @@ Possible workflows include:
 
 Not every workflow needs to be Agentic.
 
-;;;
+. 
 
 22. Example Semantic Assertion
 
@@ -669,73 +669,73 @@ Agentic Operations requires AI
 Agentic Operations is Agentic Workflow
 Agentic Operations is Agentic Value Stream
 
-;;;
+. 
 
 23. Conformance Tests
 
 Implement conformance tests covering the following requirements.
 
-AOP-CON-001 ;;; Specialization
+AOP-CON-001, and Specialization
 
 Agentic Operations MUST specialize Operations.
 
-AOP-CON-002 ;;; Material Agentic Participation
+AOP-CON-002, and Material Agentic Participation
 
 An implementation MUST demonstrate material agentic participation in operational sensing, interpretation, decision, coordination, adaptation, or execution.
 
-AOP-CON-003 ;;; Authority
+AOP-CON-003, and Authority
 
 Agentic Operations MUST operate within a defined authority boundary.
 
-AOP-CON-004 ;;; Policy
+AOP-CON-004, and Policy
 
 Operational behavior MUST be capable of being constrained by policies or equivalent operational constraints.
 
-AOP-CON-005 ;;; Outcome Orientation
+AOP-CON-005, and Outcome Orientation
 
 Agentic Operations MUST be oriented toward operational outcomes.
 
-AOP-CON-006 ;;; Agent Engagement
+AOP-CON-006, and Agent Engagement
 
 Agentic Operations MUST support engagement of an Agent where agentic behavior is asserted.
 
-AOP-CON-007 ;;; Agentic Workflow Compatibility
+AOP-CON-007, and Agentic Workflow Compatibility
 
 Agentic Operations MAY use Agentic Workflow.
 
-AOP-CON-008 ;;; Process Coordination
+AOP-CON-008, and Process Coordination
 
 Agentic Operations MAY coordinate one or more Processes.
 
-AOP-CON-009 ;;; Human Participation
+AOP-CON-009, and Human Participation
 
 Human participation MUST remain semantically valid.
 
-AOP-CON-010 ;;; Automation Compatibility
+AOP-CON-010, and Automation Compatibility
 
 Automation MAY coexist with Agentic Operations.
 
-AOP-CON-011 ;;; AI Independence
+AOP-CON-011, and AI Independence
 
 Agentic Operations MUST NOT require AI.
 
-AOP-CON-012 ;;; Autonomy Independence
+AOP-CON-012, and Autonomy Independence
 
 Agentic Operations MUST NOT imply Autonomous Operations.
 
-AOP-CON-013 ;;; Workflow Distinction
+AOP-CON-013, and Workflow Distinction
 
 Agentic Operations MUST NOT be classified as Agentic Workflow.
 
-AOP-CON-014 ;;; Value Stream Distinction
+AOP-CON-014, and Value Stream Distinction
 
 Agentic Operations MUST NOT be classified as Agentic Value Stream.
 
-AOP-CON-015 ;;; Provenance
+AOP-CON-015, and Provenance
 
 Every canonical Agentic Operations assertion MUST identify its semantic provenance.
 
-;;;
+. 
 
 24. Negative Conformance Tests
 
@@ -755,7 +755,7 @@ Agentic Operations establishes Autonomous Operations
 
 These negative tests are architectural invariants.
 
-;;;
+. 
 
 25. Schema Validation
 
@@ -775,7 +775,7 @@ CI SHALL validate:
 
 A malformed Agentic Operations artifact SHALL fail CI.
 
-;;;
+. 
 
 26. Semantic Validation
 
@@ -802,7 +802,7 @@ agentic_scope
 intervention_model
 escalation_boundary
 
-;;;
+. 
 
 27. Dependency Handling
 
@@ -836,7 +836,7 @@ Instead:
 
 This prevents the Agentic Operations CR from becoming an uncontrolled expansion of the semantic foundation.
 
-;;;
+. 
 
 28. Repository Changes
 
@@ -880,7 +880,7 @@ L-- visuals/
 
 The exact repository structure SHALL follow the established implementation conventions from CR-ES-001 through CR-ES-006.
 
-;;;
+. 
 
 29. Governance
 
@@ -906,7 +906,7 @@ No implementation outside this CR’s scope is authorized.
 
 Any newly discovered foundational semantic requirement SHALL become a Finding rather than being silently incorporated.
 
-;;;
+. 
 
 30. Acceptance Criteria
 
@@ -939,7 +939,7 @@ CR-ES-007 is accepted when:
 * [ ]	CI passes.
 * [ ]	Release metadata targets v0.6.0.
 
-;;;
+. 
 
 31. Definition of Done
 
@@ -949,23 +949,23 @@ Agentic Operations is a governed specialization of Operations describing materia
 
 The resulting semantic artifact SHALL be suitable for downstream mapping into WSF and OpenDEA without requiring either foundation to be modified by this CR.
 
-;;;
+. 
 
 32. Future Work Identified but Not Authorized
 
 The following remain future semantic decisions:
 
-ADR-ES-008+ ;;; Autonomous Operations
-ADR-ES-009+ ;;; Agentic Enterprise
-ADR-ES-010+ ;;; Autonomous Enterprise
-ADR-ES-011+ ;;; Agentic Network
-ADR-ES-012+ ;;; Agentic Ecosystem
+ADR-ES-008+, and Autonomous Operations
+ADR-ES-009+, and Agentic Enterprise
+ADR-ES-010+, and Autonomous Enterprise
+ADR-ES-011+, and Agentic Network
+ADR-ES-012+, and Agentic Ecosystem
 
 Exact sequencing remains subject to subsequent architectural investigation.
 
 No future concept listed above becomes canonical as a result of CR-ES-007.
 
-;;;
+. 
 
 33. Final Change Statement
 

@@ -46,7 +46,7 @@ Capability
 Agentic Capability is therefore not a new foundational type of ability.
 
 It is a contextual specialization describing how a Capability is materially realized.
-;;;
+. 
 2. Existing Capability Grounding
 
 ADR-ES-002 established:
@@ -65,7 +65,7 @@ Capability
    |-- Other future contextual specializations
 
 The model must preserve the universal nature of Capability.
-;;;
+. 
 3. Problem
 
 The preceding agentic semantic model establishes agentic behavior across:
@@ -97,7 +97,7 @@ Agentic Operations
 Agentic Value Stream
 
 Agentic Capability provides the missing semantic bridge.
-;;;
+. 
 4. Core Semantic Principle
 
 Agentic Capability describes what an Entity is able to achieve or enable, while Agentic describes how that capability is materially realized.
@@ -111,7 +111,7 @@ Agentic Capability
           + material agentic realization
 
 The distinction must remain explicit.
-;;;
+. 
 5. Agentic Capability Boundary
 
 The primary question is:
@@ -151,7 +151,7 @@ and:
 Agentic Capability
         ≠
 Automated Capability
-;;;
+. 
 6. Capability and Agentic Realization
 
 The conceptual model is:
@@ -178,7 +178,7 @@ Agentic Capability
 These relationships inherit the Capability semantics established by ADR-ES-002 where applicable.
 
 Agentic realization adds the behavioral dimension.
-;;;
+. 
 7. Materiality Requirement
 
 A Capability must not be classified as Agentic merely because an Agent participates somewhere in its implementation.
@@ -197,7 +197,7 @@ Examples of material agentic participation include:
 * adaptive fulfillment of the capability’s intended outcome
 
 The mere use of an Agent as a tool does not automatically qualify.
-;;;
+. 
 8. Capability Realization Boundary
 
 The architecture distinguishes:
@@ -214,7 +214,7 @@ Agentic Workflow / Agentic Operations / Service / System / Human
 OUTCOME
 
 Capability therefore remains upstream of specific execution mechanisms.
-;;;
+. 
 9. Relationship to Agent
 
 An Agent may participate in the realization of an Agentic Capability.
@@ -235,7 +235,7 @@ Agent ≠ Agentic Capability
 An Agent is an acting Entity.
 
 A Capability is an enduring ability.
-;;;
+. 
 10. Relationship to Agentic Workflow
 
 Agentic Workflow may realize an Agentic Capability.
@@ -256,7 +256,7 @@ The distinction remains:
 
 * Capability = ability
 * Workflow = coordinated execution
-;;;
+. 
 11. Relationship to Agentic Operations
 
 Agentic Operations may support or realize an Agentic Capability.
@@ -272,7 +272,7 @@ The exact relationship shall use only predicates already established in the rela
 Agentic Operations remain an operational boundary.
 
 Agentic Capability remains a capability boundary.
-;;;
+. 
 12. Relationship to Value Stream
 
 An Agentic Capability may enable an Agentic Value Stream.
@@ -293,7 +293,7 @@ The semantic distinction remains:
 
 Capability -> ability
 Value Stream -> value realization
-;;;
+. 
 13. Relationship to Autonomous Capability
 
 This ADR does not establish Autonomous Capability.
@@ -315,7 +315,7 @@ An Agentic Capability may be:
 * fully autonomous within its defined boundary
 
 but autonomy must not be inferred from Agentic Capability.
-;;;
+. 
 14. Agentic / Autonomous Orthogonality
 
 The semantic architecture therefore permits:
@@ -331,7 +331,7 @@ Capability
 However, only Agentic Capability is established by this ADR.
 
 Autonomous Capability remains deferred.
-;;;
+. 
 15. AI Boundary
 
 AI is not required.
@@ -349,7 +349,7 @@ AI-enabled Capability
 Agentic Capability
 
 An AI system may support a Capability without the Capability being materially agentic.
-;;;
+. 
 16. Automation Boundary
 
 Automation does not establish Agentic Capability.
@@ -359,7 +359,7 @@ Automated Capability
 Agentic Capability
 
 A predefined automated mechanism can support a Capability without interpreting delegated intent, selecting actions contextually, or adapting behavior.
-;;;
+. 
 17. Agentic Enterprise Relationship
 
 An Agentic Enterprise may possess Agentic Capabilities.
@@ -379,7 +379,7 @@ Agentic Enterprise
 A single Agentic Capability does not establish Agentic Enterprise.
 
 Enterprise-level materiality remains a separate qualification boundary.
-;;;
+. 
 18. Capability Portfolio Relationship
 
 Agentic Capability may be used to characterize selected portions of an enterprise capability portfolio.
@@ -401,7 +401,7 @@ Financial Management
      |-- Conventional / mixed realization
 
 This allows capability transformation to be modeled incrementally rather than declaring an entire enterprise agentic.
-;;;
+. 
 19. Capability Transformation
 
 The model supports transformation from conventional realization toward agentic realization:
@@ -421,7 +421,7 @@ Outcome
 The Capability itself remains semantically stable while its realization mode may change.
 
 This distinction is important for enterprise architecture and transformation management.
-;;;
+. 
 20. Agentic Capability Characteristics
 
 An Agentic Capability may exhibit:
@@ -438,7 +438,7 @@ An Agentic Capability may exhibit:
 10. escalation
 
 Not every characteristic must occur independently; the qualification requirement is material agentic realization.
-;;;
+. 
 21. Capability Realization Pattern
 
 The canonical pattern is:
@@ -468,7 +468,7 @@ Policy
 Constraints
 
 This connects the capability model to the established agentic execution semantics without making Workflow or Agent a subtype of Capability.
-;;;
+. 
 22. Example: OTCHERE Inc
 
 Consider Customer Resolution as an enterprise Capability.
@@ -512,7 +512,7 @@ Customer Resolution Capability
 Agentic Customer Resolution Capability
 
 is a semantic specialization rather than the creation of an entirely new business ability.
-;;;
+. 
 23. Conformance Invariants
 
 ACAP-CON-001
@@ -568,7 +568,7 @@ Agentic Capability operates within appropriate authority boundaries.
 
 ACAP-CON-018
 Agentic Capability requires provenance and semantic grounding.
-;;;
+. 
 24. Explicitly Rejected Interpretations
 
 The following are rejected:
@@ -584,7 +584,7 @@ The following are rejected:
 * Agentic Capability = Enterprise Capability that uses AI
 * Agentic Capability = Capability requiring full autonomy
 * Agentic Capability = Capability with no human participation
-;;;
+. 
 25. Future Concepts Deferred
 
 This ADR does not establish:
@@ -601,7 +601,7 @@ This ADR does not establish:
 * Autonomous Ecosystem
 
 Each requires independent semantic grounding.
-;;;
+. 
 26. Consequences
 
 Positive
@@ -619,7 +619,7 @@ Negative
 * Qualification requires evidence that agentic behavior is material to capability realization.
 * Capability transformation semantics may eventually require explicit realization-state modeling.
 * Autonomous Capability remains a future semantic decision.
-;;;
+. 
 27. Decision Summary
 
 The semantic architecture now establishes:

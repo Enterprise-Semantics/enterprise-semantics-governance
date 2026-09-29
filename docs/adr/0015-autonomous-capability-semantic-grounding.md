@@ -43,7 +43,7 @@ Autonomous Capability preserves the foundational meaning of Capability:
 An enduring ability of an Entity to achieve or enable an Outcome.
 
 Autonomy therefore describes how the capability can be realized, not what makes something a capability.
-;;;
+. 
 2. Rationale
 
 ADR-ES-012 established Agentic Capability as:
@@ -77,7 +77,7 @@ No	Yes	Autonomous Capability
 Yes	Yes	Capability exhibiting both characteristics
 
 The fourth state is not a new foundational concept. It is the intersection of two independently established semantic properties.
-;;;
+. 
 3. Semantic Principles
 
 3.1 Capability remains foundational
@@ -153,7 +153,7 @@ A capability may be autonomous while retaining:
 * exception handling
 
 Autonomy means that human intervention is not required for every capability decision or action.
-;;;
+. 
 4. Semantic Characteristics
 
 An Autonomous Capability may exhibit one or more of the following characteristics where material to its realization:
@@ -172,7 +172,7 @@ An Autonomous Capability may exhibit one or more of the following characteristic
 12. Escalation when authority is exceeded
 
 The presence of a single technology or automation mechanism is insufficient to establish the specialization.
-;;;
+. 
 5. Autonomous Capability Realization Pattern
 
 The canonical realization pattern is:
@@ -214,7 +214,7 @@ The exact execution mechanism may be:
 * hybrid
 
 Autonomy is therefore a semantic characteristic of capability realization rather than an implementation technology.
-;;;
+. 
 6. Canonical Relationships
 
 Autonomous Capability inherits the fundamental Capability relationships.
@@ -245,7 +245,7 @@ Autonomous Capability
 Relationships must only be activated where the target concept and predicate are already canonical.
 
 No foundational concept is silently created to satisfy these relationships.
-;;;
+. 
 7. Boundary With Agentic Capability
 
 The semantic distinction is:
@@ -279,7 +279,7 @@ Agentic Capability + Autonomous realization
 Agentic and Autonomous Capability
 
 This is a compositional semantic state, not a new type.
-;;;
+. 
 8. Boundary With Automation
 
 Automation is an execution mechanism.
@@ -292,7 +292,7 @@ Automation -> may enable autonomy
 Automation ≠ autonomy
 
 A fully automated capability with no independent decision scope remains automated rather than autonomous.
-;;;
+. 
 9. Boundary With AI
 
 AI is a technological mechanism or capability.
@@ -305,7 +305,7 @@ AI ≠ Autonomous Capability
 An AI-enabled capability is not automatically an Autonomous Capability.
 
 Conversely, Autonomous Capability does not require AI.
-;;;
+. 
 10. Boundary With Autonomous Operations
 
 The concepts operate at different semantic levels.
@@ -323,7 +323,7 @@ how ongoing operational activity can progress independently
 Autonomous Operations may support realization of an Autonomous Capability.
 
 Autonomous Operations do not automatically make every supported Capability autonomous.
-;;;
+. 
 11. Boundary With Autonomous Value Stream
 
 The distinction is:
@@ -334,7 +334,7 @@ Autonomous Value Stream
     = autonomous end-to-end value realization
 
 An Autonomous Capability may enable an Autonomous Value Stream, but the existence of an Autonomous Capability does not establish autonomy across the entire Value Stream.
-;;;
+. 
 12. Boundary With Autonomous Enterprise
 
 The distinction is:
@@ -347,7 +347,7 @@ Autonomous Enterprise
 A single Autonomous Capability does not establish an Autonomous Enterprise.
 
 Likewise, an Autonomous Enterprise may contain capabilities whose realization remains human-dependent.
-;;;
+. 
 13. Canonical Invariants
 
 The following invariants are established:
@@ -368,7 +368,7 @@ Autonomous Capability does not imply unrestricted autonomy
 Autonomous Capability does not require removal of humans
 Autonomous Capability operates within defined authority
 Autonomous Capability remains outcome-oriented
-;;;
+. 
 14. Deferred Concepts
 
 This ADR does not establish:
@@ -388,7 +388,7 @@ This ADR does not establish:
 * autonomous capability maturity model
 
 Each requires separate semantic grounding if subsequently proposed.
-;;;
+. 
 15. Example
 
 OTCHERE Inc possesses a Customer Resolution Capability.
@@ -423,7 +423,7 @@ Human involvement remains necessary for defined exceptions or decisions outside 
 If the realization also interprets delegated intent, dynamically selects actions, and coordinates agentic behavior, the capability may simultaneously exhibit the Agentic characteristic.
 
 That does not change its fundamental identity as a Capability.
-;;;
+. 
 16. Decision Outcome
 
 Enterprise-Semantics establishes Autonomous Capability as a governed specialization of Capability.
@@ -440,7 +440,7 @@ The specialization provides a semantic representation of capability-level autono
 * enterprise-level autonomy.
 
 This decision completes the initial semantic symmetry between Agentic Capability and Autonomous Capability without introducing unnecessary foundational concepts.
-;;;
+. 
 17. Consequences
 
 Positive
@@ -460,7 +460,7 @@ Constraints
 * AI and automation cannot be used as semantic proxies for autonomy
 * future autonomy maturity requires a separate decision
 * mappings to WSF/OpenDEA remain correspondence artifacts unless separately authorized
-;;;
+. 
 18. Provenance
 
 provenance:

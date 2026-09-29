@@ -49,7 +49,7 @@ An enterprise does not become Agentic merely because it possesses Agents, AI sys
 
 Agentic Enterprise describes an enterprise-level operating condition in which agentic behavior is materially incorporated into how the enterprise realizes value, operates, coordinates, decides, and adapts.
 
-;;;
+. 
 
 2. Problem
 
@@ -87,7 +87,7 @@ Agentic Enterprise
 
 The enterprise-level concept must describe a transformation of the enterprise operating condition, rather than simply the deployment of a technology.
 
-;;;
+. 
 
 3. Semantic Definition
 
@@ -114,7 +114,7 @@ The definition contains five essential elements:
 5. Governance
  * Enterprise-level agentic behavior remains subject to policies, constraints, objectives, accountability, and escalation mechanisms.
 
-;;;
+. 
 
 4. Architectural Position
 
@@ -144,7 +144,7 @@ Agentic Enterprise sits above the previously grounded agentic concepts.
 
 This diagram is conceptual. It does not imply that every Agentic Enterprise must contain every specialization.
 
-;;;
+. 
 
 5. Core Semantic Distinction
 
@@ -162,7 +162,7 @@ The distinction is fundamental:
 
 Agentic Enterprise is not simply the sum of Agentic Workflows, Agentic Operations, and Agents. It describes the enterprise-level operating condition created when agentic behavior becomes materially embedded in enterprise value realization and/or operation.
 
-;;;
+. 
 
 6. Agentic Enterprise Characteristics
 
@@ -182,7 +182,7 @@ Examples include:
 
 The enterprise does not need every value stream to be agentic.
 
-;;;
+. 
 
 6.2 Agentic Operations
 
@@ -199,7 +199,7 @@ This may include:
 
 Agentic Operations are therefore one possible enterprise-level realization mechanism.
 
-;;;
+. 
 
 6.3 Agentic Decision-Making
 
@@ -213,7 +213,7 @@ The enterprise must retain:
 * escalation mechanisms
 * accountability
 
-;;;
+. 
 
 6.4 Agentic Coordination
 
@@ -229,7 +229,7 @@ Agents may coordinate:
 
 Coordination does not imply unrestricted autonomy.
 
-;;;
+. 
 
 6.5 Agentic Adaptation
 
@@ -245,7 +245,7 @@ The enterprise can adapt selected behavior in response to:
 
 Adaptation remains bounded by enterprise governance.
 
-;;;
+. 
 
 7. Agentic Enterprise Operating Pattern
 
@@ -286,7 +286,7 @@ The entire loop is bounded by:
 
 This establishes the enterprise-level equivalent of the agentic operational loop while preserving the distinction between enterprise governance and operational execution.
 
-;;;
+. 
 
 8. Enterprise Boundary
 
@@ -302,7 +302,7 @@ The relevant semantic question is:
 
 This establishes the qualification boundary.
 
-;;;
+. 
 
 9. Agentic Enterprise Qualification
 
@@ -320,7 +320,7 @@ An enterprise instance should qualify as Agentic Enterprise only where there is 
 
 The model must not require every enterprise activity to be agentic.
 
-;;;
+. 
 
 10. Agentic Enterprise and Human Participation
 
@@ -344,7 +344,7 @@ Human-free Enterprise
 
 Human governance is compatible with agentic operation.
 
-;;;
+. 
 
 11. AI Boundary
 
@@ -367,7 +367,7 @@ An Agentic Enterprise does not require AI.
 
 AI-related concepts such as AI Agent, Agentic AI, AI-Native Enterprise, or AIOps require separate semantic grounding.
 
-;;;
+. 
 
 12. Automation Boundary
 
@@ -385,7 +385,7 @@ Therefore:
 
 Automation alone does not establish Agentic Enterprise.
 
-;;;
+. 
 
 13. Autonomy Boundary
 
@@ -413,7 +413,7 @@ An enterprise may also exhibit autonomous behavior without satisfying the defini
 
 Autonomous Enterprise is therefore explicitly outside this ADR.
 
-;;;
+. 
 
 14. Relationship to Agentic Value Stream
 
@@ -439,7 +439,7 @@ An enterprise can therefore contain a mixture of:
 
 without losing enterprise-level semantic coherence.
 
-;;;
+. 
 
 15. Relationship to Agentic Operations
 
@@ -462,7 +462,7 @@ Agentic Enterprise concerns the enterprise operating condition.
 
 An enterprise may therefore have Agentic Operations without being classified as an Agentic Enterprise if agentic behavior is isolated and not material at the enterprise boundary.
 
-;;;
+. 
 
 16. Relationship to Agentic Workflow
 
@@ -480,7 +480,7 @@ This is an architectural realization path, not a strict containment hierarchy.
 
 A single Agentic Workflow does not establish Agentic Enterprise.
 
-;;;
+. 
 
 17. Agentic Enterprise and Enterprise Governance
 
@@ -508,7 +508,7 @@ Accountability / Escalation
 
 This prevents the semantic model from equating agentic enterprise operation with unconstrained autonomous behavior.
 
-;;;
+. 
 
 18. Example : OTCHERE Inc
 
@@ -548,7 +548,7 @@ Agentic Enterprise Operating Model
 
 The example demonstrates enterprise-wide semantic participation without requiring every enterprise capability, process, or value stream to become agentic.
 
-;;;
+. 
 
 19. Architectural Invariants
 
@@ -608,7 +608,7 @@ Agentic Enterprise requires defined governance boundaries.
 AE-CON-018
 Agentic Enterprise requires provenance and semantic grounding.
 
-;;;
+. 
 
 20. Explicitly Rejected Interpretations
 
@@ -626,7 +626,7 @@ The following interpretations are rejected:
 * Agentic Enterprise = Self-learning Enterprise
 * Agentic Enterprise = Enterprise with unlimited autonomous authority
 
-;;;
+. 
 
 21. Future Concepts Explicitly Deferred
 
@@ -646,7 +646,7 @@ This ADR does not establish:
 
 Each requires independent semantic grounding.
 
-;;;
+. 
 
 22. Consequences
 
@@ -667,7 +667,7 @@ Negative
 * Autonomous Enterprise cannot be inferred from this model.
 * Future agentic organizational and cultural semantics may require additional boundaries.
 
-;;;
+. 
 
 23. Decision Summary
 

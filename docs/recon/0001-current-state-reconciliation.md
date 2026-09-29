@@ -1,6 +1,6 @@
 Agreed. I have started the execution by reconciling the live Enterprise-Semantics repositories and current program plan against the architecture we established.
 
-One important correction has emerged before we write the Recon artifact: the live repository is still explicitly marked Skeleton v0.0.1, and the plan still describes Phases 3–6 as future work. The governance repository says ADRs, CRs and Findings are the governed artifacts, while the authority repository is still an empty semantic authority awaiting the Phase 4 seed. 
+One important correction has emerged before we write the Recon artifact: the live repository is still explicitly marked Skeleton v0.0.1, and the plan still describes Phases 3-6 as future work. The governance repository says ADRs, CRs and Findings are the governed artifacts, while the authority repository is still an empty semantic authority awaiting the Phase 4 seed. 
 
 The program plan also confirms that the intended sequence was:
 

@@ -19,7 +19,7 @@ Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 
 CR-ES-005: Implement Agentic Value Stream Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552289869429088307 ;;; "Save it, read and understand, then proceed with all tasks needed to make way to implement it appropriately. Then implement it.")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552289869429088307. "Save it, read and understand, then proceed with all tasks needed to make way to implement it appropriately. Then implement it.")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0
@@ -28,7 +28,7 @@ Depends On: CR-ES-001, CR-ES-002, CR-ES-003, CR-ES-004
 Authorizing ADR: ADR-ES-005
 Target Semantic Version: 0.4.0
 
-;;;
+. 
 
 1. Purpose
 
@@ -46,7 +46,7 @@ The implementation must remain:
 * distinct from Process and Workflow;
 * compatible with mixed conventional, automated, human, and agentic realization.
 
-;;;
+. 
 
 2. Scope
 
@@ -70,7 +70,7 @@ This CR establishes:
 * canonical examples;
 * CI validation.
 
-;;;
+. 
 
 3. Out of Scope
 
@@ -92,7 +92,7 @@ The following shall not be canonicalized by CR-ES-005:
 
 Where these concepts are referenced, they shall be explicitly marked as future/deferred concepts.
 
-;;;
+. 
 
 4. Canonical Definition
 
@@ -113,7 +113,7 @@ Relationship:
 AgenticValueStream
     `---- specializes > ValueStream
 
-;;;
+. 
 
 5. Canonical Schema
 
@@ -197,7 +197,7 @@ version: 0.4.0
 
 The exact schema syntax shall conform to the schema conventions established by CR-ES-001 rather than introducing a parallel format.
 
-;;;
+. 
 
 6. Registry
 
@@ -222,7 +222,7 @@ ES:CONCEPT:AGENT
 ES:CONCEPT:INTENT
 ES:CONCEPT:AUTHORITY
 
-;;;
+. 
 
 7. Relationship Model
 
@@ -250,7 +250,7 @@ Agent
 
 No new agentic execution relationship shall be introduced merely to represent Agentic Workflow or Agentic Operations.
 
-;;;
+. 
 
 8. Value Stream Inheritance
 
@@ -270,7 +270,7 @@ version
 
 The implementation shall not duplicate or redefine these properties where inheritance/reference is supported by the repository schema architecture.
 
-;;;
+. 
 
 9. Agentic Scope
 
@@ -291,7 +291,7 @@ agentic_scope:
 
 The schema should allow the scope to reference existing Value Stages, decisions, or other governed semantic elements without creating a new Agentic Value Stage concept.
 
-;;;
+. 
 
 10. Authority and Intent
 
@@ -324,7 +324,7 @@ Execution
         |
 Outcome
 
-;;;
+. 
 
 11. Mixed Realization
 
@@ -342,9 +342,9 @@ Agentic Value Stream must not be interpreted as:
 
 “A value stream where everything is performed by agents.”
 
-;;;
+. 
 
-12. Mapping ;;; WSF
+12. Mapping, and WSF
 
 Create:
 
@@ -368,9 +368,9 @@ target: WSF:CONCEPT:VALUE_STREAM
 
 Any WSF Agent/Agency mapping shall reuse the semantic grounding established by CR-ES-004 rather than duplicating it.
 
-;;;
+. 
 
-13. Mapping ;;; OpenDEA
+13. Mapping, and OpenDEA
 
 Create:
 
@@ -394,7 +394,7 @@ semantic specialization / target concept
 
 rather than claiming implementation availability.
 
-;;;
+. 
 
 14. Profile
 
@@ -420,7 +420,7 @@ This profile shall provide discoverability and grouping only.
 
 It shall not imply that all listed concepts belong to one inheritance hierarchy.
 
-;;;
+. 
 
 15. Documentation
 
@@ -447,7 +447,7 @@ The document shall include:
 15. Conformance requirements
 16. Provenance
 
-;;;
+. 
 
 16. Architecture Documentation
 
@@ -485,7 +485,7 @@ Outcome
 
 The two structures intersect without becoming the same model.
 
-;;;
+. 
 
 17. Canonical Relational Diagram
 
@@ -519,7 +519,7 @@ Agent --> Outcome : produces
 
 The actual diagram shall conform to repository styling conventions.
 
-;;;
+. 
 
 18. Classic vs Agentic Visualization
 
@@ -570,9 +570,9 @@ Next Value Stage
 
 The illustration must make clear that the value journey remains the same semantic construct, while the realization mechanism becomes capable of agency.
 
-;;;
+. 
 
-19. Example ;;; OTCHERE Inc Order-to-Cash
+19. Example, and OTCHERE Inc Order-to-Cash
 
 Add:
 
@@ -616,9 +616,9 @@ The example shall explicitly identify:
 * intervention Model;
 * resulting Outcome.
 
-;;;
+. 
 
-20. Example ;;; Pay-to-Fulfillment
+20. Example, and Pay-to-Fulfillment
 
 Add an additional example illustrating a value stream where agentic participation is distributed across financial and operational stages.
 
@@ -642,7 +642,7 @@ Stakeholder Value
 
 The example must remain technology-neutral.
 
-;;;
+. 
 
 21. Conformance Tests
 
@@ -685,7 +685,7 @@ Mixed realization modes are valid.
 AVS-CON-010
 Grounding and provenance are present.
 
-;;;
+. 
 
 22. Negative Conformance Tests
 
@@ -704,7 +704,7 @@ Agentic Value Stream establishes Agentic Operations
 
 These tests are architectural safeguards against semantic drift.
 
-;;;
+. 
 
 23. Schema Validation
 
@@ -725,7 +725,7 @@ CI shall validate:
 
 The implementation shall fail CI if Agentic Value Stream can be instantiated without satisfying the mandatory Value Stream inheritance requirements.
 
-;;;
+. 
 
 24. Relationship Integrity
 
@@ -748,7 +748,7 @@ Outcome
 
 The validator shall reject dangling semantic references.
 
-;;;
+. 
 
 25. Documentation Conformance
 
@@ -764,7 +764,7 @@ Agentic Value Stream ≠ Workflow
 
 This is a semantic conformance requirement, not merely editorial guidance.
 
-;;;
+. 
 
 26. Versioning
 
@@ -780,7 +780,7 @@ Rationale:
 
 No WSF or OpenDEA version increment is implied by this CR.
 
-;;;
+. 
 
 27. Implementation Sequence
 
@@ -816,7 +816,7 @@ Implementation shall proceed in this order:
              |
 15. Publish v0.4.0
 
-;;;
+. 
 
 28. Acceptance Criteria
 
@@ -846,7 +846,7 @@ CR-ES-005 is complete when:
 * [ ]	CI validates the complete semantic package.
 * [ ]	v0.4.0 is publishable.
 
-;;;
+. 
 
 29. Governance
 
@@ -872,7 +872,7 @@ No implementation outside this scope shall be merged under CR-ES-005.
 
 In particular, introducing Agentic Workflow, Agentic Operations, Autonomous Value Stream, or AI-specific ontology under this CR constitutes scope expansion and requires a separate governed change.
 
-;;;
+. 
 
 30. Definition of Done
 

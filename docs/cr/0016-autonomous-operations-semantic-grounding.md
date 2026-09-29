@@ -1,15 +1,15 @@
 CR-ES-008: Implement Autonomous Operations Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552343053933748346 ;;; "Attached the next ADR and CR, save them, read them to understand and let's implement them accordingly")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552343053933748346. "Attached the next ADR and CR, save them, read them to understand and let's implement them accordingly")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0
 Target: Enterprise-Semantics
-Authorizing ADR: ADR-ES-008 ;;; Autonomous Operations Semantic Grounding
+Authorizing ADR: ADR-ES-008, and Autonomous Operations Semantic Grounding
 Target Semantic Version: v0.7.0
 Depends On: CR-ES-001, CR-ES-004, CR-ES-006, CR-ES-007
 
-;;;
+. 
 
 1. Change Objective
 
@@ -32,7 +32,7 @@ The implementation SHALL preserve the distinction between:
 
 The implementation SHALL NOT make autonomy synonymous with AI, agentic behavior, automation, unattended execution, or removal of human governance.
 
-;;;
+. 
 
 2. Canonical Definition
 
@@ -42,7 +42,7 @@ Autonomous Operations are operations capable of independently sensing, interpret
 
 The wording SHALL remain unchanged unless superseded by a future governed ADR.
 
-;;;
+. 
 
 3. Semantic Decision
 
@@ -64,7 +64,7 @@ Agentic Value Stream
 AI
 Automation
 
-;;;
+. 
 
 4. Scope
 
@@ -92,7 +92,7 @@ CR-ES-008 shall implement:
 18. Semantic invariant validation.
 19. v0.7.0 release preparation.
 
-;;;
+. 
 
 4.2 Explicitly Out of Scope
 
@@ -117,7 +117,7 @@ This CR SHALL NOT establish:
 
 Any such requirement discovered during implementation SHALL become a Finding for subsequent architectural treatment.
 
-;;;
+. 
 
 5. Repository Precondition
 
@@ -149,7 +149,7 @@ Instead:
 4. Create a Finding for future semantic grounding where necessary.
 5. Continue only where the missing concept does not prevent semantic validity.
 
-;;;
+. 
 
 6. Canonical Concept Artifact
 
@@ -202,7 +202,7 @@ version: 0.7.0
 
 The repository’s established schema SHALL remain authoritative over this illustrative structure.
 
-;;;
+. 
 
 7. Semantic Properties
 
@@ -224,7 +224,7 @@ observation_scope	Defines conditions and outcomes being observed.
 
 These properties describe semantic characteristics and SHALL NOT prescribe a particular technology.
 
-;;;
+. 
 
 8. Autonomy Scope
 
@@ -250,7 +250,7 @@ autonomy_scope:
 
 is conceptually valid, while a numerical maturity score is outside this CR.
 
-;;;
+. 
 
 9. Canonical Relationships
 
@@ -261,7 +261,7 @@ Autonomous Operations
 
 This relationship is mandatory.
 
-;;;
+. 
 
 9.2 Authority
 
@@ -270,7 +270,7 @@ Autonomous Operations
 
 Autonomy SHALL always be bounded by explicit authority.
 
-;;;
+. 
 
 9.3 Policy
 
@@ -279,7 +279,7 @@ Autonomous Operations
 
 Where Policy is not yet independently canonical, the implementation SHALL use the established reference/dependency mechanism rather than create a new Policy ontology.
 
-;;;
+. 
 
 9.4 Objective
 
@@ -288,7 +288,7 @@ Autonomous Operations
 
 If the repository’s existing Intent/Goal vocabulary is authoritative instead, the implementation SHALL map the operational objective to that vocabulary rather than duplicate it.
 
-;;;
+. 
 
 9.5 Operational Context
 
@@ -297,14 +297,14 @@ Autonomous Operations
 Autonomous Operations
     -> adapts-to -> Operational Context
 
-;;;
+. 
 
 9.6 Operational Outcome
 
 Autonomous Operations
     -> produces -> Operational Outcome
 
-;;;
+. 
 
 9.7 Escalation
 
@@ -315,7 +315,7 @@ The target SHALL use an existing canonical concept where available.
 
 The relationship SHALL express an operational boundary, not human ownership.
 
-;;;
+. 
 
 9.8 Workflow Usage
 
@@ -338,7 +338,7 @@ The implementation SHALL NOT create:
 Autonomous Operations
     -> specializes -> Agentic Workflow
 
-;;;
+. 
 
 10. Agentic Operations Boundary
 
@@ -364,7 +364,7 @@ unless a future ADR explicitly establishes such a relationship.
 
 The concepts are orthogonal.
 
-;;;
+. 
 
 11. Agentic vs Autonomous Semantics
 
@@ -386,7 +386,7 @@ Autonomy	Not implied	Defining characteristic
 
 This table is normative for the conceptual boundary.
 
-;;;
+. 
 
 12. Automation Boundary
 
@@ -420,7 +420,7 @@ Automation MAY participate in Autonomous Operations.
 
 Automation alone SHALL NOT satisfy the Autonomous Operations semantic definition.
 
-;;;
+. 
 
 13. AI Boundary
 
@@ -440,7 +440,7 @@ Autonomous Operations + conventional control systems
 
 The implementation mechanism SHALL not determine the semantic classification.
 
-;;;
+. 
 
 14. Human Governance
 
@@ -462,7 +462,7 @@ Autonomous Operations requires elimination of humans
 
 The semantic boundary is independence from per-action human intervention, not independence from human governance.
 
-;;;
+. 
 
 15. Autonomous Operational Loop
 
@@ -504,7 +504,7 @@ Adapt
 
 The loop SHALL explicitly demonstrate that autonomy occurs within constraints.
 
-;;;
+. 
 
 16. Decision and Action Independence
 
@@ -538,7 +538,7 @@ System escalates
 
 This distinction is central to the semantic definition.
 
-;;;
+. 
 
 17. Registry
 
@@ -562,7 +562,7 @@ The entry SHALL include:
 
 No Autonomous Value Stream or Autonomous Enterprise registry entries shall be added.
 
-;;;
+. 
 
 18. Profile
 
@@ -587,7 +587,7 @@ The profile SHALL group concepts.
 
 It SHALL NOT imply that these concepts inherit from one another.
 
-;;;
+. 
 
 19. WSF Mapping
 
@@ -613,7 +613,7 @@ If no canonical WSF Operations identifier exists:
 
 This CR does not authorize modification of WSF.
 
-;;;
+. 
 
 20. OpenDEA Mapping
 
@@ -633,7 +633,7 @@ It SHALL distinguish:
 
 No OpenDEA metamodel modification is authorized by this CR.
 
-;;;
+. 
 
 21. Documentation
 
@@ -668,7 +668,7 @@ Documentation SHALL include:
 18. Conformance requirements.
 19. Provenance.
 
-;;;
+. 
 
 22. Visualizations
 
@@ -692,7 +692,7 @@ Automation
 
 as separate semantic dimensions.
 
-;;;
+. 
 
 23. Enterprise Example
 
@@ -760,81 +760,81 @@ The example SHALL explicitly identify:
 * escalation boundary;
 * human intervention boundary.
 
-;;;
+. 
 
 24. Conformance Requirements
 
 Implement at minimum:
 
-AOP-AUTO-CON-001 ;;; Operations Specialization
+AOP-AUTO-CON-001, and Operations Specialization
 
 Autonomous Operations MUST specialize Operations.
 
-AOP-AUTO-CON-002 ;;; Independent Decision
+AOP-AUTO-CON-002, and Independent Decision
 
 Autonomous Operations MUST support independent operational decisions within defined scope.
 
-AOP-AUTO-CON-003 ;;; Independent Action
+AOP-AUTO-CON-003, and Independent Action
 
 Autonomous Operations MUST support independent authorized operational actions.
 
-AOP-AUTO-CON-004 ;;; Authority
+AOP-AUTO-CON-004, and Authority
 
 Autonomous behavior MUST operate within defined authority.
 
-AOP-AUTO-CON-005 ;;; Policy
+AOP-AUTO-CON-005, and Policy
 
 Autonomous behavior MUST remain subject to policies or equivalent constraints.
 
-AOP-AUTO-CON-006 ;;; Objective
+AOP-AUTO-CON-006, and Objective
 
 Autonomous Operations MUST pursue a defined operational objective or intent.
 
-AOP-AUTO-CON-007 ;;; Context
+AOP-AUTO-CON-007, and Context
 
 Autonomous Operations MUST be capable of responding to relevant operational context.
 
-AOP-AUTO-CON-008 ;;; Adaptation
+AOP-AUTO-CON-008, and Adaptation
 
 Autonomous Operations MUST support adaptation where adaptation is part of the claimed autonomous scope.
 
-AOP-AUTO-CON-009 ;;; Escalation
+AOP-AUTO-CON-009, and Escalation
 
 The implementation MUST define an escalation boundary for conditions beyond delegated authority.
 
-AOP-AUTO-CON-010 ;;; Human Compatibility
+AOP-AUTO-CON-010, and Human Compatibility
 
 Human governance and intervention MUST remain valid.
 
-AOP-AUTO-CON-011 ;;; AI Independence
+AOP-AUTO-CON-011, and AI Independence
 
 AI MUST NOT be a required semantic characteristic.
 
-AOP-AUTO-CON-012 ;;; Automation Distinction
+AOP-AUTO-CON-012, and Automation Distinction
 
 Automation MUST NOT automatically qualify as Autonomous Operations.
 
-AOP-AUTO-CON-013 ;;; Agentic Independence
+AOP-AUTO-CON-013, and Agentic Independence
 
 Agentic behavior MUST NOT be a prerequisite for Autonomous Operations.
 
-AOP-AUTO-CON-014 ;;; Agentic Distinction
+AOP-AUTO-CON-014, and Agentic Distinction
 
 Autonomous Operations MUST remain distinct from Agentic Operations.
 
-AOP-AUTO-CON-015 ;;; Workflow Distinction
+AOP-AUTO-CON-015, and Workflow Distinction
 
 Autonomous Operations MUST remain distinct from Agentic Workflow.
 
-AOP-AUTO-CON-016 ;;; Value Stream Distinction
+AOP-AUTO-CON-016, and Value Stream Distinction
 
 Autonomous Operations MUST remain distinct from Agentic Value Stream.
 
-AOP-AUTO-CON-017 ;;; Provenance
+AOP-AUTO-CON-017, and Provenance
 
 Canonical assertions MUST have provenance.
 
-;;;
+. 
 
 25. Negative Conformance Tests
 
@@ -852,7 +852,7 @@ Autonomous Operations implies Autonomous Value Stream
 Autonomous Operations implies Autonomous Enterprise
 Agentic Operations automatically becomes Autonomous Operations
 
-;;;
+. 
 
 26. Semantic Validation
 
@@ -881,7 +881,7 @@ action_scope
 intervention_model
 escalation_boundary
 
-;;;
+. 
 
 27. Relationship Validation
 
@@ -898,7 +898,7 @@ The validator SHALL reject undefined predicates.
 
 The validator SHALL reject relationships whose target identifiers do not exist unless explicitly marked as governed pending references.
 
-;;;
+. 
 
 28. Autonomy Integrity Tests
 
@@ -925,7 +925,7 @@ Workflow
 
 SHALL NOT pass Autonomous Operations conformance without evidence of operational independence.
 
-;;;
+. 
 
 29. Mapping Integrity
 
@@ -938,7 +938,7 @@ WSF and OpenDEA mappings SHALL:
 * identify unresolved mappings explicitly;
 * avoid implying upstream ontology modification.
 
-;;;
+. 
 
 30. Repository Changes
 
@@ -984,7 +984,7 @@ L-- visuals/
 
 The exact directory conventions SHALL follow CR-ES-001 through CR-ES-007.
 
-;;;
+. 
 
 31. Governance Pipeline
 
@@ -1010,7 +1010,7 @@ Any semantic requirement discovered outside this scope SHALL become a Finding.
 
 It SHALL NOT be silently incorporated into CR-ES-008.
 
-;;;
+. 
 
 32. Acceptance Criteria
 
@@ -1049,7 +1049,7 @@ CR-ES-008 shall be accepted when:
 * [ ]	CI passes.
 * [ ]	Release metadata targets v0.7.0.
 
-;;;
+. 
 
 33. Definition of Done
 
@@ -1059,7 +1059,7 @@ Autonomous Operations is a governed specialization of Operations characterized b
 
 The resulting semantic model SHALL remain independent of any particular AI, automation, agent, workflow, or technology implementation.
 
-;;;
+. 
 
 34. Future Semantic Work
 
@@ -1079,7 +1079,7 @@ Each requires independent architectural grounding.
 
 No future concept becomes canonical through this CR.
 
-;;;
+. 
 
 35. Final Change Statement
 

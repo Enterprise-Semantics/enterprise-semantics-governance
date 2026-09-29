@@ -1,6 +1,6 @@
 CR-ES-006: Implement Agentic Workflow Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552318709853462599 ;;; "Attached is ADR-ES-006 and CR-ES-006 save them as separate files in their respective folders, read and understand then let's implement them")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552318709853462599. "Attached is ADR-ES-006 and CR-ES-006 save them as separate files in their respective folders, read and understand then let's implement them")
 Date: 2026-09-23
 Change Type: Foundational Semantic Specialization
 Priority: P0
@@ -9,7 +9,7 @@ Depends On: CR-ES-001, CR-ES-003, CR-ES-004, CR-ES-005
 Authorizing ADR: ADR-ES-006
 Target Semantic Version: 0.5.0
 
-;;;
+. 
 
 1. Purpose
 
@@ -25,7 +25,7 @@ Agentic Execution
 
 The implementation shall not introduce Autonomous Workflow, Agentic Operations, or AI-specific workflow semantics.
 
-;;;
+. 
 
 2. Scope
 
@@ -51,7 +51,7 @@ The implementation shall not introduce Autonomous Workflow, Agentic Operations, 
 * negative semantic tests;
 * CI validation.
 
-;;;
+. 
 
 3. Out of Scope
 
@@ -68,7 +68,7 @@ Explicitly excluded:
 * OpenDEA metamodel modifications;
 * WSF metamodel modifications.
 
-;;;
+. 
 
 4. Canonical Concept
 
@@ -88,7 +88,7 @@ Parent:
 
 Workflow
 
-;;;
+. 
 
 5. Canonical Schema
 
@@ -159,7 +159,7 @@ version: 0.5.0
 
 The exact schema shall be reconciled against existing repository schemas before implementation.
 
-;;;
+. 
 
 6. Workflow Dependency
 
@@ -175,7 +175,7 @@ If it does not yet exist, implementation shall not silently expand this CR into 
 
 Instead, the implementation shall use the minimum governed reference required to preserve the specialization boundary and identify a future Workflow grounding decision.
 
-;;;
+. 
 
 7. Registry
 
@@ -202,7 +202,7 @@ AGENTIC
 INTENT
 AUTHORITY
 
-;;;
+. 
 
 8. Relationship Vocabulary
 
@@ -219,7 +219,7 @@ produces
 
 Where interprets, operates-within, or produces already exist from CR-ES-004, they shall be reused rather than duplicated.
 
-;;;
+. 
 
 9. Process Integration
 
@@ -241,7 +241,7 @@ The implementation must reject:
 
 Agentic Workflow is-a Process
 
-;;;
+. 
 
 10. Activity and Task Integration
 
@@ -265,7 +265,7 @@ Agentic Decision
 
 is valid.
 
-;;;
+. 
 
 11. Agent Integration
 
@@ -278,7 +278,7 @@ The Agent shall retain the semantics established by CR-ES-004.
 
 Agentic Workflow shall not redefine Agent.
 
-;;;
+. 
 
 12. Intent Integration
 
@@ -301,7 +301,7 @@ Intent
 
 The final representation shall use the least redundant model consistent with existing relationship semantics.
 
-;;;
+. 
 
 13. Authority Integration
 
@@ -321,7 +321,7 @@ Policy Constraints
 
 These may be represented through references rather than introducing new policy ontology in this CR.
 
-;;;
+. 
 
 14. Dynamic Decision Boundary
 
@@ -341,7 +341,7 @@ This identifies where agentic behavior can select:
 
 The property does not mean that all workflow structure is dynamically generated.
 
-;;;
+. 
 
 15. Adaptation
 
@@ -360,7 +360,7 @@ adaptation_scope:
 
 The implementation shall distinguish runtime adaptation from permanent modification of the canonical workflow definition.
 
-;;;
+. 
 
 16. Intervention
 
@@ -374,7 +374,7 @@ intervention_model:
 
 This ensures that Agentic Workflow does not semantically imply removal of human participation.
 
-;;;
+. 
 
 17. Escalation Boundary
 
@@ -392,7 +392,7 @@ Required human approval
 
 These examples are descriptive and shall not create additional canonical concepts.
 
-;;;
+. 
 
 18. Agentic Participation Rule
 
@@ -416,7 +416,7 @@ Workflow adapts execution
 
 This distinction shall be encoded in documentation and conformance tests.
 
-;;;
+. 
 
 19. WSF Mapping
 
@@ -444,7 +444,7 @@ target: WSF:CONCEPT:WORKFLOW
 
 If WSF does not contain a directly corresponding Workflow concept, the mapping shall document the semantic correspondence rather than inventing a WSF identifier.
 
-;;;
+. 
 
 20. OpenDEA Mapping
 
@@ -464,7 +464,7 @@ No OpenDEA metamodel change is authorized by this CR.
 
 If no canonical OpenDEA Workflow element exists, the mapping shall be marked as a target semantic correspondence rather than an implementation claim.
 
-;;;
+. 
 
 21. Profile
 
@@ -493,7 +493,7 @@ scope:
 
 The profile is organizational only and does not imply inheritance between all members.
 
-;;;
+. 
 
 22. Documentation
 
@@ -522,7 +522,7 @@ Required sections:
 17. Examples
 18. Conformance.
 
-;;;
+. 
 
 23. Execution Boundary Documentation
 
@@ -552,7 +552,7 @@ Activity / Task
 
 without collapsing these layers.
 
-;;;
+. 
 
 24. UML Artifact
 
@@ -586,7 +586,7 @@ AgenticWorkflow --> Outcome : produces
 
 The implementation shall avoid redundant direct Process-to-AgenticWorkflow relationships if the repository’s semantic inheritance model already derives them.
 
-;;;
+. 
 
 25. Execution Pattern Visual
 
@@ -615,7 +615,7 @@ Observe Outcome
   v
 Adapt / Continue / Escalate
 
-;;;
+. 
 
 26. Classic vs Agentic Workflow
 
@@ -659,7 +659,7 @@ Adapt / Escalate
 
 The visualization shall explicitly show that Agentic Workflow retains workflow structure while adding an agentic decision boundary.
 
-;;;
+. 
 
 27. OTCHERE Inc Example
 
@@ -685,7 +685,7 @@ The example shall not require AI.
 
 If AI is mentioned, it shall be represented as one possible implementation of the Agent rather than as the semantic definition.
 
-;;;
+. 
 
 28. Conformance Tests
 
@@ -732,7 +732,7 @@ Runtime adaptation is bounded.
 AWF-CON-012
 Provenance and grounding are present.
 
-;;;
+. 
 
 29. Negative Tests
 
@@ -751,7 +751,7 @@ Agentic Workflow = Workflow merely containing an Agent
 
 The last test is important because it protects the material-participation criterion.
 
-;;;
+. 
 
 30. Schema Validation
 
@@ -773,7 +773,7 @@ CI shall validate:
 
 A dangling Workflow reference shall fail validation.
 
-;;;
+. 
 
 31. Semantic Boundary Validation
 
@@ -791,7 +791,7 @@ Activity / Task
 
 The validator shall prevent an Agentic Workflow from being interpreted as a replacement for Process or Value Stream.
 
-;;;
+. 
 
 32. Versioning
 
@@ -803,7 +803,7 @@ This release adds a new canonical specialization and associated semantic relatio
 
 No WSF or OpenDEA release is implied.
 
-;;;
+. 
 
 33. Implementation Sequence
 
@@ -847,7 +847,7 @@ No WSF or OpenDEA release is implied.
           v
 20. Publish v0.5.0
 
-;;;
+. 
 
 34. Acceptance Criteria
 
@@ -882,7 +882,7 @@ CR-ES-006 is complete when:
 * [ ]	CI validation passes.
 * [ ]	v0.5.0 is publishable.
 
-;;;
+. 
 
 35. Governance
 
@@ -906,7 +906,7 @@ Enterprise-Semantics v0.5.0
 
 No Agentic Operations, Autonomous Workflow, Autonomous Value Stream, or AI ontology shall be merged under CR-ES-006.
 
-;;;
+. 
 
 36. Definition of Done
 

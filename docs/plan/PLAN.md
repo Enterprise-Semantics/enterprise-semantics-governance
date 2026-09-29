@@ -1,4 +1,4 @@
-# Enterprise Semantics — Program Plan
+# Enterprise Semantics: Program Plan
 
 **Owner:** emmanuel-a-otchere
 **GitHub Org:** https://github.com/Enterprise-Semantics
@@ -77,7 +77,7 @@ New Finding
 | 4 | `enterprise-semantics-governance` | WSF `wsf-governance` | ADRs, CRs, Findings, workflow templates. **Home of this PLAN.md once Phase 2 lands.** |
 | 5 | `enterprise-semantics-docs` | WSF `wsf-docs` | Human-readable documentation; generated where possible from `enterprise-semantics` |
 | 6 | `enterprise-semantics-examples` | WSF `wsf-examples` | Worked enterprise models; provenance evidence for seed concepts |
-| 7 | `enterprise-semantics-mappings` | (FND-ES-000 §9) | Bi-directional mappings: ES ;;; WSF, ES ;;; OpenDEA, ES ;;; DEA Catalogs |
+| 7 | `enterprise-semantics-mappings`| (FND-ES-000 §9) | Bi-directional mappings: ES, WSF, ES, OpenDEA, ES, and DEA Catalogs |
 | 8 | `enterprise-semantics-visuals` | WSF `wsf-visuals` | PlantUML/Mermaid/SVG sources; reproducible architectural diagrams |
 | 9 | `enterprise-semantics-test-probe` | WSF `wsf-test-probe` | Conformance harness: schema validation, ID uniqueness, broken-reference check, mapping integrity |
 
@@ -85,7 +85,7 @@ New Finding
 
 ## 2. Phases
 
-### Phase 0 — Plan + Plan-Keeper (current)
+### Phase 0: Plan + Plan-Keeper (current)
 
 **Objective:** Lock the program plan; stand up a durable plan-keeper.
 
@@ -110,9 +110,9 @@ New Finding
 
 ---
 
-### Phase 1 — Workspace + Org Landing Page (no domain repos yet)
+### Phase 1: Workspace + Org Landing Page (no domain repos yet)
 
-**Objective:** Make `Enterprise-Semantics` browsable; land the org charter; expose the WSF ;;; ES ;;; OpenDEA architecture publicly.
+**Objective:** Make `Enterprise-Semantics` browsable; land the org charter; expose the WSF. ES. OpenDEA architecture publicly.
 
 **Deliverables:**
 
@@ -135,7 +135,7 @@ New Finding
 
 ---
 
-### Phase 2 — Domain Repo Skeleton (READMEs + charters, no content)
+### Phase 2: Domain Repo Skeleton (READMEs + charters, no content)
 
 **Objective:** Create the 8 domain repos with READMEs, CODEOWNERS, CHANGELOGs; tighten branch protection on the spec/governance/docs trio.
 
@@ -163,13 +163,13 @@ New Finding
 
 ---
 
-### Phase 3 — Authority and Identifier Decisions (ADR-ES-001 + CR-ES-001)
+### Phase 3: Authority and Identifier Decisions (ADR-ES-001 + CR-ES-001)
 
 **Objective:** Land the founding governance decisions in the governance repo, authored by the user (or me, gated by Proceed per ADR/CR template).
 
 **Deliverables:**
 
-- [ ] **3.1** `docs/adr/0001-establish-enterprise-semantics-authority-and-publication-architecture.md` (ADR-ES-001): 15 scope items from FND-ES-001 §24, identifier scheme proposal (`ES:<KIND>:<NAME>` per FND-ES-000 §7), workflow diagram for Findings ;;; ADRs ;;; CRs
+- [ ] **3.1** `docs/adr/0001-establish-enterprise-semantics-authority-and-publication-architecture.md` (ADR-ES-001): 15 scope items from FND-ES-001 §24, identifier scheme proposal (`ES:<KIND>:<NAME>`per FND-ES-000 §7), workflow diagram for Findings, ADRs, and CRs
 - [ ] **3.2** `docs/cr/0001-establish-organization-and-semantic-authority-repository.md` (CR-ES-001): the implementing CR that flips Phase 2 repos from skeleton to seeded
 - [ ] **3.3** `docs/finding/0001-establish-enterprise-semantics.md`: FND-ES-000/001 ingested as Finding records (verbatim body, dash-normalized metadata header)
 - [ ] **3.4** Org board updated: ADR-ES-001 and CR-ES-001 as `Item Type: Decision` issues, status `In Progress`
@@ -185,7 +185,7 @@ New Finding
 
 ---
 
-### Phase 4 — Semantic Seed Land (the actual enterprise-concepts-model content)
+### Phase 4: Semantic Seed Land (the actual enterprise-concepts-model content)
 
 **Objective:** Materialize the seed concepts from FND-ES-000 §14/§15 as Candidate-status YAML records; land the initial profile stubs; stand up the first mapping skeletons.
 
@@ -196,7 +196,7 @@ New Finding
 - [ ] **4.3** Relationship records for the 8 hypotheses in FND-ES-000 §15 as `relationship.yaml` files with `status: provisional`
 - [ ] **4.4** Profile stubs in `enterprise-semantics/profiles/`: `agentic-enterprise`, `agentic-operations`, `agentic-value-stream`, `autonomous-enterprise`, `autonomous-operations`, `autonomous-network`. Each stub enumerates the open questions it must investigate
 - [ ] **4.5** Provenance links in every seed record pointing back to FND-ES-000/001 plus the existing agentic-work artifacts (e.g. `infographic/autonomous-flow-ai-closed-loop/`)
-- [ ] **4.6** First mapping skeletons in `enterprise-semantics-mappings/`: `ES:Capability` ;;; `wsf:Capability`, `ES:Capability` ;;; `dea:Capability`
+- [ ] **4.6** First mapping skeletons in `enterprise-semantics-mappings/`: `ES:Capability`. `wsf:Capability`, `ES:Capability`. `dea:Capability`
 - [ ] **4.7** CI in `enterprise-semantics-test-probe`: schema validates every YAML, IDs unique, no broken references, lifecycle values in the controlled enum
 - [ ] **4.8** Auto-generated Markdown views land in `enterprise-semantics-docs` per FND-ES-001 §4
 
@@ -211,7 +211,7 @@ New Finding
 
 ---
 
-### Phase 5 — Conformance Gate and Program Board Maturity
+### Phase 5: Conformance Gate and Program Board Maturity
 
 **Objective:** Promote the test-probe to a hard CI gate; mature the program board; land the first real CR against the seed.
 
@@ -220,7 +220,7 @@ New Finding
 - [ ] **5.1** `enterprise-semantics-test-probe` becomes the CI gate applied to `enterprise-semantics` and `enterprise-semantics-mappings` (the FND-ES-001 §14 list)
 - [ ] **5.2** Branch protection requires the conformance check on every PR against the authority repo and the mappings repo
 - [ ] **5.3** Org board matured: custom views (By Phase, By Repo, By Owner, Blocked), Milestones wired at repo level
-- [ ] **5.4** First "real" CR landed: `CR-ES-002 — Promote Capability from Candidate to Proposed` (the first concept-specific CR that mutates the seed)
+- [ ] **5.4** First "real" CR landed: `CR-ES-002: Promote Capability from Candidate to Proposed` (the first concept-specific CR that mutates the seed)
 - [ ] **5.5** Semantic release tag: `enterprise-semantics@v0.1.0-seed`
 
 **Verification:**
@@ -233,25 +233,25 @@ New Finding
 
 ---
 
-### Phase 6 — First Concept ADRs (post-seed)
+### Phase 6: First Concept ADRs (post-seed)
 
 **Objective:** Author concept-specific ADRs that govern future seed promotions.
 
 **Deliverables (one epic per ADR):**
 
-- [ ] **6.1** FND-ES-002 → ADR-ES-002 — Capability Semantic Grounding
-- [ ] **6.2** FND-ES-003 → ADR-ES-003 — Value Stream Semantic Grounding
-- [ ] **6.3** FND-ES-004 → ADR-ES-004 — Agentic Semantic Grounding
-- [ ] **6.4** FND-ES-005 → ADR-ES-005 — Agentic Value Stream Semantic Grounding
-- [ ] **6.5** FND-ES-006 → ADR-ES-006 — Agentic Workflow Semantic Grounding
-- [ ] **6.6** FND-ES-007 → ADR-ES-007 — Autonomous Operations Semantic Grounding
+- [ ] **6.1** FND-ES-002 → ADR-ES-002: Capability Semantic Grounding
+- [ ] **6.2** FND-ES-003 → ADR-ES-003: Value Stream Semantic Grounding
+- [ ] **6.3** FND-ES-004 → ADR-ES-004: Agentic Semantic Grounding
+- [ ] **6.4** FND-ES-005 → ADR-ES-005: Agentic Value Stream Semantic Grounding
+- [ ] **6.5** FND-ES-006 → ADR-ES-006: Agentic Workflow Semantic Grounding
+- [ ] **6.6** FND-ES-007 → ADR-ES-007: Autonomous Operations Semantic Grounding
 - [ ] **6.7** Findings chain: FND-ES-002 ... FND-ES-007 ingested as Finding records in `enterprise-semantics-governance/docs/finding/`
 
 **Verification:**
 
 - Each ADR has a corresponding CR that lands a code/spec change
 - CI green on every PR
-- Org board tracks each ADR's status through In Progress ;;; Done
+- Org board tracks each ADR's status through In Progress, and Done
 
 **Definition of Done:** Seven concept ADRs merged; seven corresponding CRs merged; org board at Phase 6 Done for each.
 
@@ -263,7 +263,7 @@ This mirrors the org GitHub Project plan:
 
 ```text
 Program: Enterprise Semantics (PVT_<org>)
-├── Epic 0.0 — Plan + Plan-Keeper                              [Phase 0]
+├── Epic 0.0: Plan + Plan-Keeper                              [Phase 0]
 │     ├── Task 0.1: workspace + 00_inbox/seed
 │     ├── Task 0.2: PLAN.md committed
 │     ├── Task 0.3: PLAN-CHANGELOG.md started
@@ -271,14 +271,14 @@ Program: Enterprise Semantics (PVT_<org>)
 │     ├── Task 0.5: scripts/plan_keeper.py authored
 │     ├── Task 0.6: seed/ dash-normalized drafts
 │     └── Task 0.7: workspace git init
-├── Epic 1.0 — Org Landing Page                                 [Phase 1]
+├── Epic 1.0: Org Landing Page                                 [Phase 1]
 │     ├── Task 1.1: .github repo created
 │     ├── Task 1.2: profile/README.md authored
 │     ├── Task 1.3: community health files
 │     ├── Task 1.4: org description set
 │     ├── Task 1.5: program board created + fields
 │     └── Task 1.6: board seeded with future-repo epics
-├── Epic 2.0 — Domain Repo Skeleton                             [Phase 2]
+├── Epic 2.0: Domain Repo Skeleton                             [Phase 2]
 │     ├── Task 2.1: enterprise-semantics repo
 │     ├── Task 2.2: enterprise-semantics-spec repo
 │     ├── Task 2.3: enterprise-semantics-governance repo + PLAN.md migration
@@ -289,13 +289,13 @@ Program: Enterprise Semantics (PVT_<org>)
 │     ├── Task 2.8: enterprise-semantics-test-probe repo
 │     ├── Task 2.9: 7 architectural diagrams
 │     └── Task 2.10: branch protection (spec/gov/docs trio)
-├── Epic 3.0 — Authority and Identifier Decisions               [Phase 3]
+├── Epic 3.0: Authority and Identifier Decisions               [Phase 3]
 │     ├── Task 3.1: ADR-ES-001
 │     ├── Task 3.2: CR-ES-001
 │     ├── Task 3.3: Finding records
 │     ├── Task 3.4: board updated with Decisions
 │     └── Task 3.5: branch protection tightened org-wide
-├── Epic 4.0 — Semantic Seed Land                               [Phase 4]
+├── Epic 4.0: Semantic Seed Land                               [Phase 4]
 │     ├── Task 4.1: 14 concept families as YAML
 │     ├── Task 4.2: id registry
 │     ├── Task 4.3: 8 hypotheses as relationship records
@@ -304,13 +304,13 @@ Program: Enterprise Semantics (PVT_<org>)
 │     ├── Task 4.6: first mapping skeletons
 │     ├── Task 4.7: CI in test-probe
 │     └── Task 4.8: auto-generated docs views
-├── Epic 5.0 — Conformance Gate + Program Board Maturity        [Phase 5]
+├── Epic 5.0: Conformance Gate + Program Board Maturity        [Phase 5]
 │     ├── Task 5.1: CI gate enforced
 │     ├── Task 5.2: branch protection requires conformance
 │     ├── Task 5.3: board views
 │     ├── Task 5.4: CR-ES-002 (first real CR)
 │     └── Task 5.5: v0.1.0-seed release tag
-└── Epic 6.0 — First Concept ADRs                               [Phase 6]
+└── Epic 6.0: First Concept ADRs                               [Phase 6]
       ├── Task 6.1: ADR-ES-002 Capability
       ├── Task 6.2: ADR-ES-003 Value Stream
       ├── Task 6.3: ADR-ES-004 Agentic
@@ -368,8 +368,8 @@ cronjob action=run job_id=c0b35d4938af
 6. Concepts start at `Candidate`; promotion to Canonical requires an ADR + CR + CI green.
 7. Branch protection on `enterprise-semantics-spec`, `enterprise-semantics-governance`, `enterprise-semantics-docs`: PR + 1 review required.
 8. No auto-deploys; no auto-merges.
-9. Cronjob cannot ask clarifying questions ;;; surface as pending-decision in Discord and exit.
-10. Destructive operations forbidden ;;; propose, never execute.
+9. Cronjob cannot ask clarifying questions. Surface as pending-decision in Discord and exit.
+10. Destructive operations forbidden. Propose, never execute.
 
 **Identity surface:**
 
@@ -398,16 +398,16 @@ Per the user's directive ("always have a sub-agent responsible to keep the proje
 
 ## 7. Decisions Log (open)
 
-- **D-001 (open):** Plan-keeper cadence and notification channel — currently15min + Discord drift ping. Change here if user prefers daily digest only, or no automation.
-- **D-002 (open):** Branch-protection bar — currently light during skeleton phase, tightened org-wide at Phase 3.5.
-- **D-003 (resolved 2026-09-03, Path A):** Orphan org `Enterprise-Concepts-Model` ;;; **`Enterprise-Semantics` is canonical**. All 9 repos + seed v1.0.0 + governance + concept records + Profile already live on `Enterprise-Semantics`; the user's directive URL (`Enterprise-Concepts-Model`) was the empty earlier shell. Resolution: (1) keep `Enterprise-Concepts-Model` as an empty shell (no archive/destroy ;;; user may still link it from external material), (2) add an alias notice to `Enterprise-Semantics/.github/profile/README.md` so any external reference to `Enterprise-Concepts-Model` resolves with a redirect sentence, (3) update PLAN §0 Owner / GitHub Org pointer (already correct ;;; was always `Enterprise-Semantics`). No code moved. No repos renamed. Zero semantic churn.
-- **D-004 (open):** Whether the local `seed/` directory is gitignored (so dash-normalized drafts don't leak into a future remote push) — currently YES, ignored.
-- **D-005 (open):** Whether to publish the local working folder as a separate `es-workspace` repo (so the workspace is reproducible) — currently NO; revisit if user wants it.
+- **D-001 (open):** Plan-keeper cadence and notification channel: currently15min + Discord drift ping. Change here if user prefers daily digest only, or no automation.
+- **D-002 (open):** Branch-protection bar: currently light during skeleton phase, tightened org-wide at Phase 3.5.
+- **D-003 (resolved 2026-09-03, Path A):** Orphan org `Enterprise-Concepts-Model`. **`Enterprise-Semantics` is canonical**. All 9 repos + seed v1.0.0 + governance + concept records + Profile already live on `Enterprise-Semantics`; the user's directive URL (`Enterprise-Concepts-Model`) was the empty earlier shell. Resolution: (1) keep `Enterprise-Concepts-Model`as an empty shell (no archive/destroy, user may still link it from external material), (2) add an alias notice to`Enterprise-Semantics/.github/profile/README.md` so any external reference to `Enterprise-Concepts-Model` resolves with a redirect sentence, (3) update PLAN §0 Owner / GitHub Org pointer (already correct. Was always `Enterprise-Semantics`). No code moved. No repos renamed. Zero semantic churn.
+- **D-004 (open):** Whether the local `seed/` directory is gitignored (so dash-normalized drafts don't leak into a future remote push): currently YES, ignored.
+- **D-005 (open):** Whether to publish the local working folder as a separate `es-workspace` repo (so the workspace is reproducible): currently NO; revisit if user wants it.
 - **D-006 (open):** PNG renders of PlantUML diagrams pending until Phase 5 CI wires the renderer. Recorded in `enterprise-semantics-visuals/CHANGELOG.md`.
 - **D-007 (resolved 2026-09-02):** `manny-es` is the dedicated, named sub-agent for the Enterprise-Semantics organization. Implemented as cronjob `c0b35d4938af`. Identity surface updated across CODEOWNERS, profile README, program board (Decision card #2), and plan-keeper YAML.
 - **D-008 (resolved 2026-09-02, Path B):** ADR-ES-002 accepted with the dependency on ADR-ES-001 noted in the ADR frontmatter. ADR-ES-001 will land alongside or after. ADR-ES-002's frontmatter carries `dependency_status: pending`. `manny-es` will surface the outstanding dependency on every daily check-in until ADR-ES-001 lands.
-- **D-009 (resolved 2026-09-02):** FND-ES-AG-001 (Agentic Semantic Grounding) and FND-ES-AG-002 (Agentic Value Stream Semantic Grounding ;;; Profile hypothesis) both landed and have been consumed by ADR-ES-AG-001 (Agentic Semantic Decision, `Proposed`). The Finding cards remain `In Progress` ;;; they are cited, not closed. Closing happens on ADR acceptance.
-- **D-010 (in_progress 2026-09-03):** CR-ES-AG-001+ ;;; 13-CR implementation sequence locked by ADR-ES-AG-001 §6. CR-ES-AG-002 (commit 063ab5c), CR-ES-AG-003+CR-ES-AG-004 (commit c15f12c), CR-ES-AG-006+CR-ES-AG-007 (commit 3869999) landed. CR-ES-AG-005 (commit d8b1c98), CR-ES-AG-008 (commit 0839d93), CR-ES-AG-009 (commit a00f054) landed. CR-ES-AG-010 (conditional), 011, 012, 013 remain. **Phase 5 conformance gate live on enterprise-semantics + enterprise-semantics-mappings ;; v0.1.0-seed tagged (commit 116304b).**
+- **D-009 (resolved 2026-09-02):** FND-ES-AG-001 (Agentic Semantic Grounding) and FND-ES-AG-002 (Agentic Value Stream Semantic Grounding. Profile hypothesis) both landed and have been consumed by ADR-ES-AG-001 (Agentic Semantic Decision, `Proposed`). The Finding cards remain `In Progress`. They are cited, not closed. Closing happens on ADR acceptance.
+- **D-010 (in_progress 2026-09-03):** CR-ES-AG-001+. 13-CR implementation sequence locked by ADR-ES-AG-001 §6. CR-ES-AG-002 (commit 063ab5c), CR-ES-AG-003+CR-ES-AG-004 (commit c15f12c), CR-ES-AG-006+CR-ES-AG-007 (commit 3869999) landed. CR-ES-AG-005 (commit d8b1c98), CR-ES-AG-008 (commit 0839d93), CR-ES-AG-009 (commit a00f054) landed. CR-ES-AG-010 (conditional), 011, 012, 013 remain. **Phase 5 conformance gate live on enterprise-semantics + enterprise-semantics-mappings ;; v0.1.0-seed tagged (commit 116304b).**
 - **D-011 (open, opened 2026-09-02):** CR-ES-AG-010 (Agentic Agent) is held back per FND-ES-AG-006. Author FND-ES-AG-009 (AI Agent) first, then decide whether Agentic Agent is redundant, a Profile, or a Distinct concept.
 
 ---
@@ -438,7 +438,7 @@ phases:
     title: "Authority and Identifier Decisions"
     status: in_progress
     started: 2026-09-02
-    notes: "ADR-ES-002 ingested as Proposed (decision card #3, In Progress). FND-ES-AG-001 + FND-ES-AG-002 landed (finding cards #4 and #5, cited by ADR-ES-AG-001). ADR-ES-AG-001 ACCEPTED 2026-09-02 (decision card #6, Status=Done). CR-ES-AG-001 + CR-ES-AG-002 + CR-ES-AG-003/004 + CR-ES-AG-006/007 landed in enterprise-semantics (commits 8afee80, 063ab5c, c15f12c, 3869999). Agentic concept records live: Value Stream, Workflow, Operations, Enterprise, Agentic Value Stream, Agentic Workflow, Agentic Operations, Agentic Enterprise (Candidate status). FND-ES-AG-004/005/006 authored ;;; CR-ES-AG-005/008/009/010(conditional)/011/012/013 remain. ADR-ES-001 still pending ;; surfaced to user (D-008 resolved via Path B)."
+    notes: "ADR-ES-002 ingested as Proposed (decision card #3, In Progress). FND-ES-AG-001 + FND-ES-AG-002 landed (finding cards #4 and #5, cited by ADR-ES-AG-001). ADR-ES-AG-001 ACCEPTED 2026-09-02 (decision card #6, Status=Done). CR-ES-AG-001 + CR-ES-AG-002 + CR-ES-AG-003/004 + CR-ES-AG-006/007 landed in enterprise-semantics (commits 8afee80, 063ab5c, c15f12c, 3869999). Agentic concept records live: Value Stream, Workflow, Operations, Enterprise, Agentic Value Stream, Agentic Workflow, Agentic Operations, Agentic Enterprise (Candidate status). FND-ES-AG-004/005/006 authored : CR-ES-AG-005/008/009/010(conditional)/011/012/013 remain. ADR-ES-001 still pending ;; surfaced to user (D-008 resolved via Path B)."
   - id: 4
     title: "Semantic Seed Land"
     status: pending
@@ -491,8 +491,8 @@ agents:
 
 ## 8. Cross-references
 
-- `00_inbox/FND-ES-000.md` — canonical Finding (verbatim, em-dashes preserved)
-- `00_inbox/FND-ES-001.md` — sharper Finding (verbatim, em-dashes preserved)
-- `seed/` — dash-normalized drafts of the above
-- `scripts/plan_keeper.py` — keeper script (Phase 0.5)
-- `plans/PLAN-CHANGELOG.md` — change log for this plan
+- `00_inbox/FND-ES-000.md`: canonical Finding (verbatim, em-dashes preserved)
+- `00_inbox/FND-ES-001.md`: sharper Finding (verbatim, em-dashes preserved)
+- `seed/`: dash-normalized drafts of the above
+- `scripts/plan_keeper.py`: keeper script (Phase 0.5)
+- `plans/PLAN-CHANGELOG.md`: change log for this plan

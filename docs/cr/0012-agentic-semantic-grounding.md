@@ -1,13 +1,13 @@
 CR-ES-004 : Agentic Semantic Grounding
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115 ;;; "Proceed with everything")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552262422398767115. "Proceed with everything")
 Change Type: Foundational Semantic Grounding
 Priority: P0 ; Foundational Enterprise Concept
 Related ADR: ADR-ES-004 ; Agentic Semantic Grounding
 Depends On: CR-ES-001, CR-ES-002, CR-ES-003
 Target Release: Enterprise-Semantics v0.3.0
 
-;;;
+. 
 
 1. Objective
 
@@ -31,7 +31,7 @@ This CR shall establish:
 
 This CR does not establish Agentic Value Stream as a canonical specialization.
 
-;;;
+. 
 
 2. Scope
 
@@ -55,7 +55,7 @@ This CR does not establish Agentic Value Stream as a canonical specialization.
 * examples;
 * conformance validation.
 
-;;;
+. 
 
 3. Out of Scope
 
@@ -75,7 +75,7 @@ Explicitly excluded:
 * OpenDEA metamodel changes;
 * WSF modifications.
 
-;;;
+. 
 
 4. Concept Representation
 
@@ -89,7 +89,7 @@ enterprise-semantics/
 | |---- authority.yaml
 | |---- action.yaml
 
-;;;
+. 
 
 5. Agent Schema
 
@@ -113,7 +113,7 @@ provenance:
  cr:
 version:
 
-;;;
+. 
 
 6. Agentic Schema
 
@@ -140,7 +140,7 @@ provenance:
  cr:
 version:
 
-;;;
+. 
 
 7. Intent
 
@@ -163,7 +163,7 @@ Intent shall remain distinct from:
 
 The exact semantic relationship among these concepts may be refined by subsequent governance.
 
-;;;
+. 
 
 8. Authority
 
@@ -183,7 +183,7 @@ Authority shall support:
 * escalation conditions;
 * constraints.
 
-;;;
+. 
 
 9. Action
 
@@ -204,7 +204,7 @@ Action shall remain distinct from:
 
 Action is the semantic unit required to describe agentic action selection.
 
-;;;
+. 
 
 10. Core Relationships
 
@@ -225,7 +225,7 @@ Action	produces	Outcome
 
 All predicates shall be added to the canonical relationship vocabulary.
 
-;;;
+. 
 
 11. Agentic Execution Pattern
 
@@ -251,7 +251,7 @@ Agent
 
 The model shall not require any specific AI technology.
 
-;;;
+. 
 
 12. Agentic Boundary
 
@@ -287,7 +287,7 @@ Contextual Adaptation
 
 The second pattern represents the foundational agentic semantic.
 
-;;;
+. 
 
 13. Agentic and AI Boundary
 
@@ -312,7 +312,7 @@ or:
 
 AI = Agentic
 
-;;;
+. 
 
 14. Agentic and Autonomous Boundary
 
@@ -330,7 +330,7 @@ as a semantic identity.
 
 Autonomy shall require a separate governed semantic definition.
 
-;;;
+. 
 
 15. Agentic Workflow Boundary
 
@@ -350,7 +350,7 @@ as a canonical semantic concept.
 
 The implementation shall reserve the semantic extension point for ADR-ES-006.
 
-;;;
+. 
 
 16. Agentic Operations Boundary
 
@@ -364,7 +364,7 @@ without promoting Agentic Operations to canonical status.
 
 The implementation shall establish the mapping boundary needed by ADR-ES-007.
 
-;;;
+. 
 
 17. Value Stream Boundary
 
@@ -386,7 +386,7 @@ as a canonical concept.
 
 That belongs to CR-ES-005.
 
-;;;
+. 
 
 18. AI Agent Correspondence
 
@@ -400,7 +400,7 @@ where appropriate.
 
 AI Agent shall not be promoted to a foundational Enterprise-Semantics concept unless separately governed.
 
-;;;
+. 
 
 19. WSF Mapping
 
@@ -420,7 +420,7 @@ The mapping shall identify:
 
 No WSF modification is authorized.
 
-;;;
+. 
 
 20. OpenDEA Mapping
 
@@ -430,7 +430,7 @@ enterprise-semantics-mappings/opendea/agentic.yaml
 
 The mapping shall establish correspondence without modifying the OpenDEA metamodel.
 
-;;;
+. 
 
 21. Registry
 
@@ -446,7 +446,7 @@ with appropriate semantic types and lifecycle states.
 
 No downstream specialized concepts shall be promoted through this registry change.
 
-;;;
+. 
 
 22. Profiles
 
@@ -467,7 +467,7 @@ scope:
 
 The profile remains organizational metadata, not an ontology.
 
-;;;
+. 
 
 23. Documentation
 
@@ -503,7 +503,7 @@ Documentation shall explicitly explain:
 * Value Stream;
 * Agentic Value Stream boundary.
 
-;;;
+. 
 
 24. Worked Example
 
@@ -539,7 +539,7 @@ The example must demonstrate that:
 * outcome is pursued;
 * human escalation remains possible.
 
-;;;
+. 
 
 25. Relationship Validation
 
@@ -554,7 +554,7 @@ Intent → guides → Action
 
 References must resolve.
 
-;;;
+. 
 
 26. Conformance Rules
 
@@ -610,7 +610,7 @@ AG-CON-013
 
 Autonomous concepts must not be canonicalized by this CR.
 
-;;;
+. 
 
 27. Negative Tests
 
@@ -627,7 +627,7 @@ Agentic Workflow is established by CR-ES-004
 
 These constructs require explicit semantic governance.
 
-;;;
+. 
 
 28. Visuals
 
@@ -668,7 +668,7 @@ Primary conceptual visualization:
  |
  Adapt to Context
 
-;;;
+. 
 
 29. Versioning
 
@@ -685,7 +685,7 @@ It does not represent:
 * an autonomous enterprise model;
 * an Agentic Value Stream model.
 
-;;;
+. 
 
 30. CI Pipeline
 
@@ -713,7 +713,7 @@ Governance Traceability
  v
 Conformance
 
-;;;
+. 
 
 31. Acceptance Criteria
 
@@ -745,7 +745,7 @@ CR-ES-004 is complete when:
 * [ ]	no Agentic Value Stream semantics are canonicalized.
 * [ ]	no Autonomous semantics are canonicalized.
 
-;;;
+. 
 
 32. Completion Condition
 
@@ -778,7 +778,7 @@ Agentic Value Stream
 
 without prematurely defining those concepts.
 
-;;;
+. 
 
 33. Next Governed Change
 
@@ -811,7 +811,7 @@ This CR was promoted from Proposed to Accepted on 2026-09-23 per user directive 
 
 The promotion to Accepted has the following consequences:
 
-* All 24 acceptance criteria of §31 are satisfied via 7 PRs across 6 repos (PR #7 + PR #8 + PR #9 enterprise-semantics ;;; PR #4 enterprise-semantics-mappings ;;; PR #3 enterprise-semantics-docs ;;; PR #3 enterprise-semantics-examples ;;; PR #3 enterprise-semantics-test-probe ;;; PR #3 enterprise-semantics-visuals).
+* All 24 acceptance criteria of §31 are satisfied via 7 PRs across 6 repos (PR #7 + PR #8 + PR #9 enterprise-semantics. PR #4 enterprise-semantics-mappings. PR #3 enterprise-semantics-docs. PR #3 enterprise-semantics-examples. PR #3 enterprise-semantics-test-probe. PR #3 enterprise-semantics-visuals).
 * The 5 concept records (Agent + Agentic + Intent + Authority + Action) are canonical at Candidate lifecycle.
 * The 11 governed predicates from §10 are registered in relationships/vocabulary.yaml v0.4.0.
 * The 11 inverse pairs from §10 are registered in relationships/inverse.yaml v0.4.0.

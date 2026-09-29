@@ -1,15 +1,15 @@
 <!--
-ADR-ES-007 ;;; Agentic Operations Semantic Grounding Decision
+ADR-ES-007, and Agentic Operations Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-007.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552333611045224559 ;;; "Attached are ADR-ES-007 and CR-ES-007, save them both, read and understand then implement e them appropriately")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552333611045224559. "Attached are ADR-ES-007 and CR-ES-007, save them both, read and understand then implement e them appropriately")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
-Depends on: ADR-ES-001 (Authority and Publication Architecture) ;;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23) ;;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
-Related: CR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-008+ (Autonomous Operations, future) ;;; ADR-ES-009+ (Agentic Enterprise, future) ;;; ADR-ES-010+ (Autonomous Enterprise, future) ;;; ADR-ES-011+ (Agentic Network, future) ;;; ADR-ES-012+ (Agentic Ecosystem, future)
+Depends on: ADR-ES-001 (Authority and Publication Architecture), ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23), ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23), ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23), ADR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23), and FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23), ADR-ES-008+ (Autonomous Operations, future), ADR-ES-009+ (Agentic Enterprise, future), ADR-ES-010+ (Autonomous Enterprise, future), ADR-ES-011+ (Agentic Network, future), and ADR-ES-012+ (Agentic Ecosystem, future)
 
 Decision: Establish Agentic Operations as a specialization of Operations. Agentic Operations are operations in which operational sensing ;; interpretation ;; decision ;; coordination ;; adaptation ;; or execution is materially performed through agentic behavior within defined intent ;; authority ;; and policy boundaries. Deliberately avoids premature canonicalization of Autonomous Operations ;; Agentic Enterprise ;; Autonomous Enterprise ;; Agentic Network ;; Agentic Ecosystem ;; AI Operations ;; AIOps ;; MLOps ;; Digital Operations.
 
@@ -19,7 +19,7 @@ Implementation: CR-ES-007 (Agentic Operations Semantic Grounding). CR-ES-007 is 
 
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 -->
-The next decision should therefore be ADR-ES-007 ;;; Agentic Operations Semantic Grounding. It should deliberately move up one level from workflow execution into the operating model: how operational work is sensed, decided, coordinated, executed, monitored, and adapted. It should not become a synonym for Agentic Workflow or Agentic Value Stream.
+The next decision should therefore be ADR-ES-007. Agentic Operations Semantic Grounding. It should deliberately move up one level from workflow execution into the operating model: how operational work is sensed, decided, coordinated, executed, monitored, and adapted. It should not become a synonym for Agentic Workflow or Agentic Value Stream.
 
 ADR-ES-007 ; Agentic Operations Semantic Grounding
 
@@ -31,7 +31,7 @@ Depends On: ADR-ES-001, ADR-ES-003, ADR-ES-004, ADR-ES-005, ADR-ES-006
 Implementation: CR-ES-007
 Target Semantic Version: 0.6.0
 
-;;;
+. 
 
 1. Context
 
@@ -75,7 +75,7 @@ The concept must remain distinct from:
 * Digital Operations;
 * Operations as a business or organizational function.
 
-;;;
+. 
 
 2. Decision
 
@@ -92,7 +92,7 @@ Agentic Operations
 
 Agentic Operations therefore inherit the semantics of Operations while establishing agentic behavior as a material characteristic of the operating mode.
 
-;;;
+. 
 
 3. Semantic Principle
 
@@ -114,7 +114,7 @@ Agentic Operations
 
 Agentic Operations is therefore broader than Agentic Workflow.
 
-;;;
+. 
 
 4. Operational Semantic Boundary
 
@@ -153,7 +153,7 @@ Outcome
 
 This establishes Agentic Operations as a bounded adaptive operating mode, not unrestricted autonomous behavior.
 
-;;;
+. 
 
 5. Operations
 
@@ -165,7 +165,7 @@ If Operations is not yet independently grounded, this ADR shall not create an un
 
 Instead, Agentic Operations shall establish only the semantic specialization boundary required for this decision.
 
-;;;
+. 
 
 6. Characteristics of Agentic Operations
 
@@ -203,7 +203,7 @@ Operational Agents act within defined authority and policy boundaries.
 
 Operational decisions exceeding authority, policy, risk, or confidence boundaries may be escalated.
 
-;;;
+. 
 
 7. Agentic Operations Is Not Merely Agentic Workflow
 
@@ -233,7 +233,7 @@ Agentic Operations
 
 An Agentic Operation may therefore use multiple workflows, processes, services, systems, and human participants.
 
-;;;
+. 
 
 8. Relationship to Agentic Value Stream
 
@@ -270,7 +270,7 @@ The same Agentic Operations capability may support:
 * exception handling;
 * continuous operational control.
 
-;;;
+. 
 
 9. Relationship to Agentic Workflow
 
@@ -286,7 +286,7 @@ Agentic Workflow remains the execution and coordination construct.
 
 Agentic Operations provides the broader operating context within which workflows are selected, initiated, monitored, coordinated, adapted, or replaced.
 
-;;;
+. 
 
 10. Relationship to Process
 
@@ -306,7 +306,7 @@ Therefore:
 
 Agentic Operations ≠ Process
 
-;;;
+. 
 
 11. Relationship to Agent
 
@@ -322,7 +322,7 @@ Agents remain individually governed by ADR-ES-004.
 
 Agentic Operations does not redefine what constitutes an Agent.
 
-;;;
+. 
 
 12. Relationship to Human Participation
 
@@ -347,7 +347,7 @@ Human + Agent + Automation + System
 
 is semantically valid.
 
-;;;
+. 
 
 13. Relationship to Automation
 
@@ -361,7 +361,7 @@ A fully automated operation can remain deterministic.
 
 Agentic Operations requires material agentic participation in operational interpretation, decision, coordination, adaptation, or execution.
 
-;;;
+. 
 
 14. Relationship to AI
 
@@ -379,7 +379,7 @@ AI-enabled Operations ≠ necessarily Agentic Operations
 
 An operation becomes semantically agentic because of its operational behavior, not because of the technology used to implement it.
 
-;;;
+. 
 
 15. Relationship to Autonomy
 
@@ -404,7 +404,7 @@ Autonomous Operations
 
 A future ADR shall establish autonomy independently.
 
-;;;
+. 
 
 16. Operational Decision Boundary
 
@@ -430,7 +430,7 @@ Adaptation
 
 The decision boundary shall remain explicit and traceable.
 
-;;;
+. 
 
 17. Operational Control Loop
 
@@ -462,7 +462,7 @@ The loop does not imply unrestricted self-learning or autonomous self-governance
 
 It represents bounded operational adaptation.
 
-;;;
+. 
 
 18. Operational Outcome
 
@@ -484,7 +484,7 @@ Observed Context
 
 This supports operational effectiveness without requiring a separate value-realization ontology.
 
-;;;
+. 
 
 19. Operational Scope
 
@@ -502,7 +502,7 @@ The scope does not change the underlying semantic definition.
 
 What changes is the operational context, authority, outcome, and participating entities.
 
-;;;
+. 
 
 20. Agentic Operations and Value Realization
 
@@ -530,7 +530,7 @@ This is an illustrative realization chain rather than a mandatory decomposition.
 
 The same Agentic Operations construct may support multiple value streams.
 
-;;;
+. 
 
 21. Canonical Relationships
 
@@ -551,7 +551,7 @@ Only relationships whose target concepts already exist as canonical Enterprise-S
 
 Future concepts shall remain deferred.
 
-;;;
+. 
 
 22. Property Model
 
@@ -571,7 +571,7 @@ escalation_boundary	Conditions requiring intervention
 
 These properties supplement rather than replace Operations semantics.
 
-;;;
+. 
 
 23. Agentic Operations vs Agentic Workflow
 
@@ -589,7 +589,7 @@ Value Streams	May support a Value Stream	May support multiple Value Streams
 AI requirement	None	None
 Autonomy implication	None	None
 
-;;;
+. 
 
 24. Agentic Operations vs Agentic Value Stream
 
@@ -604,9 +604,9 @@ Human participation	Permitted	Permitted
 AI requirement	None	None
 Autonomy implication	None	None
 
-;;;
+. 
 
-25. Example ;;; OTCHERE Inc Fulfillment Operations
+25. Example, and OTCHERE Inc Fulfillment Operations
 
 An OTCHERE Inc fulfillment operation may operate as follows:
 
@@ -644,7 +644,7 @@ Some may be Agentic Workflows.
 
 The Agentic Operations concept represents the broader operating mode that coordinates these operational behaviors.
 
-;;;
+. 
 
 26. Architectural Position
 
@@ -676,7 +676,7 @@ The vertical ordering should not be interpreted as a strict containment hierarch
 
 Agentic Operations is an operating context and mode, not merely a parent of Workflow.
 
-;;;
+. 
 
 27. Conformance Requirements
 
@@ -727,7 +727,7 @@ Agentic Operations is not Agentic Value Stream.
 AOP-CON-015
 Agentic Operations retains grounding and provenance.
 
-;;;
+. 
 
 28. Rejected Alternatives
 
@@ -759,7 +759,7 @@ Rejected because mere Agent presence does not establish material agentic operati
 
 Rejected because the semantic applies to operational behavior rather than a specific technology architecture.
 
-;;;
+. 
 
 29. Consequences
 
@@ -780,7 +780,7 @@ Constraints
 * Autonomous Operations requires separate semantic grounding.
 * Organizational operating-model semantics beyond Agentic Operations remain outside this ADR.
 
-;;;
+. 
 
 30. Decision Summary
 
@@ -828,7 +828,7 @@ Agentic
 
 Agentic Operations therefore establishes the operating-mode semantic required to connect agentic execution with enterprise operations without collapsing either into the other.
 
-;;;
+. 
 
 31. Future Decision Boundary
 

@@ -1,15 +1,15 @@
 <!--
-ADR-ES-008 ;;; Autonomous Operations Semantic Grounding Decision
+ADR-ES-008, and Autonomous Operations Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-008.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552343053933748346 ;;; "Attached the next ADR and CR, save them, read them to understand and let's implement them accordingly")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552343053933748346. "Attached the next ADR and CR, save them, read them to understand and let's implement them accordingly")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
-Depends on: ADR-ES-001 (Authority and Publication Architecture) ;;; ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) ;;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
-Related: CR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-009+ (Agentic Enterprise, future) ;;; ADR-ES-010+ (Autonomous Enterprise, future) ;;; ADR-ES-011+ (Agentic Network, future) ;;; ADR-ES-012+ (Agentic Ecosystem, future)
+Depends on: ADR-ES-001 (Authority and Publication Architecture), ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23), ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23), and FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23). ADR-ES-009+ (Agentic Enterprise, future). ADR-ES-010+ (Autonomous Enterprise, future). ADR-ES-011+ (Agentic Network, future). ADR-ES-012+ (Agentic Ecosystem, future)
 
 Decision: Establish Autonomous Operations as a specialisation of Operations. Autonomous Operations are operations capable of independently sensing ;; interpreting ;; deciding ;; coordinating ;; executing ;; and adapting operational behavior within defined objectives ;; authority ;; policies ;; and constraints without requiring human intervention for every operational decision or action. Deliberately avoids premature canonicalization of Autonomous Value Stream ;; Autonomous Enterprise ;; Autonomous Network ;; Autonomous Ecosystem ;; Autonomous Workflow ;; Autonomous Agent as a universal Entity subtype ;; autonomy maturity levels ;; autonomy certification ;; autonomy scoring ;; autonomy risk tiers.
 
@@ -19,7 +19,7 @@ Implementation: CR-ES-008 (Autonomous Operations Semantic Grounding). CR-ES-008 
 
 Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 -->
-The next architectural step is ADR-ES-008. Given the sequence established through Agent, Agentic Value Stream, Agentic Workflow, and Agentic Operations, the next concept should be Autonomous Operations;;;but as a distinct semantic grounding rather than an assumed consequence of Agentic Operations.
+The next architectural step is ADR-ES-008. Given the sequence established through Agent, Agentic Value Stream, Agentic Workflow, and Agentic Operations, the next concept should be Autonomous Operations. But as a distinct semantic grounding rather than an assumed consequence of Agentic Operations.
 
 ADR-ES-008 ; Autonomous Operations Semantic Grounding
 
@@ -31,7 +31,7 @@ Depends On: ADR-ES-001, ADR-ES-004, ADR-ES-007
 Implementation: CR-ES-008
 Target Semantic Version: v0.7.0
 
-;;;
+. 
 
 1. Decision
 
@@ -53,7 +53,7 @@ Autonomous Operations is not defined as:
 * unrestricted self-governance;
 * absence of authority boundaries.
 
-;;;
+. 
 
 2. Canonical Definition
 
@@ -63,7 +63,7 @@ The phrase “without requiring human intervention for every operational decisio
 
 Autonomy is therefore distinguished from the stronger and generally unsafe interpretation of complete independence from human governance.
 
-;;;
+. 
 
 3. Semantic Problem
 
@@ -89,7 +89,7 @@ Autonomous ≠ AI
 
 must remain foundational invariants.
 
-;;;
+. 
 
 4. Core Semantic Distinction
 
@@ -116,7 +116,7 @@ System + Autonomous
 
 may all be valid configurations depending on the governing semantics.
 
-;;;
+. 
 
 5. Autonomy Boundary
 
@@ -162,7 +162,7 @@ The system remains autonomous within its delegated boundary.
 
 Autonomy therefore does not mean absence of governance.
 
-;;;
+. 
 
 6. Autonomy as a Semantic Property
 
@@ -190,7 +190,7 @@ This allows autonomy to be associated with:
 
 without prematurely defining every autonomous thing as a new universal ontology class.
 
-;;;
+. 
 
 7. Required Characteristics
 
@@ -228,7 +228,7 @@ The operation can modify operational behavior in response to changing conditions
 
 Conditions exceeding delegated authority or capability can trigger escalation.
 
-;;;
+. 
 
 8. Human Governance Boundary
 
@@ -255,7 +255,7 @@ Human intervention required only for defined exceptions
 
 This is a semantic distinction, not a normative ranking.
 
-;;;
+. 
 
 9. Agentic Operations Relationship
 
@@ -283,7 +283,7 @@ shall not be inferred merely because autonomous behavior exists.
 
 Autonomy can be realized through mechanisms other than agentic behavior.
 
-;;;
+. 
 
 10. Agentic vs Autonomous
 
@@ -302,7 +302,7 @@ Autonomy	Not implied	Defining characteristic
 Escalation	Supported	Required for boundary conditions
 Operational scope	Operations	Operations
 
-;;;
+. 
 
 11. Autonomous Operations vs Automation
 
@@ -338,7 +338,7 @@ Adapt
 
 Automation may therefore be an implementation mechanism within Autonomous Operations without being semantically equivalent to autonomy.
 
-;;;
+. 
 
 12. Autonomous Operations vs Agentic Workflow
 
@@ -367,7 +367,7 @@ Autonomous Operations ≠ Autonomous Workflow
 
 and no Autonomous Workflow concept is established by this ADR.
 
-;;;
+. 
 
 13. Autonomous Operations vs Agentic Value Stream
 
@@ -388,7 +388,7 @@ Autonomous Operations may support multiple Value Streams.
 
 Neither concept replaces the other.
 
-;;;
+. 
 
 14. Semantic Control Boundary
 
@@ -410,7 +410,7 @@ Outcome
 
 An autonomous operational mechanism SHALL NOT be interpreted as having unlimited authority merely because it can act without immediate human intervention.
 
-;;;
+. 
 
 15. Scope of Autonomy
 
@@ -430,7 +430,7 @@ The implementation shall not create a universal numerical autonomy scale in this
 
 A future autonomy-level model may be established independently.
 
-;;;
+. 
 
 16. Autonomy and Failure Boundaries
 
@@ -459,7 +459,7 @@ Terminate operation
 
 Specific control mechanisms remain implementation concerns unless separately grounded.
 
-;;;
+. 
 
 17. Relationship Model
 
@@ -490,7 +490,7 @@ Only relationships whose target concepts are already canonically available shall
 
 No new foundational concept shall be silently introduced.
 
-;;;
+. 
 
 18. Technology Neutrality
 
@@ -511,7 +511,7 @@ Possible implementation mechanisms include:
 
 No implementation mechanism defines autonomy semantically.
 
-;;;
+. 
 
 19. AI Boundary
 
@@ -529,7 +529,7 @@ An autonomous operational system may operate without AI.
 
 The distinction shall remain explicit.
 
-;;;
+. 
 
 20. Enterprise Semantic Example
 
@@ -569,9 +569,9 @@ Adapt response
         v
 Escalate if authority boundary exceeded
 
-The semantic classification derives from the independence of operational decision and action within defined boundaries;;;not from whether the implementation uses AI.
+The semantic classification derives from the independence of operational decision and action within defined boundaries. Not from whether the implementation uses AI.
 
-;;;
+. 
 
 21. Non-Examples
 
@@ -599,7 +599,7 @@ Workflow -> Agent -> Dynamic Execution
 
 unless the broader operational environment itself satisfies the autonomy criteria.
 
-;;;
+. 
 
 22. Conformance Principles
 
@@ -636,7 +636,7 @@ Autonomous Operations is distinct from Agentic Workflow.
 AOP-AUTO-CON-015
 Autonomous Operations is distinct from Agentic Value Stream.
 
-;;;
+. 
 
 23. Rejected Alternatives
 
@@ -670,7 +670,7 @@ Autonomous Operations = Autonomous Agent
 
 Rejected because autonomous behavior can apply to broader operational configurations.
 
-;;;
+. 
 
 24. Deferred Decisions
 
@@ -690,7 +690,7 @@ This ADR deliberately does not establish:
 
 Each requires separate semantic investigation.
 
-;;;
+. 
 
 25. Architectural Consequence
 
@@ -728,7 +728,7 @@ This diagram does not assert that Autonomous Operations is a subtype of Agentic 
 
 Instead, both are distinct specializations/modes associated with Operations.
 
-;;;
+. 
 
 26. Decision Rationale
 
@@ -754,7 +754,7 @@ Human-governed + Autonomous
 
 without making any one property definitionally dependent upon another.
 
-;;;
+. 
 
 27. Decision Outcome
 
@@ -764,13 +764,13 @@ Autonomous Operations is a distinct, technology-neutral specialization of Operat
 
 This establishes autonomy as an independently governable semantic dimension rather than an implicit consequence of agentic behavior.
 
-;;;
+. 
 
 28. Implementation Authorization
 
 This ADR authorizes the preparation of:
 
-CR-ES-008 ;;; Implement Autonomous Operations Semantic Grounding
+CR-ES-008, and Implement Autonomous Operations Semantic Grounding
 
 Target release:
 
@@ -778,7 +778,7 @@ v0.7.0
 
 CR-ES-008 SHALL implement only the semantic scope established by this ADR.
 
-The important architectural move here is that autonomy becomes an independent dimension rather than the “next level” of agentic behavior. That gives us a cleaner foundation for the later concepts;;;particularly Autonomous Value Stream and Agentic/Autonomous Enterprise;;;without prematurely conflating them.
+The important architectural move here is that autonomy becomes an independent dimension rather than the “next level” of agentic behavior. That gives us a cleaner foundation for the later concepts. Particularly Autonomous Value Stream and Agentic/Autonomous Enterprise. Without prematurely conflating them.
 
 ;;
 

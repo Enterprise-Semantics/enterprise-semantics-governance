@@ -1,15 +1,15 @@
 <!--
-ADR-ES-006 ;;; Agentic Workflow Semantic Grounding Decision
+ADR-ES-006, and Agentic Workflow Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-006.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552318709853462599 ;;; "Attached is ADR-ES-006 and CR-ES-006 save them as separate files in their respective folders, read and understand then let's implement them")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552318709853462599. "Attached is ADR-ES-006 and CR-ES-006 save them as separate files in their respective folders, read and understand then let's implement them")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
-Depends on: ADR-ES-001 (Authority and Publication Architecture) ;;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
-Related: CR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-007 (Agentic Operations, future) ;;; ADR-ES-008 (Autonomous, future) ;;; ADR-ES-009 (Autonomous Value Stream, future) ;;; ADR-ES-010 (Autonomous Workflow, future)
+Depends on: ADR-ES-001 (Authority and Publication Architecture), ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23), ADR-ES-004 (Agentic Semantic Grounding, Accepted 2026-09-23), ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23), and FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-006 (Agentic Workflow Semantic Grounding, Accepted 2026-09-23), ADR-ES-007 (Agentic Operations, future), ADR-ES-008 (Autonomous, future), ADR-ES-009 (Autonomous Value Stream, future), and ADR-ES-010 (Autonomous Workflow, future)
 
 Decision: Establish Agentic Workflow as a specialization of Workflow. Agentic Workflow is a Workflow in which one or more work-coordination or execution decisions are materially performed through agentic behavior, enabling contextual interpretation, dynamic action selection, coordination, adaptation, or escalation within defined authority. Deliberately avoids premature canonicalization of Agentic Operations ;; Autonomous Workflow ;; Autonomous Value Stream ;; Autonomous Operations ;; AI-specific workflow semantics ;; LLM Workflow semantics.
 
@@ -47,7 +47,7 @@ Depends On: ADR-ES-001, ADR-ES-003, ADR-ES-004, ADR-ES-005
 Implementation: CR-ES-006
 Target Semantic Version: 0.5.0
 
-;;;
+. 
 
 1. Context
 
@@ -79,7 +79,7 @@ The concept must not become synonymous with:
 * AI workflow;
 * or Autonomous Workflow.
 
-;;;
+. 
 
 2. Decision
 
@@ -96,7 +96,7 @@ Agentic Workflow
 
 Agentic Workflow therefore inherits the semantics of Workflow while adding agentic behavior to workflow coordination or execution.
 
-;;;
+. 
 
 3. Semantic Principle
 
@@ -133,7 +133,7 @@ Agentic Workflow
 
 Agentic Workflow may therefore participate in the realization of a Process without becoming the Process itself.
 
-;;;
+. 
 
 4. Agentic Workflow Characteristics
 
@@ -171,7 +171,7 @@ Exceptions may be interpreted and resolved through agentic decision-making rathe
 
 Human approval, intervention, escalation, or oversight may remain part of the workflow.
 
-;;;
+. 
 
 5. Workflow Inheritance
 
@@ -189,7 +189,7 @@ Where a canonical Workflow concept already exists in Enterprise-Semantics, Agent
 
 Where Workflow has not yet been independently grounded as a canonical Enterprise-Semantics concept, the implementation shall establish only the minimum semantic reference necessary to express the specialization and shall not use this ADR to silently create an unrelated Workflow ontology.
 
-;;;
+. 
 
 6. Relationship to Process
 
@@ -213,7 +213,7 @@ Agentic Workflow is-a Process
 
 That relationship is explicitly invalid.
 
-;;;
+. 
 
 7. Relationship to Activity and Task
 
@@ -235,7 +235,7 @@ An Activity or Task may be performed by:
 
 Agentic Workflow therefore concerns dynamic coordination and execution behavior, not ownership of the underlying work semantics.
 
-;;;
+. 
 
 8. Relationship to Agent
 
@@ -259,7 +259,7 @@ An Agent may:
 
 The workflow does not become an Agent.
 
-;;;
+. 
 
 9. Agentic Workflow Execution Pattern
 
@@ -300,7 +300,7 @@ The key distinction is not simply that the workflow contains an Agent.
 
 The workflow becomes agentic when agentic behavior materially influences workflow coordination or execution.
 
-;;;
+. 
 
 10. Agentic Participation Threshold
 
@@ -330,7 +330,7 @@ does satisfy the semantic condition.
 
 The distinction is therefore based on material agentic participation in workflow coordination or execution, not the mere presence of an Agent.
 
-;;;
+. 
 
 11. Authority Boundary
 
@@ -364,7 +364,7 @@ Suspend
    v
 Select Alternative
 
-;;;
+. 
 
 12. Adaptation Boundary
 
@@ -386,7 +386,7 @@ Agentic Workflow does not imply unrestricted self-modification of its underlying
 
 Runtime adaptation and structural self-redefinition are distinct semantics.
 
-;;;
+. 
 
 13. Relationship to Automation
 
@@ -408,7 +408,7 @@ An Agentic Workflow can therefore contain automated steps.
 
 Automation is not itself evidence of agency.
 
-;;;
+. 
 
 14. Relationship to AI
 
@@ -432,7 +432,7 @@ AI-enabled Workflow ≠ necessarily Agentic Workflow
 
 AI may be used to implement agentic interpretation or action selection, but it is not part of the definition.
 
-;;;
+. 
 
 15. Relationship to Agentic Value Stream
 
@@ -462,7 +462,7 @@ An Agentic Value Stream may contain or use multiple Agentic Workflows.
 
 An Agentic Workflow may also support a conventional Value Stream where appropriate.
 
-;;;
+. 
 
 16. Relationship to Agentic Operations
 
@@ -479,7 +479,7 @@ Agentic Operations shall require a separate ADR.
 
 This ADR must not introduce a canonical Agentic Operations relationship merely to connect the concepts.
 
-;;;
+. 
 
 17. Relationship to Autonomous Workflow
 
@@ -496,7 +496,7 @@ It may operate with:
 
 A future autonomy decision may establish additional semantics.
 
-;;;
+. 
 
 18. Canonical Relationships
 
@@ -518,7 +518,7 @@ Process
 
 The implementation shall not create redundant predicates where existing canonical predicates can be reused.
 
-;;;
+. 
 
 19. Property Model
 
@@ -536,7 +536,7 @@ escalation_boundary	Conditions requiring intervention
 
 These properties supplement inherited Workflow semantics.
 
-;;;
+. 
 
 20. Architectural Boundary
 
@@ -564,9 +564,9 @@ Agent / Human / Service / System / Resource
 
 This boundary is normative for Enterprise-Semantics.
 
-;;;
+. 
 
-21. Example ;;; OTCHERE Inc Order Fulfillment
+21. Example, and OTCHERE Inc Order Fulfillment
 
 A Process may represent:
 
@@ -616,7 +616,7 @@ The Workflow remains the mechanism through which that process is executed.
 
 The Agentic Workflow introduces dynamic interpretation and bounded decision-making into that execution.
 
-;;;
+. 
 
 22. UML Relational Model
 
@@ -644,7 +644,7 @@ AgenticWorkflow --> Outcome : produces
 
 The actual repository diagram shall use the project’s established visual conventions.
 
-;;;
+. 
 
 23. Conformance Requirements
 
@@ -692,7 +692,7 @@ Agentic Workflow is not an Agent.
 AWF-CON-014
 Agentic Workflow preserves grounding and provenance.
 
-;;;
+. 
 
 24. Rejected Alternatives
 
@@ -720,7 +720,7 @@ Rejected because merely invoking an Agent does not establish material agentic wo
 
 Rejected because value realization and work execution operate at different semantic levels.
 
-;;;
+. 
 
 25. Consequences
 
@@ -741,7 +741,7 @@ Constraints
 * Autonomous behavior requires separate semantic grounding.
 * Agentic Operations remains outside this ADR.
 
-;;;
+. 
 
 26. Decision Summary
 

@@ -41,7 +41,7 @@ Product
 Agentic Product does not redefine Product.
 
 It establishes a specialization based on the mode through which product value is realized or product behavior is delivered, rather than on the technology used to implement the product.
-;;;
+. 
 2. Semantic Rationale
 
 Products represent something intentionally offered to a stakeholder or consumer for the realization of intended value.
@@ -65,7 +65,7 @@ The agentic characteristic must materially affect how the product:
 * determines or adjusts fulfillment;
 * responds to exceptions;
 * progresses toward an intended outcome.
-;;;
+. 
 3. Architectural Position
 
 Agentic Product belongs at the Product realization boundary, distinct from the Capability, Service, Workflow, Operations, Value Stream, and Enterprise boundaries.
@@ -87,7 +87,7 @@ Enterprise
            |-- Autonomous Value Stream
 
 This establishes parallel specialization without collapsing the concepts into one another.
-;;;
+. 
 4. Product vs Agentic Product
 
 Dimension	Product	Agentic Product
@@ -103,7 +103,7 @@ Automation	Not required	Not sufficient
 Agent	Not required	May engage an Agent
 Human participation	Valid	Valid
 Autonomy	Not implied	Not implied
-;;;
+. 
 5. Agentic Product Is Not
 
 Agentic Product shall not be semantically equated with:
@@ -132,7 +132,7 @@ An AI system can be incorporated into a Product without making the Product agent
 A Product can be agentic without using AI.
 
 A Product can be agentic without being autonomous.
-;;;
+. 
 6. Agentic Materiality
 
 An Agentic Product must demonstrate material agentic realization.
@@ -160,7 +160,7 @@ The following are insufficient by themselves:
 * recommendation functionality;
 * presence of an Agent somewhere in the implementation;
 * dynamic software behavior without delegated intent and bounded action selection.
-;;;
+. 
 7. Canonical Relationships
 
 Where the target concepts and predicates are already canonical, Agentic Product may participate in the following relationships:
@@ -184,7 +184,7 @@ These relationships do not imply that every Agentic Product must contain or use 
 CR-ES-016 shall implement only relationships whose target concepts and predicates are already canonically available.
 
 No foundational concept shall be silently introduced to satisfy a relationship.
-;;;
+. 
 8. Agentic Product Realization Boundary
 
 The conceptual realization pattern is:
@@ -211,7 +211,7 @@ Adapt / Escalate
 The entire product does not need to operate agentically.
 
 An Agentic Product may contain conventional, automated, human-mediated, and agentic realization mechanisms simultaneously.
-;;;
+. 
 9. Product / Service Boundary
 
 Product and Service must remain distinct.
@@ -232,7 +232,7 @@ An Agentic Service does not automatically make the Product Agentic.
 Conversely, an Agentic Product may employ conventional or agentic services.
 
 The classification depends on where the material agentic behavior resides.
-;;;
+. 
 10. Product / Capability Boundary
 
 Capability represents an enduring ability.
@@ -253,7 +253,7 @@ Agentic Capability
 An Agentic Capability does not automatically make every Product it enables agentic.
 
 Agentic materiality must be demonstrated at the Product boundary.
-;;;
+. 
 11. Product / Value Stream Boundary
 
 An Agentic Value Stream describes agentic behavior at the end-to-end value-realization boundary.
@@ -273,7 +273,7 @@ Agentic Product ≠ Agentic Value Stream
 A conventional Product may participate in an Agentic Value Stream.
 
 An Agentic Product may participate in a conventional, Agentic, or Autonomous Value Stream.
-;;;
+. 
 12. Agentic / Autonomous Orthogonality
 
 Agentic and Autonomous remain independent semantic dimensions.
@@ -300,7 +300,7 @@ Therefore:
 Autonomous Product is not established by this ADR.
 
 If required, it shall be established through a separate ADR and CR.
-;;;
+. 
 13. AI Boundary
 
 AI is an implementation or technological capability dimension.
@@ -317,7 +317,7 @@ Therefore:
 AI-enabled Product ≠ Agentic Product.
 
 An AI component may support an Agentic Product, but the product’s agentic character must be established from its behavior and realization semantics.
-;;;
+. 
 14. Automation Boundary
 
 Automation describes execution through predetermined mechanisms.
@@ -330,7 +330,7 @@ Automation -> executes predetermined behavior
 Agentic behavior -> interprets context and selects permitted behavior
 
 Automation may be part of an Agentic Product, but automation alone does not establish one.
-;;;
+. 
 15. Human Participation
 
 Human participation remains semantically valid.
@@ -346,7 +346,7 @@ An Agentic Product may employ:
 * human-controlled boundaries.
 
 Agentic does not mean human-free.
-;;;
+. 
 16. Example: OTCHERE Inc
 
 Consider an OTCHERE Inc customer resolution product.
@@ -382,7 +382,7 @@ Adapt or Escalate
 The product is agentic because agentic behavior materially participates in the realization of the product’s intended outcome.
 
 The use of an AI model alone would not establish this classification.
-;;;
+. 
 17. Architectural Invariants
 
 The following invariants are established:
@@ -407,7 +407,7 @@ The following invariants are established:
 18. Agentic Workflow is not a Product.
 19. Agentic Operations is not a Product.
 20. Provenance and semantic grounding are mandatory.
-;;;
+. 
 18. Rejected Interpretations
 
 The following interpretations are rejected:
@@ -426,7 +426,7 @@ The following interpretations are rejected:
 * Agentic Product = Product with adaptive software
 * Agentic Product = Product requiring no human participation
 * Agentic Product = Product with unlimited authority
-;;;
+. 
 19. Deferred Concepts
 
 This ADR does not establish:
@@ -446,7 +446,7 @@ This ADR does not establish:
 * Autonomous Ecosystem
 
 Each requires independent semantic grounding if subsequently needed.
-;;;
+. 
 20. Consequences
 
 Positive
@@ -469,7 +469,7 @@ Architectural Risk
 The primary risk is prematurely treating Product as equivalent to Service, Capability, or Offering.
 
 CR-ES-016 therefore shall not silently redefine foundational Product semantics.
-;;;
+. 
 21. Governance
 
 This ADR authorizes implementation through:
