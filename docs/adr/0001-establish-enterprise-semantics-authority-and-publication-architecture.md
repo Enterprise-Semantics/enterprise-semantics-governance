@@ -1,4 +1,4 @@
-ADR-ES-001 — Establish Enterprise-Semantics Authority and Publication Architecture
+ADR-ES-001: Establish Enterprise-Semantics Authority and Publication Architecture
 
 Status: Proposed
 Date: 2026-09-22
@@ -8,7 +8,7 @@ Supersedes: None
 Related: FND-ES-000, FND-ES-001
 Implementation: CR-ES-001
 
-⸻
+: 
 
 1. Context
 
@@ -52,7 +52,7 @@ Published Semantic Version
 
 This ADR establishes the architectural authority and publication model required for that lifecycle. (GitHub)
 
-⸻
+: 
 
 2. Problem
 
@@ -67,7 +67,7 @@ Without an explicit semantic authority architecture, Enterprise-Semantics risks 
 
 The program therefore requires a clearly defined authority boundary, source of truth, repository responsibility, identifier scheme, semantic lifecycle, governance mechanism, publication mechanism, and downstream mapping model.
 
-⸻
+: 
 
 3. Decision
 
@@ -102,7 +102,7 @@ The canonical architecture is:
 
 Enterprise-Semantics shall maintain semantic authority independently from downstream architectural implementation.
 
-⸻
+: 
 
 4. Authority Boundary
 
@@ -114,7 +114,7 @@ Enterprise-Semantics shall not redefine or duplicate foundational WSF concepts w
 
 Where an enterprise concept specializes or contextualizes a WSF concept, Enterprise-Semantics shall explicitly identify that grounding.
 
-⸻
+: 
 
 4.2 Enterprise-Semantics
 
@@ -134,7 +134,7 @@ Enterprise-Semantics is authoritative for:
 
 Enterprise-Semantics is not authoritative for the OpenDEA metamodel itself.
 
-⸻
+: 
 
 4.3 OpenDEA
 
@@ -144,7 +144,7 @@ OpenDEA may specialize or formalize Enterprise-Semantics concepts within the arc
 
 Promotion of an Enterprise-Semantics concept into OpenDEA shall therefore require the appropriate OpenDEA governance process.
 
-⸻
+: 
 
 4.4 DEA Catalogs
 
@@ -152,7 +152,7 @@ DEA Catalogs instantiate, classify, organize, and apply architectural concepts w
 
 A catalog entry shall not redefine the semantic authority of the underlying Enterprise-Semantics concept.
 
-⸻
+: 
 
 5. Repository Architecture
 
@@ -171,7 +171,7 @@ enterprise-semantics-test-probe	Semantic conformance and integrity validation
 
 This corresponds to the repository architecture established in the current program plan. (GitHub)
 
-⸻
+: 
 
 6. Semantic Source of Truth
 
@@ -195,7 +195,7 @@ Structured Semantic Source
 
 Where generated artifacts conflict with the structured semantic source, the structured semantic source takes precedence.
 
-⸻
+: 
 
 7. Identifier Architecture
 
@@ -221,7 +221,7 @@ Changing a display name shall not automatically create a new semantic identity.
 
 A semantic identity change requires governed treatment.
 
-⸻
+: 
 
 8. Semantic Lifecycle
 
@@ -249,7 +249,7 @@ Lifecycle transitions shall be governed rather than inferred from repository pre
 
 A concept appearing in the repository does not, by itself, make that concept canonical.
 
-⸻
+: 
 
 9. Governance Lifecycle
 
@@ -291,7 +291,7 @@ A release establishes the published semantic state.
 
 This lifecycle is consistent with the current governance repository definition. (GitHub)
 
-⸻
+: 
 
 10. Finding Authority
 
@@ -317,7 +317,7 @@ A Finding shall not itself establish canonical semantic authority.
 
 This prevents research from silently becoming normative architecture.
 
-⸻
+: 
 
 11. ADR Authority
 
@@ -337,7 +337,7 @@ Where a decision changes, a new ADR shall:
 
 This preserves semantic decision history.
 
-⸻
+: 
 
 12. Change Request Authority
 
@@ -360,7 +360,7 @@ A CR shall identify:
 
 A CR shall not introduce an architectural decision that has not been established by its governing ADR unless the CR is explicitly authorized as an independent scope change.
 
-⸻
+: 
 
 13. Relationship Semantics
 
@@ -390,7 +390,7 @@ Relationship wording shall be semantically deliberate.
 
 Generic association semantics shall not be used where a more precise relationship is available.
 
-⸻
+: 
 
 14. Provenance
 
@@ -413,7 +413,7 @@ Mapping
 
 This ensures that an externally sourced concept, an internally derived concept, and a downstream architectural specialization are not represented as equivalent origins.
 
-⸻
+: 
 
 15. Mapping Architecture
 
@@ -437,7 +437,7 @@ Mappings shall distinguish semantic relationships such as:
 
 A mapping shall not imply semantic equivalence merely because two constructs share a similar name.
 
-⸻
+: 
 
 16. Semantic Profiles
 
@@ -459,7 +459,7 @@ Examples of future profiles include:
 
 The existence of a profile does not automatically establish each contained concept as canonical.
 
-⸻
+: 
 
 17. Conformance
 
@@ -479,7 +479,7 @@ Conformance shall occur before semantic publication.
 
 The enterprise-semantics-test-probe repository shall provide the corresponding validation mechanism.
 
-⸻
+: 
 
 18. Publication Architecture
 
@@ -505,7 +505,7 @@ The published version shall provide a reproducible reference point for downstrea
 
 OpenDEA and DEA Catalogs shall be able to identify the Enterprise-Semantics semantic version against which a mapping or specialization was developed.
 
-⸻
+: 
 
 19. Compatibility
 
@@ -529,7 +529,7 @@ Changes that alter semantic identity, relationship meaning, required structure, 
 
 Breaking semantic changes shall require explicit governance and versioning.
 
-⸻
+: 
 
 20. Separation of Semantic and Implementation Authority
 
@@ -560,7 +560,7 @@ Capability
         ├── validated by → ES Test Probe
         └── specialized by → OpenDEA
 
-⸻
+: 
 
 21. Scope of Enterprise-Semantics
 
@@ -585,7 +585,7 @@ These are semantic domains rather than an assertion that every term within them 
 
 The current program plan identifies these as the semantic seed families. (GitHub)
 
-⸻
+: 
 
 22. Explicit Non-Goals
 
@@ -603,7 +603,7 @@ This ADR does not establish:
 
 Enterprise-Semantics is concerned with semantic authority, not with owning every downstream implementation.
 
-⸻
+: 
 
 23. Architectural Principles
 
@@ -649,7 +649,7 @@ Merged ADRs shall remain immutable.
 
 OpenDEA and DEA Catalogs may specialize Enterprise-Semantics without becoming the authority for Enterprise-Semantics itself.
 
-⸻
+: 
 
 24. Consequences
 
@@ -683,7 +683,7 @@ This is intentional.
 
 The cost is accepted to prevent semantic drift and competing authorities.
 
-⸻
+: 
 
 25. Decision
 
@@ -715,33 +715,33 @@ Semantic Release
    ↓
 Reference / Mapping
 
-⸻
+: 
 
 26. Implementation
 
 Implementation of this decision is governed by:
 
-CR-ES-001 — Establish Enterprise-Semantics Authority and Publication Architecture
+CR-ES-001: Establish Enterprise-Semantics Authority and Publication Architecture
 
 CR-ES-001 shall establish the repository structures, governance records, identifier registry, semantic seed structure, mapping foundations, validation foundations, and publication mechanisms required by this ADR.
 
-⸻
+: 
 
 27. Future Decisions Enabled
 
 This ADR establishes the authority required for subsequent semantic grounding decisions, including:
 
-* ADR-ES-002 — Capability Semantic Grounding
-* ADR-ES-003 — Value Stream Semantic Grounding
-* ADR-ES-004 — Agentic Semantic Grounding
-* ADR-ES-005 — Agentic Value Stream Semantic Grounding
-* ADR-ES-006 — Agentic Workflow Semantic Grounding
+* ADR-ES-002: Capability Semantic Grounding
+* ADR-ES-003: Value Stream Semantic Grounding
+* ADR-ES-004: Agentic Semantic Grounding
+* ADR-ES-005: Agentic Value Stream Semantic Grounding
+* ADR-ES-006: Agentic Workflow Semantic Grounding
 * subsequent Autonomous semantic decisions
 * subsequent Value Realization semantic decisions
 
 These decisions remain independently governed.
 
-⸻
+: 
 
 28. Acceptance Criteria
 

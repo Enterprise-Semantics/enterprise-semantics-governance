@@ -1,15 +1,15 @@
 <!--
-ADR-ES-009 ;;; Autonomous Value Stream Semantic Grounding Decision
+ADR-ES-009, and Autonomous Value Stream Semantic Grounding Decision
 
 Dash-normalized: colons (:) and semicolons (;) used consistently.
 Verbatim original: 00_inbox/ADR-ES-009.md (em-dashes and ellipsis dividers preserved in source).
 
-Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552351646762274856 ;;; "Merge, and attached is the next ADR and CR to be saved, read and understood and implemented accordingly")
+Status: Accepted (promoted from Proposed on 2026-09-23 per user directive message 1552351646762274856. "Merge, and attached is the next ADR and CR to be saved, read and understood and implemented accordingly")
 Decision Type: Foundational Enterprise Semantic Specialization
 Scope: Enterprise-Semantics
 Supersedes: None
-Depends on: ADR-ES-001 (Authority and Publication Architecture) ;;; ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23) ;;; FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
-Related: CR-ES-009 (Autonomous Value Stream Semantic Grounding, Accepted 2026-09-23) ;;; ADR-ES-010+ (Autonomous Enterprise, future) ;;; ADR-ES-011+ (Autonomous Network, future) ;;; ADR-ES-012+ (Autonomous Ecosystem, future) ;;; ADR-ES-013+ (Agentic Enterprise, future)
+Depends on: ADR-ES-001 (Authority and Publication Architecture), ADR-ES-003 (Value Stream Semantic Grounding, Accepted 2026-09-23), ADR-ES-005 (Agentic Value Stream Semantic Grounding, Accepted 2026-09-23), ADR-ES-007 (Agentic Operations Semantic Grounding, Accepted 2026-09-23), ADR-ES-008 (Autonomous Operations Semantic Grounding, Accepted 2026-09-23), and FND-ES-AG-008 (WSF Tier 1 / Tier 2 Grounding Boundary, Established 2026-09-22)
+Related: CR-ES-009 (Autonomous Value Stream Semantic Grounding, Accepted 2026-09-23). ADR-ES-010+ (Autonomous Enterprise, future). ADR-ES-011+ (Autonomous Network, future). ADR-ES-012+ (Autonomous Ecosystem, future). ADR-ES-013+ (Agentic Enterprise, future)
 
 Decision: Establish Autonomous Value Stream as a specialisation of Value Stream. An Autonomous Value Stream is a Value Stream in which value realization is capable of progressing through defined value stages through autonomous decision ;; coordination ;; action ;; and adaptation within defined objectives ;; authority ;; policies ;; and constraints ;; without requiring human intervention for every value-realization decision or action. Deliberately avoids premature canonicalization of Autonomous Value Stage ;; Autonomous Workflow ;; Autonomous Enterprise ;; Autonomous Ecosystem ;; Autonomous Network ;; Autonomous Agent ;; value-stream autonomy scoring ;; autonomy maturity levels ;; general autonomy ontology.
 
@@ -21,7 +21,7 @@ Authored by: Emmanuel A. Otchere (cardinal author rule, 2026-09-23)
 -->
 The next pair should establish Autonomous Value Stream as the value-realization counterpart to Autonomous Operations. The key architectural constraint is that autonomy must be expressed at the Value Stream boundary, not simply inferred because the stream happens to use autonomous operations.
 
-ADR-ES-009 ;;; Autonomous Value Stream Semantic Grounding
+ADR-ES-009, and Autonomous Value Stream Semantic Grounding
 
 ADR-ES-009 ; Autonomous Value Stream Semantic Grounding
 
@@ -33,7 +33,7 @@ Depends On: ADR-ES-003, ADR-ES-005, ADR-ES-007, ADR-ES-008
 Implementation: CR-ES-009
 Target Semantic Version: v0.8.0
 
-;;;
+. 
 
 1. Decision
 
@@ -56,7 +56,7 @@ Autonomous Value Stream therefore inherits the fundamental semantics of Value St
 
 Autonomy is added as a characteristic of how value realization proceeds, not as a replacement for the Value Stream concept.
 
-;;;
+. 
 
 2. Canonical Definition
 
@@ -64,7 +64,7 @@ An Autonomous Value Stream is a Value Stream in which value realization is capab
 
 This definition is authoritative for the implementation unless superseded by a subsequent ADR.
 
-;;;
+. 
 
 3. Architectural Principle
 
@@ -90,7 +90,7 @@ and:
 Agentic Value Stream
     ≠ Autonomous Value Stream
 
-;;;
+. 
 
 4. Value-Realization Boundary
 
@@ -120,7 +120,7 @@ An Autonomous Value Stream introduces autonomous value-realization behavior with
 
 It does not convert Value Stages into Processes or Workflows.
 
-;;;
+. 
 
 5. Autonomy at the Value-Stream Level
 
@@ -137,7 +137,7 @@ This is distinct from asking whether:
 * an Agent is autonomous;
 * a system is autonomous.
 
-;;;
+. 
 
 6. Material Autonomy
 
@@ -154,7 +154,7 @@ Material autonomy may occur through:
 
 Merely containing an autonomous system does not make a Value Stream autonomous.
 
-;;;
+. 
 
 7. Partial and Distributed Autonomy
 
@@ -176,7 +176,7 @@ provided the value stream as a whole satisfies the autonomous value-realization 
 
 Autonomous behavior may therefore be distributed across multiple stages.
 
-;;;
+. 
 
 8. Agentic Value Stream Boundary
 
@@ -202,7 +202,7 @@ Human-led conventional value stream
 
 The semantic model SHALL not infer one characteristic from the other.
 
-;;;
+. 
 
 9. Autonomous Value Stream vs Autonomous Operations
 
@@ -226,7 +226,7 @@ Autonomous Operations MAY support multiple Value Streams.
 
 Neither is a specialization of the other.
 
-;;;
+. 
 
 10. Autonomous Value Stream vs Agentic Value Stream
 
@@ -242,7 +242,7 @@ Relationship to Operations	May use Agentic Operations	May use Autonomous Operati
 
 A Value Stream may therefore be both Agentic and Autonomous without the concepts becoming synonymous.
 
-;;;
+. 
 
 11. Value Stage Boundary
 
@@ -266,7 +266,7 @@ Autonomous Value Stage
 
 unless a future ADR independently establishes such a specialization.
 
-;;;
+. 
 
 12. Authority Boundary
 
@@ -288,7 +288,7 @@ Stakeholder Outcome
 
 Autonomy therefore does not imply unrestricted authority over the value stream.
 
-;;;
+. 
 
 13. Stakeholder Boundary
 
@@ -315,7 +315,7 @@ Autonomous Value Realization
        v
 Stakeholder Outcome
 
-;;;
+. 
 
 14. Operational Relationship
 
@@ -336,7 +336,7 @@ Autonomous Operations
 
 may be valid.
 
-;;;
+. 
 
 15. Workflow Relationship
 
@@ -358,7 +358,7 @@ Autonomous Value Stream
     ≠ Workflow
     ≠ Agentic Workflow
 
-;;;
+. 
 
 16. AI and Automation Boundary
 
@@ -377,7 +377,7 @@ Autonomous Value Stream + Agentic Operations
 
 The implementation mechanism does not define the semantic concept.
 
-;;;
+. 
 
 17. Human Participation
 
@@ -396,7 +396,7 @@ The defining boundary is not absence of humans.
 
 It is the ability of the value stream to progress through defined value-realization decisions and actions without requiring human intervention at every step.
 
-;;;
+. 
 
 18. Canonical Relationships
 
@@ -429,7 +429,7 @@ Autonomous Value Stream
 
 Only relationships whose target concepts are already canonically established SHALL be implemented directly.
 
-;;;
+. 
 
 19. Semantic Invariants
 
@@ -458,7 +458,7 @@ Autonomous Value Stream does not equal Workflow.
 AVS-AUTO-INV-011
 Autonomy remains bounded by authority, policy, and constraints.
 
-;;;
+. 
 
 20. Rejected Alternatives
 
@@ -490,7 +490,7 @@ Autonomous Value Stream = Autonomous Workflow
 
 Rejected because the Value Stream is an end-to-end value-realization construct, not an execution mechanism.
 
-;;;
+. 
 
 21. Deferred Concepts
 
@@ -508,7 +508,7 @@ This ADR does not establish:
 
 Each requires separate governance.
 
-;;;
+. 
 
 22. Architectural Consequence
 
@@ -534,7 +534,7 @@ The semantic architecture now supports:
 
 The diagram expresses possible relationships, not mandatory containment.
 
-;;;
+. 
 
 23. Decision Rationale
 

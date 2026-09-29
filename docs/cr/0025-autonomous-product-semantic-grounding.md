@@ -29,7 +29,7 @@ CR-ES-017: Implement Autonomous Product
 Implement Autonomous Product as a governed specialization of Product.
 
 The implementation shall establish autonomy independently from Agentic behavior and preserve semantic separation across Product, Capability, Service, Workflow, Operations, Value Stream, and Enterprise.
-;;;
+. 
 2. Concept
 
 Create:
@@ -39,7 +39,7 @@ enterprise-semantics/concepts/autonomous-product.yaml
 Canonical definition:
 
 An Autonomous Product is a Product whose realization, interaction, configuration, fulfillment, or adaptation is capable of progressing through defined decisions, actions, coordination, and adaptation within specified product objectives, authority, policies, constraints, and governance boundaries without requiring human intervention for every product decision or action.
-;;;
+. 
 3. Properties
 
 Implement:
@@ -60,7 +60,7 @@ properties:
   escalation_boundary:
   observation_scope:
   realization_mode:
-;;;
+. 
 4. Registry
 
 Add:
@@ -68,13 +68,13 @@ Add:
 AUTONOMOUS_PRODUCT
 
 to the canonical registry.
-;;;
+. 
 5. Profile
 
 Create:
 
 ES:PROFILE:AUTONOMOUS_PRODUCT
-;;;
+. 
 6. Relationships
 
 Implement canonical relationships where dependencies exist:
@@ -96,7 +96,7 @@ Autonomous Product
     -> contributes-to -> Value
 
 No unauthorized foundational concepts shall be created.
-;;;
+. 
 7. Orthogonality Validation
 
 CI must establish:
@@ -110,7 +110,7 @@ Agentic Product
     ≠ Autonomous Product
 
 The implementation must permit both characteristics on one Product instance without introducing a new type.
-;;;
+. 
 8. Material Autonomy Validation
 
 A Product qualifies only where there is evidence of independent progression through material product decisions/actions.
@@ -126,7 +126,7 @@ Validation shall include:
 * governance;
 * adaptation;
 * escalation.
-;;;
+. 
 9. Negative Tests
 
 Create:
@@ -147,7 +147,7 @@ APROD-AUTO-NEG-013  Autonomous Operations automatically makes every Product auto
 APROD-AUTO-NEG-014  Autonomous Value Stream automatically makes every Product autonomous
 APROD-AUTO-NEG-015  Autonomous Product implies Autonomous Enterprise
 APROD-AUTO-NEG-016  Autonomous Product requires every product action to be autonomous
-;;;
+. 
 10. Positive Tests
 
 Implement at minimum:
@@ -173,7 +173,7 @@ APROD-AUTO-CON-018  may use Agentic Workflow
 APROD-AUTO-CON-019  may use Autonomous Operations
 APROD-AUTO-CON-020  preserves Agentic/Autonomous orthogonality
 APROD-AUTO-CON-021  contains complete provenance
-;;;
+. 
 11. Documentation
 
 Create:
@@ -191,7 +191,7 @@ autonomous-product-value-stream-boundary.md
 autonomous-product-operations-boundary.md
 agentic-vs-autonomous-product.md
 product-autonomy-authority-boundary.md
-;;;
+. 
 12. Visuals
 
 Create:
@@ -206,7 +206,7 @@ enterprise-semantics-visuals/architecture/autonomous-product-value-stream-bounda
 enterprise-semantics-visuals/architecture/autonomous-product-operations-boundary.puml
 enterprise-semantics-visuals/architecture/agentic-vs-autonomous-product.puml
 enterprise-semantics-visuals/architecture/product-autonomy-authority-boundary.puml
-;;;
+. 
 13. Example
 
 Create:
@@ -224,7 +224,7 @@ The example shall demonstrate:
 * outcome observation;
 * escalation;
 * optional human intervention.
-;;;
+. 
 14. Mappings
 
 Create:
@@ -235,7 +235,7 @@ enterprise-semantics-mappings/opendea/autonomous-product.yaml
 Mappings document semantic correspondence only.
 
 No WSF/OpenDEA implementation is authorized.
-;;;
+. 
 15. Provenance
 
 provenance:
@@ -253,7 +253,7 @@ provenance:
     - ADR-ES-017
   implementation:
     - CR-ES-017
-;;;
+. 
 16. Acceptance Criteria
 
 * [ ]	Autonomous Product canonically defined.
@@ -284,7 +284,7 @@ provenance:
 * [ ]	Negative conformance tests pass.
 * [ ]	CI passes.
 * [ ]	No unauthorized foundational concepts introduced.
-;;;
+. 
 17. Release Gate
 
 Successful implementation authorizes:

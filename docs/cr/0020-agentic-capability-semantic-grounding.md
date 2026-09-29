@@ -25,7 +25,7 @@ Promotion rationale: All 26 acceptance criteria of CR-ES-012 §31 satisfied via 
 Implement the governed semantic grounding of Agentic Capability established by ADR-ES-012.
 
 The implementation shall extend the canonical Capability semantic model with an agentic realization specialization while preserving Capability as the universal foundational concept.
-;;;
+. 
 2. Canonical Concept
 
 Create:
@@ -40,7 +40,7 @@ Semantic type:
 
 semantic_type: AgenticCapability
 specializes: Capability
-;;;
+. 
 3. Schema Requirements
 
 The schema shall inherit the semantic properties of Capability and additionally support:
@@ -57,7 +57,7 @@ escalation_boundary:
 realization_mode:
 
 The implementation must not duplicate the foundational Capability definition where inheritance/reference is supported by the repository schema architecture.
-;;;
+. 
 4. Required Relationships
 
 Support:
@@ -86,7 +86,7 @@ Agentic Capability
 Existing Capability relationships shall be reused rather than duplicated.
 
 Only relationships whose predicates and target concepts are canonical shall be activated in the canonical model.
-;;;
+. 
 5. Registry
 
 Add:
@@ -107,7 +107,7 @@ relationships:
 grounding:
 provenance:
 version:
-;;;
+. 
 6. Profile
 
 Create:
@@ -132,7 +132,7 @@ scope:
   - Authority
 
 Profile membership must not create inheritance.
-;;;
+. 
 7. Capability Inheritance Integrity
 
 CI shall verify:
@@ -154,7 +154,7 @@ Agentic
 as a universal condition.
 
 Not every Capability is Agentic.
-;;;
+. 
 8. Material Agentic Realization Test
 
 The implementation shall include a qualification rule:
@@ -173,7 +173,7 @@ Capability + Agent
 Capability + System
 
 unless the implementation demonstrates material agentic realization.
-;;;
+. 
 9. Agentic Realization Evidence
 
 A conforming Agentic Capability instance shall be able to identify applicable evidence from:
@@ -187,7 +187,7 @@ Bounded Authority
 Outcome Orientation
 
 Not every property needs to be independently present where the established Agentic semantics permit a different realization pattern, but the instance must demonstrate material agentic behavior.
-;;;
+. 
 10. Agent Relationship
 
 Validate:
@@ -213,7 +213,7 @@ Agent
 is-a
         ->
 Agentic Capability
-;;;
+. 
 11. Workflow Relationship
 
 Validate:
@@ -228,7 +228,7 @@ The model must preserve:
 
 Capability ≠ Workflow
 Agentic Capability ≠ Agentic Workflow
-;;;
+. 
 12. Operations Relationship
 
 Validate:
@@ -248,7 +248,7 @@ Agentic Operations
 is-a
         ->
 Agentic Capability
-;;;
+. 
 13. Value Stream Relationship
 
 Validate:
@@ -271,7 +271,7 @@ The implementation must preserve the semantic distinction:
 
 Capability -> ability
 Value Stream -> value realization
-;;;
+. 
 14. Enterprise Relationship
 
 Validate:
@@ -293,7 +293,7 @@ is-a
 Agentic Enterprise
 
 A single Agentic Capability does not establish Agentic Enterprise.
-;;;
+. 
 15. AI Integrity
 
 CI shall reject:
@@ -303,7 +303,7 @@ AI Capability automatically becomes Agentic Capability
 AI-enabled Capability automatically becomes Agentic Capability
 
 The implementation shall not introduce AI as a dependency.
-;;;
+. 
 16. Automation Integrity
 
 CI shall reject:
@@ -312,7 +312,7 @@ Automation establishes Agentic Capability
 Automated Capability automatically becomes Agentic Capability
 
 Automation may support an Agentic Capability but is not its semantic definition.
-;;;
+. 
 17. Autonomy Integrity
 
 Do not create:
@@ -334,7 +334,7 @@ Agentic Capability
 Autonomous Capability
 
 Future Autonomous Capability semantics require a separate ADR.
-;;;
+. 
 18. Human Participation
 
 Agentic Capability may include:
@@ -351,7 +351,7 @@ Human intervention does not invalidate Agentic Capability.
 The implementation must reject:
 
 Agentic Capability requires human elimination
-;;;
+. 
 19. Capability Transformation Example
 
 Create:
@@ -386,7 +386,7 @@ Each example shall identify:
 * realization mechanism
 
 The example must demonstrate that not all capabilities are agentic.
-;;;
+. 
 20. Documentation
 
 Create:
@@ -412,7 +412,7 @@ Required sections:
 15. Example
 16. Conformance
 17. Deferred concepts
-;;;
+. 
 21. Architecture Documentation
 
 Create:
@@ -442,7 +442,7 @@ Agentic Workflow   Agentic Operations
                |
                v
             Outcome
-;;;
+. 
 22. Visual Assets
 
 Create:
@@ -456,7 +456,7 @@ enterprise-semantics-visuals/
         agentic-capability-value-stream-boundary.puml
         agentic-capability-enterprise-boundary.puml
         capability-vs-agentic-capability.puml
-;;;
+. 
 23. Conformance Tests
 
 Create:
@@ -485,7 +485,7 @@ ACAP-CON-015
 ACAP-CON-016
 ACAP-CON-017
 ACAP-CON-018
-;;;
+. 
 24. Negative Tests
 
 The following must fail:
@@ -545,7 +545,7 @@ Agentic Capability automatically establishes Agentic Enterprise
 ACAP-NEG-014
 
 Agentic Capability requires removal of humans
-;;;
+. 
 25. WSF Mapping
 
 Create:
@@ -562,7 +562,7 @@ The mapping shall identify:
 * unresolved foundational dependencies
 
 No WSF modification is authorized.
-;;;
+. 
 26. OpenDEA Mapping
 
 Create:
@@ -581,7 +581,7 @@ Business Capability
 Technical/Operational realization
 
 without prematurely creating OpenDEA specializations.
-;;;
+. 
 27. Relationship Integrity
 
 CI shall verify the semantic distinction:
@@ -601,7 +601,7 @@ realization through
 Agentic mechanisms
 
 The implementation must not replace the foundational Capability -> Outcome semantics.
-;;;
+. 
 28. Provenance
 
 The concept shall include:
@@ -617,7 +617,7 @@ provenance:
     - CR-ES-012
 
 Any external source introduced during implementation must use the established provenance classification.
-;;;
+. 
 29. Versioning
 
 Target:
@@ -640,7 +640,7 @@ Examples
 Conformance tests
 Negative tests
 CI validation
-;;;
+. 
 30. Scope Restrictions
 
 CR-ES-012 does not authorize:
@@ -659,7 +659,7 @@ CR-ES-012 does not authorize:
 * modifications to OpenDEA
 
 Each requires separate governance.
-;;;
+. 
 31. Acceptance Criteria
 
 CR-ES-012 is complete when:
@@ -690,7 +690,7 @@ CR-ES-012 is complete when:
 24. CI validates Capability/Agentic boundaries.
 25. No unauthorized foundational concepts are introduced.
 26. Release metadata identifies v1.1.0.
-;;;
+. 
 32. Architectural Outcome
 
 CR-ES-012 establishes the missing capability-level bridge:

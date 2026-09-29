@@ -34,7 +34,7 @@ The implementation shall establish service-level autonomy while preserving stric
 * Agent;
 * AI;
 * automation.
-;;;
+. 
 2. Scope
 
 In scope
@@ -88,7 +88,7 @@ Out of scope
 * changes to WSF;
 * changes to OpenDEA metamodel;
 * new foundational autonomy ontology.
-;;;
+. 
 3. Canonical Concept
 
 Create:
@@ -107,7 +107,7 @@ Specialization:
 
 specializes:
   - Service
-;;;
+. 
 4. Required Properties
 
 The schema shall support:
@@ -147,7 +147,7 @@ intervention_model	Defines human intervention
 escalation_boundary	Defines when control transfers
 observation_scope	Defines what the service observes
 realization_mode	Characterizes conventional, automated, agentic, autonomous, or combined realization
-;;;
+. 
 5. Registry
 
 Add:
@@ -164,7 +164,7 @@ semantic_type: AutonomousService
 specializes:
   - SERVICE
 status: Candidate
-;;;
+. 
 6. Profile
 
 Create:
@@ -172,7 +172,7 @@ Create:
 ES:PROFILE:AUTONOMOUS_SERVICE
 
 The profile shall group autonomous-service characteristics without implying additional ontology or inheritance.
-;;;
+. 
 7. Relationships
 
 Mandatory
@@ -210,7 +210,7 @@ Autonomous Service
     |-- supports -> Capability
 
 No missing foundational concept shall be created solely to satisfy a relationship.
-;;;
+. 
 8. Autonomy Materiality Rule
 
 A Service qualifies as Autonomous Service only when autonomous progression is material to service realization.
@@ -233,7 +233,7 @@ The implementation shall require evidence of meaningful independent progression 
 * adaptation;
 * exception handling;
 * service progression toward objective.
-;;;
+. 
 9. Autonomy Integrity
 
 The implementation shall explicitly distinguish:
@@ -255,7 +255,7 @@ Agentic = true
 Autonomous = true
 
 The second state is a combined characterization, not a new subtype.
-;;;
+. 
 10. Conformance Tests
 
 Create:
@@ -304,7 +304,7 @@ ASVC-AUTO-CON-019
 Autonomous Service may participate in Autonomous Value Stream realization
 ASVC-AUTO-CON-020
 Autonomous Service retains provenance and grounding
-;;;
+. 
 11. Negative Tests
 
 Create:
@@ -341,7 +341,7 @@ ASVC-AUTO-NEG-015
 Autonomous Capability automatically makes every delivered Service autonomous
 ASVC-AUTO-NEG-016
 Autonomous Service automatically becomes Agentic Service
-;;;
+. 
 12. Semantic Integrity Tests
 
 The probe shall verify:
@@ -365,7 +365,7 @@ It shall also verify the orthogonal characterization:
 
 Agentic = independent semantic dimension
 Autonomous = independent semantic dimension
-;;;
+. 
 13. Documentation
 
 Create:
@@ -396,7 +396,7 @@ Documentation shall distinguish:
 * autonomy vs AI;
 * human intervention vs autonomous progression;
 * authority, policy, constraint, governance, and escalation.
-;;;
+. 
 14. Visualizations
 
 Create:
@@ -441,7 +441,7 @@ Objective       Authority       Context       Service Outcome
                    ↺
 
 The visualization must not imply inheritance from Agentic Service or Autonomous Operations.
-;;;
+. 
 15. Example
 
 Create:
@@ -474,7 +474,7 @@ It shall contain:
 The example shall demonstrate routine autonomous progression while preserving human escalation for exceptions.
 
 A second example may represent an Autonomous Fulfillment Service.
-;;;
+. 
 16. Mappings
 
 Create:
@@ -494,7 +494,7 @@ where justified.
 No unsupported equivalence shall be asserted.
 
 No WSF or OpenDEA implementation change is authorized by this CR.
-;;;
+. 
 17. Provenance
 
 The canonical concept shall contain:
@@ -512,7 +512,7 @@ provenance:
     - ADR-ES-015
   implementation:
     - CR-ES-015
-;;;
+. 
 18. CI Requirements
 
 CI shall validate:
@@ -553,7 +553,7 @@ or:
 Automation -> Autonomous Service
 
 is encoded as a necessary semantic condition.
-;;;
+. 
 19. Acceptance Criteria
 
 CR-ES-015 is complete when:
@@ -596,7 +596,7 @@ CR-ES-015 is complete when:
 * [ ]	CI passes.
 * [ ]	No unauthorized foundational concepts are introduced.
 * [ ]	v1.4.0 release gate passes.
-;;;
+. 
 20. Release
 
 Upon successful implementation and governance approval:
@@ -619,7 +619,7 @@ v1.1.0  Agentic Capability
 v1.2.0  Autonomous Capability
 v1.3.0  Agentic Service
 v1.4.0  Autonomous Service
-;;;
+. 
 21. Governance
 
 Implementation authority:

@@ -51,7 +51,7 @@ Enterprise
 
 An enterprise may satisfy either, both, or neither.
 
-;;;
+. 
 
 2. Problem
 
@@ -86,7 +86,7 @@ None of these implications is semantically valid.
 
 Autonomy must therefore be established independently at the enterprise boundary.
 
-;;;
+. 
 
 3. Semantic Definition
 
@@ -109,7 +109,7 @@ The definition contains six essential elements:
 6. Governance
  * Policies, constraints, escalation, accountability, and oversight remain valid.
 
-;;;
+. 
 
 4. Fundamental Architectural Principle
 
@@ -132,7 +132,7 @@ Autonomous ≠ Automation
 
 This is a foundational invariant.
 
-;;;
+. 
 
 5. Agentic / Autonomous Orthogonality
 
@@ -160,7 +160,7 @@ More precisely, an enterprise may be:
 
 The model must preserve all four possibilities.
 
-;;;
+. 
 
 6. Autonomous Enterprise Boundary
 
@@ -176,7 +176,7 @@ Does the enterprise contain autonomous systems?
 
 The presence of an autonomous system does not establish an Autonomous Enterprise.
 
-;;;
+. 
 
 7. Enterprise Autonomy Dimensions
 
@@ -195,7 +195,7 @@ Examples include:
 * fulfillment decisions
 * exception resolution
 
-;;;
+. 
 
 7.2 Autonomous Coordination
 
@@ -212,7 +212,7 @@ The enterprise can independently coordinate relevant:
 
 within authorized boundaries.
 
-;;;
+. 
 
 7.3 Autonomous Execution
 
@@ -220,7 +220,7 @@ The enterprise can independently initiate or execute authorized actions without 
 
 This does not imply unlimited execution authority.
 
-;;;
+. 
 
 7.4 Autonomous Adaptation
 
@@ -236,7 +236,7 @@ The enterprise can modify relevant behavior in response to:
 
 within defined constraints.
 
-;;;
+. 
 
 7.5 Autonomous Value Progression
 
@@ -248,7 +248,7 @@ Autonomous Value Stream
 
 but does not make Autonomous Value Stream a prerequisite.
 
-;;;
+. 
 
 8. Autonomous Enterprise Operating Pattern
 
@@ -291,7 +291,7 @@ Outcome
 
 Human intervention remains available at defined boundaries.
 
-;;;
+. 
 
 9. Human Boundary
 
@@ -323,7 +323,7 @@ Unsupervised Enterprise
 
 The defining distinction is that human intervention is not required for every enterprise decision or action.
 
-;;;
+. 
 
 10. Authority Boundary
 
@@ -367,7 +367,7 @@ Conceptually:
 
 Unlimited authority is therefore explicitly incompatible with the semantic model.
 
-;;;
+. 
 
 11. Relationship to Agentic Enterprise
 
@@ -398,7 +398,7 @@ Agentic Enterprise does not specialize Autonomous Enterprise.
 
 The two concepts describe different dimensions of enterprise behavior.
 
-;;;
+. 
 
 12. Relationship to Autonomous Operations
 
@@ -421,7 +421,7 @@ Autonomous Enterprise concerns enterprise-wide behavior.
 
 Autonomous Operations therefore does not automatically establish Autonomous Enterprise.
 
-;;;
+. 
 
 13. Relationship to Autonomous Value Stream
 
@@ -440,7 +440,7 @@ Autonomous Enterprise
 
 A single autonomous value stream does not establish enterprise-level autonomy.
 
-;;;
+. 
 
 14. Relationship to Agentic Operations
 
@@ -460,7 +460,7 @@ Autonomous Enterprise
 
 The coexistence of these modes is architecturally valid.
 
-;;;
+. 
 
 15. Relationship to Agentic Workflow
 
@@ -477,7 +477,7 @@ However, Autonomous Workflow is not established by this ADR.
 
 The enterprise concept must not be used to silently establish it.
 
-;;;
+. 
 
 16. AI Boundary
 
@@ -499,7 +499,7 @@ AI may be an implementation mechanism for autonomous behavior.
 
 It is not the semantic definition of autonomy.
 
-;;;
+. 
 
 17. Automation Boundary
 
@@ -517,7 +517,7 @@ Therefore:
 
 Automation alone does not establish Autonomous Enterprise.
 
-;;;
+. 
 
 18. Enterprise Autonomy Is Not Unlimited Self-Determination
 
@@ -533,7 +533,7 @@ The semantic model explicitly rejects the idea that autonomy means:
 
 The enterprise’s autonomous behavior remains subordinate to its established governance architecture.
 
-;;;
+. 
 
 19. Mixed Enterprise Operating Model
 
@@ -559,7 +559,7 @@ This mixed-mode model is important because autonomy can be scoped.
 
 An enterprise may autonomously manage selected domains while retaining human authority over others.
 
-;;;
+. 
 
 20. Enterprise Autonomy Scope
 
@@ -580,7 +580,7 @@ Potential scopes include:
 
 The existence of an Autonomous Enterprise does not imply uniform autonomy across all enterprise domains.
 
-;;;
+. 
 
 21. Qualification Boundary
 
@@ -599,7 +599,7 @@ An enterprise should qualify as Autonomous Enterprise only when evidence demonst
 
 The model must distinguish capability for autonomy from actual autonomous operation.
 
-;;;
+. 
 
 22. Capability Versus Operating State
 
@@ -613,7 +613,7 @@ Autonomous Enterprise
 
 The Autonomous Enterprise concept describes an enterprise operating condition or architectural characterization, not merely the possession of enabling technology.
 
-;;;
+. 
 
 23. Example : OTCHERE Inc
 
@@ -666,7 +666,7 @@ High-Risk Exception
 
 The enterprise therefore exhibits autonomy without becoming human-free or ungoverned.
 
-;;;
+. 
 
 24. Semantic Relationship Model
 
@@ -694,7 +694,7 @@ Agentic + Autonomous Enterprise
 
 This intersection is valid but is not a separate concept.
 
-;;;
+. 
 
 25. Architectural Invariants
 
@@ -766,7 +766,7 @@ Autonomous Enterprise does not imply Autonomous Agent.
 AE-AUTO-CON-022
 Autonomous Enterprise requires provenance and semantic grounding.
 
-;;;
+. 
 
 26. Explicitly Rejected Interpretations
 
@@ -787,7 +787,7 @@ The following interpretations are rejected:
 * Autonomous Enterprise = Autonomous Agent
 * Autonomous Enterprise = Fully autonomous everything
 
-;;;
+. 
 
 27. Future Concepts Explicitly Deferred
 
@@ -807,7 +807,7 @@ This ADR does not establish:
 
 Each requires independent semantic grounding.
 
-;;;
+. 
 
 28. Consequences
 
@@ -828,7 +828,7 @@ Negative
 * Autonomous Enterprise must eventually be reconciled with the authoritative Enterprise semantic grounding.
 * The model intentionally does not provide a maturity scale for autonomy.
 
-;;;
+. 
 
 29. Decision Summary
 

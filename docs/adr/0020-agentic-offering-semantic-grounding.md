@@ -42,7 +42,7 @@ Offering
 This ADR does not redefine foundational Offering semantics.
 
 If Offering is not yet canonical at implementation time, CR-ES-018 shall record the dependency rather than silently creating an Offering ontology.
-;;;
+. 
 2. Semantic Rationale
 
 An Offering represents what an organization makes available to a stakeholder or market as a coherent proposition.
@@ -68,7 +68,7 @@ The agentic behavior may concern:
 * contextual value realization.
 
 The Offering itself remains the semantic anchor.
-;;;
+. 
 3. Agentic Offering vs Agentic Product
 
 These concepts must remain distinct.
@@ -88,7 +88,7 @@ Agentic Product ≠ Agentic Offering.
 An Offering can be agentic because of the way the overall proposition is configured, composed, interacted with, fulfilled, or adapted even where its constituent Products are not individually agentic.
 
 Conversely, an Agentic Product does not automatically make the entire Offering agentic.
-;;;
+. 
 4. Agentic Offering vs Agentic Service
 
 Agentic Offering
@@ -102,7 +102,7 @@ Agentic Service concerns service realization.
 Agentic Offering concerns the broader proposition presented to a stakeholder.
 
 They therefore operate at different semantic boundaries.
-;;;
+. 
 5. Materiality
 
 Agentic behavior must be material to the Offering.
@@ -125,7 +125,7 @@ Insufficient evidence includes:
 * automated ordering;
 * a chatbot used only as an interface;
 * an Agent participating in an unrelated internal process.
-;;;
+. 
 6. Agentic / Autonomous Orthogonality
 
 Agentic Offering does not establish Autonomous Offering.
@@ -139,7 +139,7 @@ No	Yes	Autonomous Offering: future
 Yes	Yes	Agentic + Autonomous Offering: future
 
 Autonomous Offering requires separate governance.
-;;;
+. 
 7. AI Boundary
 
 AI is not the definition of Agentic Offering.
@@ -149,7 +149,7 @@ AI-enabled Offering
 Agentic Offering
 
 AI may support agentic offering behavior but is not required.
-;;;
+. 
 8. Automation Boundary
 
 Automation is not sufficient.
@@ -159,7 +159,7 @@ Automated Offering
 Agentic Offering
 
 Agentic realization requires contextual interpretation, action selection, coordination, adaptation, or equivalent agentic behavior.
-;;;
+. 
 9. Human Participation
 
 Human participation remains valid.
@@ -174,7 +174,7 @@ An Agentic Offering may include:
 * human-controlled boundaries.
 
 Agentic does not mean human-free.
-;;;
+. 
 10. Canonical Relationships
 
 Where canonical targets and predicates exist:
@@ -195,7 +195,7 @@ Agentic Offering
     |-- contributes-to -> Value
 
 These are conditional relationships, not mandatory composition rules.
-;;;
+. 
 11. Offering Realization Boundary
 
 Stakeholder Intent
@@ -215,7 +215,7 @@ Observe Outcome
 Adapt / Escalate
 
 The Offering may employ Products, Services, Capabilities, Workflows, and Operations in realizing the proposition.
-;;;
+. 
 12. Value Stream Boundary
 
 Agentic Offering and Agentic Value Stream are distinct:
@@ -231,7 +231,7 @@ Therefore:
 Agentic Offering ≠ Agentic Value Stream
 
 An Agentic Offering may participate in a conventional Value Stream, Agentic Value Stream, or Autonomous Value Stream.
-;;;
+. 
 13. Enterprise Boundary
 
 An Agentic Offering does not establish:
@@ -239,7 +239,7 @@ An Agentic Offering does not establish:
 Agentic Enterprise
 
 An enterprise may provide an Agentic Offering without operating as an Agentic Enterprise.
-;;;
+. 
 14. Example: OTCHERE Inc
 
 Consider an OTCHERE Inc integrated enterprise offering combining Products and Services.
@@ -275,7 +275,7 @@ Observe Customer Outcome
 Adapt / Escalate
 
 The offering is agentic because agentic behavior materially affects the proposition’s realization, composition, interaction, or fulfillment.
-;;;
+. 
 15. Rejected Interpretations
 
 The following are rejected:
@@ -292,7 +292,7 @@ The following are rejected:
 * Agentic Offering = Offering with conversational UI
 * Agentic Offering = Offering with an AI model
 * Agentic Offering = human-free Offering
-;;;
+. 
 16. Foundational Dependency
 
 This ADR intentionally does not establish the complete semantic definition of Offering.
@@ -303,7 +303,7 @@ Before CR-ES-018 is accepted as canonical, the repository must verify one of:
 2. a separately authorized Offering semantic grounding ADR establishes it.
 
 If neither condition is satisfied, implementation of the specialization shall remain blocked.
-;;;
+. 
 17. Consequences
 
 Positive
@@ -319,7 +319,7 @@ Risk
 The principal architectural risk is treating Offering as merely a synonym for Product or Service.
 
 CR-ES-018 must therefore validate the Offering dependency before canonical implementation.
-;;;
+. 
 18. Governance
 
 Implementation is authorized through:
@@ -327,7 +327,7 @@ Implementation is authorized through:
 CR-ES-018: Agentic Offering Semantic Grounding
 
 No WSF or OpenDEA implementation changes are authorized.
-;;;
+. 
 19. Release
 
 Target:

@@ -26,7 +26,7 @@ Implement the governed semantic grounding of Agentic Enterprise established by A
 
 The implementation shall establish Agentic Enterprise as an enterprise-level semantic specialization without introducing an independent enterprise ontology or prematurely canonicalizing deferred concepts.
 
-;;;
+. 
 
 2. Canonical Concept
 
@@ -45,7 +45,7 @@ specializes: Enterprise
 
 Where Enterprise is not yet locally canonicalized, the implementation shall reference the authoritative grounding source rather than silently creating a new Enterprise ontology.
 
-;;;
+. 
 
 3. Required Properties
 
@@ -70,7 +70,7 @@ realization_mode:
 
 Not every property must be populated for every instance; the schema shall distinguish required semantic properties from optional realization attributes.
 
-;;;
+. 
 
 4. Required Relationships
 
@@ -103,7 +103,7 @@ Only relationships whose target concepts are already semantically grounded shall
 
 Where a target concept is not yet canonical, document the intended correspondence in the mapping layer rather than creating an unauthorized concept.
 
-;;;
+. 
 
 5. Registry
 
@@ -124,7 +124,7 @@ The registry entry shall include:
 * grounding reference
 * provenance
 
-;;;
+. 
 
 6. Profile
 
@@ -150,7 +150,7 @@ scope:
 
 The profile must not imply inheritance between concepts merely because they appear together.
 
-;;;
+. 
 
 7. WSF Mapping
 
@@ -169,7 +169,7 @@ The mapping shall identify:
 
 The mapping must not modify WSF.
 
-;;;
+. 
 
 8. OpenDEA Mapping
 
@@ -183,7 +183,7 @@ The mapping must not modify OpenDEA.
 
 No OpenDEA metamodel change is authorized by this CR.
 
-;;;
+. 
 
 9. Documentation
 
@@ -212,7 +212,7 @@ The document shall include:
 17. Conformance requirements
 18. Deferred concepts
 
-;;;
+. 
 
 10. Architecture Documentation
 
@@ -244,7 +244,7 @@ Enterprise Boundary
 | |
 L---------------------------------------------┘
 
-;;;
+. 
 
 11. Enterprise Agentic Operating Model
 
@@ -280,7 +280,7 @@ Agentic Enterprise Behavior
 
 The model must explicitly show that governance surrounds rather than disappears behind agentic execution.
 
-;;;
+. 
 
 12. Value / Operations Boundary
 
@@ -306,7 +306,7 @@ Create an architecture model showing:
 
 The diagram must state that this represents semantic participation and realization, not mandatory containment.
 
-;;;
+. 
 
 13. Visual Assets
 
@@ -323,7 +323,7 @@ enterprise-semantics-visuals/
 
 The visuals shall use the existing Enterprise-Semantics visual conventions.
 
-;;;
+. 
 
 14. Example
 
@@ -367,7 +367,7 @@ It must deliberately contain at least some conventional or human-operated elemen
 
 An Agentic Enterprise does not require everything to become agentic.
 
-;;;
+. 
 
 15. Conformance Tests
 
@@ -398,7 +398,7 @@ AE-CON-016
 AE-CON-017
 AE-CON-018
 
-;;;
+. 
 
 16. Negative Tests
 
@@ -468,7 +468,7 @@ AE-NEG-016
 
 Agentic Enterprise implies Autonomous Enterprise
 
-;;;
+. 
 
 17. Semantic Integrity Validation
 
@@ -511,7 +511,7 @@ Outcome
 Intervention
 Escalation
 
-;;;
+. 
 
 18. Cross-Concept Conformance
 
@@ -547,7 +547,7 @@ Agentic Enterprise
 
 without asserting that any of those concepts is necessary to establish Agentic Enterprise.
 
-;;;
+. 
 
 19. Autonomy Integrity
 
@@ -569,7 +569,7 @@ Agentic Enterprise
 
 No enterprise autonomy level is to be introduced by this CR.
 
-;;;
+. 
 
 20. AI Integrity
 
@@ -582,7 +582,7 @@ Agentic Enterprise ≠ AI Enterprise
 
 No AI concept shall be introduced as a dependency.
 
-;;;
+. 
 
 21. Automation Integrity
 
@@ -594,7 +594,7 @@ Agentic Enterprise
 
 Automation may participate in an Agentic Enterprise but does not establish its semantic identity.
 
-;;;
+. 
 
 22. Governance Integrity
 
@@ -610,7 +610,7 @@ Escalation Boundary
 
 This is required to prevent the model from equating agentic enterprise behavior with unrestricted autonomous action.
 
-;;;
+. 
 
 23. Versioning
 
@@ -634,7 +634,7 @@ This release shall include:
 * negative conformance tests
 * CI validation
 
-;;;
+. 
 
 24. Scope Restrictions
 
@@ -653,7 +653,7 @@ This CR does not authorize:
 
 Such changes require separate ADRs and CRs.
 
-;;;
+. 
 
 25. Acceptance Criteria
 
@@ -682,7 +682,7 @@ CR-ES-010 is complete when:
 21. No unauthorized foundational concepts are introduced.
 22. Release metadata identifies v0.9.0.
 
-;;;
+. 
 
 26. Architectural Outcome
 

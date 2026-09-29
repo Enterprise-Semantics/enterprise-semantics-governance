@@ -23,7 +23,7 @@ Implement Agentic Offering as a specialization of Offering while preserving the 
 * Agentic Operations;
 * Agentic Value Stream;
 * Agentic Enterprise.
-;;;
+. 
 2. Foundational Dependency Gate
 
 Before implementation:
@@ -40,7 +40,7 @@ If NO:
 Block canonical implementation and raise a dependency for a separately governed Offering semantic grounding ADR.
 
 CR-ES-018 shall not create Offering implicitly.
-;;;
+. 
 3. Concept
 
 If the dependency gate passes, create:
@@ -50,7 +50,7 @@ enterprise-semantics/concepts/agentic-offering.yaml
 Canonical definition:
 
 An Agentic Offering is an Offering whose composition, interaction, configuration, fulfillment, or value realization materially incorporates agentic behavior in interpreting intent, selecting or coordinating actions, or adapting the offering toward an intended stakeholder outcome within defined authority, policy, and contextual boundaries.
-;;;
+. 
 4. Properties
 
 Implement:
@@ -73,7 +73,7 @@ properties:
   realization_mode:
 
 Properties must describe agentic Offering realization and must not duplicate foundational Offering properties unnecessarily.
-;;;
+. 
 5. Registry
 
 Add:
@@ -81,7 +81,7 @@ Add:
 AGENTIC_OFFERING
 
 to the canonical registry.
-;;;
+. 
 6. Profile
 
 Create:
@@ -89,7 +89,7 @@ Create:
 ES:PROFILE:AGENTIC_OFFERING
 
 The profile shall group the semantic concepts relevant to Agentic Offering without implying that all are subtypes.
-;;;
+. 
 7. Relationships
 
 Where canonical dependencies exist:
@@ -110,7 +110,7 @@ Agentic Offering
     -> contributes-to -> Value
 
 Unresolved relationships shall be documented rather than implemented through unauthorized concept creation.
-;;;
+. 
 8. Product Boundary
 
 Document:
@@ -130,7 +130,7 @@ and:
 Agentic Product is-a Agentic Offering
 
 unless a separate, explicitly governed relationship establishes such correspondence.
-;;;
+. 
 9. Service Boundary
 
 Document:
@@ -144,7 +144,7 @@ Agentic Service
 The validator shall reject:
 
 Agentic Offering is-a Agentic Service
-;;;
+. 
 10. Value Stream Boundary
 
 Document:
@@ -158,7 +158,7 @@ Agentic Offering
 The validator shall reject:
 
 Agentic Offering is-a Agentic Value Stream
-;;;
+. 
 11. Workflow Boundary
 
 Document:
@@ -170,7 +170,7 @@ may use
 Agentic Workflow
 
 Workflow remains the execution/coordination construct.
-;;;
+. 
 12. Operations Boundary
 
 Document:
@@ -182,7 +182,7 @@ may depend upon
 Agentic Operations
 
 Agentic Operations is not a subtype of Offering.
-;;;
+. 
 13. Agentic Materiality
 
 The implementation shall distinguish:
@@ -208,7 +208,7 @@ Offering
   + action selection
   + coordination
   + adaptation
-;;;
+. 
 14. Conformance Tests
 
 Create:
@@ -255,7 +255,7 @@ AOFF-NEG-012  Agentic Offering requires removal of humans
 AOFF-NEG-013  Agentic Offering has unlimited authority
 AOFF-NEG-014  Agentic Product automatically makes the whole Offering agentic
 AOFF-NEG-015  Agentic Service automatically makes the whole Offering agentic
-;;;
+. 
 15. Documentation
 
 Create:
@@ -274,7 +274,7 @@ enterprise-semantics-docs/architecture/
   agentic-offering-operations-boundary.md
   agentic-vs-autonomous-offering.md
   offering-authority-escalation-boundary.md
-;;;
+. 
 16. Visualizations
 
 Create:
@@ -289,7 +289,7 @@ enterprise-semantics-visuals/architecture/agentic-offering-value-stream-boundary
 enterprise-semantics-visuals/architecture/agentic-offering-operations-boundary.puml
 enterprise-semantics-visuals/architecture/agentic-vs-autonomous-offering.puml
 enterprise-semantics-visuals/architecture/offering-authority-escalation-boundary.puml
-;;;
+. 
 17. Example
 
 Create:
@@ -316,7 +316,7 @@ Observe Customer Outcome
 Adapt / Escalate
 
 The example must demonstrate agentic materiality at the Offering boundary, not merely inherit the classification from an Agentic Product or Agentic Service.
-;;;
+. 
 18. Mappings
 
 Create:
@@ -327,7 +327,7 @@ enterprise-semantics-mappings/opendea/agentic-offering.yaml
 Mappings shall document correspondence and specialization intent.
 
 No WSF/OpenDEA implementation change is authorized.
-;;;
+. 
 19. Provenance
 
 provenance:
@@ -344,7 +344,7 @@ provenance:
     - ADR-ES-018
   implementation:
     - CR-ES-018
-;;;
+. 
 20. Acceptance Criteria
 
 * [ ]	Offering dependency verified.
@@ -377,7 +377,7 @@ provenance:
 * [ ]	Provenance passes.
 * [ ]	CI passes.
 * [ ]	No unauthorized Offering ontology is introduced.
-;;;
+. 
 21. Release Gate
 
 If the Offering dependency is satisfied:
@@ -385,7 +385,7 @@ If the Offering dependency is satisfied:
 Enterprise-Semantics v1.7.0
 
 If Offering is not yet canonical, CR-ES-018 remains Blocked by Dependency and shall not create a substitute Offering definition.
-;;;
+. 
 22. Architectural Continuity
 
 The resulting structure is:

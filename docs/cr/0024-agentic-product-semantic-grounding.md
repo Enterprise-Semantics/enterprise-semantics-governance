@@ -41,7 +41,7 @@ The implementation shall establish Agentic Product as a governed specialization 
 * Automation.
 
 No new foundational Product ontology shall be silently introduced through this CR.
-;;;
+. 
 2. Scope
 
 In Scope
@@ -82,7 +82,7 @@ Out of Scope
 * Product changes in WSF.
 * Product changes in OpenDEA.
 * New foundational Product ontology unless separately authorized.
-;;;
+. 
 3. Canonical Concept
 
 Create:
@@ -101,7 +101,7 @@ Specialization:
 
 specializes:
   - Product
-;;;
+. 
 4. Required Properties
 
 The schema shall support:
@@ -123,7 +123,7 @@ properties:
   realization_mode:
 
 Properties must describe the agentic realization of the Product, not duplicate unrelated Product semantics.
-;;;
+. 
 5. Material Agentic Realization
 
 The implementation shall enforce the distinction between:
@@ -151,7 +151,7 @@ The validator should recognize characteristics such as:
 * escalation.
 
 Presence of an AI component alone shall fail the agentic-materiality requirement.
-;;;
+. 
 6. Registry
 
 Add:
@@ -174,7 +174,7 @@ Registry validation shall confirm:
 * version;
 * provenance;
 * schema location.
-;;;
+. 
 7. Profile
 
 Create:
@@ -196,7 +196,7 @@ scope:
   - Action
 
 The profile shall not imply that every scoped concept is a subtype of Product.
-;;;
+. 
 8. Relationships
 
 Where canonical predicates and target concepts exist, implement:
@@ -223,7 +223,7 @@ If a target concept is not yet canonical:
 2. record the relationship as deferred;
 3. document the dependency;
 4. preserve the semantic intent in the mapping/documentation layer.
-;;;
+. 
 9. Agentic / Autonomous Orthogonality
 
 The implementation must enforce:
@@ -241,7 +241,7 @@ No	Yes	Autonomous Product: future
 Yes	Yes	Agentic + Autonomous Product: future combination
 
 The CR does not authorize implementation of Autonomous Product.
-;;;
+. 
 10. AI Independence
 
 The test suite shall verify:
@@ -259,7 +259,7 @@ A Product materially interpreting delegated intent,
 selecting permitted actions, and adapting its behavior
 within authority boundaries may satisfy Agentic Product
 conformance without requiring AI.
-;;;
+. 
 11. Automation Independence
 
 The test suite shall verify:
@@ -267,7 +267,7 @@ The test suite shall verify:
 Automated Product ≠ Agentic Product
 
 A deterministic rules engine, workflow engine, script, or automation mechanism shall not satisfy Agentic Product conformance merely because it executes automatically.
-;;;
+. 
 12. Human Participation
 
 The conformance suite shall explicitly permit:
@@ -282,7 +282,7 @@ escalation
 The following shall fail:
 
 Agentic Product requires removal of humans
-;;;
+. 
 13. Product / Service Boundary
 
 Add architectural documentation showing:
@@ -306,7 +306,7 @@ and:
 Agentic Product is-a Agentic Service
 
 unless an explicitly modeled separate specialization exists.
-;;;
+. 
 14. Product / Capability Boundary
 
 Document:
@@ -325,7 +325,7 @@ Agentic Capability is-a Agentic Product
 and:
 
 Agentic Product is-a Agentic Capability
-;;;
+. 
 15. Product / Value Stream Boundary
 
 Document:
@@ -343,7 +343,7 @@ Agentic Product is-a Agentic Value Stream
 and:
 
 Agentic Value Stream is-a Agentic Product
-;;;
+. 
 16. Product / Workflow Boundary
 
 Document:
@@ -365,7 +365,7 @@ The Workflow remains the execution/coordination construct.
 The validator must prevent:
 
 Agentic Workflow is-a Agentic Product
-;;;
+. 
 17. Product / Operations Boundary
 
 Document:
@@ -379,7 +379,7 @@ Agentic Operations
 Agentic Operations represents the operating environment or mode of operational realization.
 
 It is not a Product subtype.
-;;;
+. 
 18. Architecture Documentation
 
 Create:
@@ -408,7 +408,7 @@ Agentic Capability
 Agentic Workflow
 Agentic Operations
 Agentic Value Stream
-;;;
+. 
 19. Visualizations
 
 Create:
@@ -447,7 +447,7 @@ The primary conceptual diagram shall show:
              Product Outcome
                     ->
                 Adaptation
-;;;
+. 
 20. Example
 
 Create:
@@ -489,7 +489,7 @@ The example shall demonstrate:
 * human escalation.
 
 It shall not require AI.
-;;;
+. 
 21. WSF Mapping
 
 Create:
@@ -506,7 +506,7 @@ The mapping shall document:
 * unresolved semantic dependencies.
 
 No WSF repository modification is authorized.
-;;;
+. 
 22. OpenDEA Mapping
 
 Create:
@@ -522,7 +522,7 @@ The mapping shall document:
 * unresolved mappings.
 
 No OpenDEA repository modification is authorized.
-;;;
+. 
 23. Conformance Tests
 
 Create:
@@ -553,7 +553,7 @@ APROD-CON-017  AI is not required
 APROD-CON-018  Automation is not sufficient
 APROD-CON-019  Agentic does not imply Autonomous
 APROD-CON-020  Provenance and grounding are present
-;;;
+. 
 24. Negative Tests
 
 Implement at minimum:
@@ -574,7 +574,7 @@ APROD-NEG-013  Agentic Product has unlimited authority
 APROD-NEG-014  Agentic Product requires every product action to be agentic
 APROD-NEG-015  Agentic Product automatically establishes Agentic Value Stream
 APROD-NEG-016  Agentic Product automatically establishes Agentic Enterprise
-;;;
+. 
 25. Schema Validation
 
 CI shall validate:
@@ -589,7 +589,7 @@ CI shall validate:
 * version;
 * profile membership;
 * mapping references.
-;;;
+. 
 26. Semantic Integrity Validation
 
 CI shall explicitly validate:
@@ -607,7 +607,7 @@ Agentic Product -> Agentic Value Stream
 Agentic Product -> Autonomous Product
 
 The test suite must also ensure that these are not introduced indirectly through profiles or mappings.
-;;;
+. 
 27. Materiality Validation
 
 A conformance implementation shall distinguish between:
@@ -631,7 +631,7 @@ Product
   + outcome-oriented adaptation
 
 The validator must assess semantic evidence rather than technology labels.
-;;;
+. 
 28. Provenance
 
 The concept shall contain:
@@ -652,7 +652,7 @@ provenance:
     - CR-ES-016
 
 Additional provenance may be added where actual external grounding is subsequently documented.
-;;;
+. 
 29. Acceptance Criteria
 
 CR-ES-016 is complete only when:
@@ -691,7 +691,7 @@ CR-ES-016 is complete only when:
 * [ ]	Provenance is complete.
 * [ ]	CI passes.
 * [ ]	No unauthorized foundational concepts are introduced.
-;;;
+. 
 30. Release Gate
 
 Successful completion authorizes:
@@ -701,7 +701,7 @@ Enterprise-Semantics v1.5.0
 The release shall contain the Agentic Product semantic specialization and its supporting schemas, mappings, profiles, documentation, examples, diagrams, and conformance suite.
 
 No WSF or OpenDEA implementation release is implied.
-;;;
+. 
 31. Architectural Continuity
 
 The resulting semantic architecture becomes:

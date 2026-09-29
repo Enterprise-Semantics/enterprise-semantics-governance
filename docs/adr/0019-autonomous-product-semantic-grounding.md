@@ -41,7 +41,7 @@ Product
 Autonomous Product describes the degree of independent progression of product realization.
 
 It does not define the technology used to achieve that progression.
-;;;
+. 
 2. Semantic Principle
 
 Autonomy is an independent semantic dimension from Agentic behavior.
@@ -63,7 +63,7 @@ A Product may be:
 * agentic but not autonomous;
 * autonomous but not agentic;
 * both agentic and autonomous.
-;;;
+. 
 3. Four-State Product Model
 
 Agentic	Autonomous	Semantic characterization
@@ -73,7 +73,7 @@ No	Yes	Autonomous Product
 Yes	Yes	Agentic and Autonomous Product
 
 The fourth state is a combined semantic characterization, not a new foundational type.
-;;;
+. 
 4. Autonomous Product Realization
 
 The conceptual realization pattern is:
@@ -110,7 +110,7 @@ Governance
 Escalation
 
 Autonomy therefore means bounded independent progression, not unrestricted operation.
-;;;
+. 
 5. Autonomy Materiality
 
 An Autonomous Product must demonstrate material independent progression.
@@ -137,7 +137,7 @@ The mere presence of:
 * event-driven execution;
 
 does not establish Autonomous Product.
-;;;
+. 
 6. Human Participation
 
 Human participation remains compatible with autonomy.
@@ -160,7 +160,7 @@ Autonomous Product therefore does not mean:
 * governance-free;
 * unlimited;
 * irreversible.
-;;;
+. 
 7. Canonical Relationships
 
 Where target concepts and predicates are canonical:
@@ -182,7 +182,7 @@ Autonomous Product
     |-- contributes-to -> Value
 
 No relationship shall be implemented if its target concept has not been canonically established.
-;;;
+. 
 8. Agentic / Autonomous Boundary
 
 The following distinctions are mandatory:
@@ -197,7 +197,7 @@ Agentic + Autonomous Product
 An Autonomous Product does not automatically become an Agentic Product.
 
 An Agentic Product does not automatically become an Autonomous Product.
-;;;
+. 
 9. AI Boundary
 
 AI is not required.
@@ -207,7 +207,7 @@ AI-enabled Product
 Autonomous Product
 
 AI may support autonomous product behavior, but autonomy must be demonstrated through independent decision and action progression.
-;;;
+. 
 10. Automation Boundary
 
 Automation is an execution mechanism.
@@ -219,7 +219,7 @@ Autonomy
 A fully automated deterministic product mechanism does not automatically constitute an Autonomous Product.
 
 Autonomy requires independent progression within defined objectives, authority, policies, constraints, and governance.
-;;;
+. 
 11. Architectural Boundaries
 
 Product / Capability
@@ -271,7 +271,7 @@ may involve
 Autonomous Product
 
 Autonomous Product does not imply Autonomous Value Stream.
-;;;
+. 
 12. OTCHERE Inc Example
 
 Consider an OTCHERE Inc customer-resolution product.
@@ -297,7 +297,7 @@ Adapt / Escalate
 The product is autonomous because it can progress through material product decisions and actions without requiring human intervention for each decision.
 
 A human may still intervene for exceptions, high-risk cases, or decisions outside delegated authority.
-;;;
+. 
 13. Rejected Interpretations
 
 The following are rejected:
@@ -314,7 +314,7 @@ The following are rejected:
 * Autonomous Product = Autonomous Operations
 * Autonomous Product = Autonomous Value Stream
 * Autonomous Product = Autonomous Enterprise
-;;;
+. 
 14. Deferred Concepts
 
 This ADR does not establish:
@@ -327,7 +327,7 @@ This ADR does not establish:
 * Autonomous Product Agent;
 * Autonomous Ecosystem;
 * Autonomous Enterprise beyond ADR-ES-011.
-;;;
+. 
 15. Governance
 
 Implementation is authorized only through:
@@ -335,7 +335,7 @@ Implementation is authorized only through:
 CR-ES-017: Autonomous Product Semantic Grounding
 
 No WSF or OpenDEA implementation changes are authorized.
-;;;
+. 
 16. Release
 
 Target:
