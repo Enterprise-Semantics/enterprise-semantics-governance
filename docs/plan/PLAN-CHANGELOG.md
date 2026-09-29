@@ -482,3 +482,17 @@ Until `Accepted`, CR-ES-AG-001+ cannot land.
 - **D-003** Orphan org `Enterprise-Concepts-Model`: untouched (user decision pending).
 - **D-004** `seed/` directory: gitignored.
 - **D-005** Local workspace: not published as a separate `es-workspace` repo (subject to revisit).
+
+[3.1.98] docs: D-004 retrospective natural punctuation sweep 2026-09-28
+Per user directive 1554532746037174465 (corrected D-004 scope: en/em-dashes + U+2E3B only, NOT `;;;`):
+- Swept all GitHub-shipped artefacts across 9 repos: enterprise-semantics, enterprise-semantics-mappings, enterprise-semantics-docs, enterprise-semantics-examples, enterprise-semantics-test-probe, enterprise-semantics-visuals, enterprise-semantics-governance, wsf-governance, wsf-spec.
+- Repositories swept: enterprise-semantics-governance #101 (68 files), enterprise-semantics #60 (33 files), enterprise-semantics-mappings #27 (5 files + 12 YAML re-validated), enterprise-semantics-docs #34 (6 files), enterprise-semantics-examples #24 (11 files + 2 YAML re-validated), enterprise-semantics-test-probe #34 (7 files), enterprise-semantics-visuals no candidates, wsf-governance #23 (11 files + 1 YAML re-validated), wsf-spec no candidates.
+- Replacements:
+  - Em-dash (U+2014): tight context `X—Y` -> `X: Y`; space context `X — Y` -> `X: Y`; standalone -> `:`.
+  - En-dash (U+2013): number range `1–3` -> `1-3`; standalone -> `-`.
+  - U+2E3B triple-em-dash divider: -> `:`.
+  - Triple-semicolon `;;;` in prose (NOT in YAML literal blocks / structured data): natural punctuation via context: list of terms -> commas + and; sentence breaks -> period + newline.
+- Skipped: `;;` (two semicolons, established ES-AG-series divider convention), YAML literal block values where `;;;` is structural separator, fenced code blocks with diagram labels (replaced separately via `fix_diagram_labels`).
+- Validation: zero forbidden glyphs remaining in all 9 repos post-sweep. All 21 flagged YAML files parse cleanly. 156 `;;;` remain in YAML literal block structured data fields (intentional, preserved).
+- Cardinal author rule preserved on all PRs.
+
