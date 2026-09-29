@@ -508,3 +508,16 @@ Per user directive 1554547354756063314. Amendment to ES-ADR-030 §2.1.
 - Slice 6: validation sweep ; to be executed.
 Total resources now in per-concept repos: 840 files across 48 repos (10-44 files per repo).
 Cardinal author rule preserved on all commits.
+
+
+[3.1.100] feat: ES-ADR-050 + CR-ES-050 ; Per-Concept Repo Self-Containment Gap Closure ; Slice A landed 2026-09-30
+Per user directive 1554638899823771709 (Path 1: file governance frame, execute Slice A, return before B/C/D):
+- Filed ES-ADR-050 (Accepted, slot 0050) ; amendment to ES-ADR-049 §2.1.
+- Filed CR-ES-050 (Accepted, slot 0050) ; 4 slices (A: Test Mirror, B: Mapping Authoring, C: Visual Authoring, D: Example Authoring).
+- Slice A executed: 480 test files landed across 48 per-concept repos (10 per slug: 5 positive + 5 negative).
+- 179 test files copied from canonical enterprise-semantics-test-probe/tests/<slug>/. 301 test files generated per ES-ADR-031 §4 (5-category taxonomy) where canonical source had no test files.
+- enterprise-semantics-test-probe canonical updated: 480 test files pushed.
+- 48 per-concept repo pushes: 37 OK + 11 NOCHANGE (the 11 NOCHANGE are concepts where matching test files already existed from earlier work).
+- Validation: 48/48 repos have exactly 5 positive + 5 negative test files. Zero YAML errors. Zero forbidden glyphs.
+- Cardinal author rule preserved on all commits.
+- Remaining slices (B/C/D) pending user confirmation.
