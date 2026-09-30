@@ -15,7 +15,7 @@ Implement ES-ADR-035: ES-side Closed Loop integration.
 - Vocabulary predicates: relationships add ; release pointer v2.8.0.
 - Foundation-reference mappings: mappings (WSF + OpenDEA).
 - Docs + examples + tests + visuals.
-- Concept repo `concept-closed-loop` + kit + conformance per ES-030.
+- Concept repo `closed-loop` + kit + conformance per ES-030.
 - AI Closed Loop realized as example (canonical-reject per AI boundary rule).
 
 ## 3. Dependency Gate

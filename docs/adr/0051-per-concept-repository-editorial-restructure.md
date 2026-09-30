@@ -10,7 +10,7 @@ Amends: ES-ADR-049 §2.1, §2.4
 
 ## 1. Context
 
-Per-Concept Repo Self-Containment (ES-ADR-049) established that each concept lives in its own repository. The implementation chose a path-naming convention of `concept-<slug>`, e.g. `Enterprise-Semantics/concept-agentic-value-stream`.
+Per-Concept Repo Self-Containment (ES-ADR-049) established that each concept lives in its own repository. The implementation chose a path-naming convention of `concept-<slug>`, e.g. `Enterprise-Semantics/agentic-value-stream`.
 
 Two editorial issues have been identified:
 

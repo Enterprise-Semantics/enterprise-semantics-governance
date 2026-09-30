@@ -19,7 +19,7 @@ Implement ES-ADR-033: Autonomous Ecosystem specialization of wsf:Ecosystem.
 - VS-D2a: tests (positive + negative per materiality test)
 - VS-D2b: visuals (boundary, four-state matrix, AI boundary)
 - VS-D2c: profile + profile-types entry
-- ES-030 structure: concept repo concept-autonomous-ecosystem + kit manifest + conformance regeneration
+- ES-030 structure: concept repo autonomous-ecosystem + kit manifest + conformance regeneration
 
 ## 3. Dependency Gate
 

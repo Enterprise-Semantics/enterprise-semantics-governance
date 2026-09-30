@@ -23,7 +23,7 @@ Per user directive batch confirmation (2026-09-26): DP1 = B (repo per concept), 
 
 Each governed concept receives its own repository under the Enterprise-Semantics org:
 
-- Naming: `concept-<slug>` (e.g. `concept-agentic-culture`, `concept-agentic-ecosystem`)
+- Naming: `concept-<slug>` (e.g. `agentic-culture`, `agentic-ecosystem`)
 - Contents: the concept YAML at repository root (`concept.yaml`) plus a README
 - The concept repo is the authoritative home for that concept's definition record
 - The shared vocabulary (`relationships/vocabulary.yaml`) remains in `enterprise-semantics` and is consumed by reference (shared predicates are org-wide, not per-concept)
@@ -72,11 +72,11 @@ A conformance section is generated into `enterprise-semantics-docs` at `conforma
 
 First 5 concept repos (most recent tranches, all with satisfied dependency gates):
 
-- concept-agentic-culture (ES-023)
-- concept-autonomous-culture (ES-024)
-- concept-agentic-system (ES-025)
-- concept-autonomous-system (ES-028)
-- concept-agentic-ecosystem (ES-029)
+- agentic-culture (ES-023)
+- autonomous-culture (ES-024)
+- agentic-system (ES-025)
+- autonomous-system (ES-028)
+- agentic-ecosystem (ES-029)
 
 Backfill waves follow for the remaining 20 concepts.
 

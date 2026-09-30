@@ -11,7 +11,7 @@ Implement ES-ADR-031-SVC: adopt wsf:Service (per ADR-WSF-35 + CR-WSF-35, Baselin
 
 ## 2. Implementation Chain
 
-1. ES-side base Service concept record as WSF reference (concepts/service.concept.yaml in enterprise-semantics + concept repo concept-service updated)
+1. ES-side base Service concept record as WSF reference (concepts/service.concept.yaml in enterprise-semantics + concept repo service updated)
 2. WSF mapping (enterprise-semantics-mappings/mappings/wsf/service.yaml, release_target: v1.4.0)
 3. Specialization concept YAMLs updated to base_concept: WSF:SERVICE with authority: WSF
 4. Kit manifests + conformance regeneration

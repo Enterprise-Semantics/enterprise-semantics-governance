@@ -15,7 +15,7 @@ Implement ES-ADR-034: ES-side Network integration.
 - Vocabulary predicates: relationships add ; release pointer v2.7.0.
 - Foundation-reference mappings: mappings (WSF + OpenDEA).
 - Docs + examples + tests + visuals.
-- Concept repo `concept-network` + kit + conformance per ES-030.
+- Concept repo `network` + kit + conformance per ES-030.
 
 ## 3. Dependency Gate
 

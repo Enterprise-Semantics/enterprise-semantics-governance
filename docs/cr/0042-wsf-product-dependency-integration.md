@@ -11,7 +11,7 @@ Implement ES-ADR-032-PRD: adopt wsf:Product (per ADR-WSF-36 + CR-WSF-36, Baselin
 
 ## 2. Implementation Chain
 
-1. ES-side base Product concept record as WSF reference (concepts/product.concept.yaml in enterprise-semantics + concept repo concept-product updated)
+1. ES-side base Product concept record as WSF reference (concepts/product.concept.yaml in enterprise-semantics + concept repo product updated)
 2. WSF mapping (enterprise-semantics-mappings/mappings/wsf/product.yaml, release_target: v1.6.0)
 3. Specialization concept YAMLs updated to base_concept: WSF:PRODUCT with authority: WSF
 4. Kit manifests + conformance regeneration
