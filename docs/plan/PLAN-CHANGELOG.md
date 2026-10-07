@@ -580,3 +580,21 @@ Per user directive 1557388750605127722 (confirm recommendations for Review-ES-00
   - visuals/agentic-value-stream/ ; 3 new diagrams (qualification-decision-model.puml, evidence-lifecycle.puml, conformance-status-machine.puml).
 - D-004 sweep: 0 violations across all new files.
 - Strategy follows Wave 1 CR-VAS-003 (slot 0053 + slot 0056) same Path B (Wave landing + governance frame).
+
+## [3.1.107] (2026-10-08)
+
+- Decision source: user message id `1557495335356465163` ([eaojnr] proceed).
+- Decision: execute CR-VAS-005 (Measurement & Operational Value Model) Wave 3 landing on `Enterprise-Semantics/agentic-value-stream` + governance frame in `Enterprise-Semantics/enterprise-semantics-governance`.
+- Governance artefacts:
+  - ES-ADR-055 ; Agentic Value Stream Measurement & Operational Value Framework ; slot 0055 ; 2026-10-08.
+  - CR-VAS-005 ; Agentic Value Stream Measurement & Operational Value Model ; slot 0058 ; 2026-10-08.
+- Repository artefacts (per AVS):
+  - concept.yaml ; v1.2.0 -> v1.3.0 ; new `measurement:` block (24 sub-keys).
+  - kit/ ; 61 -> 91 tests ; 30 new measurement tests (10 + 10 + 10).
+  - docs/ ; 6 new files (measurement.md, value-realization.md, operational-metrics.md, measurement-baselines.md, measurement-provenance.md, measurement-anti-patterns.md).
+  - docs/concept.md ; new Measurement and Operational Value (CR-VAS-005) section.
+  - docs/conformance.md ; regenerated to 91-test inventory.
+  - visuals/agentic-value-stream/ ; 3 new diagrams (measurement-hierarchy.puml, measurement-dimensions.puml, measurement-anti-patterns.puml).
+  - mappings/wsf.yaml + mappings/opendea.yaml ; measurement_alignment blocks.
+- D-004 sweep: 0 violations across all new files.
+- Strategy follows Wave 1 CR-VAS-003 + Wave 2 CR-VAS-004 same Path B (Wave landing + governance frame).
