@@ -598,3 +598,23 @@ Per user directive 1557388750605127722 (confirm recommendations for Review-ES-00
   - mappings/wsf.yaml + mappings/opendea.yaml ; measurement_alignment blocks.
 - D-004 sweep: 0 violations across all new files.
 - Strategy follows Wave 1 CR-VAS-003 + Wave 2 CR-VAS-004 same Path B (Wave landing + governance frame).
+
+
+## [3.1.108] (2026-10-08)
+
+- Decision source: user message id `1557536038476320830` ([eaojnr] CR-VAS-006 + CR-VAS-007 attached, plan and implement).
+- Decision: execute CR-VAS-006 (Maturity & Capability Model) Wave 4 landing on `Enterprise-Semantics/agentic-value-stream` + governance frame in `Enterprise-Semantics/enterprise-semantics-governance`. CR-VAS-007 (Governance, Lifecycle & Portfolio Management) Wave 5 deferred to next user signal.
+- Governance artefacts:
+  - ES-ADR-056 ; Agentic Value Stream Maturity & Capability Framework ; slot 0056 ; 2026-10-08.
+  - CR-VAS-006 ; Agentic Value Stream Maturity & Capability Model ; slot 0059 ; 2026-10-08.
+- Repository artefacts (per AVS):
+  - concept.yaml ; v1.3.0 -> v1.4.0 ; new `maturity:` block (28 sub-keys).
+  - kit/ ; 91 -> 121 tests ; 30 new maturity tests (10 positive + 10 negative + 10 boundary).
+  - kit/kit.yaml ; ma_positive + ma_negative + ma_boundary blocks relocated to top level (Wave 3 me_* duplicate-provenance structural bug also fixed in same pass).
+  - docs/ ; 7 new files (maturity.md, capability-model.md, maturity-levels.md, maturity-assessment.md, capability-gaps.md, maturity-governance.md, maturity-anti-patterns.md).
+  - docs/concept.md ; new Maturity and Capability (CR-VAS-006) section.
+  - docs/conformance.md ; regenerated to 121-test inventory.
+  - visuals/agentic-value-stream/ ; 3 new diagrams (maturity-levels.puml, maturity-capability-dimensions.puml, maturity-anti-patterns.puml).
+  - mappings/wsf.yaml + mappings/opendea.yaml ; maturity_alignment blocks.
+- D-004 sweep: 0 violations across all new files.
+- Strategy follows Wave 1 CR-VAS-003 + Wave 2 CR-VAS-004 + Wave 3 CR-VAS-005 same Path B (Wave landing + governance frame).
