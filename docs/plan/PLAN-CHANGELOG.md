@@ -563,3 +563,20 @@ Per user directive 1557388750605127722 (confirm recommendations for Review-ES-00
 - Architectural consequence: CR-VAS-003 establishes the semantic spine (Value Stream -> Agentic Participation -> Intent / Authority / Context -> Selection -> Action -> Outcome). CR-VAS-004 Evidence & Conformance is the next layer in the semantic-to-operational chain.
 - Release cut: STILL HELD per 2026-10-07 user directive ("continue to focus on the recon and do no release until I am clear we are in stable state").
 - Branch-protection bypass pattern used for governance push (same as ES-049/050/051/052). Flagged for user decision on PR-based flow going forward.
+
+## [3.1.106] (2026-10-08)
+
+- Decision source: user message id `1557490245581410395` ([eaojnr] ready for wave 2).
+- Decision: execute CR-VAS-004 (Evidence, Conformance & Qualification Validation Model) Wave 2 landing on `Enterprise-Semantics/agentic-value-stream` + governance frame in `Enterprise-Semantics/enterprise-semantics-governance`.
+- Governance artefacts:
+  - ES-ADR-054 ; Agentic Value Stream Evidence, Conformance & Qualification Validation Framework ; slot 0054 ; 2026-10-08.
+  - CR-VAS-004 ; Agentic Value Stream Evidence, Conformance & Qualification Validation Model ; slot 0057 ; 2026-10-08.
+- Repository artefacts (per AVS):
+  - concept.yaml ; v1.1.0 -> v1.2.0 ; new `evidence_conformance:` block.
+  - kit/ ; 33 -> 61 tests ; 28 new conformance tests (8 + 10 + 10).
+  - docs/ ; 5 new files (evidence.md, qualification.md, validation.md, boundary-testing.md, conformance-drift.md).
+  - docs/concept.md ; new Evidence and Conformance (CR-VAS-004) section.
+  - docs/conformance.md ; regenerated to 61-test inventory.
+  - visuals/agentic-value-stream/ ; 3 new diagrams (qualification-decision-model.puml, evidence-lifecycle.puml, conformance-status-machine.puml).
+- D-004 sweep: 0 violations across all new files.
+- Strategy follows Wave 1 CR-VAS-003 (slot 0053 + slot 0056) same Path B (Wave landing + governance frame).
