@@ -639,3 +639,24 @@ Per user directive 1557388750605127722 (confirm recommendations for Review-ES-00
 - D-004 sweep: 0 violations across all new files.
 - Strategy follows Wave 1 CR-VAS-003 + Wave 2 CR-VAS-004 + Wave 3 CR-VAS-005 + Wave 4 CR-VAS-006 same Path B (Wave landing + governance frame).
 - Closes the 5-part semantic-to-operational chain AND extends it with the governance control plane. The CR sequence after CR-VAS-007 is complete (6 of 6 CRs in the planned AVS chain landed). CR-VAS-008 (Architecture Patterns) is the next natural area.
+
+
+## [3.1.110] (2026-10-08)
+
+- Decision source: user message id `1557551719750303876` ([eaojnr] CR-VAS-008 + CR-VAS-009 attached, plan and implement).
+- Decision: execute CR-VAS-008 (Architecture Patterns & Reference Architectures) Wave 6 landing on `Enterprise-Semantics/agentic-value-stream` + governance frame in `Enterprise-Semantics/enterprise-semantics-governance`. CR-VAS-009 (Interoperability & Technology Boundaries) Wave 7 deferred to next user signal.
+- Governance artefacts:
+  - ES-ADR-058 ; Agentic Value Stream Architecture Patterns & Reference Architectures Framework ; slot 0058 ; 2026-10-08.
+  - CR-VAS-008 ; Agentic Value Stream Architecture Patterns & Reference Architectures Model ; slot 0061 ; 2026-10-08.
+- Repository artefacts (per AVS):
+  - concept.yaml ; v1.5.0 -> v1.6.0 ; new `architecture:` block (16 sub-keys).
+  - kit/ ; 151 -> 169 tests ; 18 new architecture tests (6 positive + 6 negative + 6 boundary).
+  - kit/kit.yaml ; ap_positive + ap_negative + ap_boundary blocks at top level.
+  - docs/ ; 6 new files (architecture.md, reference-architecture.md, architecture-patterns.md, architecture-boundaries.md, architecture-decisions.md, architecture-anti-patterns.md).
+  - docs/concept.md ; new Architecture Patterns & Reference Architectures (CR-VAS-008) section.
+  - docs/conformance.md ; regenerated to 169-test inventory.
+  - visuals/agentic-value-stream/ ; 3 new diagrams (avs-reference-architecture.puml, avs-architecture-patterns.puml, avs-architecture-boundaries.puml).
+  - mappings/wsf.yaml + mappings/opendea.yaml ; architecture_alignment blocks.
+- D-004 sweep: 0 violations across all new files.
+- Strategy follows Wave 1..5 same Path B (Wave landing + governance frame).
+- Extends the 6-part semantic-to-operational chain with the architecture translation layer. The CR sequence after CR-VAS-008 is: CR-VAS-009 (Interoperability & Technology Boundaries) next, then CR-VAS-010 (semantic knowledge lifecycle: versioning, evolution, backward compatibility, deprecation, migration, semantic change management).
