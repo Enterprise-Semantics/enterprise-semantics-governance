@@ -618,3 +618,24 @@ Per user directive 1557388750605127722 (confirm recommendations for Review-ES-00
   - mappings/wsf.yaml + mappings/opendea.yaml ; maturity_alignment blocks.
 - D-004 sweep: 0 violations across all new files.
 - Strategy follows Wave 1 CR-VAS-003 + Wave 2 CR-VAS-004 + Wave 3 CR-VAS-005 same Path B (Wave landing + governance frame).
+
+
+## [3.1.109] (2026-10-08)
+
+- Decision source: user message id `1557545829437284474` ([eaojnr] continue).
+- Decision: execute CR-VAS-007 (Governance, Lifecycle & Portfolio Management) Wave 5 landing on `Enterprise-Semantics/agentic-value-stream` + governance frame in `Enterprise-Semantics/enterprise-semantics-governance`.
+- Governance artefacts:
+  - ES-ADR-057 ; Agentic Value Stream Governance, Lifecycle & Portfolio Framework ; slot 0057 ; 2026-10-08.
+  - CR-VAS-007 ; Agentic Value Stream Governance, Lifecycle & Portfolio Management Model ; slot 0060 ; 2026-10-08.
+- Repository artefacts (per AVS):
+  - concept.yaml ; v1.4.0 -> v1.5.0 ; new `governance:` block (32 sub-keys).
+  - kit/ ; 121 -> 151 tests ; 30 new governance tests (10 positive + 10 negative + 10 boundary).
+  - kit/kit.yaml ; gv_positive + gv_negative + gv_boundary blocks at top level.
+  - docs/ ; 8 new files (governance.md, lifecycle.md, change-management.md, authority-governance.md, suspension-and-recovery.md, portfolio-governance.md, governance-metrics.md, governance-anti-patterns.md).
+  - docs/concept.md ; new Governance, Lifecycle & Portfolio (CR-VAS-007) section.
+  - docs/conformance.md ; regenerated to 151-test inventory.
+  - visuals/agentic-value-stream/ ; 3 new diagrams (avs-lifecycle.puml, governance-domains.puml, governance-policy-hierarchy.puml).
+  - mappings/wsf.yaml + mappings/opendea.yaml ; governance_alignment blocks.
+- D-004 sweep: 0 violations across all new files.
+- Strategy follows Wave 1 CR-VAS-003 + Wave 2 CR-VAS-004 + Wave 3 CR-VAS-005 + Wave 4 CR-VAS-006 same Path B (Wave landing + governance frame).
+- Closes the 5-part semantic-to-operational chain AND extends it with the governance control plane. The CR sequence after CR-VAS-007 is complete (6 of 6 CRs in the planned AVS chain landed). CR-VAS-008 (Architecture Patterns) is the next natural area.
